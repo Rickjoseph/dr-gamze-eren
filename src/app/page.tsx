@@ -4,10 +4,10 @@ import { GlassCard } from "@/components/GlassCard";
 import { services } from "@/content/services";
 
 const serviceImages: Record<string, string> = {
-  facial: "/img/beauty-profile.jpg",
-  body: "/img/beauty-natural.jpg",
-  breast: "/img/beauty-soft.jpg",
-  "non-surgical": "/img/skincare-hands.jpg",
+  facial: "/img/service-facial.jpg",
+  body: "/img/service-body.jpg",
+  breast: "/img/service-breast.jpg",
+  "non-surgical": "/img/service-nonsurgical.jpg",
 };
 
 export default function Home() {
