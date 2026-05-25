@@ -3,15 +3,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import type { Dict, Locale } from "@/i18n/dict";
+import { LocaleToggle } from "./LocaleToggle";
 
-const items = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
-  { href: "/contact", label: "Contact" },
-];
+type Props = {
+  locale: Locale;
+  t: Dict;
+};
 
-export function Nav() {
+export function Nav({ locale, t }: Props) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
 
@@ -21,6 +21,13 @@ export function Nav() {
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const items = [
+    { href: "/", label: t.nav.home },
+    { href: "/about", label: t.nav.about },
+    { href: "/services", label: t.nav.services },
+    { href: "/contact", label: t.nav.contact },
+  ];
 
   return (
     <header
@@ -33,7 +40,7 @@ export function Nav() {
           scrolled ? "max-w-3xl px-3 py-2" : "max-w-5xl px-5 py-3"
         }`}
       >
-        <Link href="/" className="flex items-center gap-3 pl-1 pr-3" aria-label="Dr. Gamze Eren — Home">
+        <Link href="/" className="flex items-center gap-3 pl-1 pr-3" aria-label={t.nav.home}>
           <Image
             src="/brand/logo.png"
             alt=""
@@ -48,7 +55,7 @@ export function Nav() {
             className="transition-all duration-700"
             sizes="(max-width: 640px) 200px, 260px"
           />
-          <span className="sr-only">Dr. Gamze Eren — Aesthetic & Plastic Surgery</span>
+          <span className="sr-only">Dr. Gamze Eren — {t.about.portrait.title}</span>
         </Link>
 
         <ul className="hidden items-center gap-1 md:flex">
@@ -64,18 +71,24 @@ export function Nav() {
           ))}
         </ul>
 
-        <Link href="/contact" className="btn-solid hidden md:inline-flex">
-          Book Consultation
-        </Link>
+        <div className="hidden items-center gap-3 md:flex">
+          <LocaleToggle current={locale} />
+          <Link href="/contact" className="btn-solid">
+            {t.nav.book}
+          </Link>
+        </div>
 
-        <button
-          aria-label="Menu"
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-          className="btn-glass !px-3 !py-2 md:hidden"
-        >
-          <span className="block h-0.5 w-5 bg-current" />
-        </button>
+        <div className="flex items-center gap-2 md:hidden">
+          <LocaleToggle current={locale} />
+          <button
+            aria-label={t.nav.menu}
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+            className="btn-glass !px-3 !py-2"
+          >
+            <span className="block h-0.5 w-5 bg-current" />
+          </button>
+        </div>
       </nav>
 
       {open && (
@@ -94,7 +107,7 @@ export function Nav() {
             ))}
             <li className="pt-1">
               <Link href="/contact" onClick={() => setOpen(false)} className="btn-solid w-full justify-center">
-                Book Consultation
+                {t.nav.book}
               </Link>
             </li>
           </ul>
