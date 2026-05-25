@@ -275,7 +275,7 @@ const en = {
     breast: "Breast",
     "non-surgical": "Non-surgical",
   },
-} as const;
+};
 
 const tr: typeof en = {
   meta: {
