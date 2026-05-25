@@ -47,7 +47,6 @@ export default function ServicesPage() {
             <GlassCard
               className="overflow-hidden p-0"
               tint={i % 2 === 1 ? "rose" : "clear"}
-              refract={i === 0}
             >
               <div className="grid gap-0 md:grid-cols-5">
                 <div className="relative min-h-[260px] md:col-span-2 md:min-h-full">

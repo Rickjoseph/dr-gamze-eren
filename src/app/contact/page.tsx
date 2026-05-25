@@ -28,7 +28,7 @@ export default function ContactPage() {
       <section className="relative px-4 sm:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-6 lg:grid-cols-5">
-            <GlassCard className="p-8 sm:p-10 lg:col-span-3" refract>
+            <GlassCard className="p-8 sm:p-10 lg:col-span-3">
               <ContactForm />
             </GlassCard>
 

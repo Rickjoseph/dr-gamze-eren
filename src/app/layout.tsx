@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -13,7 +14,7 @@ const inter = Inter({
 
 const cormorant = Cormorant_Garamond({
   variable: "--font-display",
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500"],
   style: ["normal", "italic"],
   subsets: ["latin"],
   display: "swap",
@@ -40,34 +41,17 @@ export default function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${inter.variable} ${cormorant.variable} antialiased`}>
-      <head>
-        {/* Swallow errors thrown by browser extensions (wallets, etc.)
-            so they don't trigger Next.js's dev error overlay. Real
-            application errors still surface — we only filter rejections
-            whose stack points to a chrome-extension:// URL. */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              (function() {
-                function isExtErr(e) {
-                  var s = (e && (e.reason && (e.reason.stack || e.reason.message))) || (e && e.message) || '';
-                  var f = (e && e.filename) || '';
-                  return /chrome-extension:\\/\\//.test(s) || /chrome-extension:\\/\\//.test(f) ||
-                         /moz-extension:\\/\\//.test(s) || /moz-extension:\\/\\//.test(f) ||
-                         /safari-extension:\\/\\//.test(s) || /safari-extension:\\/\\//.test(f);
-                }
-                window.addEventListener('error', function(e) {
-                  if (isExtErr(e)) { e.stopImmediatePropagation(); e.preventDefault(); }
-                }, true);
-                window.addEventListener('unhandledrejection', function(e) {
-                  if (isExtErr(e)) { e.stopImmediatePropagation(); e.preventDefault(); }
-                }, true);
-              })();
-            `,
-          }}
-        />
-      </head>
       <body className="relative min-h-screen">
+        {/* Swallow errors thrown by browser extensions (wallets, etc.) so
+            they don't trigger Next.js's dev error overlay. Real app
+            errors still surface — we only filter events whose stack /
+            filename points to a chrome-extension://, moz-extension:// or
+            safari-extension:// URL. Uses next/script with beforeInteractive
+            so the listeners attach before extension code typically runs. */}
+        <Script
+          id="suppress-extension-errors"
+          strategy="beforeInteractive"
+        >{`(function(){function x(e){var s=(e&&e.reason&&(e.reason.stack||e.reason.message))||(e&&e.message)||'';var f=(e&&e.filename)||'';return /chrome-extension:\\/\\//.test(s)||/chrome-extension:\\/\\//.test(f)||/moz-extension:\\/\\//.test(s)||/moz-extension:\\/\\//.test(f)||/safari-extension:\\/\\//.test(s)||/safari-extension:\\/\\//.test(f);}window.addEventListener('error',function(e){if(x(e)){e.stopImmediatePropagation();e.preventDefault();}},true);window.addEventListener('unhandledrejection',function(e){if(x(e)){e.stopImmediatePropagation();e.preventDefault();}},true);})();`}</Script>
         <GlassFilter />
         <Nav />
         <main className="pt-24 sm:pt-32">{children}</main>

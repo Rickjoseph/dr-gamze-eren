@@ -41,19 +41,27 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Hero portrait inside a generous glass frame */}
+            {/* Hero portrait — Dr. Gamze Eren herself, framed in glass */}
             <div className="reveal reveal-2 relative">
               <GlassCard className="relative overflow-hidden p-3" tint="rose">
                 <div className="relative aspect-[4/5] overflow-hidden rounded-2xl">
                   <Image
-                    src="/img/hero-portrait.jpg"
-                    alt="A portrait conveying the clinic's aesthetic — soft, natural, confident"
+                    src="/team/dr-gamze-cafe.jpg"
+                    alt="Op. Dr. Güler Gamze Eren"
                     fill
                     priority
                     sizes="(max-width: 1024px) 92vw, 540px"
                     className="object-cover"
                   />
-                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/35 via-transparent to-transparent" />
+                  {/* Subtle bottom gradient so the floating pills sit cleanly */}
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/40 via-transparent to-transparent" />
+                  {/* Quiet attribution caption inside the frame */}
+                  <div className="pointer-events-none absolute inset-x-0 bottom-0 p-6 text-white">
+                    <p className="text-[0.65rem] uppercase tracking-[0.3em] opacity-80">Op. Dr.</p>
+                    <p className="font-display text-2xl leading-tight">
+                      Güler Gamze <span className="italic">Eren</span>
+                    </p>
+                  </div>
                 </div>
               </GlassCard>
 
@@ -131,7 +139,7 @@ export default function Home() {
       </section>
 
       {/* ============== SERVICES ============== */}
-      <section className="relative mt-32 px-4 sm:px-8">
+      <section className="relative mt-32 px-4 cv-auto sm:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="flex items-end justify-between gap-6">
             <div>
@@ -195,7 +203,7 @@ export default function Home() {
       </section>
 
       {/* ============== MEDICAL TOURISM ============== */}
-      <section className="relative mt-32 px-4 sm:px-8">
+      <section className="relative mt-32 px-4 cv-auto sm:px-8">
         <div className="mx-auto max-w-6xl">
           <GlassCard className="overflow-hidden p-0" tint="dark">
             <div className="grid gap-0 md:grid-cols-2">
@@ -255,7 +263,7 @@ export default function Home() {
       </section>
 
       {/* ============== JOURNEY ============== */}
-      <section className="relative mt-32 px-4 sm:px-8">
+      <section className="relative mt-32 px-4 cv-auto sm:px-8">
         <div className="mx-auto max-w-6xl">
           <p className="eyebrow">Your Journey</p>
           <h2 className="headline mt-3 max-w-3xl text-4xl sm:text-5xl">
@@ -303,7 +311,7 @@ export default function Home() {
       </section>
 
       {/* ============== TESTIMONIAL ============== */}
-      <section className="relative mt-32 px-4 sm:px-8">
+      <section className="relative mt-32 px-4 cv-auto sm:px-8">
         <div className="mx-auto max-w-4xl">
           <GlassCard className="p-10 text-center sm:p-16">
             <p className="font-display text-7xl leading-none text-[var(--color-rosegold)]">
@@ -322,7 +330,7 @@ export default function Home() {
       </section>
 
       {/* ============== CTA ============== */}
-      <section className="relative mt-32 px-4 sm:px-8">
+      <section className="relative mt-32 px-4 cv-auto sm:px-8">
         <div className="mx-auto max-w-5xl">
           <GlassCard className="p-10 text-center sm:p-16" tint="rose">
             <h2 className="headline text-4xl sm:text-5xl">

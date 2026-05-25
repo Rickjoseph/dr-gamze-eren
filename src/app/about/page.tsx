@@ -86,7 +86,7 @@ export default function AboutPage() {
 
       <section className="relative mt-24 px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
-          <GlassCard className="p-10 sm:p-14" refract>
+          <GlassCard className="p-10 sm:p-14">
             <p className="eyebrow">Approach</p>
             <h2 className="headline mt-4 text-3xl sm:text-4xl">
               An aesthetic that looks{" "}

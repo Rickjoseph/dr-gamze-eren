@@ -43,34 +43,35 @@
     overflow-x: hidden;
   }
 
-  /* Living color field — bolder drifting orbs sit behind every page.
-     The strong color contrast is essential for the glass refraction to
-     show up: backdrop-filter has nothing to refract on a flat colour. */
+  /* Living color field — bold radial orbs give the glass something to
+     refract. STATIC by default to keep paint cost down: any animation
+     here forces every backdrop-filter above it to re-snapshot per frame.
+     Reduced-motion users would never see it animate anyway. */
   body::before {
     content: "";
     position: fixed;
-    inset: -20vmax;
+    inset: -10vmax;
     z-index: -2;
     background:
       radial-gradient(42vmax 42vmax at 15% 18%, #ffd5c1 0%, transparent 55%),
       radial-gradient(38vmax 38vmax at 88% 22%, #f0b89a 0%, transparent 50%),
       radial-gradient(54vmax 54vmax at 72% 88%, #c98970 0%, transparent 55%),
       radial-gradient(40vmax 40vmax at 8% 92%, #f3e0d0 0%, transparent 58%),
-      radial-gradient(30vmax 30vmax at 50% 50%, #e8b59a 0%, transparent 60%),
       linear-gradient(180deg, #fbf2e8 0%, #ecd6c2 100%);
     filter: saturate(1.12);
-    animation: drift 36s ease-in-out infinite alternate;
     pointer-events: none;
+    will-change: auto;
   }
 
-  /* Fine grain to keep large washes from looking flat */
+  /* Fine grain to keep large washes from looking flat.
+     The noise SVG is rasterized once and tiled — cheap. */
   body::after {
     content: "";
     position: fixed;
     inset: 0;
     z-index: -1;
     pointer-events: none;
-    opacity: 0.06;
+    opacity: 0.05;
     mix-blend-mode: multiply;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
   }
@@ -126,34 +127,36 @@
       rgba(255, 255, 255, 0.28) 62%,
       rgba(255, 255, 255, 0.55) 100%
     );
-  /* Layer 2 — diffusion: heavy blur + saturation lift + brightness pop.
-     Lightning CSS auto-prefixes from browserslist; do NOT add the
-     -webkit-* line manually or Lightning will collapse to webkit-only. */
-  backdrop-filter: blur(28px) saturate(220%) brightness(1.08) contrast(1.04);
+  /* Layer 2 — diffusion. Lighter default (18px) for the dozens of
+     glass surfaces site-wide; .glass-strong and .glass-refract get
+     the heavier treatment selectively. */
+  backdrop-filter: blur(18px) saturate(180%) brightness(1.05);
   /* Layer 5–7: chromatic dispersion + lensing inner ring + drop shadow */
   box-shadow:
-    /* Chromatic edge dispersion — barely-visible RGB split on rim */
     -0.5px -0.5px 0 rgba(243, 169, 169, 0.35),
     0.5px 0.5px 0 rgba(166, 186, 232, 0.35),
-    /* Crisp inner specular line (the curved "top edge" of glass) */
     inset 0 1.5px 0 rgba(255, 255, 255, 0.95),
     inset 0 -1px 0 rgba(255, 255, 255, 0.4),
-    /* Lensing — inner shadow toward center, like edge of a lens */
-    inset 0 0 30px rgba(255, 255, 255, 0.35),
+    inset 0 0 30px rgba(255, 255, 255, 0.3),
     inset 0 -20px 40px -10px rgba(26, 20, 16, 0.08),
-    /* Drop shadow */
-    0 30px 60px -20px rgba(26, 20, 16, 0.3),
-    0 8px 24px -8px rgba(26, 20, 16, 0.18);
-  /* 1px transparent border so background-clip works for rim treatments */
+    0 24px 50px -18px rgba(26, 20, 16, 0.28),
+    0 6px 18px -8px rgba(26, 20, 16, 0.15);
   border: 1px solid rgba(255, 255, 255, 0.7);
-  transition: transform 600ms var(--ease-soft), box-shadow 600ms var(--ease-soft);
-  will-change: transform;
+  transition: transform 400ms var(--ease-soft), box-shadow 400ms var(--ease-soft);
+}
+
+/* Heavier blur — opt in on hero/showcase surfaces only */
+.glass-strong {
+  backdrop-filter: blur(28px) saturate(220%) brightness(1.08) contrast(1.04);
 }
 
 /* Layer 4: Specular conic rim that wraps around the perimeter.
    Drawn on ::before, masked to a 1.5px outline so only the rim shows.
    The --ang custom property drives the rotation; we animate it
    for a slow "breathing" rotation that gives the glass life. */
+/* Static specular rim by default — much cheaper than an always-on
+   conic-gradient animation on every glass card. The rim only rotates
+   on hover (handled below), so idle pages have zero rim animation. */
 .glass::before {
   content: "";
   position: absolute;
@@ -163,7 +166,7 @@
   z-index: 1;
   padding: 2px;
   background: conic-gradient(
-    from var(--ang, 130deg),
+    from 130deg,
     rgba(255, 255, 255, 0) 0deg,
     rgba(255, 255, 255, 1) 35deg,
     rgba(255, 255, 255, 0.2) 90deg,
@@ -181,7 +184,23 @@
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
           mask-composite: exclude;
-  animation: rim-spin 12s linear infinite, glass-breathe 6s ease-in-out infinite;
+}
+
+/* On hover, opt in to the animated rim. The hover state is also when
+   --mx/--my driven highlight kicks in, so we already promote on hover. */
+.glass:hover::before {
+  background: conic-gradient(
+    from var(--ang, 130deg),
+    rgba(255, 255, 255, 0) 0deg,
+    rgba(255, 255, 255, 1) 35deg,
+    rgba(255, 255, 255, 0.2) 90deg,
+    rgba(255, 235, 220, 0.85) 150deg,
+    rgba(255, 255, 255, 0) 200deg,
+    rgba(255, 255, 255, 0.95) 270deg,
+    rgba(255, 220, 200, 0.45) 320deg,
+    rgba(255, 255, 255, 0) 360deg
+  );
+  animation: rim-spin 12s linear infinite;
 }
 
 /* Layer 8: Mouse-tracked moving specular highlight + Layer 3 backup highlight.
@@ -274,7 +293,8 @@
   }
 }
 
-/* Floating nav variant — thinner, lighter material, but same rim treatment */
+/* Floating nav variant — one instance site-wide, so we can afford a
+   slightly heavier blur. Static rim, no animation. */
 .glass-nav {
   position: relative;
   isolation: isolate;
@@ -284,7 +304,7 @@
       rgba(255, 255, 255, 0.72) 0%,
       rgba(255, 255, 255, 0.42) 100%
     );
-  backdrop-filter: blur(32px) saturate(220%) brightness(1.06);
+  backdrop-filter: blur(24px) saturate(200%) brightness(1.05);
   border: 1px solid rgba(255, 255, 255, 0.7);
   box-shadow:
     -0.5px -0.5px 0 rgba(243, 169, 169, 0.3),
@@ -302,7 +322,7 @@
   pointer-events: none;
   padding: 1.5px;
   background: conic-gradient(
-    from var(--ang, 130deg),
+    from 130deg,
     rgba(255, 255, 255, 0) 0deg,
     rgba(255, 255, 255, 0.95) 45deg,
     rgba(255, 255, 255, 0.2) 100deg,
@@ -319,7 +339,13 @@
     linear-gradient(#000 0 0) content-box,
     linear-gradient(#000 0 0);
           mask-composite: exclude;
-  animation: rim-spin 22s linear infinite;
+}
+
+/* Performance: skip layout/paint work for sections that scroll
+   off-screen. The intrinsic size hint keeps the scrollbar honest. */
+.cv-auto {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 800px;
 }
 
 /* Pill button on glass */
