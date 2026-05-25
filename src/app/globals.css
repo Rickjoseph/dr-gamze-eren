@@ -1,26 +1,413 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-ivory: #f7f1ea;
+  --color-cream: #efe5d8;
+  --color-blush: #f3d9d0;
+  --color-rose: #d9a99a;
+  --color-rosegold: #c9a47c;
+  --color-taupe: #8a6b56;
+  --color-cocoa: #5b4636;
+  --color-ink: #1a1410;
+  --color-line: rgba(26, 20, 16, 0.08);
+
+  --font-serif: "Cormorant Garamond", "Playfair Display", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-display: "Cormorant Garamond", ui-serif, Georgia, serif;
+
+  --shadow-glass:
+    0 1px 0 rgba(255, 255, 255, 0.55) inset,
+    0 -1px 0 rgba(255, 255, 255, 0.18) inset,
+    0 30px 60px -20px rgba(26, 20, 16, 0.25),
+    0 8px 24px -8px rgba(26, 20, 16, 0.15);
+
+  --ease-soft: cubic-bezier(0.22, 1, 0.36, 1);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    color-scheme: light;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    color: var(--color-ink);
+    background: var(--color-ivory);
+    font-feature-settings: "ss01", "cv11";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  /* Living color field — bolder drifting orbs sit behind every page.
+     The strong color contrast is essential for the glass refraction to
+     show up: backdrop-filter has nothing to refract on a flat colour. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: -20vmax;
+    z-index: -2;
+    background:
+      radial-gradient(42vmax 42vmax at 15% 18%, #ffd5c1 0%, transparent 55%),
+      radial-gradient(38vmax 38vmax at 88% 22%, #f0b89a 0%, transparent 50%),
+      radial-gradient(54vmax 54vmax at 72% 88%, #c98970 0%, transparent 55%),
+      radial-gradient(40vmax 40vmax at 8% 92%, #f3e0d0 0%, transparent 58%),
+      radial-gradient(30vmax 30vmax at 50% 50%, #e8b59a 0%, transparent 60%),
+      linear-gradient(180deg, #fbf2e8 0%, #ecd6c2 100%);
+    filter: saturate(1.12);
+    animation: drift 36s ease-in-out infinite alternate;
+    pointer-events: none;
+  }
+
+  /* Fine grain to keep large washes from looking flat */
+  body::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    opacity: 0.06;
+    mix-blend-mode: multiply;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='180'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.6 0'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");
+  }
+
+  ::selection {
+    background: var(--color-rosegold);
+    color: white;
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: -0.01em;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@keyframes drift {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(2vmax, -1vmax, 0) scale(1.03); }
+  100% { transform: translate3d(-1vmax, 2vmax, 0) scale(1.05); }
+}
+
+/* =========================================================
+   Liquid Glass — physically-inspired layered material
+   --------------------------------------------------------
+   Layer 1: Translucent fill (the "tint")
+   Layer 2: Heavy backdrop-filter — blur, saturate, brightness, contrast
+            (this is the actual diffusion of light through the material)
+   Layer 3: SVG displacement (Chromium) — true refraction of backdrop
+   Layer 4: Specular outer rim (conic gradient) — the bright edge highlight
+            where light catches the curve of the "glass"
+   Layer 5: Lensing — concentric inner shadow that bends backdrop light
+            toward the center, like the edge of a real lens
+   Layer 6: Chromatic edge dispersion — split RGB shadows simulating
+            the way real glass refracts different wavelengths differently
+   Layer 7: Inner glow — soft luminescence as if backlit
+   Layer 8: Mouse-tracked specular highlight — fluid bright spot that
+            tracks the cursor like a moving point light
+   Layer 9: Drifting noise — micro-texture so the glass never looks plastic
+   ========================================================= */
+
+.glass {
+  position: relative;
+  isolation: isolate;
+  border-radius: 1.75rem;
+  color: var(--color-ink);
+  /* Layer 1 — translucent tint */
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255, 255, 255, 0.58) 0%,
+      rgba(255, 255, 255, 0.18) 38%,
+      rgba(255, 255, 255, 0.28) 62%,
+      rgba(255, 255, 255, 0.55) 100%
+    );
+  /* Layer 2 — diffusion: heavy blur + saturation lift + brightness pop.
+     Lightning CSS auto-prefixes from browserslist; do NOT add the
+     -webkit-* line manually or Lightning will collapse to webkit-only. */
+  backdrop-filter: blur(28px) saturate(220%) brightness(1.08) contrast(1.04);
+  /* Layer 5–7: chromatic dispersion + lensing inner ring + drop shadow */
+  box-shadow:
+    /* Chromatic edge dispersion — barely-visible RGB split on rim */
+    -0.5px -0.5px 0 rgba(243, 169, 169, 0.35),
+    0.5px 0.5px 0 rgba(166, 186, 232, 0.35),
+    /* Crisp inner specular line (the curved "top edge" of glass) */
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.4),
+    /* Lensing — inner shadow toward center, like edge of a lens */
+    inset 0 0 30px rgba(255, 255, 255, 0.35),
+    inset 0 -20px 40px -10px rgba(26, 20, 16, 0.08),
+    /* Drop shadow */
+    0 30px 60px -20px rgba(26, 20, 16, 0.3),
+    0 8px 24px -8px rgba(26, 20, 16, 0.18);
+  /* 1px transparent border so background-clip works for rim treatments */
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  transition: transform 600ms var(--ease-soft), box-shadow 600ms var(--ease-soft);
+  will-change: transform;
+}
+
+/* Layer 4: Specular conic rim that wraps around the perimeter.
+   Drawn on ::before, masked to a 1.5px outline so only the rim shows.
+   The --ang custom property drives the rotation; we animate it
+   for a slow "breathing" rotation that gives the glass life. */
+.glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 1;
+  padding: 2px;
+  background: conic-gradient(
+    from var(--ang, 130deg),
+    rgba(255, 255, 255, 0) 0deg,
+    rgba(255, 255, 255, 1) 35deg,
+    rgba(255, 255, 255, 0.2) 90deg,
+    rgba(255, 235, 220, 0.85) 150deg,
+    rgba(255, 255, 255, 0) 200deg,
+    rgba(255, 255, 255, 0.95) 270deg,
+    rgba(255, 220, 200, 0.45) 320deg,
+    rgba(255, 255, 255, 0) 360deg
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+          mask-composite: exclude;
+  animation: rim-spin 12s linear infinite, glass-breathe 6s ease-in-out infinite;
+}
+
+/* Layer 8: Mouse-tracked moving specular highlight + Layer 3 backup highlight.
+   Falls back to a top-left sheen even without cursor tracking. */
+.glass::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 2;
+  background:
+    /* Top-left static sheen — the "main light source" */
+    radial-gradient(140% 100% at 0% 0%, rgba(255, 255, 255, 0.55) 0%, transparent 38%),
+    /* Mouse-tracked moving hotspot */
+    radial-gradient(
+      260px circle at var(--mx, 50%) var(--my, -20%),
+      rgba(255, 255, 255, 0.55),
+      transparent 60%
+    );
+  mix-blend-mode: screen;
+  transition: opacity 400ms var(--ease-soft);
+}
+
+.glass:hover {
+  box-shadow:
+    -0.5px -0.5px 0 rgba(243, 169, 169, 0.45),
+    0.5px 0.5px 0 rgba(166, 186, 232, 0.45),
+    inset 0 1.5px 0 rgba(255, 255, 255, 1),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 0 35px rgba(255, 255, 255, 0.45),
+    inset 0 -20px 40px -10px rgba(26, 20, 16, 0.06),
+    0 40px 80px -20px rgba(26, 20, 16, 0.4),
+    0 10px 30px -8px rgba(26, 20, 16, 0.22);
+}
+
+@keyframes rim-spin {
+  to { --ang: 490deg; }
+}
+
+/* Optional: a softly pulsing inner glow that hints at backlit material */
+@keyframes glass-breathe {
+  0%, 100% { opacity: 0.92; }
+  50%      { opacity: 1; }
+}
+
+/* Register the custom property so it can animate. Without this the
+   browser treats --ang as a string and won't tween it. */
+@property --ang {
+  syntax: "<angle>";
+  initial-value: 130deg;
+  inherits: false;
+}
+
+.glass-dark {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(26, 20, 16, 0.62) 0%,
+      rgba(26, 20, 16, 0.35) 50%,
+      rgba(91, 70, 54, 0.45) 100%
+    );
+  color: var(--color-ivory);
+  box-shadow:
+    -0.5px -0.5px 0 rgba(217, 169, 154, 0.25),
+    0.5px 0.5px 0 rgba(166, 186, 232, 0.18),
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.35),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 0 40px rgba(255, 255, 255, 0.08),
+    0 30px 60px -20px rgba(0, 0, 0, 0.5),
+    0 8px 24px -8px rgba(0, 0, 0, 0.35);
+}
+
+.glass-tint-rose {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(243, 217, 208, 0.75) 0%,
+      rgba(217, 169, 154, 0.4) 60%,
+      rgba(243, 217, 208, 0.55) 100%
+    );
+}
+
+/* Real refraction — applied as an additional URL inside backdrop-filter.
+   Only Chromium supports SVG filters in backdrop-filter, but feature
+   detection keeps it harmless in Safari/Firefox (they get just the blur). */
+@supports (backdrop-filter: url(#glass-refraction)) {
+  .glass-refract {
+    backdrop-filter: url(#glass-refraction) blur(20px) saturate(220%) brightness(1.08);
+  }
+}
+
+/* Floating nav variant — thinner, lighter material, but same rim treatment */
+.glass-nav {
+  position: relative;
+  isolation: isolate;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.72) 0%,
+      rgba(255, 255, 255, 0.42) 100%
+    );
+  backdrop-filter: blur(32px) saturate(220%) brightness(1.06);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow:
+    -0.5px -0.5px 0 rgba(243, 169, 169, 0.3),
+    0.5px 0.5px 0 rgba(166, 186, 232, 0.3),
+    inset 0 1.5px 0 rgba(255, 255, 255, 0.95),
+    inset 0 -1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 0 24px rgba(255, 255, 255, 0.4),
+    0 16px 40px -12px rgba(26, 20, 16, 0.22);
+}
+.glass-nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  padding: 1.5px;
+  background: conic-gradient(
+    from var(--ang, 130deg),
+    rgba(255, 255, 255, 0) 0deg,
+    rgba(255, 255, 255, 0.95) 45deg,
+    rgba(255, 255, 255, 0.2) 100deg,
+    rgba(255, 255, 255, 0.7) 175deg,
+    rgba(255, 255, 255, 0) 220deg,
+    rgba(255, 255, 255, 0.5) 290deg,
+    rgba(255, 255, 255, 0) 360deg
+  );
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+          mask-composite: exclude;
+  animation: rim-spin 22s linear infinite;
+}
+
+/* Pill button on glass */
+.btn-glass {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.35));
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(16px) saturate(180%);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 10px 30px -10px rgba(26, 20, 16, 0.25);
+  color: var(--color-ink);
+  transition: transform 300ms var(--ease-soft), box-shadow 300ms var(--ease-soft);
+}
+.btn-glass:hover {
+  transform: translateY(-1px);
+  box-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.9) inset,
+    0 16px 40px -12px rgba(26, 20, 16, 0.35);
+}
+
+.btn-solid {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(135deg, var(--color-cocoa), var(--color-ink));
+  box-shadow: 0 12px 30px -10px rgba(26, 20, 16, 0.55);
+  transition: transform 300ms var(--ease-soft), box-shadow 300ms var(--ease-soft);
+}
+.btn-solid:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 20px 40px -12px rgba(26, 20, 16, 0.6);
+}
+
+/* Type accents */
+.eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-taupe);
+}
+
+.headline {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+}
+
+.italic-accent {
+  font-family: var(--font-display);
+  font-style: italic;
+  color: var(--color-cocoa);
+}
+
+/* Soft entrance animation, no library required */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  animation: reveal-in 1s var(--ease-soft) forwards;
+}
+.reveal-1 { animation-delay: 0.05s; }
+.reveal-2 { animation-delay: 0.2s; }
+.reveal-3 { animation-delay: 0.35s; }
+.reveal-4 { animation-delay: 0.5s; }
+.reveal-5 { animation-delay: 0.65s; }
+
+@keyframes reveal-in {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+  body::before { animation: none; }
 }
