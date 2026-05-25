@@ -124,8 +124,8 @@ export default function AboutPage() {
             <GlassCard className="md:col-span-2 overflow-hidden p-0">
               <div className="relative aspect-[16/10] w-full">
                 <Image
-                  src="/team/dr-gamze-clinic.jpg"
-                  alt="Dr. Gamze Eren beside the clinic signage at the practice entrance"
+                  src="/team/dr-gamze-treatment.jpg"
+                  alt="Dr. Gamze Eren performing a treatment on a patient in the clinic"
                   fill
                   sizes="(max-width: 768px) 92vw, 720px"
                   className="object-cover"
