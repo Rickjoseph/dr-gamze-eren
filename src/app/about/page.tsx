@@ -135,12 +135,18 @@ export default function AboutPage() {
             <GlassCard className="overflow-hidden p-0" tint="rose">
               <div className="relative aspect-[16/10] w-full md:aspect-auto md:h-full">
                 <Image
-                  src="/img/spa-minimal.jpg"
-                  alt="Minimal, calming treatment-room aesthetic"
+                  src="/team/dr-gamze-surgery.jpg"
+                  alt="Dr. Gamze Eren performing surgery in the operating room"
                   fill
                   sizes="(max-width: 768px) 92vw, 360px"
                   className="object-cover"
                 />
+                {/* Soft bottom gradient for the caption */}
+                <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/55 via-transparent to-transparent" />
+                <div className="pointer-events-none absolute inset-x-0 bottom-0 p-5 text-white">
+                  <p className="text-[0.6rem] uppercase tracking-[0.25em] opacity-85">In theatre</p>
+                  <p className="font-display text-lg leading-tight">Precision at work</p>
+                </div>
               </div>
             </GlassCard>
           </div>

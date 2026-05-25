@@ -53,7 +53,7 @@ export default function Home() {
                     sizes="(max-width: 1024px) 92vw, 540px"
                     className="object-cover"
                   />
-                  {/* Subtle bottom gradient so the floating pills sit cleanly */}
+                  {/* Subtle bottom gradient so the caption sits cleanly */}
                   <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/40 via-transparent to-transparent" />
                   {/* Quiet attribution caption inside the frame */}
                   <div className="pointer-events-none absolute inset-x-0 bottom-0 p-6 text-white">
@@ -64,20 +64,6 @@ export default function Home() {
                   </div>
                 </div>
               </GlassCard>
-
-              {/* Floating credential pills overlapping the portrait */}
-              <div className="pointer-events-none absolute -bottom-6 -left-4 hidden md:block">
-                <div className="glass pointer-events-auto rounded-2xl p-4">
-                  <p className="font-display text-3xl text-[var(--color-rosegold)]">3D</p>
-                  <p className="text-xs uppercase tracking-widest text-[var(--color-taupe)]">Kratos planning</p>
-                </div>
-              </div>
-              <div className="pointer-events-none absolute -top-4 -right-2 hidden md:block">
-                <div className="glass pointer-events-auto rounded-2xl p-4">
-                  <p className="font-display text-3xl">15+</p>
-                  <p className="text-xs uppercase tracking-widest text-[var(--color-taupe)]">years</p>
-                </div>
-              </div>
             </div>
           </div>
 
@@ -139,7 +125,7 @@ export default function Home() {
       </section>
 
       {/* ============== SERVICES ============== */}
-      <section className="relative mt-32 px-4 cv-auto sm:px-8">
+      <section className="relative mt-32 px-4 sm:px-8">
         <div className="mx-auto max-w-6xl">
           <div className="flex items-end justify-between gap-6">
             <div>
@@ -203,7 +189,7 @@ export default function Home() {
       </section>
 
       {/* ============== MEDICAL TOURISM ============== */}
-      <section className="relative mt-32 px-4 cv-auto sm:px-8">
+      <section className="relative mt-32 px-4 sm:px-8">
         <div className="mx-auto max-w-6xl">
           <GlassCard className="overflow-hidden p-0" tint="dark">
             <div className="grid gap-0 md:grid-cols-2">
@@ -263,7 +249,7 @@ export default function Home() {
       </section>
 
       {/* ============== JOURNEY ============== */}
-      <section className="relative mt-32 px-4 cv-auto sm:px-8">
+      <section className="relative mt-32 px-4 sm:px-8">
         <div className="mx-auto max-w-6xl">
           <p className="eyebrow">Your Journey</p>
           <h2 className="headline mt-3 max-w-3xl text-4xl sm:text-5xl">
@@ -311,7 +297,7 @@ export default function Home() {
       </section>
 
       {/* ============== TESTIMONIAL ============== */}
-      <section className="relative mt-32 px-4 cv-auto sm:px-8">
+      <section className="relative mt-32 px-4 sm:px-8">
         <div className="mx-auto max-w-4xl">
           <GlassCard className="p-10 text-center sm:p-16">
             <p className="font-display text-7xl leading-none text-[var(--color-rosegold)]">
@@ -330,7 +316,7 @@ export default function Home() {
       </section>
 
       {/* ============== CTA ============== */}
-      <section className="relative mt-32 px-4 cv-auto sm:px-8">
+      <section className="relative mt-32 px-4 sm:px-8">
         <div className="mx-auto max-w-5xl">
           <GlassCard className="p-10 text-center sm:p-16" tint="rose">
             <h2 className="headline text-4xl sm:text-5xl">

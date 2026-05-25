@@ -341,12 +341,11 @@
           mask-composite: exclude;
 }
 
-/* Performance: skip layout/paint work for sections that scroll
-   off-screen. The intrinsic size hint keeps the scrollbar honest. */
-.cv-auto {
-  content-visibility: auto;
-  contain-intrinsic-size: 1px 800px;
-}
+/* content-visibility: auto would have been a perf win, but it
+   implies `contain: paint`, which clips card drop-shadows at the
+   section boundary. Not worth the visual artifact at this scale —
+   removed and we rely on the other optimisations (lighter blur,
+   hover-only rim animation, fewer glass-refract surfaces). */
 
 /* Pill button on glass */
 .btn-glass {
