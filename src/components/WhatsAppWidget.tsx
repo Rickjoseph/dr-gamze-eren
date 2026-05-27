@@ -50,18 +50,19 @@ export function WhatsAppWidget() {
     try {
       await fetch("https://aurenza-v1-1-gemstone.base44.app/functions/auraWebhook", {
         method: "POST",
-        headers: { "Content-Type": "application/json" },
+        headers: {
+          "Content-Type": "application/json",
+          "x-aura-secret": "aurenza-aura-2026-secret-x7k9maX9mK2pL8vQr4nWj",
+        },
         body: JSON.stringify({
           action: "create_lead",
-          secret: "aurenza-aura-2026-secret-x7k9maX9mK2pL8vQr4nWj",
           data: {
-            full_name: form.name,
+            name: form.name,
             country: form.country,
             procedure_interest: form.procedure,
             notes: form.message,
             source: "website",
-            status: "New",
-            language: "en",
+            language: "english",
           },
         }),
       });
