@@ -275,6 +275,13 @@ const en = {
     breast: "Breast",
     "non-surgical": "Non-surgical",
   },
+  cookies: {
+    title: "Cookies",
+    message:
+      "We use cookies to remember your language preference and keep the site working smoothly. No tracking, no third-party advertising.",
+    accept: "Accept",
+    decline: "Decline",
+  },
 };
 
 const tr: typeof en = {
@@ -549,6 +556,13 @@ const tr: typeof en = {
     breast: "Meme",
     "non-surgical": "Cerrahi olmayan",
   },
+  cookies: {
+    title: "Çerezler",
+    message:
+      "Dil tercihinizi hatırlamak ve sitenin sorunsuz çalışması için çerezleri kullanıyoruz. Takip yapılmaz, üçüncü taraf reklam yoktur.",
+    accept: "Kabul et",
+    decline: "Reddet",
+  },
 };
 
 const ru: typeof en = {
@@ -822,6 +836,13 @@ const ru: typeof en = {
     body: "Тело",
     breast: "Грудь",
     "non-surgical": "Без операции",
+  },
+  cookies: {
+    title: "Файлы cookie",
+    message:
+      "Мы используем файлы cookie, чтобы запомнить ваш языковой выбор и обеспечить корректную работу сайта. Без отслеживания, без сторонней рекламы.",
+    accept: "Принять",
+    decline: "Отклонить",
   },
 };
 

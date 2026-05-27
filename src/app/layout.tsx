@@ -7,6 +7,7 @@ import { Footer } from "@/components/Footer";
 import { GlassFilter } from "@/components/GlassFilter";
 import { getDict } from "@/i18n/getLocale";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
+import { CookieConsent } from "@/components/CookieConsent";
 
 
 const inter = Inter({
@@ -55,7 +56,8 @@ export default async function RootLayout({
         <Nav locale={locale} t={t} />
         <main className="pt-24 sm:pt-32">{children}</main>
         <Footer t={t} />
-              <WhatsAppWidget />
+        <WhatsAppWidget />
+        <CookieConsent t={t} />
       </body>
     </html>
   );
