@@ -42,3 +42,8 @@ next-env.d.ts
 
 # scratch space for source images before they're placed into /public
 /_reference_assets/
+
+# macOS screenshot dumps in the project root
+Screenshot*.png
+Screen Shot*.png
+/screenshots/
