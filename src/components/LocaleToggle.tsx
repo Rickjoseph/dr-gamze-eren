@@ -9,8 +9,16 @@ type Props = {
   className?: string;
 };
 
-// Two-pill toggle. Sets a cookie and asks Next to re-render the route
-// on the server with the new locale. Pill style matches the brand chips.
+// Three-pill toggle. Order is RU – EN – TR so the default (EN)
+// sits in the centre as a visual anchor. Clicking a pill sets the
+// `locale` cookie and asks Next to re-render the route on the server
+// with the new locale.
+const LOCALES: { code: Locale; label: string }[] = [
+  { code: "ru", label: "RU" },
+  { code: "en", label: "EN" },
+  { code: "tr", label: "TR" },
+];
+
 export function LocaleToggle({ current, className = "" }: Props) {
   const router = useRouter();
   const [pending, startTransition] = useTransition();
@@ -31,30 +39,21 @@ export function LocaleToggle({ current, className = "" }: Props) {
       className={`inline-flex items-center gap-0.5 rounded-full border border-white/60 bg-white/40 p-0.5 text-[0.7rem] font-medium tracking-widest backdrop-blur-md ${className}`}
       data-pending={pending ? "" : undefined}
     >
-      <button
-        type="button"
-        onClick={() => setLocale("en")}
-        aria-pressed={current === "en"}
-        className={`rounded-full px-2.5 py-1 transition ${
-          current === "en"
-            ? "bg-[var(--color-ink)] text-[var(--color-ivory)]"
-            : "text-[var(--color-cocoa)] hover:text-[var(--color-ink)]"
-        }`}
-      >
-        EN
-      </button>
-      <button
-        type="button"
-        onClick={() => setLocale("tr")}
-        aria-pressed={current === "tr"}
-        className={`rounded-full px-2.5 py-1 transition ${
-          current === "tr"
-            ? "bg-[var(--color-ink)] text-[var(--color-ivory)]"
-            : "text-[var(--color-cocoa)] hover:text-[var(--color-ink)]"
-        }`}
-      >
-        TR
-      </button>
+      {LOCALES.map(({ code, label }) => (
+        <button
+          key={code}
+          type="button"
+          onClick={() => setLocale(code)}
+          aria-pressed={current === code}
+          className={`rounded-full px-2.5 py-1 transition ${
+            current === code
+              ? "bg-[var(--color-ink)] text-[var(--color-ivory)]"
+              : "text-[var(--color-cocoa)] hover:text-[var(--color-ink)]"
+          }`}
+        >
+          {label}
+        </button>
+      ))}
     </div>
   );
 }
