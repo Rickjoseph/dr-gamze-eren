@@ -6,6 +6,8 @@ import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
 import { GlassFilter } from "@/components/GlassFilter";
 import { getDict } from "@/i18n/getLocale";
+import { WhatsAppWidget } from "@/components/WhatsAppWidget";
+
 
 const inter = Inter({
   variable: "--font-sans",
@@ -53,6 +55,7 @@ export default async function RootLayout({
         <Nav locale={locale} t={t} />
         <main className="pt-24 sm:pt-32">{children}</main>
         <Footer t={t} />
+              <WhatsAppWidget />
       </body>
     </html>
   );
