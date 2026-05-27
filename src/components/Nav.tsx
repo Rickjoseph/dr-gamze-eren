@@ -11,6 +11,11 @@ type Props = {
   t: Dict;
 };
 
+// Logo intrinsic aspect ratio (width / height of the source PNG).
+// Used to compute the rendered width from the rendered height so the
+// proportions stay rock-stable through the scroll transition.
+const LOGO_RATIO = 1587 / 865;
+
 export function Nav({ locale, t }: Props) {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
@@ -22,12 +27,33 @@ export function Nav({ locale, t }: Props) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  // Close the mobile/tablet menu on viewport resize past the lg breakpoint
+  // and on Escape.
+  useEffect(() => {
+    if (!open) return;
+    const onResize = () => {
+      if (window.innerWidth >= 1024) setOpen(false);
+    };
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setOpen(false);
+    };
+    window.addEventListener("resize", onResize);
+    window.addEventListener("keydown", onKey);
+    return () => {
+      window.removeEventListener("resize", onResize);
+      window.removeEventListener("keydown", onKey);
+    };
+  }, [open]);
+
   const items = [
     { href: "/", label: t.nav.home },
     { href: "/about", label: t.nav.about },
     { href: "/services", label: t.nav.services },
     { href: "/contact", label: t.nav.contact },
   ];
+
+  const logoHeight = scrolled ? 38 : 52;
+  const logoWidth = Math.round(logoHeight * LOGO_RATIO);
 
   return (
     <header
@@ -36,11 +62,17 @@ export function Nav({ locale, t }: Props) {
       }`}
     >
       <nav
-        className={`glass-nav mx-auto flex items-center justify-between rounded-full transition-all duration-700 ${
-          scrolled ? "max-w-3xl px-3 py-2" : "max-w-5xl px-5 py-3"
+        className={`glass-nav mx-auto flex items-center justify-between gap-3 rounded-full transition-all duration-700 ${
+          scrolled
+            ? "max-w-3xl px-3 py-2 lg:max-w-4xl"
+            : "max-w-5xl px-4 py-3 sm:px-5"
         }`}
       >
-        <Link href="/" className="flex items-center gap-3 pl-1 pr-3" aria-label={t.nav.home}>
+        <Link
+          href="/"
+          className="flex shrink-0 items-center pr-2"
+          aria-label={t.nav.home}
+        >
           <Image
             src="/brand/logo.png"
             alt=""
@@ -48,22 +80,26 @@ export function Nav({ locale, t }: Props) {
             height={865}
             priority
             style={{
-              height: scrolled ? 40 : 56,
-              width: "auto",
-              filter: "drop-shadow(0 1px 1px rgba(26,20,16,0.18)) drop-shadow(0 4px 12px rgba(138,107,86,0.28))",
+              height: logoHeight,
+              width: logoWidth,
+              filter:
+                "drop-shadow(0 1px 1px rgba(26,20,16,0.18)) drop-shadow(0 4px 12px rgba(138,107,86,0.28))",
             }}
-            className="transition-all duration-700"
-            sizes="(max-width: 640px) 200px, 260px"
+            className="transition-[height,width] duration-700 ease-out"
+            sizes="(max-width: 640px) 110px, 130px"
           />
-          <span className="sr-only">Dr. Gamze Eren — {t.about.portrait.title}</span>
+          <span className="sr-only">
+            Dr. Gamze Eren — {t.about.portrait.title}
+          </span>
         </Link>
 
-        <ul className="hidden items-center gap-1 md:flex">
+        {/* Inline page links — desktop only (lg+) */}
+        <ul className="hidden items-center gap-1 lg:flex">
           {items.map((it) => (
             <li key={it.href}>
               <Link
                 href={it.href}
-                className="rounded-full px-4 py-2 text-sm font-medium text-[var(--color-cocoa)] transition hover:bg-white/40 hover:text-[var(--color-ink)]"
+                className="rounded-full px-3 py-2 text-sm font-medium text-[var(--color-cocoa)] transition hover:bg-white/40 hover:text-[var(--color-ink)] xl:px-4"
               >
                 {it.label}
               </Link>
@@ -71,28 +107,53 @@ export function Nav({ locale, t }: Props) {
           ))}
         </ul>
 
-        <div className="hidden items-center gap-3 md:flex">
+        {/* Right cluster — desktop (lg+): toggle + solid CTA */}
+        <div className="hidden shrink-0 items-center gap-2 lg:flex xl:gap-3">
           <LocaleToggle current={locale} />
-          <Link href="/contact" className="btn-solid">
+          <Link
+            href="/contact"
+            className="btn-solid whitespace-nowrap text-sm xl:text-[0.95rem]"
+          >
             {t.nav.book}
           </Link>
         </div>
 
-        <div className="flex items-center gap-2 md:hidden">
+        {/* Right cluster — mobile + tablet (< lg): toggle + hamburger.
+            Book CTA moves into the dropdown menu so it never crowds. */}
+        <div className="flex shrink-0 items-center gap-2 lg:hidden">
           <LocaleToggle current={locale} />
           <button
+            type="button"
             aria-label={t.nav.menu}
             aria-expanded={open}
             onClick={() => setOpen((v) => !v)}
             className="btn-glass !px-3 !py-2"
           >
-            <span className="block h-0.5 w-5 bg-current" />
+            {/* Animated hamburger ↔ close */}
+            <span className="relative block h-4 w-5">
+              <span
+                className={`absolute left-0 right-0 top-0 h-0.5 origin-center bg-current transition-transform duration-300 ${
+                  open ? "translate-y-1.5 rotate-45" : ""
+                }`}
+              />
+              <span
+                className={`absolute left-0 right-0 top-1.5 h-0.5 bg-current transition-opacity duration-300 ${
+                  open ? "opacity-0" : "opacity-100"
+                }`}
+              />
+              <span
+                className={`absolute left-0 right-0 top-3 h-0.5 origin-center bg-current transition-transform duration-300 ${
+                  open ? "-translate-y-1.5 -rotate-45" : ""
+                }`}
+              />
+            </span>
           </button>
         </div>
       </nav>
 
+      {/* Dropdown menu — covers everything below lg */}
       {open && (
-        <div className="glass mx-auto mt-2 max-w-3xl rounded-3xl p-4 md:hidden">
+        <div className="glass mx-auto mt-2 max-w-3xl rounded-3xl p-4 lg:hidden">
           <ul className="flex flex-col gap-1">
             {items.map((it) => (
               <li key={it.href}>
@@ -106,7 +167,11 @@ export function Nav({ locale, t }: Props) {
               </li>
             ))}
             <li className="pt-1">
-              <Link href="/contact" onClick={() => setOpen(false)} className="btn-solid w-full justify-center">
+              <Link
+                href="/contact"
+                onClick={() => setOpen(false)}
+                className="btn-solid w-full justify-center whitespace-nowrap"
+              >
                 {t.nav.book}
               </Link>
             </li>
