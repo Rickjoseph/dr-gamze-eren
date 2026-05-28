@@ -114,8 +114,8 @@ export function Nav({ locale, t }: Props) {
           <Image
             src="/brand/logo-monogram.png"
             alt=""
-            width={312}
-            height={166}
+            width={225}
+            height={162}
             priority
             style={{
               height: logoHeight,
