@@ -98,7 +98,7 @@ export function WhatsAppWidget() {
   return (
     <>
       {/* Fixed floating button */}
-      <div className="fixed bottom-6 right-6 z-[9999]">
+      <div className={`fixed bottom-6 right-6 z-[9999] transition-opacity duration-200 ${step !== "bubble" ? "opacity-0 pointer-events-none" : "opacity-100"}`}>
         <button
           type="button"
           onClick={() => setStep("form")}
