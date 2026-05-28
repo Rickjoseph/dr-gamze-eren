@@ -5,12 +5,29 @@ import type { Dict } from "@/i18n/dict";
 
 type Props = { t: Dict };
 
+// Anti-spam: hidden field bots fill in + min dwell time before submit
+// is plausibly human. Both must pass for a submission to be treated as
+// real. Bot submissions silently show success so they don't retry.
+const HONEYPOT_FIELD = "website_url";
+const MIN_DWELL_MS = 1500;
+
 export function ContactForm({ t }: Props) {
   const f = t.contact.form;
   const [submitted, setSubmitted] = useState(false);
+  const [honeypot, setHoneypot] = useState("");
+  // Lazy-initialise so the timer starts at mount, not on every render
+  const [mountedAt] = useState(() => Date.now());
 
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    const dwell = Date.now() - mountedAt;
+    // Show success either way — but only actually do anything (here: nothing
+    // yet, the form doesn't have a backend) when both anti-spam checks pass.
+    if (honeypot || dwell < MIN_DWELL_MS) {
+      setSubmitted(true);
+      return;
+    }
+    // TODO: when a backend exists, POST the form here.
     setSubmitted(true);
   }
 
@@ -35,6 +52,22 @@ export function ContactForm({ t }: Props) {
   return (
     <form onSubmit={onSubmit} className="grid gap-5">
       <p className="eyebrow">{f.heading}</p>
+
+      {/* Honeypot — off-screen, screen-reader hidden, off the tab order.
+          Bots fill any field they see; humans never touch this one. */}
+      <div aria-hidden="true" className="pointer-events-none absolute h-0 w-0 overflow-hidden opacity-0">
+        <label>
+          Leave this field empty
+          <input
+            type="text"
+            name={HONEYPOT_FIELD}
+            tabIndex={-1}
+            autoComplete="off"
+            value={honeypot}
+            onChange={(e) => setHoneypot(e.target.value)}
+          />
+        </label>
+      </div>
 
       <div className="grid gap-5 sm:grid-cols-2">
         <Field label={f.firstName} name="firstName" required />
