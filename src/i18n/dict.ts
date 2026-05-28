@@ -101,6 +101,13 @@ const en = {
         { n: "04", t: "Recovery", d: "Concierge follow-up, scar care, and long-term aesthetic support." },
       ],
     },
+    journal: {
+      eyebrow: "From the Journal",
+      headlineA: "Read, before you",
+      headlineAccent: "decide.",
+      readMore: "Read article",
+      viewAll: "Read all articles →",
+    },
     testimonial: {
       quoteA: "I didn’t want to look different. I wanted to look like myself on my best morning — every morning.",
       quoteAccent: "Dr. Eren understood that.",
@@ -427,6 +434,13 @@ const tr: typeof en = {
         { n: "04", t: "İyileşme", d: "Concierge takip, iz bakımı ve uzun vadeli estetik destek." },
       ],
     },
+    journal: {
+      eyebrow: "Dergiden",
+      headlineA: "Karar vermeden önce,",
+      headlineAccent: "okuyun.",
+      readMore: "Yazıyı oku",
+      viewAll: "Tüm yazıları gör →",
+    },
     testimonial: {
       quoteA: "Farklı görünmek istemedim. Her sabah en iyi sabahımdaki halime benzemek istedim.",
       quoteAccent: "Dr. Eren bunu anladı.",
@@ -752,6 +766,13 @@ const ru: typeof en = {
         { n: "03", t: "Операция", d: "Проводится в аккредитованной больнице с опытной анестезией и сестринским уходом." },
         { n: "04", t: "Восстановление", d: "Concierge-сопровождение, уход за рубцами и долгосрочная эстетическая поддержка." },
       ],
+    },
+    journal: {
+      eyebrow: "Из журнала",
+      headlineA: "Прочитайте, прежде чем",
+      headlineAccent: "решиться.",
+      readMore: "Читать статью",
+      viewAll: "Все статьи →",
     },
     testimonial: {
       quoteA: "Я не хотела выглядеть иначе. Я хотела выглядеть собой — в самое лучшее утро, каждое утро.",

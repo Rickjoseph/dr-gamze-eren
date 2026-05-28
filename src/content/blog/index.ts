@@ -8,6 +8,10 @@ export interface Post {
   date: string;
   category: string;
   readTime: string;
+  /** Path under /public — used for card thumbnail and post-detail hero */
+  image: string;
+  /** Short alt text describing the image (a11y) */
+  imageAlt: string;
   body: string;
 }
 

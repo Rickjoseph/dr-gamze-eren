@@ -5,6 +5,8 @@ export const post = {
   date: "2026-05-20",
   category: "Rhinoplasty",
   readTime: "6 min read",
+  image: "/img/blog/rhinoplasty.jpg",
+  imageAlt: "Editorial profile portrait — soft natural light, dewy skin",
   body: `
 Choosing rhinoplasty is a significant decision. Understanding what recovery looks like — week by week — helps you plan properly and arrive with realistic expectations.
 

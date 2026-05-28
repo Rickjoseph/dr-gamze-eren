@@ -5,6 +5,8 @@ export const post = {
   date: "2026-05-15",
   category: "Patient Guide",
   readTime: "5 min read",
+  image: "/img/blog/istanbul.jpg",
+  imageAlt: "Illuminated Ottoman building on the Bosphorus at night",
   body: `
 Istanbul is one of the world's great cities — and one of the most accessible for international patients travelling for aesthetic surgery. Here is everything you need to plan a smooth, comfortable stay.
 

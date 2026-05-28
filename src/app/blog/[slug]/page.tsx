@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { getPost, posts } from "@/content/blog";
 
@@ -47,7 +48,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   return (
     <section className="relative px-4 sm:px-8">
-      <div className="mx-auto max-w-2xl pt-8 pb-24">
+      <div className="mx-auto max-w-3xl pt-8 pb-24">
 
         {/* Back */}
         <Link href="/blog" className="text-sm text-[var(--color-taupe)] hover:text-[var(--color-cocoa)] transition">
@@ -68,11 +69,20 @@ export default async function BlogPostPage({ params }: Props) {
           {post.title}
         </h1>
 
-        {/* Divider */}
-        <div className="mt-8 h-px bg-[var(--color-line)]" />
+        {/* Hero image */}
+        <div className="relative mt-10 aspect-[16/10] w-full overflow-hidden rounded-3xl border border-white/60 shadow-[0_24px_60px_-20px_rgba(26,20,16,0.28)]">
+          <Image
+            src={post.image}
+            alt={post.imageAlt}
+            fill
+            priority
+            sizes="(max-width: 768px) 92vw, 768px"
+            className="object-cover"
+          />
+        </div>
 
-        {/* Body */}
-        <article className="mt-8 text-base">
+        {/* Body — narrower than the hero so long-form reads comfortably */}
+        <article className="mx-auto mt-10 max-w-2xl text-base">
           {renderBody(post.body)}
         </article>
 

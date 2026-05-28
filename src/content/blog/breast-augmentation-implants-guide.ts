@@ -5,6 +5,8 @@ export const post = {
   date: "2026-05-10",
   category: "Breast",
   readTime: "7 min read",
+  image: "/img/blog/breast.jpg",
+  imageAlt: "Pink peonies in moody natural light",
   body: `
 Breast augmentation is the most personalised procedure we perform. The same implant placed in two different patients will look completely different. Understanding the decision-making process helps you arrive at consultation ready to have a meaningful conversation.
 

@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import { GlassCard } from "@/components/GlassCard";
+import { BlogCarousel } from "@/components/BlogCarousel";
+import { posts } from "@/content/blog";
 import { getDict } from "@/i18n/getLocale";
 
 const serviceOrder = ["facial", "body", "breast", "non-surgical"] as const;
@@ -248,6 +250,18 @@ export default async function Home() {
             ))}
           </ol>
         </div>
+      </section>
+
+      {/* ============== JOURNAL CAROUSEL ============== */}
+      <section className="relative mt-32">
+        <BlogCarousel
+          posts={posts.slice(0, 6)}
+          eyebrow={h.journal.eyebrow}
+          headlineA={h.journal.headlineA}
+          headlineAccent={h.journal.headlineAccent}
+          readMore={h.journal.readMore}
+          cta={h.journal.viewAll}
+        />
       </section>
 
       {/* ============== TESTIMONIAL ============== */}
