@@ -20,7 +20,7 @@ const en = {
     blog: "Journal",
     media: "Media",
     contact: "Contact",
-    book: "Book Consultation",
+    book: "Consultation",
     menu: "Menu",
     more: "Explore",
     moreSubs: {
@@ -359,7 +359,7 @@ const tr: typeof en = {
     blog: "Dergi",
     media: "Medya",
     contact: "İletişim",
-    book: "Randevu Al",
+    book: "Randevu",
     menu: "Menü",
     more: "Keşfet",
     moreSubs: {
@@ -698,7 +698,7 @@ const ru: typeof en = {
     blog: "Журнал",
     media: "Медиа",
     contact: "Контакты",
-    book: "Записаться",
+    book: "Запись",
     menu: "Меню",
     more: "Обзор",
     moreSubs: {
