@@ -125,7 +125,7 @@ export function Nav({ locale, t }: Props) {
             className="transition-all duration-700 ease-out"
           />
           {/* Text stack — name + pill */}
-          <div className="flex flex-col items-start gap-0.5">
+          <div className="hidden sm:flex flex-col items-start gap-0.5">
             <span
               className="font-display tracking-[0.22em] uppercase text-[#9b8a7a] leading-none transition-all duration-700"
               style={{ fontSize: scrolled ? "11px" : "13px", fontWeight: 500 }}
