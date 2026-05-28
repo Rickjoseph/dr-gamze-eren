@@ -22,6 +22,12 @@ const en = {
     contact: "Contact",
     book: "Book Consultation",
     menu: "Menu",
+    more: "More",
+    moreSubs: {
+      results: "Before & after photographs",
+      blog: "Procedure guides & insights",
+      media: "Videos & interviews",
+    },
   },
   footer: {
     tagline:
@@ -355,6 +361,12 @@ const tr: typeof en = {
     contact: "İletişim",
     book: "Randevu Al",
     menu: "Menü",
+    more: "Daha fazla",
+    moreSubs: {
+      results: "Öncesi ve sonrası fotoğraflar",
+      blog: "Prosedür rehberleri ve içgörüler",
+      media: "Videolar ve röportajlar",
+    },
   },
   footer: {
     tagline:
@@ -688,6 +700,12 @@ const ru: typeof en = {
     contact: "Контакты",
     book: "Записаться",
     menu: "Меню",
+    more: "Ещё",
+    moreSubs: {
+      results: "Фотографии до и после",
+      blog: "Руководства и советы",
+      media: "Видео и интервью",
+    },
   },
   footer: {
     tagline:

@@ -2,7 +2,8 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
+import { useEffect, useRef, useState } from "react";
 import type { Dict, Locale } from "@/i18n/dict";
 import { LocaleToggle } from "./LocaleToggle";
 
@@ -18,7 +19,10 @@ const LOGO_RATIO = 1587 / 865;
 
 export function Nav({ locale, t }: Props) {
   const [scrolled, setScrolled] = useState(false);
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false); // mobile/tablet menu
+  const [moreOpen, setMoreOpen] = useState(false); // desktop "More" dropdown
+  const pathname = usePathname();
+  const moreRef = useRef<HTMLLIElement>(null);
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24);
@@ -27,25 +31,55 @@ export function Nav({ locale, t }: Props) {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  // Close the mobile/tablet menu on viewport resize past the lg breakpoint
-  // and on Escape.
+  // Close menus on route change (avoids stale-open state after Link click)
   useEffect(() => {
-    if (!open) return;
+    setOpen(false);
+    setMoreOpen(false);
+  }, [pathname]);
+
+  // Close mobile/tablet menu on viewport resize past the lg breakpoint
+  // and on Escape; close the More dropdown on Escape or outside click.
+  useEffect(() => {
     const onResize = () => {
       if (window.innerWidth >= 1024) setOpen(false);
     };
     const onKey = (e: KeyboardEvent) => {
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") {
+        setOpen(false);
+        setMoreOpen(false);
+      }
+    };
+    const onClick = (e: MouseEvent) => {
+      if (!moreOpen) return;
+      if (moreRef.current && !moreRef.current.contains(e.target as Node)) {
+        setMoreOpen(false);
+      }
     };
     window.addEventListener("resize", onResize);
     window.addEventListener("keydown", onKey);
+    window.addEventListener("mousedown", onClick);
     return () => {
       window.removeEventListener("resize", onResize);
       window.removeEventListener("keydown", onKey);
+      window.removeEventListener("mousedown", onClick);
     };
-  }, [open]);
+  }, [moreOpen]);
 
-  const items = [
+  // Primary inline nav (desktop only). Secondary pages live under "More".
+  const primary = [
+    { href: "/", label: t.nav.home },
+    { href: "/about", label: t.nav.about },
+    { href: "/services", label: t.nav.services },
+    { href: "/contact", label: t.nav.contact },
+  ];
+  const moreItems = [
+    { href: "/results", label: t.nav.results, sub: t.nav.moreSubs.results },
+    { href: "/blog", label: t.nav.blog, sub: t.nav.moreSubs.blog },
+    { href: "/media", label: t.nav.media, sub: t.nav.moreSubs.media },
+  ];
+  // Full list for the mobile/tablet dropdown — flat, every page reachable
+  // in one tap (no nested submenu on touch).
+  const mobileItems = [
     { href: "/", label: t.nav.home },
     { href: "/about", label: t.nav.about },
     { href: "/services", label: t.nav.services },
@@ -96,9 +130,10 @@ export function Nav({ locale, t }: Props) {
           </span>
         </Link>
 
-        {/* Inline page links — desktop only (lg+) */}
+        {/* Inline page links — desktop only (lg+). Home/About/Services,
+            then a "More" dropdown for secondary pages, then Contact. */}
         <ul className="hidden items-center gap-1 lg:flex">
-          {items.map((it) => (
+          {primary.slice(0, 3).map((it) => (
             <li key={it.href}>
               <Link
                 href={it.href}
@@ -108,6 +143,75 @@ export function Nav({ locale, t }: Props) {
               </Link>
             </li>
           ))}
+          {/* More — opens a glass panel with secondary pages */}
+          <li ref={moreRef} className="relative">
+            <button
+              type="button"
+              onClick={() => setMoreOpen((v) => !v)}
+              aria-haspopup="menu"
+              aria-expanded={moreOpen}
+              className="inline-flex items-center gap-1.5 rounded-full px-3 py-2 text-sm font-medium text-[var(--color-cocoa)] transition hover:bg-white/40 hover:text-[var(--color-ink)] xl:px-4"
+            >
+              {t.nav.more}
+              <svg
+                className={`h-3 w-3 transition-transform duration-300 ${moreOpen ? "rotate-180" : ""}`}
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={2.5}
+                viewBox="0 0 24 24"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+              </svg>
+            </button>
+
+            {/* Dropdown panel */}
+            <div
+              role="menu"
+              aria-label={t.nav.more}
+              className={`absolute left-1/2 top-[calc(100%+12px)] z-40 w-72 -translate-x-1/2 origin-top rounded-2xl border border-white/65 bg-white/55 p-2 shadow-[0_24px_60px_-20px_rgba(26,20,16,0.35)] backdrop-blur-2xl transition-all duration-200 ease-out ${
+                moreOpen
+                  ? "scale-100 opacity-100"
+                  : "pointer-events-none -translate-y-2 scale-95 opacity-0"
+              }`}
+              style={{ ["--tw-translate-x" as string]: "-50%" }}
+            >
+              {moreItems.map((it) => (
+                <Link
+                  key={it.href}
+                  href={it.href}
+                  role="menuitem"
+                  className="group block rounded-xl px-3 py-3 transition hover:bg-white/60"
+                >
+                  <div className="flex items-center justify-between">
+                    <span className="text-sm font-medium text-[var(--color-ink)] transition-colors group-hover:text-[var(--color-rosegold)]">
+                      {it.label}
+                    </span>
+                    <svg
+                      className="h-3.5 w-3.5 text-[var(--color-taupe)] opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:opacity-100"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth={2}
+                      viewBox="0 0 24 24"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
+                  <p className="mt-0.5 text-xs leading-snug text-[var(--color-taupe)]">
+                    {it.sub}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </li>
+          {/* Contact — primary action, kept at the end */}
+          <li>
+            <Link
+              href={primary[3].href}
+              className="rounded-full px-3 py-2 text-sm font-medium text-[var(--color-cocoa)] transition hover:bg-white/40 hover:text-[var(--color-ink)] xl:px-4"
+            >
+              {primary[3].label}
+            </Link>
+          </li>
         </ul>
 
         {/* Right cluster — desktop (lg+): toggle + solid CTA */}
@@ -154,11 +258,11 @@ export function Nav({ locale, t }: Props) {
         </div>
       </nav>
 
-      {/* Dropdown menu — covers everything below lg */}
+      {/* Mobile / tablet dropdown — flat list, every page reachable in one tap */}
       {open && (
         <div className="glass mx-auto mt-2 max-w-3xl rounded-3xl p-4 lg:hidden">
           <ul className="flex flex-col gap-1">
-            {items.map((it) => (
+            {mobileItems.map((it) => (
               <li key={it.href}>
                 <Link
                   href={it.href}
