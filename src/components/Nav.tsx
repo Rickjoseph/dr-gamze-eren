@@ -101,7 +101,7 @@ export function Nav({ locale, t }: Props) {
       <nav
         className={`glass-nav mx-auto flex items-center justify-between gap-3 rounded-full transition-all duration-700 ${
           scrolled
-            ? "max-w-3xl px-3 py-2 lg:max-w-4xl"
+            ? "max-w-4xl px-3 py-2 lg:max-w-5xl"
             : "max-w-5xl px-4 py-3 sm:px-5"
         }`}
       >
