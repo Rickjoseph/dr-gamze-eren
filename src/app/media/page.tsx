@@ -198,6 +198,7 @@ const SOCIAL_LINKS = [
 export default function MediaPage() {
   const [active, setActive] = useState<MediaType>("all");
   const filtered = active === "all" ? MEDIA : MEDIA.filter((m) => m.type === active);
+  // isShortView kept for potential future use
   const isShortView = active === "shorts";
 
   const igGradient = "linear-gradient(135deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)";
@@ -240,13 +241,21 @@ export default function MediaPage() {
 
         {/* Grid */}
         <div className={`mt-10 grid gap-6 ${
-          isShortView
-            ? "grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
-            : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
+          active === "videos"
+            ? "grid-cols-1 sm:grid-cols-2 lg:grid-cols-2"
+            : "grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
         }`}>
-          {filtered.map((item) => (
-            <MediaCard key={item.id} item={item} />
-          ))}
+          {filtered.map((item) => {
+            const isLandscape = item.type === "videos";
+            return (
+              <div
+                key={item.id}
+                className={isLandscape ? "col-span-2 sm:col-span-2 lg:col-span-2" : "col-span-1"}
+              >
+                <MediaCard item={item} />
+              </div>
+            );
+          })}
         </div>
 
         {/* Social follow section */}
