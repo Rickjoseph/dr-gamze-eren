@@ -112,17 +112,14 @@ export function Nav({ locale, t }: Props) {
         >
           {/* CG monogram image — keeps the face silhouette detail */}
           <Image
-            src="/brand/logo-horizontal.png"
+            src="/brand/logo-monogram.png"
             alt=""
-            width={825}
-            height={198}
+            width={312}
+            height={166}
             priority
             style={{
               height: logoHeight,
               width: "auto",
-              maxWidth: scrolled ? "44px" : "56px",
-              objectFit: "contain",
-              objectPosition: "left center",
               filter: "drop-shadow(0 1px 1px rgba(26,20,16,0.12))",
             }}
             className="transition-all duration-700 ease-out"
