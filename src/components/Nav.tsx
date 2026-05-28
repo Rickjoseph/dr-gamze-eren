@@ -15,7 +15,7 @@ type Props = {
 // Logo intrinsic aspect ratio (width / height of the source PNG).
 // Used to compute the rendered width from the rendered height so the
 // proportions stay rock-stable through the scroll transition.
-const LOGO_RATIO = 1587 / 865;
+const LOGO_RATIO = 825 / 198; // horizontal lockup
 
 export function Nav({ locale, t }: Props) {
   const [scrolled, setScrolled] = useState(false);
@@ -89,7 +89,7 @@ export function Nav({ locale, t }: Props) {
     { href: "/contact", label: t.nav.contact },
   ];
 
-  const logoHeight = scrolled ? 38 : 52;
+  const logoHeight = scrolled ? 36 : 48;
   const logoWidth = Math.round(logoHeight * LOGO_RATIO);
 
   return (
@@ -111,10 +111,10 @@ export function Nav({ locale, t }: Props) {
           aria-label={t.nav.home}
         >
           <Image
-            src="/brand/logo.png"
+            src="/brand/logo-horizontal.png"
             alt=""
-            width={1587}
-            height={865}
+            width={825}
+            height={198}
             priority
             style={{
               height: logoHeight,
@@ -123,7 +123,7 @@ export function Nav({ locale, t }: Props) {
                 "drop-shadow(0 1px 1px rgba(26,20,16,0.18)) drop-shadow(0 4px 12px rgba(138,107,86,0.28))",
             }}
             className="transition-[height,width] duration-700 ease-out"
-            sizes="(max-width: 640px) 110px, 130px"
+            sizes="(max-width: 640px) 160px, 220px"
           />
           <span className="sr-only">
             Dr. Gamze Eren — {t.about.portrait.title}
