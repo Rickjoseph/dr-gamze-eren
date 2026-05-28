@@ -7,7 +7,7 @@ const en = {
   meta: {
     siteTitle: "Dr. Gamze Eren — Aesthetic & Reconstructive Surgery, Istanbul",
     siteDescription:
-      "Board-certified plastic surgery in Istanbul. Surgical precision meets artistic vision — natural, confident results in a private Caddebostan clinic.",
+      "Board-certified plastic surgery in Istanbul. Surgical precision meets artistic vision, with natural, confident results in a private Caddebostan clinic.",
     ogTitle: "Dr. Gamze Eren — Aesthetic Surgery, Istanbul",
     ogDescription:
       "Confidence is beautiful. Surgical precision, artistic vision, results that look unmistakably yours.",
@@ -53,7 +53,7 @@ const en = {
     headlineAccent1: "beautiful.",
     headlineB: "The rest is",
     headlineAccent2: "refinement.",
-    lede: "Dr. Gamze Eren pairs surgical precision with an artist’s eye — shaping results that look like a quieter, more rested version of you, never someone else.",
+    lede: "Dr. Gamze Eren pairs surgical precision with an artist’s eye, shaping results that look like a quieter, more rested version of you. Never someone else.",
     ctaPrimary: "Book a private consultation",
     ctaSecondary: "Explore procedures →",
     portraitTitle: "Op. Dr.",
@@ -115,14 +115,14 @@ const en = {
       viewAll: "Read all articles →",
     },
     testimonial: {
-      quoteA: "I didn’t want to look different. I wanted to look like myself on my best morning — every morning.",
+      quoteA: "I didn’t want to look different. I wanted to look like myself on my best morning. Every morning.",
       quoteAccent: "Dr. Eren understood that.",
       attribution: "Patient · Rhinoplasty, 2025",
     },
     finalCta: {
       headlineA: "Ready to begin the",
       headlineAccent: "conversation?",
-      body: "Every journey starts with a private consultation. Share your goals — we’ll take it from there.",
+      body: "Every journey starts with a private consultation. Share your goals, and we’ll take it from there.",
       primary: "Book consultation",
     },
   },
@@ -139,9 +139,9 @@ const en = {
     training: {
       eyebrow: "Training",
       items: [
-        "Medical Doctor — Istanbul University, Cerrahpaşa",
-        "Plastic Surgery Residency — Ministry of Health Teaching Hospital",
-        "Aesthetic Surgery Fellowship — International rotations",
+        "Medical Doctor, Istanbul University Cerrahpaşa",
+        "Plastic Surgery Residency, Ministry of Health Teaching Hospital",
+        "Aesthetic Surgery Fellowship, International rotations",
       ],
     },
     memberships: {
@@ -168,18 +168,18 @@ const en = {
       headlineA: "An aesthetic that looks",
       headlineAccent: "unmistakably yours.",
       paragraphs: [
-        "Dr. Eren’s practice is built on three principles. The first is harmony — every change is judged against the rest of the face or body, never in isolation. The second is restraint — taking only what is needed to reach the result you want, nothing more. The third is transparency — 3D simulation, frank conversation, and a written plan so you know precisely what is being proposed.",
+        "Dr. Eren’s practice is built on three principles. The first is harmony: every change is judged against the rest of the face or body, never in isolation. The second is restraint: taking only what is needed to reach the result you want, nothing more. The third is transparency: 3D simulation, frank conversation, and a written plan so you know precisely what is being proposed.",
         "The clinic in Caddebostan is intentionally small. Patients are seen privately, by name, and consultations are unrushed. International visitors are looked after with a concierge service that covers everything from airport pickup to follow-up at home.",
       ],
     },
     values: [
       { t: "Patient-first consultations", d: "60-minute private sessions. We listen first, recommend second." },
       { t: "Accredited hospital surgery", d: "Procedures performed in partner hospitals with senior anaesthesia and full ICU backup." },
-      { t: "Long-term follow-up", d: "Aftercare scheduled for 24h, 7d, 1mo, 3mo, 12mo — by video if you live abroad." },
+      { t: "Long-term follow-up", d: "Aftercare scheduled for 24h, 7d, 1mo, 3mo, 12mo, by video if you live abroad." },
     ],
     cta: {
       headline: "Considering a procedure?",
-      body: "A consultation is the right place to start — there’s no obligation, and you’ll leave with a clearer sense of what is possible.",
+      body: "A consultation is the right place to start. There’s no obligation, and you’ll leave with a clearer sense of what is possible.",
       primary: "Book consultation",
       secondary: "Browse procedures",
     },
@@ -196,7 +196,7 @@ const en = {
     kratos: {
       eyebrow: "How we plan together",
       headline: "3D before the OR. Always.",
-      body: "Especially for rhinoplasty and facial work, we plan in three dimensions using Kratos Surgery — a digital system that maps your anatomy and lets you preview likely outcomes before any decision is made. It does not promise an exact result; it gives you a language to talk about one.",
+      body: "Especially for rhinoplasty and facial work, we plan in three dimensions using Kratos Surgery, a digital system that maps your anatomy and lets you preview likely outcomes before any decision is made. It does not promise an exact result; it gives you a language to talk about one.",
     },
   },
   contact: {
@@ -220,7 +220,7 @@ const en = {
         "Not sure yet",
       ],
       message: "Your message",
-      messagePlaceholder: "Tell us a little about your goals — there are no wrong answers.",
+      messagePlaceholder: "Tell us a little about your goals. There are no wrong answers.",
       consent:
         "I consent to my information being used to contact me about a consultation. We never share your details with third parties.",
       submit: "Send request",
@@ -240,7 +240,7 @@ const en = {
   serviceContent: {
     facial: {
       title: "Facial Aesthetics",
-      short: "A graceful refinement that respects your features — never overdone.",
+      short: "A graceful refinement that respects your features. Never overdone.",
       description:
         "Procedures shaped around your facial proportions, planned with 3D simulation so you understand every change before it is made.",
       procedures: [
@@ -253,7 +253,7 @@ const en = {
     },
     body: {
       title: "Body Contouring",
-      short: "Sculpt the silhouette you recognise as your own — balanced, natural.",
+      short: "Sculpt the silhouette you recognise as your own. Balanced, natural.",
       description:
         "A bespoke approach to body shaping that prioritises proportion over volume. Recovery is supported by modern protocols and concierge care.",
       procedures: [
@@ -302,7 +302,7 @@ const en = {
     meta: {
       title: "Patient Results",
       description:
-        "Before and after results from Dr. Gamze Eren's patients — rhinoplasty, breast, body contouring and facial aesthetics in Istanbul.",
+        "Before and after results from Dr. Gamze Eren's patients: rhinoplasty, breast, body contouring and facial aesthetics in Istanbul.",
     },
     consent: {
       eyebrow: "Patient Results",
@@ -310,14 +310,14 @@ const en = {
       headlineAccent: "please confirm",
       body: "This section contains clinical before and after photographs shared with patient consent, for informational purposes only. By continuing you confirm you are seeking information about aesthetic surgery procedures.",
       rights: "All images are protected. Downloading or sharing is not permitted.",
-      accept: "I understand — show results",
+      accept: "I understand, show results",
       back: "Go back",
     },
     hero: {
       eyebrow: "Patient Results",
       headlineA: "Real results,",
       headlineAccent: "honest outcomes.",
-      lede: "Every photograph is shared with full patient consent. Drag the slider to compare before and after. Results vary — your outcome will be discussed in detail during consultation.",
+      lede: "Every photograph is shared with full patient consent. Drag the slider to compare before and after. Results vary; your outcome will be discussed in detail during consultation.",
     },
     categories: {
       all: "All Results",
@@ -346,7 +346,7 @@ const tr: typeof en = {
   meta: {
     siteTitle: "Dr. Gamze Eren — Estetik ve Plastik Cerrahi, İstanbul",
     siteDescription:
-      "İstanbul’da kurul onaylı plastik cerrahi. Cerrahi hassasiyet ve sanatsal vizyonun buluşması — Caddebostan’da özel bir klinikte doğal, özgüvenli sonuçlar.",
+      "İstanbul’da kurul onaylı plastik cerrahi. Cerrahi hassasiyet ve sanatsal vizyonun buluşması; Caddebostan’da özel bir klinikte doğal, özgüvenli sonuçlar.",
     ogTitle: "Dr. Gamze Eren — Estetik Cerrahi, İstanbul",
     ogDescription:
       "Özgüven güzeldir. Cerrahi hassasiyet, sanatsal vizyon ve gerçekten size ait görünen sonuçlar.",
@@ -392,7 +392,7 @@ const tr: typeof en = {
     headlineAccent1: "güzeldir.",
     headlineB: "Gerisi",
     headlineAccent2: "incelikten ibarettir.",
-    lede: "Dr. Gamze Eren, cerrahi hassasiyeti sanatçı bir bakışla harmanlayarak başkası gibi değil, daha dinlenmiş, daha sakin halinize benzeyen sonuçlar tasarlar.",
+    lede: "Dr. Gamze Eren, cerrahi hassasiyeti sanatçı bir bakışla harmanlayarak başkası gibi değil; daha dinlenmiş, daha sakin halinize benzeyen sonuçlar tasarlar.",
     ctaPrimary: "Özel konsültasyon randevusu",
     ctaSecondary: "İşlemleri keşfedin →",
     portraitTitle: "Op. Dr.",
@@ -461,7 +461,7 @@ const tr: typeof en = {
     finalCta: {
       headlineA: "Konuşmaya",
       headlineAccent: "hazır mısınız?",
-      body: "Her yolculuk özel bir konsültasyonla başlar. Hedeflerinizi paylaşın — gerisini biz hallederiz.",
+      body: "Her yolculuk özel bir konsültasyonla başlar. Hedeflerinizi paylaşın, gerisini biz hallederiz.",
       primary: "Randevu al",
     },
   },
@@ -478,9 +478,9 @@ const tr: typeof en = {
     training: {
       eyebrow: "Eğitim",
       items: [
-        "Tıp Doktoru — İstanbul Üniversitesi, Cerrahpaşa",
-        "Plastik Cerrahi İhtisası — Sağlık Bakanlığı Eğitim ve Araştırma Hastanesi",
-        "Estetik Cerrahi Fellowship — Uluslararası rotasyonlar",
+        "Tıp Doktoru, İstanbul Üniversitesi Cerrahpaşa",
+        "Plastik Cerrahi İhtisası, Sağlık Bakanlığı Eğitim ve Araştırma Hastanesi",
+        "Estetik Cerrahi Fellowship, uluslararası rotasyonlar",
       ],
     },
     memberships: {
@@ -507,18 +507,18 @@ const tr: typeof en = {
       headlineA: "Açıkça",
       headlineAccent: "size ait bir estetik.",
       paragraphs: [
-        "Dr. Eren’in pratiği üç ilke üzerine kuruludur. Birincisi uyumdur — her değişiklik tek başına değil, yüzün veya bedenin geri kalanıyla birlikte değerlendirilir. İkincisi ölçülülüktür — istenen sonuca ulaşmak için sadece gerekenin yapılması, fazlasının yapılmaması. Üçüncüsü şeffaflıktır — 3D simülasyon, açık bir konuşma ve neyin önerildiğini tam olarak bilmeniz için yazılı bir plan.",
+        "Dr. Eren’in pratiği üç ilke üzerine kuruludur. Birincisi uyumdur: her değişiklik tek başına değil, yüzün veya bedenin geri kalanıyla birlikte değerlendirilir. İkincisi ölçülülüktür: istenen sonuca ulaşmak için sadece gerekenin yapılması, fazlasının yapılmaması. Üçüncüsü şeffaflıktır: 3D simülasyon, açık bir konuşma ve neyin önerildiğini tam olarak bilmeniz için yazılı bir plan.",
         "Caddebostan’daki klinik bilinçli olarak küçüktür. Hastalar isimleriyle, özel olarak ve acele edilmeden görülür. Uluslararası ziyaretçiler, havalimanı karşılamadan ev takibe kadar her şeyi kapsayan bir concierge hizmetiyle ağırlanır.",
       ],
     },
     values: [
       { t: "Önce hasta odaklı konsültasyon", d: "60 dakikalık özel görüşmeler. Önce dinleriz, sonra öneririz." },
       { t: "Akredite hastanede cerrahi", d: "Deneyimli anestezi ve tam yoğun bakım desteğiyle partner hastanelerde gerçekleştirilir." },
-      { t: "Uzun vadeli takip", d: "24 saat, 7 gün, 1 ay, 3 ay, 12 ayda — yurt dışında yaşıyorsanız görüntülü olarak." },
+      { t: "Uzun vadeli takip", d: "24 saat, 7 gün, 1 ay, 3 ay ve 12 ayda; yurt dışında yaşıyorsanız görüntülü olarak." },
     ],
     cta: {
       headline: "Bir işlem mi düşünüyorsunuz?",
-      body: "Başlamak için en doğru yer bir konsültasyondur — herhangi bir yükümlülük yoktur ve neyin mümkün olduğuna dair daha net bir fikirle ayrılırsınız.",
+      body: "Başlamak için en doğru yer bir konsültasyondur. Herhangi bir yükümlülük yoktur ve neyin mümkün olduğuna dair daha net bir fikirle ayrılırsınız.",
       primary: "Randevu al",
       secondary: "İşlemleri incele",
     },
@@ -535,7 +535,7 @@ const tr: typeof en = {
     kratos: {
       eyebrow: "Birlikte nasıl planlıyoruz",
       headline: "Ameliyathaneden önce 3D. Her zaman.",
-      body: "Özellikle rinoplasti ve yüz işlemlerinde Kratos Surgery ile üç boyutlu plan yapıyoruz — anatominizi haritalandıran ve karardan önce olası sonuçları önizlemenize olanak tanıyan dijital bir sistem. Birebir sonuç vaat etmez; sonuç üzerine konuşmanız için bir dil sağlar.",
+      body: "Özellikle rinoplasti ve yüz işlemlerinde Kratos Surgery ile üç boyutlu plan yapıyoruz; anatominizi haritalandıran ve karardan önce olası sonuçları önizlemenize olanak tanıyan dijital bir sistem. Birebir sonuç vaat etmez; sonuç üzerine konuşmanız için bir dil sağlar.",
     },
   },
   contact: {
@@ -559,7 +559,7 @@ const tr: typeof en = {
         "Henüz emin değilim",
       ],
       message: "Mesajınız",
-      messagePlaceholder: "Hedefleriniz hakkında biraz bilgi verin — yanlış cevap yoktur.",
+      messagePlaceholder: "Hedefleriniz hakkında biraz bilgi verin. Yanlış cevap yoktur.",
       consent:
         "Bilgilerimin bir konsültasyon için benimle iletişime geçilmek üzere kullanılmasına onay veriyorum. Bilgileriniz üçüncü taraflarla asla paylaşılmaz.",
       submit: "Talebi gönder",
@@ -579,7 +579,7 @@ const tr: typeof en = {
   serviceContent: {
     facial: {
       title: "Yüz Estetiği",
-      short: "Yüz hatlarınıza saygılı, zarif bir rötuş — asla abartısız.",
+      short: "Yüz hatlarınıza saygılı, zarif bir rötuş. Asla abartısız.",
       description:
         "Yüz oranlarınıza göre şekillendirilen, her değişikliği önceden anlamanız için 3D simülasyonla planlanan işlemler.",
       procedures: [
@@ -592,7 +592,7 @@ const tr: typeof en = {
     },
     body: {
       title: "Vücut Şekillendirme",
-      short: "Tanıdığınız kendi silüetinizi heykelleyin — dengeli, doğal.",
+      short: "Tanıdığınız kendi silüetinizi heykelleyin. Dengeli, doğal.",
       description:
         "Hacim yerine orantıya öncelik veren, kişiye özel bir vücut şekillendirme yaklaşımı. İyileşme, modern protokoller ve concierge bakım ile desteklenir.",
       procedures: [
@@ -641,7 +641,7 @@ const tr: typeof en = {
     meta: {
       title: "Hasta Sonuçları",
       description:
-        "Dr. Gamze Eren'in hastalarına ait öncesi ve sonrası sonuçlar — İstanbul'da rinoplasti, meme, vücut şekillendirme ve yüz estetiği.",
+        "Dr. Gamze Eren'in hastalarına ait öncesi ve sonrası sonuçlar: İstanbul'da rinoplasti, meme, vücut şekillendirme ve yüz estetiği.",
     },
     consent: {
       eyebrow: "Hasta Sonuçları",
@@ -649,14 +649,14 @@ const tr: typeof en = {
       headlineAccent: "lütfen onaylayın",
       body: "Bu bölüm, yalnızca bilgilendirme amaçlı, hasta onayıyla paylaşılan klinik öncesi ve sonrası fotoğrafları içerir. Devam ederek estetik cerrahi işlemleri hakkında bilgi aradığınızı onaylamış olursunuz.",
       rights: "Tüm görseller telif hakkı ile korunmaktadır. İndirilmesi veya paylaşılması yasaktır.",
-      accept: "Anladım — sonuçları göster",
+      accept: "Anladım, sonuçları göster",
       back: "Geri dön",
     },
     hero: {
       eyebrow: "Hasta Sonuçları",
       headlineA: "Gerçek sonuçlar,",
       headlineAccent: "dürüst çıktılar.",
-      lede: "Her fotoğraf tam hasta onayıyla paylaşılmıştır. Öncesi ve sonrasını karşılaştırmak için kaydırıcıyı sürükleyin. Sonuçlar kişiye göre değişir — sizin için olası sonuç konsültasyonda ayrıntılı olarak konuşulur.",
+      lede: "Her fotoğraf tam hasta onayıyla paylaşılmıştır. Öncesi ve sonrasını karşılaştırmak için kaydırıcıyı sürükleyin. Sonuçlar kişiye göre değişir; sizin için olası sonuç konsültasyonda ayrıntılı olarak konuşulur.",
     },
     categories: {
       all: "Tüm Sonuçlar",
@@ -685,7 +685,7 @@ const ru: typeof en = {
   meta: {
     siteTitle: "Доктор Гамзе Эрен — Эстетическая и пластическая хирургия, Стамбул",
     siteDescription:
-      "Сертифицированная пластическая хирургия в Стамбуле. Хирургическая точность и художественное видение — естественные, уверенные результаты в частной клинике в районе Каддебостан.",
+      "Сертифицированная пластическая хирургия в Стамбуле. Хирургическая точность и художественное видение, естественные и уверенные результаты в частной клинике в районе Каддебостан.",
     ogTitle: "Доктор Гамзе Эрен — Эстетическая хирургия, Стамбул",
     ogDescription:
       "Уверенность прекрасна. Хирургическая точность, художественное видение и результаты, которые остаются по-настоящему вашими.",
@@ -731,7 +731,7 @@ const ru: typeof en = {
     headlineAccent1: "прекрасна.",
     headlineB: "Остальное —",
     headlineAccent2: "точность.",
-    lede: "Доктор Гамзе Эрен сочетает хирургическую точность с взглядом художника, создавая результаты, в которых вы выглядите спокойнее и отдохнувшее — не кем-то другим, а собой.",
+    lede: "Доктор Гамзе Эрен сочетает хирургическую точность с взглядом художника, создавая результаты, в которых вы выглядите спокойнее и отдохнувшее. Не кем-то другим, а собой.",
     ctaPrimary: "Записаться на консультацию",
     ctaSecondary: "Изучить процедуры →",
     portraitTitle: "Доктор",
@@ -765,7 +765,7 @@ const ru: typeof en = {
       eyebrow: "Concierge для иностранных пациентов",
       headlineA: "Начните своё эстетическое путешествие в",
       headlineAccent: "Стамбуле.",
-      body: "От перелёта и приватного размещения до двуязычного предоперационного планирования и послеоперационного ухода — наша команда берёт на себя каждую деталь, чтобы вы могли сосредоточиться на спокойном и комфортном восстановлении.",
+      body: "От перелёта и приватного размещения до двуязычного предоперационного планирования и послеоперационного ухода: наша команда берёт на себя каждую деталь, чтобы вы могли сосредоточиться на спокойном и комфортном восстановлении.",
       cta: "Спланировать визит →",
       tiles: [
         { k: "Перелёт", v: "Организуем" },
@@ -793,14 +793,14 @@ const ru: typeof en = {
       viewAll: "Все статьи →",
     },
     testimonial: {
-      quoteA: "Я не хотела выглядеть иначе. Я хотела выглядеть собой — в самое лучшее утро, каждое утро.",
+      quoteA: "Я не хотела выглядеть иначе. Я хотела выглядеть собой в самое лучшее утро. Каждое утро.",
       quoteAccent: "Доктор Эрен это поняла.",
       attribution: "Пациентка · Ринопластика, 2025",
     },
     finalCta: {
       headlineA: "Готовы начать",
       headlineAccent: "разговор?",
-      body: "Каждый путь начинается с приватной консультации. Поделитесь своими целями — об остальном позаботимся мы.",
+      body: "Каждый путь начинается с приватной консультации. Поделитесь своими целями, а об остальном позаботимся мы.",
       primary: "Записаться",
     },
   },
@@ -817,9 +817,9 @@ const ru: typeof en = {
     training: {
       eyebrow: "Образование",
       items: [
-        "Доктор медицины — Стамбульский университет, Джеррахпаша",
-        "Резидентура по пластической хирургии — Учебная больница Министерства здравоохранения",
-        "Стажировка по эстетической хирургии — Международные ротации",
+        "Доктор медицины, Стамбульский университет, Джеррахпаша",
+        "Резидентура по пластической хирургии, Учебная больница Министерства здравоохранения",
+        "Стажировка по эстетической хирургии, международные ротации",
       ],
     },
     memberships: {
@@ -853,11 +853,11 @@ const ru: typeof en = {
     values: [
       { t: "Консультации в центре внимания пациента", d: "Часовые приватные встречи. Сначала слушаем — потом рекомендуем." },
       { t: "Операции в аккредитованных больницах", d: "Процедуры проводятся в партнёрских клиниках с опытной анестезией и полной поддержкой реанимации." },
-      { t: "Долгосрочное наблюдение", d: "Контроль через 24 часа, 7 дней, 1 месяц, 3 месяца, 12 месяцев — по видео, если вы живёте за рубежом." },
+      { t: "Долгосрочное наблюдение", d: "Контроль через 24 часа, 7 дней, 1 месяц, 3 месяца и 12 месяцев; по видео, если вы живёте за рубежом." },
     ],
     cta: {
       headline: "Думаете о процедуре?",
-      body: "Лучшее место для начала — консультация: без обязательств, и вы уйдёте с более чётким пониманием того, что возможно.",
+      body: "Лучшее место для начала — консультация. Без обязательств, и вы уйдёте с более чётким пониманием того, что возможно.",
       primary: "Записаться",
       secondary: "Посмотреть процедуры",
     },
@@ -874,7 +874,7 @@ const ru: typeof en = {
     kratos: {
       eyebrow: "Как мы планируем вместе",
       headline: "3D — до операционной. Всегда.",
-      body: "Особенно в ринопластике и работе с лицом мы планируем в трёх измерениях с помощью Kratos Surgery — цифровой системы, которая картирует вашу анатомию и позволяет предварительно увидеть возможный результат ещё до любого решения. Она не обещает точного результата — она даёт язык, на котором о нём можно говорить.",
+      body: "Особенно в ринопластике и работе с лицом мы планируем в трёх измерениях с помощью Kratos Surgery, цифровой системы, которая картирует вашу анатомию и позволяет предварительно увидеть возможный результат ещё до любого решения. Она не обещает точного результата; она даёт язык, на котором о нём можно говорить.",
     },
   },
   contact: {
@@ -898,7 +898,7 @@ const ru: typeof en = {
         "Пока не уверена",
       ],
       message: "Ваше сообщение",
-      messagePlaceholder: "Расскажите немного о ваших целях — неправильных ответов не бывает.",
+      messagePlaceholder: "Расскажите немного о ваших целях. Неправильных ответов не бывает.",
       consent:
         "Я даю согласие на использование моей информации, чтобы со мной связались по поводу консультации. Ваши данные никогда не передаются третьим лицам.",
       submit: "Отправить запрос",
@@ -918,7 +918,7 @@ const ru: typeof en = {
   serviceContent: {
     facial: {
       title: "Эстетика лица",
-      short: "Изящные изменения, уважающие ваши черты — никогда не чрезмерные.",
+      short: "Изящные изменения, уважающие ваши черты. Никогда не чрезмерные.",
       description:
         "Процедуры, спланированные с учётом ваших пропорций и с 3D-симуляцией, чтобы каждое изменение было понятно до того, как оно будет сделано.",
       procedures: [
@@ -931,7 +931,7 @@ const ru: typeof en = {
     },
     body: {
       title: "Контурная пластика тела",
-      short: "Силуэт, в котором вы узнаёте себя — сбалансированный, естественный.",
+      short: "Силуэт, в котором вы узнаёте себя. Сбалансированный, естественный.",
       description:
         "Индивидуальный подход к моделированию тела, отдающий приоритет пропорциям, а не объёму. Восстановление поддерживается современными протоколами и concierge-уходом.",
       procedures: [
@@ -951,7 +951,7 @@ const ru: typeof en = {
     },
     "non-surgical": {
       title: "Безоперационные процедуры",
-      short: "Тонкие изменения, делающие кожу сияющей — без изменения того, кто вы есть.",
+      short: "Тонкие изменения, делающие кожу сияющей, без изменения того, кто вы есть.",
       description:
         "Меню инъекций, аппаратных и кожных процедур под медицинским контролем для поддержания, утончения и продления результата операций.",
       procedures: [
@@ -980,7 +980,7 @@ const ru: typeof en = {
     meta: {
       title: "Результаты пациентов",
       description:
-        "Фотографии до и после пациентов доктора Гамзе Эрен — ринопластика, маммопластика, контурная пластика тела и эстетика лица в Стамбуле.",
+        "Фотографии до и после пациентов доктора Гамзе Эрен: ринопластика, маммопластика, контурная пластика тела и эстетика лица в Стамбуле.",
     },
     consent: {
       eyebrow: "Результаты пациентов",
@@ -988,14 +988,14 @@ const ru: typeof en = {
       headlineAccent: "пожалуйста, подтвердите",
       body: "Этот раздел содержит клинические фотографии до и после, опубликованные с согласия пациентов исключительно в информационных целях. Продолжая, вы подтверждаете, что ищете информацию об эстетических хирургических процедурах.",
       rights: "Все изображения защищены. Скачивание и распространение запрещены.",
-      accept: "Я понимаю — показать результаты",
+      accept: "Я понимаю, показать результаты",
       back: "Назад",
     },
     hero: {
       eyebrow: "Результаты пациентов",
       headlineA: "Реальные результаты,",
       headlineAccent: "честные итоги.",
-      lede: "Каждая фотография опубликована с полного согласия пациента. Перетащите ползунок, чтобы сравнить «до» и «после». Результаты индивидуальны — ваш возможный исход будет подробно обсуждён на консультации.",
+      lede: "Каждая фотография опубликована с полного согласия пациента. Перетащите ползунок, чтобы сравнить «до» и «после». Результаты индивидуальны; ваш возможный исход будет подробно обсуждён на консультации.",
     },
     categories: {
       all: "Все результаты",
