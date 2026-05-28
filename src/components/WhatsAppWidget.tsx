@@ -179,7 +179,7 @@ export function WhatsAppWidget() {
                   value={form.name}
                   onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
                   placeholder="e.g. Sophie"
-                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-800 outline-none transition focus:border-[#25D366]"
+                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-base sm:text-sm text-gray-800 outline-none transition focus:border-[#25D366]"
                 />
               </div>
 
@@ -191,7 +191,7 @@ export function WhatsAppWidget() {
                   required
                   value={form.country}
                   onChange={(e) => setForm((f) => ({ ...f, country: e.target.value }))}
-                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-800 outline-none transition focus:border-[#25D366]"
+                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-base sm:text-sm text-gray-800 outline-none transition focus:border-[#25D366]"
                 >
                   <option value="">Select your country</option>
                   {COUNTRIES.map((c) => (
@@ -208,7 +208,7 @@ export function WhatsAppWidget() {
                   required
                   value={form.procedure}
                   onChange={(e) => setForm((f) => ({ ...f, procedure: e.target.value }))}
-                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-800 outline-none transition focus:border-[#25D366]"
+                  className="w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-base sm:text-sm text-gray-800 outline-none transition focus:border-[#25D366]"
                 >
                   <option value="">Select a procedure</option>
                   {PROCEDURES.map((p) => (
@@ -226,7 +226,7 @@ export function WhatsAppWidget() {
                   value={form.message}
                   onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
                   placeholder="Timeline, questions, concerns..."
-                  className="w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-800 outline-none transition focus:border-[#25D366]"
+                  className="w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-base sm:text-sm text-gray-800 outline-none transition focus:border-[#25D366]"
                 />
               </div>
 

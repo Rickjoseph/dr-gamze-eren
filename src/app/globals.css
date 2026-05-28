@@ -81,6 +81,21 @@
     color: white;
   }
 
+  /* iOS Safari auto-zooms into form fields whose computed font-size
+     is below 16px. Enforce a 16px floor on mobile across every text
+     input / textarea / select so focusing one never triggers a zoom.
+     Uses :where() to keep specificity at 0,0,0 — Tailwind utilities
+     still override at larger breakpoints. */
+  @media (max-width: 640px) {
+    :where(
+      input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):not([type="color"]):not([type="file"]),
+      select,
+      textarea
+    ) {
+      font-size: 16px;
+    }
+  }
+
   h1, h2, h3, h4 {
     font-family: var(--font-display);
     font-weight: 500;
