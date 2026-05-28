@@ -23,18 +23,27 @@ export function CookieConsent({ t }: Props) {
     if (already) return;
 
     setMounted(true);
-    // Two rAFs so the entrance transition actually plays
-    const id = requestAnimationFrame(() =>
-      requestAnimationFrame(() => setShown(true))
-    );
-    return () => cancelAnimationFrame(id);
+    // Two rAFs so the entrance transition actually plays. Track BOTH ids
+    // so Strict Mode's unmount/remount cycle can cancel the inner frame
+    // before it fires setShown on an about-to-mount-again component
+    // (which trips React 19's "state update before mount" warning).
+    let outer = 0;
+    let inner = 0;
+    outer = requestAnimationFrame(() => {
+      inner = requestAnimationFrame(() => setShown(true));
+    });
+    return () => {
+      cancelAnimationFrame(outer);
+      cancelAnimationFrame(inner);
+    };
   }, []);
 
   function dismiss(value: "accepted" | "declined") {
     document.cookie = `${COOKIE_NAME}=${value}; path=/; max-age=${COOKIE_MAX_AGE}; SameSite=Lax`;
     setShown(false);
-    const id = setTimeout(() => setMounted(false), 450);
-    return () => clearTimeout(id);
+    // setTimeout fires on the next tick after the slide-out animation.
+    // No need to return a cleanup — this is called from a click handler.
+    setTimeout(() => setMounted(false), 450);
   }
 
   if (!mounted) return null;

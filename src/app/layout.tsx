@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter, Cormorant_Garamond } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import { Nav } from "@/components/Nav";
 import { Footer } from "@/components/Footer";
@@ -8,6 +7,7 @@ import { GlassFilter } from "@/components/GlassFilter";
 import { getDict } from "@/i18n/getLocale";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
 import { CookieConsent } from "@/components/CookieConsent";
+import { ExtensionErrorFilter } from "@/components/ExtensionErrorFilter";
 
 
 const inter = Inter({
@@ -48,10 +48,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} className={`${inter.variable} ${cormorant.variable} antialiased`}>
       <body className="relative min-h-screen">
-        <Script
-          id="suppress-extension-errors"
-          strategy="beforeInteractive"
-        >{`(function(){function x(e){var s=(e&&e.reason&&(e.reason.stack||e.reason.message))||(e&&e.message)||'';var f=(e&&e.filename)||'';return /chrome-extension:\\/\\//.test(s)||/chrome-extension:\\/\\//.test(f)||/moz-extension:\\/\\//.test(s)||/moz-extension:\\/\\//.test(f)||/safari-extension:\\/\\//.test(s)||/safari-extension:\\/\\//.test(f);}window.addEventListener('error',function(e){if(x(e)){e.stopImmediatePropagation();e.preventDefault();}},true);window.addEventListener('unhandledrejection',function(e){if(x(e)){e.stopImmediatePropagation();e.preventDefault();}},true);})();`}</Script>
+        <ExtensionErrorFilter />
         <GlassFilter />
         <Nav locale={locale} t={t} />
         <main className="pt-24 sm:pt-32">{children}</main>
