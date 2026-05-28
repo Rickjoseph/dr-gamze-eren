@@ -2,78 +2,54 @@
 
 import { useState } from "react";
 
-type MediaType = "all" | "videos" | "shorts" | "reels";
+type MediaType = "all" | "videos" | "shorts";
 
 interface MediaItem {
   id: string;
   type: Exclude<MediaType, "all">;
   title: string;
-  platform: "youtube" | "instagram";
-  embedId: string; // YouTube video ID or Instagram shortcode
-  thumbnail?: string;
+  embedId: string;
 }
 
-// Placeholder items — swap embedIds with real ones when Dr. Gamze shares her links
 const MEDIA: MediaItem[] = [
-  {
-    id: "1",
-    type: "videos",
-    title: "Rhinoplasty: What to Expect",
-    platform: "youtube",
-    embedId: "dQw4w9WgXcQ", // placeholder — replace with real YouTube ID
-  },
-  {
-    id: "2",
-    type: "videos",
-    title: "3D Kratos Simulation Explained",
-    platform: "youtube",
-    embedId: "dQw4w9WgXcQ", // placeholder
-  },
-  {
-    id: "3",
-    type: "shorts",
-    title: "Recovery tip: sleeping position after rhinoplasty",
-    platform: "youtube",
-    embedId: "dQw4w9WgXcQ", // placeholder
-  },
-  {
-    id: "4",
-    type: "shorts",
-    title: "Breast augmentation — implant types explained in 60 seconds",
-    platform: "youtube",
-    embedId: "dQw4w9WgXcQ", // placeholder
-  },
-  {
-    id: "5",
-    type: "reels",
-    title: "A day at the clinic",
-    platform: "instagram",
-    embedId: "placeholder", // replace with Instagram reel shortcode
-  },
-  {
-    id: "6",
-    type: "reels",
-    title: "Istanbul — recovering in one of the world's great cities",
-    platform: "instagram",
-    embedId: "placeholder",
-  },
+  // ── Full videos ────────────────────────────────────────────────────────────
+  { id: "v1", type: "videos", title: "3D Simulation in Rhinoplasty", embedId: "voMKa2LoFGA" },
+  { id: "v2", type: "videos", title: "Surgical Options for Abdominal Fat", embedId: "W5krMI9z00A" },
+  { id: "v3", type: "videos", title: "What Is the Optimal Age for Breast Augmentation?", embedId: "w9h87wyOReY" },
+  { id: "v4", type: "videos", title: "Breast Augmentation — Frequently Asked Questions", embedId: "oY0VYSY4XKw" },
+  { id: "v5", type: "videos", title: "Upper Eyelid Surgery", embedId: "T2tynp3sHfY" },
+  { id: "v6", type: "videos", title: "Dr. Güler Gamze Eren — Clinic Overview", embedId: "IWYZ0xdnkGw" },
+
+  // ── Shorts ─────────────────────────────────────────────────────────────────
+  { id: "s1", type: "shorts", title: "Skincare, Botox & Beauty", embedId: "IuuVzMBW0kk" },
+  { id: "s2", type: "shorts", title: "Operations After Bariatric Surgery", embedId: "PUKhOe9bqIg" },
+  { id: "s3", type: "shorts", title: "Tummy Tuck — What You Need to Know", embedId: "UmFWHitIWwY" },
+  { id: "s4", type: "shorts", title: "Breast Lift — Dr. Güler Gamze Eren", embedId: "93uiIwCpROk" },
+  { id: "s5", type: "shorts", title: "Liposuction — Dr. Güler Gamze Eren", embedId: "za0CTtMgt6s" },
+  { id: "s6", type: "shorts", title: "Abdominoplasty Explained", embedId: "bvpDLbyZsXQ" },
+  { id: "s7", type: "shorts", title: "Breast Lift — Procedure Highlights", embedId: "8UBDJ1HH44Q" },
+  { id: "s8", type: "shorts", title: "Liposuction Highlights", embedId: "Ex-pTZ8aVvY" },
+  { id: "s9", type: "shorts", title: "Post Bariatric Surgery Overview", embedId: "vZAiWt9MABs" },
 ];
 
 const FILTERS: { key: MediaType; label: string }[] = [
   { key: "all",    label: "All" },
   { key: "videos", label: "Videos" },
   { key: "shorts", label: "Shorts" },
-  { key: "reels",  label: "Reels" },
 ];
 
-function YouTubeEmbed({ embedId, title }: { embedId: string; title: string }) {
+function YouTubeEmbed({ embedId, title, isShort }: { embedId: string; title: string; isShort: boolean }) {
   const [loaded, setLoaded] = useState(false);
   const thumb = `https://img.youtube.com/vi/${embedId}/hqdefault.jpg`;
+
+  const embedUrl = isShort
+    ? `https://www.youtube.com/embed/${embedId}?autoplay=1&loop=1&playlist=${embedId}`
+    : `https://www.youtube.com/embed/${embedId}?autoplay=1`;
 
   return loaded ? (
     <iframe
       className="absolute inset-0 w-full h-full rounded-2xl"
-      src={`https://www.youtube.com/embed/${embedId}?autoplay=1`}
+      src={embedUrl}
       title={title}
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
@@ -84,49 +60,36 @@ function YouTubeEmbed({ embedId, title }: { embedId: string; title: string }) {
       className="absolute inset-0 w-full h-full group"
       aria-label={`Play ${title}`}
     >
-      {/* Thumbnail */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img src={thumb} alt={title} className="w-full h-full object-cover rounded-2xl" />
-      {/* Play button */}
       <div className="absolute inset-0 flex items-center justify-center">
-        <div className="w-16 h-16 rounded-full bg-white/90 shadow-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-          <svg className="w-6 h-6 text-[var(--color-rosegold)] ml-1" fill="currentColor" viewBox="0 0 24 24">
+        <div className="w-16 h-16 rounded-full bg-white/90 shadow-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
+          <svg className="w-6 h-6 ml-1" fill="currentColor" viewBox="0 0 24 24"
+            style={{ color: "var(--color-rosegold)" }}>
             <path d="M8 5v14l11-7z" />
           </svg>
         </div>
       </div>
+      {isShort && (
+        <div className="absolute top-3 right-3 bg-black/60 text-white text-[10px] font-semibold px-2 py-0.5 rounded-full uppercase tracking-wider">
+          Short
+        </div>
+      )}
     </button>
-  );
-}
-
-function InstagramPlaceholder({ title }: { title: string }) {
-  return (
-    <div className="absolute inset-0 flex flex-col items-center justify-center bg-gradient-to-br from-[#f09433] via-[#e6683c] to-[#bc1888] rounded-2xl text-white p-6 text-center">
-      <svg className="w-10 h-10 mb-3 opacity-90" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-      </svg>
-      <p className="text-sm font-medium leading-snug">{title}</p>
-      <p className="mt-2 text-xs opacity-75">Instagram Reel — coming soon</p>
-    </div>
   );
 }
 
 function MediaCard({ item }: { item: MediaItem }) {
   const isShort = item.type === "shorts";
   return (
-    <div className={`rounded-3xl overflow-hidden bg-white/30 border border-white/60 shadow-[0_8px_32px_-8px_rgba(26,20,16,0.12)] flex flex-col ${isShort ? "max-w-xs mx-auto" : ""}`}>
-      {/* Video area */}
-      <div className={`relative w-full bg-black rounded-2xl m-2 overflow-hidden ${isShort ? "aspect-[9/16]" : "aspect-video"}`}>
-        {item.platform === "youtube" ? (
-          <YouTubeEmbed embedId={item.embedId} title={item.title} />
-        ) : (
-          <InstagramPlaceholder title={item.title} />
-        )}
+    <div className="rounded-3xl overflow-hidden bg-white/30 border border-white/60 shadow-[0_8px_32px_-8px_rgba(26,20,16,0.12)] flex flex-col hover:shadow-[0_16px_48px_-8px_rgba(26,20,16,0.18)] hover:-translate-y-1 transition-all duration-300">
+      <div className={`relative w-full bg-black rounded-2xl m-2 overflow-hidden ${isShort ? "aspect-[9/16]" : "aspect-video"}`}
+        style={{ width: "calc(100% - 1rem)" }}>
+        <YouTubeEmbed embedId={item.embedId} title={item.title} isShort={isShort} />
       </div>
-      {/* Caption */}
       <div className="px-5 py-4">
         <span className="text-[10px] uppercase tracking-widest text-[var(--color-taupe)]">
-          {item.type === "shorts" ? "Short" : item.type === "reels" ? "Reel" : "Video"} · {item.platform === "youtube" ? "YouTube" : "Instagram"}
+          {isShort ? "Short" : "Video"} · YouTube
         </span>
         <p className="mt-1 text-sm font-medium text-[var(--color-cocoa)]">{item.title}</p>
       </div>
@@ -137,6 +100,7 @@ function MediaCard({ item }: { item: MediaItem }) {
 export default function MediaPage() {
   const [active, setActive] = useState<MediaType>("all");
   const filtered = active === "all" ? MEDIA : MEDIA.filter((m) => m.type === active);
+  const isShortView = active === "shorts";
 
   return (
     <section className="relative px-4 sm:px-8">
@@ -149,36 +113,57 @@ export default function MediaPage() {
           <span className="italic-accent">learn.</span>
         </h1>
         <p className="mt-6 max-w-2xl text-lg leading-relaxed text-[var(--color-cocoa)]">
-          Procedure walkthroughs, recovery tips, and a closer look at the clinic — from Dr. Gamze Eren's YouTube channel and Instagram.
+          Procedure walkthroughs, recovery tips, and expert insights — from Dr. Gamze Eren's YouTube channel.
         </p>
 
         {/* Filters */}
-        <div className="mt-10 flex flex-wrap gap-2 mb-10">
+        <div className="mt-10 flex flex-wrap gap-2">
           {FILTERS.map((f) => (
             <button
               key={f.key}
               onClick={() => setActive(f.key)}
               className={`rounded-full px-5 py-2 text-sm font-medium transition border ${
                 active === f.key
-                  ? "bg-[var(--color-rosegold)] border-[var(--color-rosegold)] text-white"
+                  ? "text-white border-transparent"
                   : "bg-white/40 border-white/60 text-[var(--color-cocoa)] hover:bg-white/60"
               }`}
+              style={active === f.key ? { background: "linear-gradient(135deg, var(--color-rosegold), var(--color-rose))", borderColor: "transparent" } : {}}
             >
               {f.label}
+              <span className="ml-1.5 opacity-60 text-xs">
+                {f.key === "all" ? MEDIA.length : MEDIA.filter(m => m.type === f.key).length}
+              </span>
             </button>
           ))}
         </div>
 
-        {/* Grid — shorts get a narrower column */}
-        <div className={`grid gap-6 ${
-          active === "shorts"
-            ? "grid-cols-2 sm:grid-cols-3 lg:grid-cols-4"
+        {/* Grid */}
+        <div className={`mt-10 grid gap-6 ${
+          isShortView
+            ? "grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5"
             : "grid-cols-1 sm:grid-cols-2 lg:grid-cols-3"
         }`}>
           {filtered.map((item) => (
             <MediaCard key={item.id} item={item} />
           ))}
         </div>
+
+        {/* YouTube channel link */}
+        <div className="mt-14 text-center">
+          <p className="text-sm text-[var(--color-taupe)]">See more on YouTube</p>
+          <a
+            href="https://www.youtube.com/@dr.gamzeozcansclinic4133"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-2 inline-flex items-center gap-2 rounded-2xl px-6 py-3 text-sm font-semibold border border-white/60 bg-white/40 text-[var(--color-cocoa)] hover:bg-white/70 transition"
+          >
+            <svg className="w-5 h-5 text-red-500" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+            </svg>
+            @dr.gamzeozcansclinic4133
+          </a>
+        </div>
+
       </div>
     </section>
   );
