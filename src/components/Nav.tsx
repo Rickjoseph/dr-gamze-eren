@@ -129,7 +129,7 @@ export function Nav({ locale, t }: Props) {
           <div className="hidden sm:flex flex-col items-start gap-0.5">
             <span
               className="font-display tracking-[0.22em] uppercase text-[#6b5a4e] leading-none transition-all duration-700"
-              style={{ fontSize: scrolled ? "12px" : "14.5px", fontWeight: 700 }}
+              style={{ fontSize: scrolled ? "11px" : "13px", fontWeight: 700 }}
             >
               Dr.Gamze Eren
             </span>
