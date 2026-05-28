@@ -97,15 +97,15 @@ export default async function ContactPage() {
 
       <section className="relative mt-16 px-4 sm:px-8">
         <div className="mx-auto max-w-6xl">
-          <GlassCard className="overflow-hidden p-0">
+          <div className="overflow-hidden rounded-3xl">
             <iframe
               title="Clinic location"
               src="https://www.google.com/maps?q=Caddebostan+Mah.+Ethem+Efendi+Cad.+No:3+Kadıköy+İstanbul&output=embed"
-              className="h-[420px] w-full border-0"
+              className="h-[420px] w-full border-0 block"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
             />
-          </GlassCard>
+          </div>
         </div>
       </section>
     </>
