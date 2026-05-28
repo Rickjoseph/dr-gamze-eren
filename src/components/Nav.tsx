@@ -107,7 +107,7 @@ export function Nav({ locale, t }: Props) {
       >
         <Link
           href="/"
-          className="flex shrink-0 items-center pr-2"
+          className="flex shrink-0 flex-col items-center gap-0.5 pr-2"
           aria-label={t.nav.home}
         >
           <Image
@@ -125,8 +125,14 @@ export function Nav({ locale, t }: Props) {
             className="transition-[height,width] duration-700 ease-out"
             sizes="(max-width: 640px) 160px, 220px"
           />
+          <span
+            className="border border-[#9b8a7a]/50 rounded-full px-2.5 py-px text-[8px] tracking-[0.18em] uppercase text-[#9b8a7a] font-light transition-all duration-700"
+            style={{ fontSize: scrolled ? "7px" : "8px", letterSpacing: "0.18em" }}
+          >
+            Estetik ve Plastik Cerrahi
+          </span>
           <span className="sr-only">
-            Dr. Gamze Eren — {t.about.portrait.title}
+            Dr. Gamze Eren — Estetik ve Plastik Cerrahi
           </span>
         </Link>
 
