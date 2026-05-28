@@ -108,10 +108,14 @@ export function BlogCarousel({ posts, eyebrow, headlineA, headlineAccent, cta, r
         </div>
 
         {/* Scroll-snap track. Negative margin + padding bleeds the cards
-            to the screen edge on mobile so peek-of-next-card works. */}
+            to the screen edge on mobile so peek-of-next-card works.
+            Vertical padding (py-4) is essential: overflow-x:auto forces
+            overflow-y to clip, so the cards' hover translate-y and
+            drop-shadow need room above and below the scroller bounds
+            or they get cut off mid-animation. */}
         <div
           ref={scrollerRef}
-          className="mt-10 -mx-4 flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-px-4 px-4 pb-6 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:-mx-8 sm:scroll-px-8 sm:px-8"
+          className="mt-10 -mx-4 flex snap-x snap-mandatory gap-5 overflow-x-auto scroll-px-4 px-4 pb-12 pt-4 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden sm:-mx-8 sm:scroll-px-8 sm:px-8"
           style={{ scrollSnapType: "x mandatory" }}
         >
           {posts.map((post) => (
