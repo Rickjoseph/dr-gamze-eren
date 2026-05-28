@@ -164,11 +164,13 @@ export function Nav({ locale, t }: Props) {
               </svg>
             </button>
 
-            {/* Dropdown panel */}
+            {/* Dropdown panel — sits well clear of the nav pill so it
+                reads as its own surface, and uses a more opaque tint so
+                the page content behind doesn't bleed through. */}
             <div
               role="menu"
               aria-label={t.nav.more}
-              className={`absolute left-1/2 top-[calc(100%+12px)] z-40 w-72 -translate-x-1/2 origin-top rounded-2xl border border-white/65 bg-white/55 p-2 shadow-[0_24px_60px_-20px_rgba(26,20,16,0.35)] backdrop-blur-2xl transition-all duration-200 ease-out ${
+              className={`absolute left-1/2 top-[calc(100%+22px)] z-40 w-72 -translate-x-1/2 origin-top rounded-2xl border border-white/75 bg-[var(--color-ivory)]/92 p-2 shadow-[0_24px_60px_-20px_rgba(26,20,16,0.35)] backdrop-blur-2xl transition-all duration-200 ease-out ${
                 moreOpen
                   ? "scale-100 opacity-100"
                   : "pointer-events-none -translate-y-2 scale-95 opacity-0"
