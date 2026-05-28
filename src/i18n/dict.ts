@@ -22,7 +22,7 @@ const en = {
     contact: "Contact",
     book: "Book Consultation",
     menu: "Menu",
-    more: "More",
+    more: "Explore",
     moreSubs: {
       results: "Before & after photographs",
       blog: "Procedure guides & insights",
@@ -361,7 +361,7 @@ const tr: typeof en = {
     contact: "İletişim",
     book: "Randevu Al",
     menu: "Menü",
-    more: "Daha fazla",
+    more: "Keşfet",
     moreSubs: {
       results: "Öncesi ve sonrası fotoğraflar",
       blog: "Prosedür rehberleri ve içgörüler",
@@ -700,7 +700,7 @@ const ru: typeof en = {
     contact: "Контакты",
     book: "Записаться",
     menu: "Меню",
-    more: "Ещё",
+    more: "Обзор",
     moreSubs: {
       results: "Фотографии до и после",
       blog: "Руководства и советы",
