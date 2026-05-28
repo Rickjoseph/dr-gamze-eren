@@ -107,9 +107,10 @@ export function Nav({ locale, t }: Props) {
       >
         <Link
           href="/"
-          className="flex shrink-0 flex-col items-center gap-0.5 pr-2"
-          aria-label={t.nav.home}
+          className="flex shrink-0 items-center gap-3 pr-2"
+          aria-label="Dr. Gamze Eren — Estetik ve Plastik Cerrahi"
         >
+          {/* CG monogram image — keeps the face silhouette detail */}
           <Image
             src="/brand/logo-horizontal.png"
             alt=""
@@ -118,22 +119,29 @@ export function Nav({ locale, t }: Props) {
             priority
             style={{
               height: logoHeight,
-              width: logoWidth,
-              filter:
-                "drop-shadow(0 1px 1px rgba(26,20,16,0.18)) drop-shadow(0 4px 12px rgba(138,107,86,0.28))",
+              width: "auto",
+              maxWidth: scrolled ? "44px" : "56px",
+              objectFit: "contain",
+              objectPosition: "left center",
+              filter: "drop-shadow(0 1px 1px rgba(26,20,16,0.12))",
             }}
-            className="transition-[height,width] duration-700 ease-out"
-            sizes="(max-width: 640px) 160px, 220px"
+            className="transition-all duration-700 ease-out"
           />
-          <span
-            className="border border-[#9b8a7a]/50 rounded-full px-2.5 py-px text-[8px] tracking-[0.18em] uppercase text-[#9b8a7a] font-light transition-all duration-700"
-            style={{ fontSize: scrolled ? "7px" : "8px", letterSpacing: "0.18em" }}
-          >
-            Estetik ve Plastik Cerrahi
-          </span>
-          <span className="sr-only">
-            Dr. Gamze Eren — Estetik ve Plastik Cerrahi
-          </span>
+          {/* Text stack — name + pill */}
+          <div className="flex flex-col items-start gap-0.5">
+            <span
+              className="font-display tracking-[0.22em] uppercase text-[#9b8a7a] leading-none transition-all duration-700"
+              style={{ fontSize: scrolled ? "12px" : "15px", fontWeight: 500 }}
+            >
+              Dr.Gamze Eren
+            </span>
+            <span
+              className="border border-[#9b8a7a]/50 rounded-full px-2 py-px tracking-[0.16em] uppercase text-[#9b8a7a] font-light leading-none transition-all duration-700"
+              style={{ fontSize: scrolled ? "6.5px" : "7.5px" }}
+            >
+              Estetik ve Plastik Cerrahi
+            </span>
+          </div>
         </Link>
 
         {/* Inline page links — desktop only (lg+). Home/About/Services,
