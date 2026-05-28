@@ -89,7 +89,7 @@ export function Nav({ locale, t }: Props) {
     { href: "/contact", label: t.nav.contact },
   ];
 
-  const logoHeight = scrolled ? 36 : 48;
+  const logoHeight = scrolled ? 34 : 40;
   const logoWidth = Math.round(logoHeight * LOGO_RATIO);
 
   return (
@@ -128,13 +128,13 @@ export function Nav({ locale, t }: Props) {
           <div className="flex flex-col items-start gap-0.5">
             <span
               className="font-display tracking-[0.22em] uppercase text-[#9b8a7a] leading-none transition-all duration-700"
-              style={{ fontSize: scrolled ? "12px" : "15px", fontWeight: 500 }}
+              style={{ fontSize: scrolled ? "11px" : "13px", fontWeight: 500 }}
             >
               Dr.Gamze Eren
             </span>
             <span
               className="border border-[#9b8a7a]/50 rounded-full px-2 py-px tracking-[0.16em] uppercase text-[#9b8a7a] font-light leading-none transition-all duration-700"
-              style={{ fontSize: scrolled ? "6.5px" : "7.5px" }}
+              style={{ fontSize: scrolled ? "6px" : "7px" }}
             >
               Estetik ve Plastik Cerrahi
             </span>
