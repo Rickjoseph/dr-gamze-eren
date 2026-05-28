@@ -49,9 +49,9 @@ export function Nav({ locale, t }: Props) {
     { href: "/", label: t.nav.home },
     { href: "/about", label: t.nav.about },
     { href: "/services", label: t.nav.services },
-    { href: "/results", label: "Results" },
-    { href: "/blog", label: "Journal" },
-    { href: "/media", label: "Media" },
+    { href: "/results", label: t.nav.results },
+    { href: "/blog", label: t.nav.blog },
+    { href: "/media", label: t.nav.media },
     { href: "/contact", label: t.nav.contact },
   ];
 

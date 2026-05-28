@@ -16,6 +16,9 @@ const en = {
     home: "Home",
     about: "About",
     services: "Services",
+    results: "Results",
+    blog: "Journal",
+    media: "Media",
     contact: "Contact",
     book: "Book Consultation",
     menu: "Menu",
@@ -282,6 +285,48 @@ const en = {
     accept: "Accept",
     decline: "Decline",
   },
+  results: {
+    meta: {
+      title: "Patient Results",
+      description:
+        "Before and after results from Dr. Gamze Eren's patients — rhinoplasty, breast, body contouring and facial aesthetics in Istanbul.",
+    },
+    consent: {
+      eyebrow: "Patient Results",
+      headlineA: "Before continuing,",
+      headlineAccent: "please confirm",
+      body: "This section contains clinical before and after photographs shared with patient consent, for informational purposes only. By continuing you confirm you are seeking information about aesthetic surgery procedures.",
+      rights: "All images are protected. Downloading or sharing is not permitted.",
+      accept: "I understand — show results",
+      back: "Go back",
+    },
+    hero: {
+      eyebrow: "Patient Results",
+      headlineA: "Real results,",
+      headlineAccent: "honest outcomes.",
+      lede: "Every photograph is shared with full patient consent. Drag the slider to compare before and after. Results vary — your outcome will be discussed in detail during consultation.",
+    },
+    categories: {
+      all: "All Results",
+      rhinoplasty: "Rhinoplasty",
+      breast: "Breast",
+      body: "Body",
+      face: "Face",
+    },
+    slider: { before: "Before", after: "After" },
+    disclaimer:
+      "All photographs shared with written patient consent. Results are individual and may vary. These images are for informational purposes only and do not constitute a guarantee of outcome.",
+    cases: [
+      { label: "Rhinoplasty", tag: "Primary rhinoplasty · 6 months post-op" },
+      { label: "Rhinoplasty", tag: "Septorhinoplasty · 4 months post-op" },
+      { label: "Breast Augmentation", tag: "Round implants · 3 months post-op" },
+      { label: "Breast Lift", tag: "Mastopexy · 6 months post-op" },
+      { label: "Tummy Tuck", tag: "Abdominoplasty + 360° lipo · 5 months post-op" },
+      { label: "Liposuction", tag: "360° body contouring · 4 months post-op" },
+      { label: "Blepharoplasty", tag: "Upper eyelid lift · 2 months post-op" },
+      { label: "Brow Lift", tag: "Endoscopic forehead lift · 3 months post-op" },
+    ],
+  },
 };
 
 const tr: typeof en = {
@@ -297,6 +342,9 @@ const tr: typeof en = {
     home: "Anasayfa",
     about: "Hakkımda",
     services: "Hizmetler",
+    results: "Sonuçlar",
+    blog: "Dergi",
+    media: "Medya",
     contact: "İletişim",
     book: "Randevu Al",
     menu: "Menü",
@@ -563,6 +611,48 @@ const tr: typeof en = {
     accept: "Kabul et",
     decline: "Reddet",
   },
+  results: {
+    meta: {
+      title: "Hasta Sonuçları",
+      description:
+        "Dr. Gamze Eren'in hastalarına ait öncesi ve sonrası sonuçlar — İstanbul'da rinoplasti, meme, vücut şekillendirme ve yüz estetiği.",
+    },
+    consent: {
+      eyebrow: "Hasta Sonuçları",
+      headlineA: "Devam etmeden önce",
+      headlineAccent: "lütfen onaylayın",
+      body: "Bu bölüm, yalnızca bilgilendirme amaçlı, hasta onayıyla paylaşılan klinik öncesi ve sonrası fotoğrafları içerir. Devam ederek estetik cerrahi işlemleri hakkında bilgi aradığınızı onaylamış olursunuz.",
+      rights: "Tüm görseller telif hakkı ile korunmaktadır. İndirilmesi veya paylaşılması yasaktır.",
+      accept: "Anladım — sonuçları göster",
+      back: "Geri dön",
+    },
+    hero: {
+      eyebrow: "Hasta Sonuçları",
+      headlineA: "Gerçek sonuçlar,",
+      headlineAccent: "dürüst çıktılar.",
+      lede: "Her fotoğraf tam hasta onayıyla paylaşılmıştır. Öncesi ve sonrasını karşılaştırmak için kaydırıcıyı sürükleyin. Sonuçlar kişiye göre değişir — sizin için olası sonuç konsültasyonda ayrıntılı olarak konuşulur.",
+    },
+    categories: {
+      all: "Tüm Sonuçlar",
+      rhinoplasty: "Rinoplasti",
+      breast: "Meme",
+      body: "Vücut",
+      face: "Yüz",
+    },
+    slider: { before: "Önce", after: "Sonra" },
+    disclaimer:
+      "Tüm fotoğraflar yazılı hasta onayıyla paylaşılmıştır. Sonuçlar kişiseldir ve değişiklik gösterebilir. Görseller yalnızca bilgilendirme amaçlıdır ve sonuç garantisi anlamına gelmez.",
+    cases: [
+      { label: "Rinoplasti", tag: "Birincil rinoplasti · operasyondan 6 ay sonra" },
+      { label: "Rinoplasti", tag: "Septorinoplasti · operasyondan 4 ay sonra" },
+      { label: "Meme Büyütme", tag: "Yuvarlak implant · operasyondan 3 ay sonra" },
+      { label: "Meme Dikleştirme", tag: "Mastopeksi · operasyondan 6 ay sonra" },
+      { label: "Karın Germe", tag: "Abdominoplasti + 360° lipo · operasyondan 5 ay sonra" },
+      { label: "Liposuction", tag: "360° vücut şekillendirme · operasyondan 4 ay sonra" },
+      { label: "Blefaroplasti", tag: "Üst göz kapağı estetiği · operasyondan 2 ay sonra" },
+      { label: "Kaş Kaldırma", tag: "Endoskopik alın germe · operasyondan 3 ay sonra" },
+    ],
+  },
 };
 
 const ru: typeof en = {
@@ -578,6 +668,9 @@ const ru: typeof en = {
     home: "Главная",
     about: "Обо мне",
     services: "Услуги",
+    results: "Результаты",
+    blog: "Журнал",
+    media: "Медиа",
     contact: "Контакты",
     book: "Записаться",
     menu: "Меню",
@@ -843,6 +936,48 @@ const ru: typeof en = {
       "Мы используем файлы cookie, чтобы запомнить ваш языковой выбор и обеспечить корректную работу сайта. Без отслеживания, без сторонней рекламы.",
     accept: "Принять",
     decline: "Отклонить",
+  },
+  results: {
+    meta: {
+      title: "Результаты пациентов",
+      description:
+        "Фотографии до и после пациентов доктора Гамзе Эрен — ринопластика, маммопластика, контурная пластика тела и эстетика лица в Стамбуле.",
+    },
+    consent: {
+      eyebrow: "Результаты пациентов",
+      headlineA: "Прежде чем продолжить,",
+      headlineAccent: "пожалуйста, подтвердите",
+      body: "Этот раздел содержит клинические фотографии до и после, опубликованные с согласия пациентов исключительно в информационных целях. Продолжая, вы подтверждаете, что ищете информацию об эстетических хирургических процедурах.",
+      rights: "Все изображения защищены. Скачивание и распространение запрещены.",
+      accept: "Я понимаю — показать результаты",
+      back: "Назад",
+    },
+    hero: {
+      eyebrow: "Результаты пациентов",
+      headlineA: "Реальные результаты,",
+      headlineAccent: "честные итоги.",
+      lede: "Каждая фотография опубликована с полного согласия пациента. Перетащите ползунок, чтобы сравнить «до» и «после». Результаты индивидуальны — ваш возможный исход будет подробно обсуждён на консультации.",
+    },
+    categories: {
+      all: "Все результаты",
+      rhinoplasty: "Ринопластика",
+      breast: "Грудь",
+      body: "Тело",
+      face: "Лицо",
+    },
+    slider: { before: "До", after: "После" },
+    disclaimer:
+      "Все фотографии опубликованы с письменного согласия пациентов. Результаты индивидуальны и могут отличаться. Изображения носят информационный характер и не являются гарантией исхода.",
+    cases: [
+      { label: "Ринопластика", tag: "Первичная ринопластика · 6 месяцев после операции" },
+      { label: "Ринопластика", tag: "Септоринопластика · 4 месяца после операции" },
+      { label: "Увеличение груди", tag: "Круглые импланты · 3 месяца после операции" },
+      { label: "Подтяжка груди", tag: "Мастопексия · 6 месяцев после операции" },
+      { label: "Абдоминопластика", tag: "Абдоминопластика + 360° липосакция · 5 месяцев после операции" },
+      { label: "Липосакция", tag: "360° контурная пластика · 4 месяца после операции" },
+      { label: "Блефаропластика", tag: "Подтяжка верхних век · 2 месяца после операции" },
+      { label: "Подтяжка бровей", tag: "Эндоскопический лифтинг лба · 3 месяца после операции" },
+    ],
   },
 };
 
