@@ -184,44 +184,55 @@ export default async function Home() {
       {/* ============== MEDICAL TOURISM ============== */}
       <section className="relative mt-32 px-4 sm:px-8">
         <div className="mx-auto max-w-6xl">
-          <GlassCard className="overflow-hidden p-0" tint="dark">
-            <div className="grid gap-0 md:grid-cols-2">
-              <div className="p-10 sm:p-14">
-                <p className="eyebrow !text-[var(--color-blush)]">{h.tourism.eyebrow}</p>
-                <h2 className="headline mt-5 text-4xl text-[var(--color-ivory)] sm:text-5xl">
-                  {h.tourism.headlineA}{" "}
-                  <span className="italic-accent !text-[var(--color-rose)]">{h.tourism.headlineAccent}</span>
-                </h2>
-                <p className="mt-6 max-w-md text-base leading-relaxed text-[var(--color-cream)]/85">
-                  {h.tourism.body}
-                </p>
-                <Link href="/contact" className="btn-glass mt-8">
-                  {h.tourism.cta}
-                </Link>
-              </div>
-              <div className="relative min-h-[280px] sm:min-h-[420px]">
-                <Image
-                  src="/img/istanbul-bosphorus.jpg"
-                  alt="Galata Tower and the Bosphorus at sunset"
-                  fill
-                  sizes="(max-width: 768px) 92vw, 540px"
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#1a1410]/85 via-[#5b4636]/55 to-[#1a1410]/70" />
-                <div className="relative grid h-full grid-cols-2 gap-3 p-8 sm:p-10">
-                  {h.tourism.tiles.map((item) => (
-                    <div
-                      key={item.k}
-                      className="glass glass-dark flex flex-col justify-end rounded-2xl p-4"
-                    >
-                      <p className="text-xs uppercase tracking-widest text-[var(--color-blush)]/80">
-                        {item.k}
-                      </p>
-                      <p className="mt-1 font-display text-xl text-[var(--color-ivory)]">
-                        {item.v}
-                      </p>
-                    </div>
-                  ))}
+          <GlassCard className="p-0" tint="rose">
+            {/* Inner wrapper handles the rounded clip.
+                Safari has a long-standing bug where overflow-hidden +
+                border-radius on an element that also has backdrop-filter
+                does NOT clip absolutely-positioned descendants — so
+                we clip on a plain inner div instead of on .glass itself. */}
+            <div className="overflow-hidden rounded-[1.75rem]">
+              <div className="grid gap-0 md:grid-cols-[1.05fr_1fr]">
+                {/* Image — appears first on mobile (top), right side on desktop */}
+                <div className="relative order-first min-h-[260px] sm:min-h-[320px] md:order-last md:min-h-[560px]">
+                  <Image
+                    src="/img/istanbul-bosphorus.jpg"
+                    alt="Galata Tower and the Bosphorus at sunset"
+                    fill
+                    sizes="(max-width: 768px) 92vw, 540px"
+                    className="object-cover"
+                  />
+                  {/* Whisper of warm tint — no heavy dark overlay */}
+                  <div className="pointer-events-none absolute inset-0 bg-gradient-to-tr from-[var(--color-rose)]/15 via-transparent to-[var(--color-cream)]/10" />
+                </div>
+
+                {/* Content */}
+                <div className="p-8 sm:p-12 md:order-first lg:p-14">
+                  <p className="eyebrow">{h.tourism.eyebrow}</p>
+                  <h2 className="headline mt-4 text-4xl sm:text-5xl">
+                    {h.tourism.headlineA}{" "}
+                    <span className="italic-accent">{h.tourism.headlineAccent}</span>
+                  </h2>
+                  <p className="mt-5 max-w-md text-base leading-relaxed text-[var(--color-cocoa)]">
+                    {h.tourism.body}
+                  </p>
+
+                  {/* Concierge facts — simple typographic pairs, not glass tiles */}
+                  <dl className="mt-9 grid max-w-md grid-cols-2 gap-x-6 gap-y-6">
+                    {h.tourism.tiles.map((item) => (
+                      <div key={item.k}>
+                        <dt className="text-[0.65rem] uppercase tracking-[0.22em] text-[var(--color-taupe)]">
+                          {item.k}
+                        </dt>
+                        <dd className="mt-1 font-display text-xl leading-tight text-[var(--color-ink)]">
+                          {item.v}
+                        </dd>
+                      </div>
+                    ))}
+                  </dl>
+
+                  <Link href="/contact" className="btn-solid mt-10">
+                    {h.tourism.cta}
+                  </Link>
                 </div>
               </div>
             </div>
