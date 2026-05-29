@@ -6,7 +6,7 @@ const CLINIC_ID = "6a0accc2ed885a92edfa5ed1";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, phone, procedures } = await req.json();
+    const { name, email, phone, procedures, estimatedMin, estimatedMax } = await req.json();
     if (!name || !email) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
@@ -19,9 +19,16 @@ export async function POST(req: NextRequest) {
       : acceptLang.startsWith("es") ? "spanish"
       : "english";
 
-    const procedureNote = procedures?.length
-      ? `Selected procedures: ${procedures.join(", ")}. `
+    // Build procedure list string for notes
+    const procedureList = procedures?.length ? procedures.join(", ") : "";
+    const priceRange = (estimatedMin && estimatedMax)
+      ? `Estimated range: €${estimatedMin.toLocaleString()}–€${estimatedMax.toLocaleString()}. `
       : "";
+
+    // Use midpoint as estimated_value
+    const estimatedValue = (estimatedMin && estimatedMax)
+      ? Math.round((estimatedMin + estimatedMax) / 2)
+      : null;
 
     await fetch(GEMSTONE_WEBHOOK, {
       method: "POST",
@@ -37,10 +44,11 @@ export async function POST(req: NextRequest) {
           email: email.trim(),
           phone: phone?.trim() ?? "",
           language: lang,
-          procedure_interest: procedures?.[0] ?? "",
+          procedure_interest: procedureList,
+          estimated_value: estimatedValue,
           source: "website_calculator",
           status: "new",
-          notes: `${procedureNote}Lead captured via procedure price calculator on website.`,
+          notes: `${priceRange}${procedureList ? `Selected procedures: ${procedureList}. ` : ""}Lead captured via procedure price calculator on website.`,
         },
       }),
     });
