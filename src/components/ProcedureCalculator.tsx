@@ -80,7 +80,7 @@ export function ProcedureCalculator({ labels }: Props) {
   }
 
   return (
-    <div className="mx-auto max-w-2xl w-full overflow-hidden">
+    <div className="mx-auto max-w-2xl w-full">
       {/* ── Step 1: Procedure selector (always visible) ── */}
       <GlassCard className="rounded-2xl p-6 sm:p-8">
         <h3 className="font-display text-lg font-semibold text-[var(--color-ink)] mb-4">
@@ -164,7 +164,7 @@ export function ProcedureCalculator({ labels }: Props) {
 
       {/* ── Step 3: Results — only after gate is passed ── */}
       {selected.length > 0 && unlocked && (
-        <GlassCard className="mt-6 rounded-2xl p-6 sm:p-8 overflow-hidden" tint="rose">
+        <GlassCard className="mt-6 rounded-2xl p-6 sm:p-8" tint="rose">
           <h3 className="font-display text-lg font-semibold text-[var(--color-ink)] mb-5">
             {labels.yourPackage}
           </h3>
