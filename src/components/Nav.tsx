@@ -70,12 +70,14 @@ export function Nav({ locale, t }: Props) {
     { href: "/", label: t.nav.home },
     { href: "/about", label: t.nav.about },
     { href: "/services", label: t.nav.services },
+    { href: "/calculator", label: t.nav.moreSubs.calculator },
     { href: "/contact", label: t.nav.contact },
   ];
   const moreItems = [
     { href: "/results", label: t.nav.results, sub: t.nav.moreSubs.results },
     { href: "/blog", label: t.nav.blog, sub: t.nav.moreSubs.blog },
     { href: "/media", label: t.nav.media, sub: t.nav.moreSubs.media },
+    { href: "/calculator", label: t.nav.moreSubs.calculator, sub: t.nav.moreSubs.calculator },
   ];
   // Full list for the mobile/tablet dropdown — flat, every page reachable
   // in one tap (no nested submenu on touch).
@@ -86,6 +88,7 @@ export function Nav({ locale, t }: Props) {
     { href: "/results", label: t.nav.results },
     { href: "/blog", label: t.nav.blog },
     { href: "/media", label: t.nav.media },
+    { href: "/calculator", label: t.nav.moreSubs.calculator },
     { href: "/contact", label: t.nav.contact },
   ];
 
