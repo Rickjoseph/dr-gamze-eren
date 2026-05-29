@@ -1,9 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const GEMSTONE_APP_ID = "69fc3c8482c8ea60f6d36104";
-const GEMSTONE_CLINIC_ID = "dr-gamze-eren";
-const BASE44_API = `https://api.base44.com/api/apps/${GEMSTONE_APP_ID}/entities`;
-const SERVICE_TOKEN = process.env.BASE44_SERVICE_TOKEN ?? "";
+const GEMSTONE_WEBHOOK = "https://aurenza-v1-1-gemstone.base44.app/functions/auraWebhook";
+const AURA_SECRET = process.env.AURA_WEBHOOK_SECRET ?? "";
 
 export async function POST(req: NextRequest) {
   try {
@@ -12,7 +10,6 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    // Detect language from Accept-Language header
     const acceptLang = req.headers.get("accept-language") ?? "";
     const lang = acceptLang.startsWith("ru") ? "Russian"
       : acceptLang.startsWith("tr") ? "Turkish"
@@ -21,15 +18,14 @@ export async function POST(req: NextRequest) {
       : acceptLang.startsWith("es") ? "Spanish"
       : "English";
 
-    await fetch(`${BASE44_API}/Lead`, {
+    await fetch(GEMSTONE_WEBHOOK, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "app-id": GEMSTONE_APP_ID,
-        "service-token": SERVICE_TOKEN,
+        "x-aura-secret": AURA_SECRET,
       },
       body: JSON.stringify({
-        clinic_id: GEMSTONE_CLINIC_ID,
+        action: "create_lead",
         name: name.trim(),
         email: email.trim(),
         phone: phone?.trim() ?? "",
