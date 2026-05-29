@@ -36,7 +36,7 @@ export function ContactForm({ t }: Props) {
         lastName: (e.currentTarget.elements.namedItem("lastName") as HTMLInputElement)?.value,
         email: (e.currentTarget.elements.namedItem("email") as HTMLInputElement)?.value,
         phone: (e.currentTarget.elements.namedItem("phone") as HTMLInputElement)?.value,
-        interest: selectedInterest,
+        interest: (e.currentTarget.elements.namedItem("interest") as HTMLInputElement)?.value,
         message: (e.currentTarget.elements.namedItem("message") as HTMLTextAreaElement)?.value,
         honeypot,
       }),
