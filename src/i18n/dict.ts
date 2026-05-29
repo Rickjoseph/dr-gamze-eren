@@ -27,6 +27,7 @@ const en = {
       results: "Before & after photographs",
       blog: "Procedure guides & insights",
       media: "Videos & interviews",
+      calculator: "Procedure price calculator",
     },
   },
   calculator: {
@@ -389,6 +390,7 @@ const tr: typeof en = {
       results: "Öncesi ve sonrası fotoğraflar",
       blog: "Prosedür rehberleri ve içgörüler",
       media: "Videolar ve röportajlar",
+      calculator: "Prosedür fiyat hesaplayıcı",
     },
   },
   calculator: {
@@ -751,5 +753,6 @@ const ru: typeof en = {
       results: "Фотографии до и после",
       blog: "Руководства и советы",
       media: "Видео и интервью",
+      calculator: "Калькулятор цен на процедуры",
     },
   },
