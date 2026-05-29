@@ -27,7 +27,20 @@ export function ContactForm({ t }: Props) {
       setSubmitted(true);
       return;
     }
-    // TODO: when a backend exists, POST the form here.
+    // POST to backend — fire and forget, never block the UX
+    fetch("/api/contact", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        firstName: (e.currentTarget.elements.namedItem("firstName") as HTMLInputElement)?.value,
+        lastName: (e.currentTarget.elements.namedItem("lastName") as HTMLInputElement)?.value,
+        email: (e.currentTarget.elements.namedItem("email") as HTMLInputElement)?.value,
+        phone: (e.currentTarget.elements.namedItem("phone") as HTMLInputElement)?.value,
+        interest: selectedInterest,
+        message: (e.currentTarget.elements.namedItem("message") as HTMLTextAreaElement)?.value,
+        honeypot,
+      }),
+    }).catch(() => {});
     setSubmitted(true);
   }
 
