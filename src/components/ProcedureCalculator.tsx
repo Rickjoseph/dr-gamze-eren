@@ -1,8 +1,9 @@
 "use client";
 
-import { useState, useMemo } from "react";
+import { useState, useMemo, useEffect } from "react";
 import Link from "next/link";
 import { GlassCard } from "@/components/GlassCard";
+import { LeadGate } from "@/components/LeadGate";
 import { PROCEDURES, calcPackagePrice, type Procedure } from "@/lib/pricingData";
 
 const CATEGORIES = Array.from(new Set(PROCEDURES.map((p) => p.category)));
@@ -27,6 +28,16 @@ type Props = {
     emptyHint: string;
     title?: string;
     subtitle?: string;
+    // Gate labels
+    gateTitle: string;
+    gateSub: string;
+    namePlaceholder: string;
+    emailPlaceholder: string;
+    phonePlaceholder: string;
+    phoneHint: string;
+    submitLabel: string;
+    submitting: string;
+    privacyNote: string;
   };
 };
 
@@ -34,6 +45,14 @@ export function ProcedureCalculator({ labels }: Props) {
   const [selected, setSelected] = useState<Procedure[]>([]);
   const [pickCategory, setPickCategory] = useState<string>(CATEGORIES[0]);
   const [pickId, setPickId] = useState<string>("");
+  const [unlocked, setUnlocked] = useState(false);
+
+  // Restore session unlock on mount
+  useEffect(() => {
+    try {
+      if (sessionStorage.getItem("calc_unlocked") === "1") setUnlocked(true);
+    } catch {}
+  }, []);
 
   const availableInCategory = PROCEDURES.filter(
     (p) => p.category === pickCategory && !selected.find((s) => s.id === p.id)
@@ -62,6 +81,7 @@ export function ProcedureCalculator({ labels }: Props) {
 
   return (
     <div className="mx-auto max-w-2xl">
+      {/* ── Step 1: Procedure selector (always visible) ── */}
       <GlassCard className="rounded-2xl p-6 sm:p-8">
         <h3 className="font-display text-lg font-semibold text-[var(--color-ink)] mb-4">
           {labels.addProcedure}
@@ -84,7 +104,7 @@ export function ProcedureCalculator({ labels }: Props) {
           ))}
         </div>
 
-        {/* Select + Add button — stack on mobile, side-by-side on sm+ */}
+        {/* Select + Add */}
         <div className="flex flex-col sm:flex-row gap-3">
           <select
             value={pickId}
@@ -106,7 +126,6 @@ export function ProcedureCalculator({ labels }: Props) {
           </button>
         </div>
 
-        {/* Rate limit notice */}
         {limitReached && (
           <p className="mt-3 text-xs text-center text-[var(--color-cocoa)]/60 italic">
             Maximum {MAX_PROCEDURES} procedures reached. Remove one to add another.
@@ -120,8 +139,29 @@ export function ProcedureCalculator({ labels }: Props) {
         )}
       </GlassCard>
 
-      {selected.length > 0 && (
-        <GlassCard className="mt-6 rounded-2xl p-6 sm:p-8 pb-24 sm:pb-8" tint="rose">
+      {/* ── Step 2: Gate — shown once at least 1 procedure is selected ── */}
+      {selected.length > 0 && !unlocked && (
+        <div className="mt-6">
+          <LeadGate
+            labels={{
+              gateTitle: labels.gateTitle,
+              gateSub: labels.gateSub,
+              namePlaceholder: labels.namePlaceholder,
+              emailPlaceholder: labels.emailPlaceholder,
+              phonePlaceholder: labels.phonePlaceholder,
+              phoneHint: labels.phoneHint,
+              submitLabel: labels.submitLabel,
+              submitting: labels.submitting,
+              privacyNote: labels.privacyNote,
+            }}
+            onUnlock={() => setUnlocked(true)}
+          />
+        </div>
+      )}
+
+      {/* ── Step 3: Results — only after gate is passed ── */}
+      {selected.length > 0 && unlocked && (
+        <GlassCard className="mt-6 rounded-2xl p-6 sm:p-8" tint="rose">
           <h3 className="font-display text-lg font-semibold text-[var(--color-ink)] mb-5">
             {labels.yourPackage}
           </h3>
