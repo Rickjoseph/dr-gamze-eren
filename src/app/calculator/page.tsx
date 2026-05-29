@@ -40,6 +40,15 @@ export default async function CalculatorPage() {
             fullPrice: c.fullPrice,
             off: c.off,
             emptyHint: c.emptyHint,
+            gateTitle: c.gateTitle,
+            gateSub: c.gateSub,
+            namePlaceholder: c.namePlaceholder,
+            emailPlaceholder: c.emailPlaceholder,
+            phonePlaceholder: c.phonePlaceholder,
+            phoneHint: c.phoneHint,
+            submitLabel: c.submitLabel,
+            submitting: c.submitting,
+            privacyNote: c.privacyNote,
           }}
         />
       </div>
