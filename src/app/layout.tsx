@@ -24,6 +24,13 @@ const cormorant = Cormorant_Garamond({
   display: "swap",
 });
 
+// Prevent iOS auto-zoom when dynamic content appears
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+};
+
 export async function generateMetadata(): Promise<Metadata> {
   const { t } = await getDict();
   return {
