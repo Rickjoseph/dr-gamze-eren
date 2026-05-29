@@ -14,10 +14,13 @@ type Props = {
     submitting: string;
     privacyNote: string;
   };
+  procedures?: string[];
+  estimatedMin?: number;
+  estimatedMax?: number;
   onUnlock: () => void;
 };
 
-export function LeadGate({ labels, onUnlock }: Props) {
+export function LeadGate({ labels, procedures, estimatedMin, estimatedMax, onUnlock }: Props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [phone, setPhone] = useState("");
@@ -38,6 +41,9 @@ export function LeadGate({ labels, onUnlock }: Props) {
           name: name.trim(),
           email: email.trim(),
           phone: phone.trim() || null,
+          procedures: procedures ?? [],
+          estimatedMin: estimatedMin ?? null,
+          estimatedMax: estimatedMax ?? null,
         }),
       });
     } catch {
