@@ -188,17 +188,17 @@ export default async function Home() {
           <div className="glass-card rounded-2xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
               <p className="font-display text-xl font-semibold text-[var(--color-ink)]">
-                {h.calculator.ctaBanner}
+                {t.calculator.ctaBanner}
               </p>
               <p className="mt-1 text-sm text-[var(--color-cocoa)]">
-                {h.calculator.ctaBannerSub}
+                {t.calculator.ctaBannerSub}
               </p>
             </div>
             <Link
               href="/calculator"
               className="shrink-0 rounded-xl bg-[var(--color-cocoa)] px-6 py-3.5 text-sm font-semibold tracking-wide uppercase text-white transition hover:opacity-90"
             >
-              {h.calculator.ctaBannerLink}
+              {t.calculator.ctaBannerLink}
             </Link>
           </div>
         </div>
