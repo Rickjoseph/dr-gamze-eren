@@ -172,14 +172,14 @@ export function ProcedureCalculator({ labels }: Props) {
             {sortedSelected.map((proc, i) => {
               const factor = i === 0 ? 1 : 0.75;
               return (
-                <div key={proc.id} className="flex items-center justify-between gap-3 rounded-xl bg-white/50 px-4 py-3">
+                <div key={proc.id} className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-3 rounded-xl bg-white/50 px-4 py-3">
                   <div className="flex-1 min-w-0">
-                    <p className="text-sm font-medium text-[var(--color-ink)] truncate">{proc.name}</p>
+                    <p className="text-sm font-medium text-[var(--color-ink)]">{proc.name}</p>
                     <p className={`text-xs mt-0.5 ${i === 0 ? "text-[var(--color-cocoa)]/60" : "text-emerald-600 font-medium"}`}>
                       {i === 0 ? labels.fullPrice : `25% ${labels.off}`}
                     </p>
                   </div>
-                  <p className="text-sm font-semibold text-[var(--color-ink)] shrink-0">
+                  <p className="text-sm font-semibold text-[var(--color-ink)]">
                     €{round100(proc.low * factor).toLocaleString()} – €{round100(proc.high * factor).toLocaleString()}
                   </p>
                   <button
@@ -196,7 +196,7 @@ export function ProcedureCalculator({ labels }: Props) {
 
           <div className="mt-5 border-t border-[var(--color-cocoa)]/10 pt-5 flex items-center justify-between">
             <p className="font-display text-base font-semibold text-[var(--color-ink)]">{labels.total}</p>
-            <p className="font-display text-2xl font-bold text-[var(--color-ink)]">
+            <p className="font-display text-xl sm:text-2xl font-bold text-[var(--color-ink)]">
               €{round100(result.low).toLocaleString()} – €{round100(result.high).toLocaleString()}
             </p>
           </div>
