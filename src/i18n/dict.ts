@@ -27,7 +27,7 @@ const en = {
       results: "Before & after photographs",
       blog: "Procedure guides & insights",
       media: "Videos & interviews",
-      calculator: "Estimate package cost",
+      calculator: "Calculator",
     },
   },
   footer: {
@@ -387,7 +387,7 @@ const tr: typeof en = {
       results: "Öncesi ve sonrası fotoğraflar",
       blog: "Prosedür rehberleri ve içgörüler",
       media: "Videolar ve röportajlar",
-      calculator: "Paket maliyet tahmini",
+      calculator: "Calculator",
     },
   },
   footer: {
@@ -747,7 +747,7 @@ const ru: typeof en = {
       results: "Фотографии до и после",
       blog: "Руководства и советы",
       media: "Видео и интервью",
-      calculator: "Оценка стоимости пакета",
+      calculator: "Calculator",
     },
   },
   footer: {
