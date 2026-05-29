@@ -14,7 +14,7 @@ export default async function CalculatorPage() {
   const c = t.calculator;
 
   return (
-    <section className="relative px-4 sm:px-8 py-16 sm:py-24 pb-28 sm:pb-24">
+    <section className="relative px-4 sm:px-8 py-16 sm:py-24">
       <div className="mx-auto max-w-6xl">
         <div className="text-center mb-12 sm:mb-16">
           <p className="eyebrow">{c.eyebrow}</p>
