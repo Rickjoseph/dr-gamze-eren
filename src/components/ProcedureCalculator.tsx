@@ -6,6 +6,11 @@ import { GlassCard } from "@/components/GlassCard";
 import { PROCEDURES, calcPackagePrice, type Procedure } from "@/lib/pricingData";
 
 const CATEGORIES = Array.from(new Set(PROCEDURES.map((p) => p.category)));
+const MAX_PROCEDURES = 3;
+
+function round100(n: number) {
+  return Math.round(n / 100) * 100;
+}
 
 type Props = {
   labels: {
@@ -40,7 +45,10 @@ export function ProcedureCalculator({ labels }: Props) {
     [selected]
   );
 
+  const limitReached = selected.length >= MAX_PROCEDURES;
+
   function addProcedure() {
+    if (limitReached) return;
     const proc = PROCEDURES.find((p) => p.id === pickId);
     if (proc && !selected.find((s) => s.id === proc.id)) {
       setSelected((prev) => [...prev, proc]);
@@ -58,6 +66,8 @@ export function ProcedureCalculator({ labels }: Props) {
         <h3 className="font-display text-lg font-semibold text-[var(--color-ink)] mb-4">
           {labels.addProcedure}
         </h3>
+
+        {/* Category tabs */}
         <div className="flex flex-wrap gap-2 mb-4">
           {CATEGORIES.map((cat) => (
             <button
@@ -73,11 +83,14 @@ export function ProcedureCalculator({ labels }: Props) {
             </button>
           ))}
         </div>
-        <div className="flex gap-3">
+
+        {/* Select + Add button — stack on mobile, side-by-side on sm+ */}
+        <div className="flex flex-col sm:flex-row gap-3">
           <select
             value={pickId}
             onChange={(e) => setPickId(e.target.value)}
-            className="flex-1 rounded-xl border border-[var(--color-cocoa)]/20 bg-white/60 px-4 py-3 text-sm text-[var(--color-ink)] focus:outline-none focus:ring-2 focus:ring-[var(--color-cocoa)]/30"
+            disabled={limitReached}
+            className="w-full sm:flex-1 rounded-xl border border-[var(--color-cocoa)]/20 bg-white/60 px-4 py-3 text-sm text-[var(--color-ink)] focus:outline-none focus:ring-2 focus:ring-[var(--color-cocoa)]/30 disabled:opacity-40"
           >
             <option value="">{labels.selectPlaceholder}</option>
             {availableInCategory.map((p) => (
@@ -86,12 +99,20 @@ export function ProcedureCalculator({ labels }: Props) {
           </select>
           <button
             onClick={addProcedure}
-            disabled={!pickId}
-            className="rounded-xl bg-[var(--color-cocoa)] px-5 py-3 text-sm font-semibold text-white transition hover:opacity-90 disabled:opacity-30"
+            disabled={!pickId || limitReached}
+            className="w-full sm:w-auto rounded-xl bg-[var(--color-cocoa)] px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90 disabled:opacity-30"
           >
-            +
+            + Add
           </button>
         </div>
+
+        {/* Rate limit notice */}
+        {limitReached && (
+          <p className="mt-3 text-xs text-center text-[var(--color-cocoa)]/60 italic">
+            Maximum {MAX_PROCEDURES} procedures reached. Remove one to add another.
+          </p>
+        )}
+
         {selected.length === 0 && (
           <p className="mt-4 text-sm text-[var(--color-cocoa)]/60 text-center italic">
             {labels.emptyHint}
@@ -100,7 +121,7 @@ export function ProcedureCalculator({ labels }: Props) {
       </GlassCard>
 
       {selected.length > 0 && (
-        <GlassCard className="mt-6 rounded-2xl p-6 sm:p-8" tint="rose">
+        <GlassCard className="mt-6 rounded-2xl p-6 sm:p-8 pb-24 sm:pb-8" tint="rose">
           <h3 className="font-display text-lg font-semibold text-[var(--color-ink)] mb-5">
             {labels.yourPackage}
           </h3>
@@ -108,32 +129,39 @@ export function ProcedureCalculator({ labels }: Props) {
             {sortedSelected.map((proc, i) => {
               const factor = i === 0 ? 1 : 0.75;
               return (
-                <div key={proc.id} className="flex items-center justify-between gap-4 rounded-xl bg-white/50 px-4 py-3">
+                <div key={proc.id} className="flex items-center justify-between gap-3 rounded-xl bg-white/50 px-4 py-3">
                   <div className="flex-1 min-w-0">
                     <p className="text-sm font-medium text-[var(--color-ink)] truncate">{proc.name}</p>
                     <p className={`text-xs mt-0.5 ${i === 0 ? "text-[var(--color-cocoa)]/60" : "text-emerald-600 font-medium"}`}>
                       {i === 0 ? labels.fullPrice : `25% ${labels.off}`}
                     </p>
                   </div>
-                  <div className="text-right shrink-0">
-                    <p className="text-sm font-semibold text-[var(--color-ink)]">
-                      €{(Math.round(proc.low * factor / 100) * 100).toLocaleString()} – €{(Math.round(proc.high * factor / 100) * 100).toLocaleString()}
-                    </p>
-                  </div>
-                  <button onClick={() => remove(proc.id)} className="ml-2 text-[var(--color-cocoa)]/40 hover:text-rose-400 transition text-xl leading-none">
+                  <p className="text-sm font-semibold text-[var(--color-ink)] shrink-0">
+                    €{round100(proc.low * factor).toLocaleString()} – €{round100(proc.high * factor).toLocaleString()}
+                  </p>
+                  <button
+                    onClick={() => remove(proc.id)}
+                    aria-label={labels.remove}
+                    className="shrink-0 text-[var(--color-cocoa)]/40 hover:text-rose-400 transition text-xl leading-none"
+                  >
                     ×
                   </button>
                 </div>
               );
             })}
           </div>
+
           <div className="mt-5 border-t border-[var(--color-cocoa)]/10 pt-5 flex items-center justify-between">
             <p className="font-display text-base font-semibold text-[var(--color-ink)]">{labels.total}</p>
             <p className="font-display text-2xl font-bold text-[var(--color-ink)]">
-              €{(Math.round(result.low / 100) * 100).toLocaleString()} – €{(Math.round(result.high / 100) * 100).toLocaleString()}
+              €{round100(result.low).toLocaleString()} – €{round100(result.high).toLocaleString()}
             </p>
           </div>
-          <Link href={labels.ctaHref} className="mt-6 block w-full rounded-xl bg-[var(--color-cocoa)] px-6 py-4 text-center text-sm font-semibold tracking-wide uppercase text-white transition hover:opacity-90">
+
+          <Link
+            href={labels.ctaHref}
+            className="mt-6 block w-full rounded-xl bg-[var(--color-cocoa)] px-6 py-4 text-center text-sm font-semibold tracking-wide uppercase text-white transition hover:opacity-90"
+          >
             {labels.ctaLabel}
           </Link>
           <p className="mt-4 text-xs text-center text-[var(--color-cocoa)]/50 leading-relaxed">
