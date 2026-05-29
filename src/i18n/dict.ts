@@ -351,7 +351,7 @@ const en = {
     yourPackage: "Your package estimate",
     total: "Estimated range",
     ctaLabel: "Request a personalised quote",
-    disclaimer: "This is an estimated range only. Exact pricing is always reviewed and confirmed by Berrak before being sent to you.",
+    disclaimer: "This is an estimated range only. Exact pricing is always reviewed and confirmed by our team before being sent to you.",
     remove: "Remove",
     fullPrice: "Full price",
     off: "off",
