@@ -185,7 +185,7 @@ export default async function Home() {
       {/* ============== CALCULATOR CTA ============== */}
       <section className="relative mt-12 px-4 sm:px-8">
         <div className="mx-auto max-w-6xl">
-          <div className="glass-card rounded-2xl p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div className="rounded-2xl border border-[var(--color-cocoa)]/10 bg-[var(--color-cream)]/80 backdrop-blur-sm p-8 sm:p-10 flex flex-col sm:flex-row items-center justify-between gap-6">
             <div>
               <p className="font-display text-xl font-semibold text-[var(--color-ink)]">
                 {t.calculator.ctaBanner}
@@ -204,7 +204,7 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* ============== MEDICAL TOURISM ============== */
+      {/* ============== MEDICAL TOURISM ============== */}
       <section className="relative mt-32 px-4 sm:px-8">
         <div className="mx-auto max-w-6xl">
           <GlassCard className="p-0" tint="rose">
