@@ -117,7 +117,7 @@ export function ProcedureCalculator({ labels }: Props) {
                   </div>
                   <div className="text-right shrink-0">
                     <p className="text-sm font-semibold text-[var(--color-ink)]">
-                      €{Math.round(proc.low * factor).toLocaleString()} – €{Math.round(proc.high * factor).toLocaleString()}
+                      €{(Math.round(proc.low * factor / 100) * 100).toLocaleString()} – €{(Math.round(proc.high * factor / 100) * 100).toLocaleString()}
                     </p>
                   </div>
                   <button onClick={() => remove(proc.id)} className="ml-2 text-[var(--color-cocoa)]/40 hover:text-rose-400 transition text-xl leading-none">
@@ -130,7 +130,7 @@ export function ProcedureCalculator({ labels }: Props) {
           <div className="mt-5 border-t border-[var(--color-cocoa)]/10 pt-5 flex items-center justify-between">
             <p className="font-display text-base font-semibold text-[var(--color-ink)]">{labels.total}</p>
             <p className="font-display text-2xl font-bold text-[var(--color-ink)]">
-              €{result.low.toLocaleString()} – €{result.high.toLocaleString()}
+              €{(Math.round(result.low / 100) * 100).toLocaleString()} – €{(Math.round(result.high / 100) * 100).toLocaleString()}
             </p>
           </div>
           <Link href={labels.ctaHref} className="mt-6 block w-full rounded-xl bg-[var(--color-cocoa)] px-6 py-4 text-center text-sm font-semibold tracking-wide uppercase text-white transition hover:opacity-90">
