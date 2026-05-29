@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const AURA_WEBHOOK = "https://aurenza-v1-1-gemstone.base44.app/functions/auraWebhook";
-const AURA_SECRET = process.env.AURA_WEBHOOK_SECRET ?? "";
+const GEMSTONE_APP_ID = "69fc3c8482c8ea60f6d36104";
+const GEMSTONE_CLINIC_ID = "dr-gamze-eren";
+const BASE44_API = `https://api.base44.com/api/apps/${GEMSTONE_APP_ID}/entities`;
+const SERVICE_TOKEN = process.env.BASE44_SERVICE_TOKEN ?? "";
 
 export async function POST(req: NextRequest) {
   try {
@@ -10,33 +12,35 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
-    // Detect language from Accept-Language header as a best-effort signal
+    // Detect language from Accept-Language header
     const acceptLang = req.headers.get("accept-language") ?? "";
     const lang = acceptLang.startsWith("ru") ? "Russian"
       : acceptLang.startsWith("tr") ? "Turkish"
       : acceptLang.startsWith("de") ? "German"
+      : acceptLang.startsWith("fr") ? "French"
+      : acceptLang.startsWith("es") ? "Spanish"
       : "English";
 
-    await fetch(AURA_WEBHOOK, {
+    await fetch(`${BASE44_API}/Lead`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        "x-aura-secret": AURA_SECRET,
+        "app-id": GEMSTONE_APP_ID,
+        "service-token": SERVICE_TOKEN,
       },
       body: JSON.stringify({
-        action: "create_lead",
-        name,
-        email,
-        phone: phone ?? "",
+        clinic_id: GEMSTONE_CLINIC_ID,
+        name: name.trim(),
+        email: email.trim(),
+        phone: phone?.trim() ?? "",
         language: lang,
         source: "website_calculator",
-        notes: "Lead captured via procedure price calculator.",
-        procedure_interest: "",
-        country: "",
+        status: "New",
+        notes: "Lead captured via procedure price calculator on website.",
       }),
     });
   } catch {
-    // Fail silently — don't block the user
+    // Fail silently — never block the user from seeing their estimate
   }
 
   return NextResponse.json({ ok: true });
