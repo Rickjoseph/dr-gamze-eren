@@ -1,22 +1,27 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const GEMSTONE_WEBHOOK = "https://aurenza-v1-1-gemstone.base44.app/functions/auraWebhook";
+const GEMSTONE_WEBHOOK = "https://aurenza-v1-1-gemstone.base44.app/api/functions/auraWebhook";
 const AURA_SECRET = process.env.AURA_WEBHOOK_SECRET ?? "";
+const CLINIC_ID = "6a0accc2ed885a92edfa5ed1";
 
 export async function POST(req: NextRequest) {
   try {
-    const { name, email, phone } = await req.json();
+    const { name, email, phone, procedures } = await req.json();
     if (!name || !email) {
       return NextResponse.json({ error: "Missing required fields" }, { status: 400 });
     }
 
     const acceptLang = req.headers.get("accept-language") ?? "";
-    const lang = acceptLang.startsWith("ru") ? "Russian"
-      : acceptLang.startsWith("tr") ? "Turkish"
-      : acceptLang.startsWith("de") ? "German"
-      : acceptLang.startsWith("fr") ? "French"
-      : acceptLang.startsWith("es") ? "Spanish"
-      : "English";
+    const lang = acceptLang.startsWith("ru") ? "russian"
+      : acceptLang.startsWith("tr") ? "turkish"
+      : acceptLang.startsWith("de") ? "german"
+      : acceptLang.startsWith("fr") ? "french"
+      : acceptLang.startsWith("es") ? "spanish"
+      : "english";
+
+    const procedureNote = procedures?.length
+      ? `Selected procedures: ${procedures.join(", ")}. `
+      : "";
 
     await fetch(GEMSTONE_WEBHOOK, {
       method: "POST",
@@ -26,13 +31,17 @@ export async function POST(req: NextRequest) {
       },
       body: JSON.stringify({
         action: "create_lead",
-        name: name.trim(),
-        email: email.trim(),
-        phone: phone?.trim() ?? "",
-        language: lang,
-        source: "website_calculator",
-        status: "New",
-        notes: "Lead captured via procedure price calculator on website.",
+        data: {
+          clinic_id: CLINIC_ID,
+          name: name.trim(),
+          email: email.trim(),
+          phone: phone?.trim() ?? "",
+          language: lang,
+          procedure_interest: procedures?.[0] ?? "",
+          source: "website_calculator",
+          status: "new",
+          notes: `${procedureNote}Lead captured via procedure price calculator on website.`,
+        },
       }),
     });
   } catch {
