@@ -154,6 +154,9 @@ export function ProcedureCalculator({ labels }: Props) {
               submitting: labels.submitting,
               privacyNote: labels.privacyNote,
             }}
+            procedures={sortedSelected.map((p) => p.name)}
+            estimatedMin={round100(result.low)}
+            estimatedMax={round100(result.high)}
             onUnlock={() => setUnlocked(true)}
           />
         </div>
