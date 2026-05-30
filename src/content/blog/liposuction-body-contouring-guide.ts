@@ -5,8 +5,8 @@ export const post = {
   date: "2026-05-28",
   category: "Body",
   readTime: "8 min read",
-  image: "/img/service-body.jpg",
-  imageAlt: "Body contouring and sculpting procedure",
+  image: "/img/blog/liposuction.jpg",
+  imageAlt: "Elegant body silhouette in natural light",
   body: `
 Liposuction is one of the most misunderstood procedures in cosmetic surgery. Many patients think of it as weight loss surgery — a way to eliminate excess body weight. In reality, it is a precision sculpting tool used to refine body proportions and contours.
 

@@ -5,8 +5,8 @@ export const post = {
   date: "2026-05-26",
   category: "Face",
   readTime: "7 min read",
-  image: "/img/service-facial.jpg",
-  imageAlt: "Refined facial contours after rejuvenation procedure",
+  image: "/img/blog/facelift.jpg",
+  imageAlt: "Elegant mature woman portrait",
   body: `
 The goal of facial rejuvenation is not to look 20 again. It is to look like the best version of yourself at your current age — refreshed, well-rested, and with the character and wisdom that comes with living.
 
