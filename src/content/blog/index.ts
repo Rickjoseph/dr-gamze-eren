@@ -18,8 +18,10 @@ export interface Post {
 import { post as post1 } from "./rhinoplasty-recovery-what-to-expect";
 import { post as post2 } from "./istanbul-guide-aesthetic-surgery-patients";
 import { post as post3 } from "./breast-augmentation-implants-guide";
+import { post as post4 } from "./liposuction-body-contouring-guide";
+import { post as post5 } from "./facelift-facial-rejuvenation-age-gracefully";
 
-export const posts: Post[] = [post1, post2, post3].sort(
+export const posts: Post[] = [post1, post2, post3, post4, post5].sort(
   (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
 );
 
