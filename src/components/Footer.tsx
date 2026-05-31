@@ -95,7 +95,11 @@ export function Footer({ t }: Props) {
 
         <div className="mt-10 flex flex-col items-start justify-between gap-3 border-t border-[var(--color-line)] pt-6 text-xs text-[var(--color-taupe)] sm:flex-row sm:items-center">
           <p>© {new Date().getFullYear()} Dr. Güler Gamze Eren. {t.footer.copyright}</p>
-          <p>{t.footer.credential}</p>
+          <div className="flex flex-wrap items-center gap-4">
+            <p>{t.footer.credential}</p>
+            <Link href="/privacy-policy" className="hover:text-[var(--color-ink)] transition">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-[var(--color-ink)] transition">Terms &amp; Conditions</Link>
+          </div>
         </div>
       </div>
     </footer>
