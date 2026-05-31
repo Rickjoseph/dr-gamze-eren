@@ -106,6 +106,58 @@ export default function PrivacyPolicyPage() {
             <p className="mt-2"><strong>Dr. Güler Gamze Eren Clinic</strong><br />Istanbul, Turkey<br /><a href="mailto:info@drgamzeeren.com" className="underline hover:text-[var(--color-ink)]">info@drgamzeeren.com</a></p>
           </div>
 
+
+          <div className="mt-12 rounded-2xl border border-[var(--color-rosegold)]/30 bg-[var(--color-blush)]/40 p-6 sm:p-8">
+            <p className="eyebrow mb-4">KVKK — Türkiye</p>
+            <h2 className="font-display text-xl font-semibold text-[var(--color-ink)] mb-3">Kişisel Verilerin Korunması Kanunu (KVKK) Kapsamında Aydınlatma Metni</h2>
+            <p className="text-sm mb-4">6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") uyarınca, kişisel verileriniz aşağıda açıklanan kapsamda işlenmektedir.</p>
+
+            <div className="space-y-4 text-sm">
+              <div>
+                <p className="font-semibold text-[var(--color-ink)]">Veri Sorumlusu</p>
+                <p>Dr. Güler Gamze Eren — İstanbul, Türkiye<br />E-posta: info@drgamzeeren.com</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-[var(--color-ink)]">İşlenen Kişisel Veriler</p>
+                <p>Ad-soyad, e-posta adresi, telefon/WhatsApp numarası, ülke, dil tercihi, ilgilenilen estetik prosedür(ler) ve iletişim formu aracılığıyla paylaşılan notlar.</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-[var(--color-ink)]">İşleme Amaçları (KVKK Madde 5 ve 6)</p>
+                <p>Kişisel verileriniz; konsültasyon talebinizin yanıtlanması, randevu planlanması, WhatsApp veya e-posta yoluyla iletişim kurulması ve ilgilendiğiniz prosedürlere ilişkin bilgi sağlanması amacıyla işlenmektedir. Sağlığa ilişkin veriler, KVKK Madde 6 kapsamında hassas kişisel veri niteliği taşımakta olup yalnızca açık rızanıza dayanılarak işlenmektedir.</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-[var(--color-ink)]">Hukuki Dayanak</p>
+                <p>Kişisel verileriniz; açık rızanız (KVKK Madde 5/1), sözleşmenin kurulması veya ifası (KVKK Madde 5/2-c) ve meşru menfaat (KVKK Madde 5/2-f) hukuki sebeplerine dayanılarak işlenmektedir.</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-[var(--color-ink)]">Verilerin Aktarımı</p>
+                <p>Kişisel verileriniz; yalnızca prosedür planlaması amacıyla ilgili hastane (Medicana veya Başkent) ile ve yasal yükümlülükler çerçevesinde yetkili mercilerle paylaşılabilir. Pazarlama amacıyla üçüncü taraflarla kesinlikle paylaşılmamaktadır.</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-[var(--color-ink)]">Saklama Süresi</p>
+                <p>Verileriniz, konsültasyon talebinizin tamamlanmasından itibaren en fazla 12 ay süreyle saklanacak; bu sürenin sonunda imha edilecektir. Aktif hasta ilişkisi söz konusu olması halinde yasal saklama süreleri uygulanır.</p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-[var(--color-ink)]">KVKK Kapsamındaki Haklarınız (Madde 11)</p>
+                <p>Kişisel verilerinizin işlenip işlenmediğini öğrenme, işlenen verilere ilişkin bilgi talep etme, işleme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme, yurt içinde veya yurt dışında aktarıldığı üçüncü kişileri öğrenme, eksik veya yanlış işlenmiş verilerin düzeltilmesini isteme, KVKK Madde 7 kapsamında silinmesini veya yok edilmesini talep etme ve işlemeye itiraz etme haklarına sahipsiniz.</p>
+                <p className="mt-1">Bu haklarınızı kullanmak için: <a href="mailto:info@drgamzeeren.com" className="underline hover:text-[var(--color-ink)]">info@drgamzeeren.com</a></p>
+              </div>
+
+              <div>
+                <p className="font-semibold text-[var(--color-ink)]">Şikayet Hakkı</p>
+                <p>Verilerinizin işlenmesine ilişkin şikayetlerinizi Kişisel Verileri Koruma Kurumu'na (KVKK) iletme hakkına sahipsiniz: <a href="https://www.kvkk.gov.tr" target="_blank" rel="noopener noreferrer" className="underline hover:text-[var(--color-ink)]">www.kvkk.gov.tr</a></p>
+              </div>
+
+              <p className="text-xs text-[var(--color-taupe)] pt-2 border-t border-[var(--color-line)]">Bu aydınlatma metni, 6698 sayılı KVKK'nın 10. maddesi ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ kapsamında hazırlanmıştır. VERBIS kaydı ve veri envanteri gereklilikleri için bir hukuk danışmanına başvurulması tavsiye edilir.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
