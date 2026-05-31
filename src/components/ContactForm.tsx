@@ -127,7 +127,13 @@ export function ContactForm({ t }: Props) {
 
       <label className="flex items-start gap-3 text-xs text-[var(--color-cocoa)]">
         <input type="checkbox" required className="mt-1 accent-[var(--color-rosegold)]" />
-        <span>{f.consent}</span>
+        <span>
+          {f.consentPrefix}{" "}
+          <a href="/privacy-policy" target="_blank" className="underline hover:text-[var(--color-ink)] transition">
+            {f.consentPrivacyLink}
+          </a>
+          {f.consentSuffix}
+        </span>
       </label>
 
       <button type="submit" className="btn-solid w-full justify-center sm:w-auto">
