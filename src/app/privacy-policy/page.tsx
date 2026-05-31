@@ -11,7 +11,7 @@ export default function PrivacyPolicyPage() {
       <div className="mx-auto max-w-3xl">
         <p className="eyebrow">Legal</p>
         <h1 className="headline mt-4">Privacy Policy</h1>
-        <p className="mt-4 text-sm text-[var(--color-taupe)]">Last updated: June 2025</p>
+        <p className="mt-4 text-sm text-[var(--color-taupe)]">Last updated: June 2026</p>
 
         <div className="mt-12 space-y-10 text-[var(--color-cocoa)] leading-relaxed">
 
