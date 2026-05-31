@@ -592,8 +592,9 @@ const tr: typeof en = {
       ],
       message: "Mesajınız",
       messagePlaceholder: "Hedefleriniz hakkında biraz bilgi verin. Yanlış cevap yoktur.",
-      consent:
-        "Bilgilerimin bir konsültasyon için benimle iletişime geçilmek üzere kullanılmasına onay veriyorum. Bilgileriniz üçüncü taraflarla asla paylaşılmaz.",
+      consentPrefix: "Dr. Gamze Eren kliniği tarafından WhatsApp dahil olmak üzere konsültasyonum hakkında benimle iletişime geçilmesine onay veriyorum. Bilgileriniz üçüncü taraflarla paylaşılmaz.",
+      consentPrivacyLink: "Gizlilik Politikası",
+      consentSuffix: "",
       submit: "Talebi gönder",
       successTitle: "Teşekkürler.",
       successAccent: "Sizinle iletişime geçeceğiz.",
@@ -961,8 +962,9 @@ const ru: typeof en = {
       ],
       message: "Ваше сообщение",
       messagePlaceholder: "Расскажите немного о ваших целях. Неправильных ответов не бывает.",
-      consent:
-        "Я даю согласие на использование моей информации, чтобы со мной связались по поводу консультации. Ваши данные никогда не передаются третьим лицам.",
+      consentPrefix: "Я даю согласие на то, чтобы клиника доктора Гамзе Эрен связалась со мной по поводу консультации, в том числе через WhatsApp. Ваши данные никогда не передаются третьим лицам.",
+      consentPrivacyLink: "Политика конфиденциальности",
+      consentSuffix: "",
       submit: "Отправить запрос",
       successTitle: "Спасибо.",
       successAccent: "Мы свяжемся с вами.",
