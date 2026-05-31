@@ -222,8 +222,9 @@ const en = {
       ],
       message: "Your message",
       messagePlaceholder: "Tell us a little about your goals. There are no wrong answers.",
-      consent:
-        "I consent to my information being used to contact me about a consultation. We never share your details with third parties.",
+      consentPrefix: "I consent to being contacted about my consultation, including via WhatsApp, by Dr. Gamze Eren\u2019s clinic. We never share your details with third parties and handle your data with care and privacy.",
+      consentPrivacyLink: "Privacy Policy",
+      consentSuffix: "",
       submit: "Send request",
       successTitle: "Thank you.",
       successAccent: "We’ll be in touch.",
