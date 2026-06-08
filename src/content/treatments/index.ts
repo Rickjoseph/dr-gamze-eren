@@ -8,6 +8,19 @@ import { blepharoplasty } from "./blepharoplasty";
 import { browLift } from "./brow-lift";
 import { lipLift } from "./lip-lift";
 import { facialFatTransfer } from "./facial-fat-transfer";
+import { brazilianButtLift } from "./brazilian-butt-lift";
+import { abdominoplasty } from "./abdominoplasty";
+import { armThighLift } from "./arm-thigh-lift";
+import { liposuction } from "./liposuction";
+import { breastLift } from "./breast-lift";
+import { breastAugmentation } from "./breast-augmentation";
+import { breastReduction } from "./breast-reduction";
+import { secondaryBreastSurgery } from "./secondary-breast-surgery";
+import { botulinumToxin } from "./botulinum-toxin";
+import { dermalFillers } from "./dermal-fillers";
+import { mesotherapySkinBoosters } from "./mesotherapy-skin-boosters";
+import { medicalPeels } from "./medical-peels";
+import { bioStimulators } from "./bio-stimulators";
 
 export type { Treatment, TreatmentContent, ServiceCategory } from "./types";
 
@@ -22,10 +35,24 @@ export const treatments: Treatment[] = [
   lipLift,
   facialFatTransfer,
   // Breast
+  breastLift,
+  breastAugmentation,
+  breastReduction,
+  secondaryBreastSurgery,
   gynecomastia,
   polandSyndrome,
   // Body
   mommyMakeover,
+  brazilianButtLift,
+  abdominoplasty,
+  armThighLift,
+  liposuction,
+  // Non-surgical
+  botulinumToxin,
+  dermalFillers,
+  mesotherapySkinBoosters,
+  medicalPeels,
+  bioStimulators,
 ];
 
 export function getTreatment(slug: string): Treatment | undefined {
@@ -48,9 +75,9 @@ export function getTreatmentsByCategory(category: ServiceCategory): Treatment[] 
 // src/i18n/dict.ts. As more pages are built, replace nulls with their slugs.
 export const procedureSlugs: Record<ServiceCategory, (string | null)[]> = {
   facial: ["rhinoplasty", "blepharoplasty", "brow-lift", "lip-lift", "facial-fat-transfer"],
-  body: ["mommy-makeover", null, null, null, null],
-  breast: [null, null, null, null, "gynecomastia", "poland-syndrome"],
-  "non-surgical": [null, null, null, null, null],
+  body: ["mommy-makeover", "brazilian-butt-lift", "abdominoplasty", "arm-thigh-lift", "liposuction"],
+  breast: ["breast-lift", "breast-augmentation", "breast-reduction", "secondary-breast-surgery", "gynecomastia", "poland-syndrome"],
+  "non-surgical": ["botulinum-toxin", "dermal-fillers", "mesotherapy-skin-boosters", "medical-peels", "bio-stimulators"],
 };
 
 // Page-chrome labels (back link, CTA, FAQ heading, disclaimer) and the
