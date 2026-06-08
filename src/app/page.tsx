@@ -69,18 +69,24 @@ export default async function Home() {
           </div>
 
           <div className="reveal reveal-3 mt-20 grid gap-4 sm:grid-cols-3">
-            <GlassCard className="p-6">
-              <p className="font-display text-4xl">{h.stats.yearsValue}</p>
-              <p className="mt-1 text-sm text-[var(--color-cocoa)]">{h.stats.yearsLabel}</p>
-            </GlassCard>
-            <GlassCard className="p-6" tint="rose">
-              <p className="font-display text-4xl">{h.stats.planningValue}</p>
-              <p className="mt-1 text-sm text-[var(--color-cocoa)]">{h.stats.planningLabel}</p>
-            </GlassCard>
-            <GlassCard className="p-6">
-              <p className="font-display text-4xl">{h.stats.patientsValue}</p>
-              <p className="mt-1 text-sm text-[var(--color-cocoa)]">{h.stats.patientsLabel}</p>
-            </GlassCard>
+            <Link href="/about" className="group block">
+              <GlassCard className="p-6 transition duration-300 group-hover:-translate-y-1">
+                <p className="font-display text-4xl">{h.stats.yearsValue}</p>
+                <p className="mt-1 text-sm text-[var(--color-cocoa)]">{h.stats.yearsLabel}</p>
+              </GlassCard>
+            </Link>
+            <Link href="/technology" className="group block">
+              <GlassCard className="p-6 transition duration-300 group-hover:-translate-y-1" tint="rose">
+                <p className="font-display text-4xl">{h.stats.planningValue}</p>
+                <p className="mt-1 text-sm text-[var(--color-cocoa)]">{h.stats.planningLabel}</p>
+              </GlassCard>
+            </Link>
+            <Link href="/about" className="group block">
+              <GlassCard className="p-6 transition duration-300 group-hover:-translate-y-1">
+                <p className="font-display text-4xl">{h.stats.patientsValue}</p>
+                <p className="mt-1 text-sm text-[var(--color-cocoa)]">{h.stats.patientsLabel}</p>
+              </GlassCard>
+            </Link>
           </div>
         </div>
       </section>
