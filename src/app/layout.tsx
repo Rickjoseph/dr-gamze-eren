@@ -6,6 +6,7 @@ import { Footer } from "@/components/Footer";
 import { GlassFilter } from "@/components/GlassFilter";
 import { getDict } from "@/i18n/getLocale";
 import { WhatsAppWidget } from "@/components/WhatsAppWidget";
+import { whatsappContent } from "@/content/whatsapp";
 import { CookieConsent } from "@/components/CookieConsent";
 import { ExtensionErrorFilter } from "@/components/ExtensionErrorFilter";
 
@@ -60,7 +61,7 @@ export default async function RootLayout({
         <Nav locale={locale} t={t} />
         <main className="pt-24 sm:pt-32">{children}</main>
         <Footer t={t} />
-        <WhatsAppWidget />
+        <WhatsAppWidget t={whatsappContent[locale]} locale={locale} />
         <CookieConsent t={t} />
       </body>
     </html>

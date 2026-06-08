@@ -1,6 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import type { Locale } from "@/i18n/dict";
+import {
+  type WhatsAppStrings,
+  PROCEDURE_VALUES,
+  COUNTRY_VALUES,
+  LEAD_LANGUAGE,
+} from "@/content/whatsapp";
 
 const WHATSAPP_NUMBER = "905411637220";
 // Honeypot: hidden field bots almost always fill in. Real users never
@@ -11,28 +18,11 @@ const HONEYPOT_FIELD = "website_url";
 // could plausibly have filled it. Below this -> likely a bot.
 const MIN_DWELL_MS = 1500;
 
-const PROCEDURES = [
-  "Rhinoplasty",
-  "Breast Augmentation",
-  "Breast Lift / Reduction",
-  "Tummy Tuck",
-  "Liposuction / Body Contouring",
-  "Blepharoplasty (Eyelid)",
-  "Brow Lift",
-  "Mommy Makeover",
-  "Non-surgical Treatment",
-  "Other / Not sure yet",
-];
-
-const COUNTRIES = [
-  "United Kingdom", "Germany", "Netherlands", "France", "Spain",
-  "Ukraine", "Russia", "Poland", "Belgium", "Switzerland",
-  "United States", "Canada", "Australia", "Other",
-];
+type Props = { t: WhatsAppStrings; locale: Locale };
 
 type Step = "bubble" | "form" | "success";
 
-export function WhatsAppWidget() {
+export function WhatsAppWidget({ t, locale }: Props) {
   const [step, setStep] = useState<Step>("bubble");
   const [form, setForm] = useState({
     name: "",
@@ -48,8 +38,8 @@ export function WhatsAppWidget() {
 
   // Stop pulse after 6 seconds
   useEffect(() => {
-    const t = setTimeout(() => setShowPulse(false), 6000);
-    return () => clearTimeout(t);
+    const timer = setTimeout(() => setShowPulse(false), 6000);
+    return () => clearTimeout(timer);
   }, []);
 
   // Record open time whenever the form is opened (for dwell-time check)
@@ -84,7 +74,7 @@ export function WhatsAppWidget() {
             procedure_interest: form.procedure,
             notes: form.message,
             source: "website",
-            language: "english",
+            language: LEAD_LANGUAGE[locale],
           },
         }),
       });
@@ -102,7 +92,7 @@ export function WhatsAppWidget() {
         <button
           type="button"
           onClick={() => setStep("form")}
-          aria-label="Chat on WhatsApp"
+          aria-label={t.aria}
           className="group relative flex h-14 w-14 items-center justify-center rounded-full shadow-lg transition-transform hover:scale-110 active:scale-95"
           style={{ backgroundColor: "#25D366" }}
         >
@@ -116,7 +106,7 @@ export function WhatsAppWidget() {
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
           </svg>
           <span className="pointer-events-none absolute right-16 whitespace-nowrap rounded-full bg-white px-3 py-1 text-xs font-medium text-gray-800 opacity-0 shadow transition-opacity group-hover:opacity-100">
-            Chat with us
+            {t.tooltip}
           </span>
         </button>
       </div>
@@ -135,13 +125,13 @@ export function WhatsAppWidget() {
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
               <div>
-                <p className="text-sm font-semibold text-white">Dr. Gamze Eren Clinic</p>
-                <p className="text-xs text-white/80">We typically reply within a few hours</p>
+                <p className="text-sm font-semibold text-white">{t.clinicName}</p>
+                <p className="text-xs text-white/80">{t.replyTime}</p>
               </div>
               <button
                 onClick={() => setStep("bubble")}
                 className="ml-auto text-white/80 transition hover:text-white"
-                aria-label="Close"
+                aria-label={t.closeAria}
               >
                 <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -150,9 +140,7 @@ export function WhatsAppWidget() {
             </div>
 
             <form onSubmit={handleSubmit} className="grid gap-4 px-6 py-6">
-              <p className="-mt-1 text-sm text-gray-500">
-                Share a few details and we&apos;ll reach out on WhatsApp.
-              </p>
+              <p className="-mt-1 text-sm text-gray-500">{t.intro}</p>
 
               {/* Honeypot — visually hidden, screen-reader hidden, off the tab order.
                   Bots that scrape inputs will dutifully fill this and reveal themselves. */}
@@ -172,20 +160,20 @@ export function WhatsAppWidget() {
 
               <div>
                 <label className="mb-1 block text-xs font-semibold uppercase tracking-wider text-gray-500">
-                  Your name *
+                  {t.nameLabel}
                 </label>
                 <input
                   required
                   value={form.name}
                   onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
-                  placeholder="e.g. Sophie"
+                  placeholder={t.namePlaceholder}
                   className="w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-base sm:text-sm text-gray-800 outline-none transition focus:border-[#25D366]"
                 />
               </div>
 
               <div>
                 <label className="mb-1 block text-xs font-semibold uppercase tracking-wider text-gray-500">
-                  Country *
+                  {t.countryLabel}
                 </label>
                 <select
                   required
@@ -193,16 +181,16 @@ export function WhatsAppWidget() {
                   onChange={(e) => setForm((f) => ({ ...f, country: e.target.value }))}
                   className="w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-base sm:text-sm text-gray-800 outline-none transition focus:border-[#25D366]"
                 >
-                  <option value="">Select your country</option>
-                  {COUNTRIES.map((c) => (
-                    <option key={c} value={c}>{c}</option>
+                  <option value="">{t.countryPlaceholder}</option>
+                  {COUNTRY_VALUES.map((value, i) => (
+                    <option key={value} value={value}>{t.countries[i]}</option>
                   ))}
                 </select>
               </div>
 
               <div>
                 <label className="mb-1 block text-xs font-semibold uppercase tracking-wider text-gray-500">
-                  Procedure of interest *
+                  {t.procedureLabel}
                 </label>
                 <select
                   required
@@ -210,22 +198,22 @@ export function WhatsAppWidget() {
                   onChange={(e) => setForm((f) => ({ ...f, procedure: e.target.value }))}
                   className="w-full rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-base sm:text-sm text-gray-800 outline-none transition focus:border-[#25D366]"
                 >
-                  <option value="">Select a procedure</option>
-                  {PROCEDURES.map((p) => (
-                    <option key={p} value={p}>{p}</option>
+                  <option value="">{t.procedurePlaceholder}</option>
+                  {PROCEDURE_VALUES.map((value, i) => (
+                    <option key={value} value={value}>{t.procedures[i]}</option>
                   ))}
                 </select>
               </div>
 
               <div>
                 <label className="mb-1 block text-xs font-semibold uppercase tracking-wider text-gray-500">
-                  Anything else? (optional)
+                  {t.messageLabel}
                 </label>
                 <textarea
                   rows={3}
                   value={form.message}
                   onChange={(e) => setForm((f) => ({ ...f, message: e.target.value }))}
-                  placeholder="Timeline, questions, concerns..."
+                  placeholder={t.messagePlaceholder}
                   className="w-full resize-none rounded-xl border border-gray-200 bg-white px-4 py-2.5 text-base sm:text-sm text-gray-800 outline-none transition focus:border-[#25D366]"
                 />
               </div>
@@ -238,7 +226,17 @@ export function WhatsAppWidget() {
                   onChange={(e) => setForm((f) => ({ ...f, consent: e.target.checked }))}
                   className="mt-0.5 accent-[#25D366]"
                 />
-                <span>I agree to be contacted by the clinic team via WhatsApp regarding my inquiry.</span>
+                <span>
+                  {t.consentPrefix}
+                  <a href="/privacy-policy" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-700">
+                    {t.consentPrivacyLink}
+                  </a>
+                  {t.consentAnd}
+                  <a href="/terms" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-700">
+                    {t.consentTermsLink}
+                  </a>
+                  {t.consentSuffix}
+                </span>
               </label>
 
               <button
@@ -247,7 +245,7 @@ export function WhatsAppWidget() {
                 className="w-full rounded-xl py-3 text-sm font-semibold text-white transition hover:opacity-90 active:scale-95 disabled:opacity-60"
                 style={{ backgroundColor: "#25D366" }}
               >
-                {submitting ? "Sending…" : "Send & start conversation →"}
+                {submitting ? t.submitting : t.submit}
               </button>
             </form>
           </div>
@@ -263,21 +261,19 @@ export function WhatsAppWidget() {
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
               </svg>
             </div>
-            <p className="font-display text-2xl text-gray-800">Thank you!</p>
-            <p className="mt-2 text-sm text-gray-500">
-              We&apos;ve received your details and will reach out on WhatsApp shortly.
-            </p>
+            <p className="font-display text-2xl text-gray-800">{t.successTitle}</p>
+            <p className="mt-2 text-sm text-gray-500">{t.successBody}</p>
             <a
-              href={`https://wa.me/${WHATSAPP_NUMBER}?text=Hi%2C+I%27d+like+to+enquire+about+a+consultation+with+Dr.+Gamze+Eren.`}
+              href={`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(t.waPrefill)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="mt-5 inline-block rounded-xl px-6 py-3 text-sm font-semibold text-white transition hover:opacity-90"
               style={{ backgroundColor: "#25D366" }}
             >
-              Open WhatsApp now
+              {t.successCta}
             </a>
             <button onClick={() => setStep("bubble")} className="mt-3 block w-full text-xs text-gray-400 hover:text-gray-600">
-              Close
+              {t.successClose}
             </button>
           </div>
         </div>
