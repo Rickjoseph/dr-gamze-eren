@@ -15,6 +15,7 @@ const CATEGORY_COLORS: Record<string, string> = {
   Body: "bg-amber-100/90 text-amber-800",
   Face: "bg-purple-100/90 text-purple-800",
   "Patient Guide": "bg-teal-100/90 text-teal-800",
+  Reconstructive: "bg-emerald-100/90 text-emerald-800",
 };
 
 export default function BlogPage() {

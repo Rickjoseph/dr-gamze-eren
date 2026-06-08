@@ -20,10 +20,14 @@ import { post as post2 } from "./istanbul-guide-aesthetic-surgery-patients";
 import { post as post3 } from "./breast-augmentation-implants-guide";
 import { post as post4 } from "./liposuction-body-contouring-guide";
 import { post as post5 } from "./facelift-facial-rejuvenation-age-gracefully";
+import { post as post6 } from "./poland-syndrome-understanding-and-reconstruction";
+import { post as post7 } from "./mommy-makeover-restoring-confidence-after-children";
+import { post as post8 } from "./silksurface-breast-implants-natural-feel";
+import { post as post9 } from "./rhinoplasty-3d-planning-kratos-simulation";
 
-export const posts: Post[] = [post1, post2, post3, post4, post5].sort(
-  (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-);
+export const posts: Post[] = [
+  post1, post2, post3, post4, post5, post6, post7, post8, post9,
+].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 export function getPost(slug: string): Post | undefined {
   return posts.find((p) => p.slug === slug);
