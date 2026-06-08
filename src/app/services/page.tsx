@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { GlassCard } from "@/components/GlassCard";
 import { getDict } from "@/i18n/getLocale";
+import { getTreatment, procedureSlugs } from "@/content/treatments";
 
 const serviceOrder = ["facial", "body", "breast", "non-surgical"] as const;
 const serviceHero: Record<string, string> = {
@@ -84,15 +85,38 @@ export default async function ServicesPage() {
 
                     <p className="eyebrow mt-8">{s.proceduresOffered}</p>
                     <ul className="mt-4 grid gap-2 sm:grid-cols-2">
-                      {sc.procedures.map((p) => (
-                        <li
-                          key={p}
-                          className="flex items-center gap-3 rounded-2xl border border-white/60 bg-white/35 px-4 py-3 text-sm text-[var(--color-cocoa)]"
-                        >
-                          <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-rosegold)]" />
-                          {p}
-                        </li>
-                      ))}
+                      {sc.procedures.map((p, idx) => {
+                        const procSlug = procedureSlugs[slug]?.[idx] ?? null;
+                        const treatment = procSlug ? getTreatment(procSlug) : undefined;
+                        if (treatment) {
+                          return (
+                            <li key={p}>
+                              <Link
+                                href={`/services/${treatment.slug}`}
+                                className="group flex items-center gap-3 rounded-2xl border border-white/60 bg-white/45 px-4 py-3 text-sm text-[var(--color-ink)] transition hover:border-[var(--color-rosegold)]/50 hover:bg-white/70"
+                              >
+                                <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-rosegold)]" />
+                                <span className="flex-1">{p}</span>
+                                <span
+                                  aria-hidden="true"
+                                  className="text-[var(--color-rosegold)] opacity-40 transition-all group-hover:translate-x-0.5 group-hover:opacity-100"
+                                >
+                                  →
+                                </span>
+                              </Link>
+                            </li>
+                          );
+                        }
+                        return (
+                          <li
+                            key={p}
+                            className="flex items-center gap-3 rounded-2xl border border-white/40 bg-white/20 px-4 py-3 text-sm text-[var(--color-taupe)]"
+                          >
+                            <span className="h-1.5 w-1.5 rounded-full bg-[var(--color-taupe)]/40" />
+                            {p}
+                          </li>
+                        );
+                      })}
                     </ul>
 
                     <div className="mt-8 flex flex-wrap gap-3">

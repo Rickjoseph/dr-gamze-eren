@@ -282,7 +282,7 @@ const en = {
       short: "Restore volume, harmony, and a profile that feels truly yours.",
       description:
         "Breast surgery centred on shape, symmetry and a natural feel. Implant choices include FDA-approved silk-surface options.",
-      procedures: ["Breast lift", "Augmentation", "Reduction", "Secondary surgery"],
+      procedures: ["Breast lift", "Augmentation", "Reduction", "Secondary surgery", "Gynecomastia", "Poland syndrome treatment"],
     },
     "non-surgical": {
       title: "Non-surgical Treatments",
@@ -663,7 +663,7 @@ const tr: typeof en = {
       short: "Hacmi, uyumu ve gerçekten size ait bir profili geri kazanın.",
       description:
         "Şekle, simetriye ve doğal hissiyata odaklanan meme cerrahisi. İmplant seçenekleri FDA onaylı silk-surface seçenekleri içerir.",
-      procedures: ["Meme dikleştirme", "Meme büyütme", "Meme küçültme", "Sekonder cerrahi"],
+      procedures: ["Meme dikleştirme", "Meme büyütme", "Meme küçültme", "Sekonder cerrahi", "Jinekomasti", "Poland sendromu tedavisi"],
     },
     "non-surgical": {
       title: "Cerrahi Olmayan İşlemler",
@@ -1044,7 +1044,7 @@ const ru: typeof en = {
       short: "Восстановите объём, гармонию и контур, который ощущается по-настоящему вашим.",
       description:
         "Хирургия груди, ориентированная на форму, симметрию и естественные ощущения. Варианты имплантов включают одобренные FDA модели с silk-поверхностью.",
-      procedures: ["Подтяжка груди", "Увеличение", "Уменьшение", "Вторичная хирургия"],
+      procedures: ["Подтяжка груди", "Увеличение", "Уменьшение", "Вторичная хирургия", "Гинекомастия", "Лечение синдрома Поланда"],
     },
     "non-surgical": {
       title: "Безоперационные процедуры",
