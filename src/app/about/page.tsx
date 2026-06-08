@@ -2,6 +2,12 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { GlassCard } from "@/components/GlassCard";
+import { PublicationsAccordion } from "@/components/PublicationsAccordion";
+import {
+  publicationsLabels,
+  JOURNAL_ARTICLES,
+  INTERNATIONAL_PRESENTATIONS,
+} from "@/content/publications";
 import { getDict } from "@/i18n/getLocale";
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -13,7 +19,7 @@ export async function generateMetadata(): Promise<Metadata> {
 }
 
 export default async function AboutPage() {
-  const { t } = await getDict();
+  const { locale, t } = await getDict();
   const a = t.about;
 
   return (
@@ -58,6 +64,15 @@ export default async function AboutPage() {
                 <p className="eyebrow">{a.training.eyebrow}</p>
                 <ul className="mt-3 space-y-2 text-sm leading-relaxed text-[var(--color-cocoa)]">
                   {a.training.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </GlassCard>
+
+              <GlassCard className="p-7">
+                <p className="eyebrow">{a.career.eyebrow}</p>
+                <ul className="mt-3 space-y-2 text-sm leading-relaxed text-[var(--color-cocoa)]">
+                  {a.career.items.map((item) => (
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
@@ -150,6 +165,16 @@ export default async function AboutPage() {
               ))}
             </div>
           </GlassCard>
+        </div>
+      </section>
+
+      <section className="relative mt-16 px-4 sm:px-8">
+        <div className="mx-auto max-w-4xl">
+          <PublicationsAccordion
+            labels={publicationsLabels[locale]}
+            journal={JOURNAL_ARTICLES}
+            international={INTERNATIONAL_PRESENTATIONS}
+          />
         </div>
       </section>
 

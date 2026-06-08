@@ -131,18 +131,29 @@ const en = {
     eyebrow: "About",
     headlineA: "Precision is a craft.",
     headlineAccent: "Beauty is the result.",
-    lede: "Dr. Güler Gamze Eren is an Istanbul-based plastic surgeon known for natural results, fastidious technique, and an unhurried approach to consultation. Her practice combines surgical depth with the quiet confidence of an artist.",
+    lede: "Dr. Güler Gamze Eren is an Istanbul-based plastic surgeon known for natural results, fastidious technique, and an unhurried approach to consultation. Her practice combines surgical depth with the quiet confidence of an artist. Her Caddebostan clinic holds official health-tourism authorisation from the Republic of Türkiye Ministry of Health.",
     portrait: {
       role: "Op. Dr.",
       name: "Güler Gamze Eren",
       title: "Plastic, Reconstructive & Aesthetic Surgeon",
     },
     training: {
-      eyebrow: "Training",
+      eyebrow: "Education & Training",
       items: [
-        "Medical Doctor, Istanbul University Cerrahpaşa",
-        "Plastic Surgery Residency, Ministry of Health Teaching Hospital",
-        "Aesthetic Surgery Fellowship, International rotations",
+        "Doctor of Medicine — Uludağ University Faculty of Medicine (2009)",
+        "Residency, Plastic, Reconstructive & Aesthetic Surgery — Kocaeli University (2009–2015)",
+        "Microsurgery Course — University of Zürich, Switzerland (2011)",
+        "Reconstructive mission (cleft & burns) — Bukhara, Uzbekistan (2013)",
+        "Observership, Paediatric Plastic Surgery — University of Rochester, USA (2015)",
+      ],
+    },
+    career: {
+      eyebrow: "Experience",
+      items: [
+        "Founder & Surgeon — Dr. Gamze Eren Clinic, Istanbul (2022–present)",
+        "Plastic Surgeon — Esteworld, Altunizade (2019–2022)",
+        "Plastic Surgeon — Sultan Abdülhamid Han Training & Research Hospital (2017–2019)",
+        "Plastic Surgeon — Kocaeli Derince Training & Research Hospital (2015–2017)",
       ],
     },
     memberships: {
@@ -271,7 +282,7 @@ const en = {
       short: "Restore volume, harmony, and a profile that feels truly yours.",
       description:
         "Breast surgery centred on shape, symmetry and a natural feel. Implant choices include FDA-approved silk-surface options.",
-      procedures: ["Breast lift", "Augmentation", "Reduction", "Revision surgery"],
+      procedures: ["Breast lift", "Augmentation", "Reduction", "Secondary surgery"],
     },
     "non-surgical": {
       title: "Non-surgical Treatments",
@@ -501,18 +512,29 @@ const tr: typeof en = {
     eyebrow: "Hakkımda",
     headlineA: "Hassasiyet bir sanattır.",
     headlineAccent: "Güzellik onun sonucudur.",
-    lede: "Dr. Güler Gamze Eren, doğal sonuçlar, titiz teknik ve aceleye getirmeden yürütülen konsültasyonlarıyla tanınan İstanbul merkezli bir plastik cerrahıdır. Pratiği, cerrahi derinliği bir sanatçının sakin özgüveniyle birleştirir.",
+    lede: "Dr. Güler Gamze Eren, doğal sonuçlar, titiz teknik ve aceleye getirmeden yürütülen konsültasyonlarıyla tanınan İstanbul merkezli bir plastik cerrahıdır. Pratiği, cerrahi derinliği bir sanatçının sakin özgüveniyle birleştirir. Caddebostan'daki kliniği, T.C. Sağlık Bakanlığı tarafından verilen sağlık turizmi yetki belgesine sahiptir.",
     portrait: {
       role: "Op. Dr.",
       name: "Güler Gamze Eren",
       title: "Plastik, Rekonstrüktif ve Estetik Cerrah",
     },
     training: {
-      eyebrow: "Eğitim",
+      eyebrow: "Eğitim ve Uzmanlık",
       items: [
-        "Tıp Doktoru, İstanbul Üniversitesi Cerrahpaşa",
-        "Plastik Cerrahi İhtisası, Sağlık Bakanlığı Eğitim ve Araştırma Hastanesi",
-        "Estetik Cerrahi Fellowship, uluslararası rotasyonlar",
+        "Tıp Doktoru — Uludağ Üniversitesi Tıp Fakültesi (2009)",
+        "Plastik, Rekonstrüktif ve Estetik Cerrahi İhtisası — Kocaeli Üniversitesi (2009–2015)",
+        "Mikrocerrahi Kursu — Zürih Üniversitesi, İsviçre (2011)",
+        "Rekonstrüktif gönüllü görev (yarık damak ve yanık) — Buhara, Özbekistan (2013)",
+        "Gözlemci, Pediatrik Plastik Cerrahi — Rochester Üniversitesi, ABD (2015)",
+      ],
+    },
+    career: {
+      eyebrow: "Deneyim",
+      items: [
+        "Kurucu ve Cerrah — Dr. Gamze Eren Kliniği, İstanbul (2022–günümüz)",
+        "Plastik Cerrah — Esteworld, Altunizade (2019–2022)",
+        "Plastik Cerrah — Sultan Abdülhamid Han Eğitim ve Araştırma Hastanesi (2017–2019)",
+        "Plastik Cerrah — Kocaeli Derince Eğitim ve Araştırma Hastanesi (2015–2017)",
       ],
     },
     memberships: {
@@ -641,7 +663,7 @@ const tr: typeof en = {
       short: "Hacmi, uyumu ve gerçekten size ait bir profili geri kazanın.",
       description:
         "Şekle, simetriye ve doğal hissiyata odaklanan meme cerrahisi. İmplant seçenekleri FDA onaylı silk-surface seçenekleri içerir.",
-      procedures: ["Meme dikleştirme", "Meme büyütme", "Meme küçültme", "Revizyon cerrahisi"],
+      procedures: ["Meme dikleştirme", "Meme büyütme", "Meme küçültme", "Sekonder cerrahi"],
     },
     "non-surgical": {
       title: "Cerrahi Olmayan İşlemler",
@@ -871,18 +893,29 @@ const ru: typeof en = {
     eyebrow: "Обо мне",
     headlineA: "Точность как ремесло.",
     headlineAccent: "Красота как её результат.",
-    lede: "Доктор Гюлер Гамзе Эрен, пластический хирург из Стамбула, известна естественными результатами, скрупулёзной техникой и неспешным подходом к консультации. Её практика сочетает глубину хирургии с тихой уверенностью художника.",
+    lede: "Доктор Гюлер Гамзе Эрен, пластический хирург из Стамбула, известна естественными результатами, скрупулёзной техникой и неспешным подходом к консультации. Её практика сочетает глубину хирургии с тихой уверенностью художника. Её клиника в Каддебостане имеет официальное разрешение на медицинский туризм, выданное Министерством здравоохранения Турецкой Республики.",
     portrait: {
       role: "Доктор",
       name: "Гюлер Гамзе Эрен",
       title: "Пластический, реконструктивный и эстетический хирург",
     },
     training: {
-      eyebrow: "Образование",
+      eyebrow: "Образование и подготовка",
       items: [
-        "Доктор медицины, Стамбульский университет, Джеррахпаша",
-        "Резидентура по пластической хирургии, Учебная больница Министерства здравоохранения",
-        "Стажировка по эстетической хирургии, международные ротации",
+        "Доктор медицины — Университет Улудаг, медицинский факультет (2009)",
+        "Резидентура по пластической, реконструктивной и эстетической хирургии — Университет Коджаэли (2009–2015)",
+        "Курс микрохирургии — Цюрихский университет, Швейцария (2011)",
+        "Реконструктивная волонтёрская миссия (расщелина нёба и ожоги) — Бухара, Узбекистан (2013)",
+        "Стажировка-наблюдение, детская пластическая хирургия — Рочестерский университет, США (2015)",
+      ],
+    },
+    career: {
+      eyebrow: "Опыт",
+      items: [
+        "Основатель и хирург — Клиника Dr. Gamze Eren, Стамбул (2022 — настоящее время)",
+        "Пластический хирург — Esteworld, Алтунизаде (2019–2022)",
+        "Пластический хирург — Учебно-исследовательская больница имени Султана Абдул-Хамида Хана (2017–2019)",
+        "Пластический хирург — Учебно-исследовательская больница Коджаэли Дериндже (2015–2017)",
       ],
     },
     memberships: {
@@ -1011,7 +1044,7 @@ const ru: typeof en = {
       short: "Восстановите объём, гармонию и контур, который ощущается по-настоящему вашим.",
       description:
         "Хирургия груди, ориентированная на форму, симметрию и естественные ощущения. Варианты имплантов включают одобренные FDA модели с silk-поверхностью.",
-      procedures: ["Подтяжка груди", "Увеличение", "Уменьшение", "Ревизионная хирургия"],
+      procedures: ["Подтяжка груди", "Увеличение", "Уменьшение", "Вторичная хирургия"],
     },
     "non-surgical": {
       title: "Безоперационные процедуры",
