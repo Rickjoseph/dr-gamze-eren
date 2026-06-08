@@ -54,7 +54,7 @@ export default async function RootLayout({
 }: Readonly<{ children: React.ReactNode }>) {
   const { locale, t } = await getDict();
   return (
-    <html lang={locale} className={`${inter.variable} ${cormorant.variable} antialiased`}>
+    <html lang={locale} data-scroll-behavior="smooth" className={`${inter.variable} ${cormorant.variable} antialiased`}>
       <body className="relative min-h-screen">
         <ExtensionErrorFilter />
         <GlassFilter />
