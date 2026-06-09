@@ -8,7 +8,62 @@ import {
   JOURNAL_ARTICLES,
   INTERNATIONAL_PRESENTATIONS,
 } from "@/content/publications";
+import type { ReactNode } from "react";
 import { getDict } from "@/i18n/getLocale";
+
+// Small line icons that give each credential card a quiet visual anchor.
+const svgProps = {
+  viewBox: "0 0 24 24",
+  fill: "none",
+  stroke: "currentColor",
+  strokeWidth: 1.6,
+  strokeLinecap: "round" as const,
+  strokeLinejoin: "round" as const,
+  className: "h-[18px] w-[18px]",
+};
+
+function EducationIcon() {
+  return (
+    <svg {...svgProps}>
+      <path d="M22 10 12 5 2 10l10 5 10-5Z" />
+      <path d="M6 12v4.5c0 1.1 2.7 2.5 6 2.5s6-1.4 6-2.5V12" />
+    </svg>
+  );
+}
+function ExperienceIcon() {
+  return (
+    <svg {...svgProps}>
+      <rect x="3" y="7" width="18" height="13" rx="2" />
+      <path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2" />
+      <path d="M3 12h18" />
+    </svg>
+  );
+}
+function MembershipIcon() {
+  return (
+    <svg {...svgProps}>
+      <path d="M12 3 5 6v5c0 4.5 3 7.5 7 8.5 4-1 7-4 7-8.5V6l-7-3Z" />
+      <path d="m9.3 12 1.8 1.8L15 10" />
+    </svg>
+  );
+}
+function LanguagesIcon() {
+  return (
+    <svg {...svgProps}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M3 12h18" />
+      <path d="M12 3c2.5 2.7 3.8 6 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-6-3.8-9s1.3-6.3 3.8-9Z" />
+    </svg>
+  );
+}
+function CardHeader({ icon, label }: { icon: ReactNode; label: string }) {
+  return (
+    <div className="flex items-center gap-2 text-[var(--color-rosegold)]">
+      {icon}
+      <p className="eyebrow">{label}</p>
+    </div>
+  );
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const { t } = await getDict();
@@ -41,14 +96,14 @@ export default async function AboutPage() {
         <div className="mx-auto max-w-6xl">
           <div className="grid gap-6 md:grid-cols-5">
             <GlassCard className="md:col-span-3 overflow-hidden p-0">
-              <div className="relative aspect-[4/5] w-full">
+              <div className="relative aspect-[4/5] w-full md:aspect-auto md:h-full">
                 <Image
                   src="/team/dr-gamze-portrait.jpg"
                   alt={`${a.portrait.role} ${a.portrait.name}`}
                   fill
                   priority
                   sizes="(max-width: 768px) 92vw, 720px"
-                  className="object-cover"
+                  className="object-cover object-[center_25%]"
                 />
                 <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-[var(--color-ink)]/80 via-transparent to-transparent" />
                 <div className="absolute inset-x-0 bottom-0 p-8 text-white">
@@ -61,7 +116,7 @@ export default async function AboutPage() {
 
             <div className="md:col-span-2 space-y-4">
               <GlassCard className="p-7">
-                <p className="eyebrow">{a.training.eyebrow}</p>
+                <CardHeader icon={<EducationIcon />} label={a.training.eyebrow} />
                 <ul className="mt-3 space-y-2 text-sm leading-relaxed text-[var(--color-cocoa)]">
                   {a.training.items.map((item) => (
                     <li key={item}>{item}</li>
@@ -70,7 +125,7 @@ export default async function AboutPage() {
               </GlassCard>
 
               <GlassCard className="p-7">
-                <p className="eyebrow">{a.career.eyebrow}</p>
+                <CardHeader icon={<ExperienceIcon />} label={a.career.eyebrow} />
                 <ul className="mt-3 space-y-2 text-sm leading-relaxed text-[var(--color-cocoa)]">
                   {a.career.items.map((item) => (
                     <li key={item}>{item}</li>
@@ -79,7 +134,7 @@ export default async function AboutPage() {
               </GlassCard>
 
               <GlassCard className="p-7" tint="rose">
-                <p className="eyebrow">{a.memberships.eyebrow}</p>
+                <CardHeader icon={<MembershipIcon />} label={a.memberships.eyebrow} />
                 <ul className="mt-3 space-y-2 text-sm leading-relaxed text-[var(--color-cocoa)]">
                   {a.memberships.items.map((item) => (
                     <li key={item}>{item}</li>
@@ -88,11 +143,26 @@ export default async function AboutPage() {
               </GlassCard>
 
               <GlassCard className="p-7">
-                <p className="eyebrow">{a.languages.eyebrow}</p>
+                <CardHeader icon={<LanguagesIcon />} label={a.languages.eyebrow} />
                 <p className="mt-3 text-sm text-[var(--color-cocoa)]">{a.languages.body}</p>
               </GlassCard>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Pull-quote — her voice, to make the page feel personal */}
+      <section className="relative mt-20 px-4 sm:px-8">
+        <div className="mx-auto max-w-3xl text-center">
+          <span aria-hidden="true" className="font-display text-7xl leading-none text-[var(--color-rosegold)]/40">
+            {"“"}
+          </span>
+          <blockquote className="-mt-2 font-display text-2xl italic leading-relaxed text-[var(--color-ink)] sm:text-3xl">
+            {a.quote.text}
+          </blockquote>
+          <p className="mt-6 text-xs uppercase tracking-[0.25em] text-[var(--color-taupe)]">
+            {a.quote.attribution}
+          </p>
         </div>
       </section>
 

@@ -131,7 +131,7 @@ const en = {
     eyebrow: "About",
     headlineA: "Precision is a craft.",
     headlineAccent: "Beauty is the result.",
-    lede: "Dr. Güler Gamze Eren is an Istanbul-based plastic surgeon known for natural results, fastidious technique, and an unhurried approach to consultation. Her practice combines surgical depth with the quiet confidence of an artist. Her Caddebostan clinic holds official health-tourism authorisation from the Republic of Türkiye Ministry of Health.",
+    lede: "Dr. Güler Gamze Eren is an Istanbul plastic surgeon whose patients tend to describe the same feeling: of being genuinely listened to. With a foundation in reconstructive surgery and training that has taken her from Kocaeli to Zürich and Rochester, she brings together real surgical depth and an artist's eye. At her private clinic in Caddebostan, accredited for international care by the Turkish Ministry of Health, consultations are unhurried, the advice is honest, and every plan is shaped around the person in front of her.",
     portrait: {
       role: "Op. Dr.",
       name: "Güler Gamze Eren",
@@ -140,20 +140,20 @@ const en = {
     training: {
       eyebrow: "Education & Training",
       items: [
-        "Doctor of Medicine — Uludağ University Faculty of Medicine (2009)",
-        "Residency, Plastic, Reconstructive & Aesthetic Surgery — Kocaeli University (2009–2015)",
-        "Microsurgery Course — University of Zürich, Switzerland (2011)",
-        "Reconstructive mission (cleft & burns) — Bukhara, Uzbekistan (2013)",
-        "Observership, Paediatric Plastic Surgery — University of Rochester, USA (2015)",
+        "Doctor of Medicine, Uludağ University Faculty of Medicine (2009)",
+        "Plastic, Reconstructive & Aesthetic Surgery residency, Kocaeli University (2009 to 2015)",
+        "Microsurgery course, University of Zürich, Switzerland (2011)",
+        "Reconstructive mission for cleft and burns, Bukhara, Uzbekistan (2013)",
+        "Paediatric plastic surgery observership, University of Rochester, USA (2015)",
       ],
     },
     career: {
       eyebrow: "Experience",
       items: [
-        "Founder & Surgeon — Dr. Gamze Eren Clinic, Istanbul (2022–present)",
-        "Plastic Surgeon — Esteworld, Altunizade (2019–2022)",
-        "Plastic Surgeon — Sultan Abdülhamid Han Training & Research Hospital (2017–2019)",
-        "Plastic Surgeon — Kocaeli Derince Training & Research Hospital (2015–2017)",
+        "Founder & Surgeon, Dr. Gamze Eren Clinic, Istanbul (2022 to present)",
+        "Plastic Surgeon, Esteworld Altunizade (2019 to 2022)",
+        "Plastic Surgeon, Sultan Abdülhamid Han Training & Research Hospital (2017 to 2019)",
+        "Plastic Surgeon, Kocaeli Derince Training & Research Hospital (2015 to 2017)",
       ],
     },
     memberships: {
@@ -168,6 +168,10 @@ const en = {
       eyebrow: "Languages",
       body: "Turkish · English · Working German",
     },
+    quote: {
+      text: "My goal is never to make you look like someone else. It is to help you feel completely, confidently like yourself.",
+      attribution: "Dr. Güler Gamze Eren",
+    },
     gallery: {
       eyebrow: "Inside the clinic",
       headlineA: "A small, private practice in",
@@ -180,20 +184,20 @@ const en = {
       headlineA: "An aesthetic that looks",
       headlineAccent: "unmistakably yours.",
       paragraphs: [
-        "Dr. Eren’s practice is built on three principles. The first is harmony: every change is judged against the rest of the face or body, never in isolation. The second is restraint: taking only what is needed to reach the result you want, nothing more. The third is transparency: 3D simulation, frank conversation, and a written plan so you know precisely what is being proposed.",
-        "The clinic in Caddebostan is intentionally small. Patients are seen privately, by name, and consultations are unrushed. International visitors are looked after with a concierge service that covers everything from airport pickup to follow-up at home.",
+        "Dr. Eren's work rests on three quiet principles. The first is harmony: every change is judged against the whole face or body, never in isolation. The second is restraint, taking only what is needed to reach the result you want and nothing more. The third is transparency, so that 3D simulation, an open conversation and a written plan leave you knowing exactly what is proposed.",
+        "Her clinic in Caddebostan is intentionally small, and that is by design. Patients are seen privately, by name, and never rushed. For those travelling from abroad, a personal concierge looks after everything from airport pickup to follow up once you are home, so the only thing you need to think about is your result.",
       ],
     },
     values: [
-      { t: "Patient-first consultations", d: "60-minute private sessions. We listen first, recommend second." },
-      { t: "Accredited hospital surgery", d: "Procedures performed in partner hospitals with senior anaesthesia and full ICU backup." },
-      { t: "Long-term follow-up", d: "Aftercare scheduled for 24h, 7d, 1mo, 3mo, 12mo, by video if you live abroad." },
+      { t: "Consultations that listen first", d: "Unhurried, private sessions. We understand your goals before we ever suggest a procedure." },
+      { t: "Surgery in accredited hospitals", d: "Every operation takes place in a partner hospital with senior anaesthesia and full intensive-care support." },
+      { t: "Care that continues", d: "Structured aftercare at 24 hours, one week and well beyond, in person or by video if you live abroad." },
     ],
     cta: {
-      headline: "Considering a procedure?",
-      body: "A consultation is the right place to start. There’s no obligation, and you’ll leave with a clearer sense of what is possible.",
-      primary: "Book consultation",
-      secondary: "Browse procedures",
+      headline: "Come and meet Dr. Eren",
+      body: "Every journey here begins with a relaxed, honest consultation, in clinic or online. There is no obligation, and you will leave with a clear sense of what is genuinely possible for you.",
+      primary: "Book a consultation",
+      secondary: "Explore procedures",
     },
   },
   services: {
@@ -512,7 +516,7 @@ const tr: typeof en = {
     eyebrow: "Hakkımda",
     headlineA: "Hassasiyet bir sanattır.",
     headlineAccent: "Güzellik onun sonucudur.",
-    lede: "Dr. Güler Gamze Eren, doğal sonuçlar, titiz teknik ve aceleye getirmeden yürütülen konsültasyonlarıyla tanınan İstanbul merkezli bir plastik cerrahıdır. Pratiği, cerrahi derinliği bir sanatçının sakin özgüveniyle birleştirir. Caddebostan'daki kliniği, T.C. Sağlık Bakanlığı tarafından verilen sağlık turizmi yetki belgesine sahiptir.",
+    lede: "Dr. Güler Gamze Eren, hastalarının çoğunlukla aynı şeyi hissettiği bir İstanbul plastik cerrahıdır: gerçekten dinlenildiğini hissetmek. Rekonstrüktif cerrahi temeli ve onu Kocaeli'den Zürih ve Rochester'a taşıyan eğitimiyle, gerçek cerrahi derinliği bir sanatçının bakışıyla birleştirir. Caddebostan'daki, T.C. Sağlık Bakanlığı tarafından uluslararası hasta bakımı için yetkilendirilmiş özel kliniğinde konsültasyonlar aceleye getirilmez, tavsiyeler dürüsttür ve her plan karşısındaki kişiye göre şekillenir.",
     portrait: {
       role: "Op. Dr.",
       name: "Güler Gamze Eren",
@@ -521,20 +525,20 @@ const tr: typeof en = {
     training: {
       eyebrow: "Eğitim ve Uzmanlık",
       items: [
-        "Tıp Doktoru — Uludağ Üniversitesi Tıp Fakültesi (2009)",
-        "Plastik, Rekonstrüktif ve Estetik Cerrahi İhtisası — Kocaeli Üniversitesi (2009–2015)",
-        "Mikrocerrahi Kursu — Zürih Üniversitesi, İsviçre (2011)",
-        "Rekonstrüktif gönüllü görev (yarık damak ve yanık) — Buhara, Özbekistan (2013)",
-        "Gözlemci, Pediatrik Plastik Cerrahi — Rochester Üniversitesi, ABD (2015)",
+        "Tıp Doktoru, Uludağ Üniversitesi Tıp Fakültesi (2009)",
+        "Plastik, Rekonstrüktif ve Estetik Cerrahi ihtisası, Kocaeli Üniversitesi (2009-2015)",
+        "Mikrocerrahi kursu, Zürih Üniversitesi, İsviçre (2011)",
+        "Yarık damak ve yanık için rekonstrüktif gönüllü görev, Buhara, Özbekistan (2013)",
+        "Pediatrik plastik cerrahi gözlemciliği, Rochester Üniversitesi, ABD (2015)",
       ],
     },
     career: {
       eyebrow: "Deneyim",
       items: [
-        "Kurucu ve Cerrah — Dr. Gamze Eren Kliniği, İstanbul (2022–günümüz)",
-        "Plastik Cerrah — Esteworld, Altunizade (2019–2022)",
-        "Plastik Cerrah — Sultan Abdülhamid Han Eğitim ve Araştırma Hastanesi (2017–2019)",
-        "Plastik Cerrah — Kocaeli Derince Eğitim ve Araştırma Hastanesi (2015–2017)",
+        "Kurucu ve Cerrah, Dr. Gamze Eren Kliniği, İstanbul (2022-günümüz)",
+        "Plastik Cerrah, Esteworld Altunizade (2019-2022)",
+        "Plastik Cerrah, Sultan Abdülhamid Han Eğitim ve Araştırma Hastanesi (2017-2019)",
+        "Plastik Cerrah, Kocaeli Derince Eğitim ve Araştırma Hastanesi (2015-2017)",
       ],
     },
     memberships: {
@@ -549,6 +553,10 @@ const tr: typeof en = {
       eyebrow: "Diller",
       body: "Türkçe · İngilizce · Yeterli Almanca",
     },
+    quote: {
+      text: "Amacım sizi bir başkasına benzetmek değil. Tamamen ve güvenle kendiniz gibi hissetmenize yardımcı olmaktır.",
+      attribution: "Dr. Güler Gamze Eren",
+    },
     gallery: {
       eyebrow: "Klinikten",
       headlineA: "Caddebostan’da küçük ve",
@@ -561,20 +569,20 @@ const tr: typeof en = {
       headlineA: "Açıkça",
       headlineAccent: "size ait bir estetik.",
       paragraphs: [
-        "Dr. Eren’in pratiği üç ilke üzerine kuruludur. Birincisi uyumdur: her değişiklik tek başına değil, yüzün veya bedenin geri kalanıyla birlikte değerlendirilir. İkincisi ölçülülüktür: istenen sonuca ulaşmak için sadece gerekenin yapılması, fazlasının yapılmaması. Üçüncüsü şeffaflıktır: 3D simülasyon, açık bir konuşma ve neyin önerildiğini tam olarak bilmeniz için yazılı bir plan.",
-        "Caddebostan’daki klinik bilinçli olarak küçüktür. Hastalar isimleriyle, özel olarak ve acele edilmeden görülür. Uluslararası ziyaretçiler, havalimanı karşılamadan ev takibe kadar her şeyi kapsayan bir concierge hizmetiyle ağırlanır.",
+        "Dr. Eren'in çalışması üç sessiz ilkeye dayanır. Birincisi uyumdur: her değişiklik tek başına değil, tüm yüz veya bedenle birlikte değerlendirilir. İkincisi ölçülülüktür; istediğiniz sonuca ulaşmak için yalnızca gerekeni almak, fazlasını değil. Üçüncüsü şeffaflıktır; 3D simülasyon, açık bir sohbet ve yazılı bir plan, neyin önerildiğini tam olarak bilmenizi sağlar.",
+        "Caddebostan'daki kliniği bilinçli olarak küçüktür ve bu bir tercihtir. Hastalar özel olarak, isimleriyle karşılanır ve asla aceleye getirilmez. Yurt dışından gelenler için kişisel bir danışman, havaalanı karşılamasından evinize döndükten sonraki takibe kadar her şeyle ilgilenir; böylece düşünmeniz gereken tek şey sonucunuz olur.",
       ],
     },
     values: [
-      { t: "Önce hasta odaklı konsültasyon", d: "60 dakikalık özel görüşmeler. Önce dinleriz, sonra öneririz." },
-      { t: "Akredite hastanede cerrahi", d: "Deneyimli anestezi ve tam yoğun bakım desteğiyle partner hastanelerde gerçekleştirilir." },
-      { t: "Uzun vadeli takip", d: "24 saat, 7 gün, 1 ay, 3 ay ve 12 ayda; yurt dışında yaşıyorsanız görüntülü olarak." },
+      { t: "Önce dinleyen konsültasyonlar", d: "Aceleye getirilmeyen, özel görüşmeler. Bir işlem önermeden önce hedeflerinizi anlarız." },
+      { t: "Akredite hastanelerde cerrahi", d: "Her ameliyat, kıdemli anestezi ve tam yoğun bakım desteğiyle bir partner hastanede gerçekleştirilir." },
+      { t: "Devam eden bakım", d: "24 saat, bir hafta ve çok daha sonrasında yapılandırılmış takip; yurt dışındaysanız yüz yüze veya görüntülü." },
     ],
     cta: {
-      headline: "Bir işlem mi düşünüyorsunuz?",
-      body: "Başlamak için en doğru yer bir konsültasyondur. Herhangi bir yükümlülük yoktur ve neyin mümkün olduğuna dair daha net bir fikirle ayrılırsınız.",
-      primary: "Randevu al",
-      secondary: "İşlemleri incele",
+      headline: "Gelin, Dr. Eren ile tanışın",
+      body: "Buradaki her yolculuk, klinikte veya çevrimiçi, rahat ve dürüst bir konsültasyonla başlar. Hiçbir yükümlülük yoktur ve sizin için gerçekten neyin mümkün olduğuna dair net bir fikirle ayrılırsınız.",
+      primary: "Konsültasyon ayırtın",
+      secondary: "İşlemleri keşfedin",
     },
   },
   services: {
@@ -893,7 +901,7 @@ const ru: typeof en = {
     eyebrow: "Обо мне",
     headlineA: "Точность как ремесло.",
     headlineAccent: "Красота как её результат.",
-    lede: "Доктор Гюлер Гамзе Эрен, пластический хирург из Стамбула, известна естественными результатами, скрупулёзной техникой и неспешным подходом к консультации. Её практика сочетает глубину хирургии с тихой уверенностью художника. Её клиника в Каддебостане имеет официальное разрешение на медицинский туризм, выданное Министерством здравоохранения Турецкой Республики.",
+    lede: "Доктор Гюлер Гамзе Эрен, пластический хирург из Стамбула, у которой пациенты часто отмечают одно и то же: с ней действительно чувствуешь, что тебя слушают. Опираясь на основу в реконструктивной хирургии и подготовку, которая привела её из Коджаэли в Цюрих и Рочестер, она соединяет настоящую хирургическую глубину со взглядом художника. В её частной клинике в Каддебостане, аккредитованной Министерством здравоохранения Турции для приёма международных пациентов, консультации проходят без спешки, советы честны, а каждый план выстраивается вокруг человека напротив.",
     portrait: {
       role: "Доктор",
       name: "Гюлер Гамзе Эрен",
@@ -902,20 +910,20 @@ const ru: typeof en = {
     training: {
       eyebrow: "Образование и подготовка",
       items: [
-        "Доктор медицины — Университет Улудаг, медицинский факультет (2009)",
-        "Резидентура по пластической, реконструктивной и эстетической хирургии — Университет Коджаэли (2009–2015)",
-        "Курс микрохирургии — Цюрихский университет, Швейцария (2011)",
-        "Реконструктивная волонтёрская миссия (расщелина нёба и ожоги) — Бухара, Узбекистан (2013)",
-        "Стажировка-наблюдение, детская пластическая хирургия — Рочестерский университет, США (2015)",
+        "Доктор медицины, Университет Улудаг, медицинский факультет (2009)",
+        "Резидентура по пластической, реконструктивной и эстетической хирургии, Университет Коджаэли (2009-2015)",
+        "Курс микрохирургии, Цюрихский университет, Швейцария (2011)",
+        "Реконструктивная волонтёрская миссия (расщелина нёба и ожоги), Бухара, Узбекистан (2013)",
+        "Стажировка по детской пластической хирургии, Рочестерский университет, США (2015)",
       ],
     },
     career: {
       eyebrow: "Опыт",
       items: [
-        "Основатель и хирург — Клиника Dr. Gamze Eren, Стамбул (2022 — настоящее время)",
-        "Пластический хирург — Esteworld, Алтунизаде (2019–2022)",
-        "Пластический хирург — Учебно-исследовательская больница имени Султана Абдул-Хамида Хана (2017–2019)",
-        "Пластический хирург — Учебно-исследовательская больница Коджаэли Дериндже (2015–2017)",
+        "Основатель и хирург, клиника Dr. Gamze Eren, Стамбул (2022-настоящее время)",
+        "Пластический хирург, Esteworld Алтунизаде (2019-2022)",
+        "Пластический хирург, Учебно-исследовательская больница имени Султана Абдул-Хамида Хана (2017-2019)",
+        "Пластический хирург, Учебно-исследовательская больница Коджаэли Дериндже (2015-2017)",
       ],
     },
     memberships: {
@@ -930,6 +938,10 @@ const ru: typeof en = {
       eyebrow: "Языки",
       body: "Турецкий · Английский · Базовый немецкий",
     },
+    quote: {
+      text: "Моя цель не в том, чтобы сделать вас похожей на кого-то другого, а в том, чтобы помочь вам чувствовать себя полностью и уверенно собой.",
+      attribution: "Доктор Гюлер Гамзе Эрен",
+    },
     gallery: {
       eyebrow: "В клинике",
       headlineA: "Небольшая частная практика в",
@@ -942,20 +954,20 @@ const ru: typeof en = {
       headlineA: "Эстетика, которая выглядит",
       headlineAccent: "по-настоящему вашей.",
       paragraphs: [
-        "Практика доктора Эрен строится на трёх принципах: гармонии, сдержанности и прозрачности. Гармония означает, что каждое изменение оценивается вместе с остальным лицом или телом, а не изолированно. Сдержанность подразумевает делать только то, что нужно для желаемого результата, и ничего больше. Прозрачность означает 3D-симуляцию, откровенный разговор и письменный план, чтобы вы точно знали, что предлагается.",
-        "Клиника в Каддебостане намеренно небольшая. Пациентов принимают приватно, по имени, и консультации проходят без спешки. Иностранных гостей сопровождает concierge-сервис, который заботится обо всём, от встречи в аэропорту до контроля после возвращения домой.",
+        "Работа доктора Эрен опирается на три тихих принципа. Первый принцип, гармония: каждое изменение оценивается не отдельно, а вместе со всем лицом или телом. Второй принцип, сдержанность: брать только то, что нужно для желаемого результата, и ничего сверх. Третий принцип, прозрачность: 3D-симуляция, открытый разговор и письменный план позволяют вам точно знать, что именно предлагается.",
+        "Её клиника в Каддебостане намеренно небольшая, и это осознанный выбор. Пациентов принимают индивидуально, по имени, и никогда не торопят. Для приезжающих из-за рубежа персональный координатор берёт на себя всё, от встречи в аэропорту до наблюдения после возвращения домой, так что думать вам нужно только о результате.",
       ],
     },
     values: [
-      { t: "Консультации в центре внимания пациента", d: "Часовые приватные встречи. Сначала слушаем, потом рекомендуем." },
-      { t: "Операции в аккредитованных больницах", d: "Процедуры проводятся в партнёрских клиниках с опытной анестезией и полной поддержкой реанимации." },
-      { t: "Долгосрочное наблюдение", d: "Контроль через 24 часа, 7 дней, 1 месяц, 3 месяца и 12 месяцев; по видео, если вы живёте за рубежом." },
+      { t: "Консультации, которые сначала слушают", d: "Неспешные, частные встречи. Мы понимаем ваши цели, прежде чем что-либо предлагать." },
+      { t: "Операции в аккредитованных больницах", d: "Каждая операция проходит в партнёрской больнице с опытной анестезией и полной поддержкой реанимации." },
+      { t: "Забота, которая продолжается", d: "Структурированное наблюдение через 24 часа, неделю и значительно дольше, лично или по видео, если вы живёте за рубежом." },
     ],
     cta: {
-      headline: "Думаете о процедуре?",
-      body: "Лучше всего начать с консультации. Никаких обязательств, и вы уйдёте с более чётким пониманием того, что возможно.",
-      primary: "Записаться",
-      secondary: "Посмотреть процедуры",
+      headline: "Познакомьтесь с доктором Эрен",
+      body: "Любой путь здесь начинается со спокойной, честной консультации, в клинике или онлайн. Никаких обязательств, и вы уйдёте с ясным пониманием того, что действительно возможно для вас.",
+      primary: "Записаться на консультацию",
+      secondary: "Смотреть процедуры",
     },
   },
   services: {
