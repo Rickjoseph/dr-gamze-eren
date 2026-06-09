@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const facialFatTransfer: Treatment = {
   slug: "facial-fat-transfer",
   category: "facial",
@@ -8,17 +8,17 @@ export const facialFatTransfer: Treatment = {
   imageAlt: "Facial rejuvenation at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Facial Fat Transfer in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Facial Fat Transfer in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "Natural facial rejuvenation with your own fat, restoring volume to cheeks, under-eyes and temples. Dr. Gamze Eren, Istanbul.",
       title: "Facial Fat Transfer",
       tagline: "Your own fat, restoring softness and youthful volume.",
       summary:
-        "Facial fat transfer uses your own purified fat to gently restore volume where the face has hollowed — cheeks, under-eyes, temples — for a softer, naturally rejuvenated look that lasts.",
+        "Facial fat transfer uses your own purified fat to gently restore volume where the face has hollowed, cheeks, under-eyes, temples, for a softer, naturally rejuvenated look that lasts.",
       sections: [
         {
           heading: "Why fat, and where",
-          body: "Faces age partly by losing volume, not just by sagging. Restoring that volume can look more natural than tightening alone. Fat transfer refills areas that have hollowed — mid-cheeks, temples, tear troughs, lips or jawline — using your own tissue, so there is no risk of allergy.\n\nBecause it is living tissue, a portion of the transferred fat settles permanently, and the result has a soft, natural quality that fillers can struggle to match.",
+          body: "Faces age partly by losing volume, not just by sagging. Restoring that volume can look more natural than tightening alone. Fat transfer refills areas that have hollowed, mid-cheeks, temples, tear troughs, lips or jawline, using your own tissue, so there is no risk of allergy.\n\nBecause it is living tissue, a portion of the transferred fat settles permanently, and the result has a soft, natural quality that fillers can struggle to match.",
         },
         {
           heading: "The procedure",
@@ -26,7 +26,7 @@ export const facialFatTransfer: Treatment = {
         },
         {
           heading: "Recovery & results",
-          body: "Swelling and some bruising settle over one to two weeks. Not all transferred fat survives — Dr. Eren accounts for this when planning — and the final, stable result is seen after a few months.\n\nThe volume that takes is long-lasting, refreshing the face without an overfilled appearance.",
+          body: "Swelling and some bruising settle over one to two weeks. Not all transferred fat survives, Dr. Eren accounts for this when planning, and the final, stable result is seen after a few months.\n\nThe volume that takes is long-lasting, refreshing the face without an overfilled appearance.",
         },
       ],
       faqs: [
@@ -41,7 +41,7 @@ export const facialFatTransfer: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Yüze Yağ Transferi — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Yüze Yağ Transferi, Dr. Gamze Eren",
       metaDescription:
         "Kendi yağınızla yanaklara, göz altına ve şakaklara hacim kazandıran doğal yüz gençleştirme. Dr. Gamze Eren, İstanbul.",
       title: "Yüze Yağ Transferi",

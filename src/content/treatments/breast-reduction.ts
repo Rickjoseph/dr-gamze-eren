@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const breastReduction: Treatment = {
   slug: "breast-reduction",
   category: "breast",
@@ -8,17 +8,17 @@ export const breastReduction: Treatment = {
   imageAlt: "Breast aesthetics at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Breast Reduction in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Breast Reduction in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "Breast reduction to relieve discomfort and create a lighter, lifted, proportionate shape. Dr. Gamze Eren, Istanbul.",
       title: "Breast Reduction",
-      tagline: "Lighter, lifted, and in proportion — and more comfortable.",
+      tagline: "Lighter, lifted, and in proportion, and more comfortable.",
       summary:
-        "Breast reduction removes excess breast tissue and skin to relieve the neck, shoulder and back discomfort of overly large breasts — while reshaping and lifting for a lighter, firmer, proportionate result.",
+        "Breast reduction removes excess breast tissue and skin to relieve the neck, shoulder and back discomfort of overly large breasts, while reshaping and lifting for a lighter, firmer, proportionate result.",
       sections: [
         {
           heading: "More than cosmetic",
-          body: "Very large breasts can cause real physical strain — neck, shoulder and back pain, grooving from bra straps, skin irritation and limits on activity. Reduction is often as much about comfort and health as appearance.\n\nDr. Eren removes excess tissue and skin, reshapes the breast and lifts it, repositioning the nipple to a natural height — combining relief with an attractive, balanced shape.",
+          body: "Very large breasts can cause real physical strain, neck, shoulder and back pain, grooving from bra straps, skin irritation and limits on activity. Reduction is often as much about comfort and health as appearance.\n\nDr. Eren removes excess tissue and skin, reshapes the breast and lifts it, repositioning the nipple to a natural height, combining relief with an attractive, balanced shape.",
         },
         {
           heading: "The procedure",
@@ -41,17 +41,17 @@ export const breastReduction: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Meme Küçültme — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Meme Küçültme, Dr. Gamze Eren",
       metaDescription:
         "Rahatsızlığı gidermek ve daha hafif, kaldırılmış, orantılı bir şekil oluşturmak için meme küçültme. Dr. Gamze Eren, İstanbul.",
       title: "Meme Küçültme",
-      tagline: "Daha hafif, kaldırılmış ve orantılı — ve daha konforlu.",
+      tagline: "Daha hafif, kaldırılmış ve orantılı, ve daha konforlu.",
       summary:
         "Meme küçültme, aşırı büyük memelerin boyun, omuz ve sırt rahatsızlığını gidermek için fazla meme dokusunu ve deriyi alır; aynı zamanda yeniden şekillendirip kaldırarak daha hafif, sıkı ve orantılı bir sonuç sağlar.",
       sections: [
         {
           heading: "Yalnızca kozmetik değil",
-          body: "Çok büyük memeler gerçek fiziksel zorlanmaya yol açabilir — boyun, omuz ve sırt ağrısı, sütyen askısı izleri, deri tahrişi ve aktivite kısıtlılığı. Küçültme çoğu zaman görünüm kadar konfor ve sağlıkla ilgilidir.\n\nDr. Eren fazla dokuyu ve deriyi alır, memeyi yeniden şekillendirip kaldırır ve meme başını doğal bir yüksekliğe konumlandırır — rahatlamayı çekici, dengeli bir şekille birleştirir.",
+          body: "Çok büyük memeler gerçek fiziksel zorlanmaya yol açabilir, boyun, omuz ve sırt ağrısı, sütyen askısı izleri, deri tahrişi ve aktivite kısıtlılığı. Küçültme çoğu zaman görünüm kadar konfor ve sağlıkla ilgilidir.\n\nDr. Eren fazla dokuyu ve deriyi alır, memeyi yeniden şekillendirip kaldırır ve meme başını doğal bir yüksekliğe konumlandırır, rahatlamayı çekici, dengeli bir şekille birleştirir.",
         },
         {
           heading: "Ameliyat",

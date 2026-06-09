@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const botulinumToxin: Treatment = {
   slug: "botulinum-toxin",
   category: "non-surgical",
@@ -8,21 +8,21 @@ export const botulinumToxin: Treatment = {
   imageAlt: "Non-surgical treatments at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Botulinum Toxin (Anti-Wrinkle) in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Botulinum Toxin (Anti-Wrinkle) in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "Natural-looking wrinkle softening with botulinum toxin, placed precisely by a plastic surgeon. Dr. Gamze Eren, Istanbul.",
       title: "Botulinum Toxin",
       tagline: "Softening lines while keeping your expression.",
       summary:
-        "Botulinum toxin gently relaxes the muscles that create frown lines, forehead lines and crow's feet — softening them while keeping your expression natural. Placed precisely and conservatively, it refreshes rather than freezes.",
+        "Botulinum toxin gently relaxes the muscles that create frown lines, forehead lines and crow's feet, softening them while keeping your expression natural. Placed precisely and conservatively, it refreshes rather than freezes.",
       sections: [
         {
           heading: "What it treats",
-          body: "Botulinum toxin is best known for dynamic lines — those that appear when you move: the frown between the brows, horizontal forehead lines and crow's feet around the eyes. It can also be used subtly for a gentle brow lift, a smoother neck or to soften a gummy smile.\n\nDr. Eren's approach is conservative and natural — relaxing just enough to soften lines while preserving movement and expression.",
+          body: "Botulinum toxin is best known for dynamic lines, those that appear when you move: the frown between the brows, horizontal forehead lines and crow's feet around the eyes. It can also be used subtly for a gentle brow lift, a smoother neck or to soften a gummy smile.\n\nDr. Eren's approach is conservative and natural, relaxing just enough to soften lines while preserving movement and expression.",
         },
         {
           heading: "What to expect",
-          body: "Treatment takes only a few minutes. After mapping your muscles, a very fine needle places small amounts of product at precise points. Discomfort is minimal and there is no real downtime — most people return to their day immediately.\n\nYou'll be advised to stay upright and avoid rubbing the area for a few hours.",
+          body: "Treatment takes only a few minutes. After mapping your muscles, a very fine needle places small amounts of product at precise points. Discomfort is minimal and there is no real downtime, most people return to their day immediately.\n\nYou'll be advised to stay upright and avoid rubbing the area for a few hours.",
         },
         {
           heading: "Results & maintenance",
@@ -32,7 +32,7 @@ export const botulinumToxin: Treatment = {
       faqs: [
         {
           q: "Will my face look frozen?",
-          a: "No — a conservative, precise approach softens lines while keeping natural movement and expression. The aim is a refreshed look, not a frozen one.",
+          a: "No, a conservative, precise approach softens lines while keeping natural movement and expression. The aim is a refreshed look, not a frozen one.",
         },
         {
           q: "Is there any downtime?",
@@ -41,7 +41,7 @@ export const botulinumToxin: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Botulinum Toksini (Kırışıklık) — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Botulinum Toksini (Kırışıklık), Dr. Gamze Eren",
       metaDescription:
         "Bir plastik cerrah tarafından hassas uygulanan botulinum toksiniyle doğal görünümlü kırışıklık yumuşatma. Dr. Gamze Eren, İstanbul.",
       title: "Botulinum Toksini",
@@ -51,11 +51,11 @@ export const botulinumToxin: Treatment = {
       sections: [
         {
           heading: "Neyi tedavi eder",
-          body: "Botulinum toksini en çok dinamik çizgilerle —hareket ettiğinizde ortaya çıkanlarla— bilinir: kaşlar arasındaki çatma, yatay alın çizgileri ve göz çevresindeki kaz ayakları. Ayrıca hafif bir kaş kaldırma, daha pürüzsüz bir boyun veya diş eti gülüşünü yumuşatmak için ince biçimde kullanılabilir.\n\nDr. Eren'in yaklaşımı ölçülü ve doğaldır — hareket ve ifadeyi korurken çizgileri yumuşatacak kadar gevşetir.",
+          body: "Botulinum toksini en çok dinamik çizgilerle —hareket ettiğinizde ortaya çıkanlarla— bilinir: kaşlar arasındaki çatma, yatay alın çizgileri ve göz çevresindeki kaz ayakları. Ayrıca hafif bir kaş kaldırma, daha pürüzsüz bir boyun veya diş eti gülüşünü yumuşatmak için ince biçimde kullanılabilir.\n\nDr. Eren'in yaklaşımı ölçülü ve doğaldır, hareket ve ifadeyi korurken çizgileri yumuşatacak kadar gevşetir.",
         },
         {
           heading: "Ne beklemeli",
-          body: "İşlem yalnızca birkaç dakika sürer. Kaslarınız haritalandıktan sonra çok ince bir iğneyle hassas noktalara küçük miktarlarda ürün uygulanır. Rahatsızlık minimaldir ve gerçek bir iyileşme süresi yoktur — çoğu kişi hemen gününe döner.\n\nBirkaç saat dik durmanız ve bölgeyi ovuşturmamanız önerilir.",
+          body: "İşlem yalnızca birkaç dakika sürer. Kaslarınız haritalandıktan sonra çok ince bir iğneyle hassas noktalara küçük miktarlarda ürün uygulanır. Rahatsızlık minimaldir ve gerçek bir iyileşme süresi yoktur, çoğu kişi hemen gününe döner.\n\nBirkaç saat dik durmanız ve bölgeyi ovuşturmamanız önerilir.",
         },
         {
           heading: "Sonuçlar ve bakım",
@@ -65,7 +65,7 @@ export const botulinumToxin: Treatment = {
       faqs: [
         {
           q: "Yüzüm donmuş mu görünür?",
-          a: "Hayır — ölçülü, hassas bir yaklaşım doğal hareket ve ifadeyi korurken çizgileri yumuşatır. Amaç donmuş değil, tazelenmiş bir görünümdür.",
+          a: "Hayır, ölçülü, hassas bir yaklaşım doğal hareket ve ifadeyi korurken çizgileri yumuşatır. Amaç donmuş değil, tazelenmiş bir görünümdür.",
         },
         {
           q: "İyileşme süresi var mı?",

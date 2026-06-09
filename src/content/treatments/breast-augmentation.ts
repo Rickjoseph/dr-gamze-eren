@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const breastAugmentation: Treatment = {
   slug: "breast-augmentation",
   category: "breast",
@@ -8,17 +8,17 @@ export const breastAugmentation: Treatment = {
   imageAlt: "Breast aesthetics at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Breast Augmentation in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Breast Augmentation in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "Breast augmentation with FDA-approved silk-surface implants or fat transfer for natural, proportionate fullness. Dr. Gamze Eren, Istanbul.",
       title: "Breast Augmentation",
-      tagline: "Natural, proportionate fullness — your shape, enhanced.",
+      tagline: "Natural, proportionate fullness, your shape, enhanced.",
       summary:
-        "Breast augmentation adds volume and improves shape using carefully chosen implants — including FDA-approved silk-surface options — or your own fat. Dr. Eren plans size and shape to suit your frame for a result that looks and feels natural.",
+        "Breast augmentation adds volume and improves shape using carefully chosen implants, including FDA-approved silk-surface options, or your own fat. Dr. Eren plans size and shape to suit your frame for a result that looks and feels natural.",
       sections: [
         {
           heading: "Choosing what's right for you",
-          body: "Augmentation is highly individual. The right implant — its size, profile and placement — depends on your frame, existing tissue and the look you want. Dr. Eren favours proportion over maximum size, for a result that suits you and ages well.\n\nImplant choices include FDA-approved silk-surface options; for modest, very natural enhancement, fat transfer using your own tissue may be an alternative.",
+          body: "Augmentation is highly individual. The right implant, its size, profile and placement, depends on your frame, existing tissue and the look you want. Dr. Eren favours proportion over maximum size, for a result that suits you and ages well.\n\nImplant choices include FDA-approved silk-surface options; for modest, very natural enhancement, fat transfer using your own tissue may be an alternative.",
         },
         {
           heading: "The procedure",
@@ -32,7 +32,7 @@ export const breastAugmentation: Treatment = {
       faqs: [
         {
           q: "Will it look natural?",
-          a: "That's the aim — sizing and placement are planned in proportion to your frame, so the result looks and feels like you, not an obvious enhancement.",
+          a: "That's the aim, sizing and placement are planned in proportion to your frame, so the result looks and feels like you, not an obvious enhancement.",
         },
         {
           q: "Implants or fat transfer?",
@@ -41,11 +41,11 @@ export const breastAugmentation: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Meme Büyütme — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Meme Büyütme, Dr. Gamze Eren",
       metaDescription:
         "Doğal ve orantılı dolgunluk için FDA onaylı silk-surface implantlar veya yağ transferiyle meme büyütme. Dr. Gamze Eren, İstanbul.",
       title: "Meme Büyütme",
-      tagline: "Doğal, orantılı dolgunluk — şekliniz, belirginleşmiş.",
+      tagline: "Doğal, orantılı dolgunluk, şekliniz, belirginleşmiş.",
       summary:
         "Meme büyütme, dikkatle seçilmiş implantlarla —FDA onaylı silk-surface seçenekleri dahil— veya kendi yağınızla hacim ekler ve şekli iyileştirir. Dr. Eren, doğal görünen ve hisseden bir sonuç için boyut ve şekli bedeninize göre planlar.",
       sections: [
@@ -65,7 +65,7 @@ export const breastAugmentation: Treatment = {
       faqs: [
         {
           q: "Doğal görünür mü?",
-          a: "Amaç budur — boyut ve yerleşim bedeninizle orantılı planlanır; sonuç bariz bir belirginleştirme değil, sizin gibi görünür ve hisseder.",
+          a: "Amaç budur, boyut ve yerleşim bedeninizle orantılı planlanır; sonuç bariz bir belirginleştirme değil, sizin gibi görünür ve hisseder.",
         },
         {
           q: "İmplant mı yağ transferi mi?",

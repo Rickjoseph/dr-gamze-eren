@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const secondaryBreastSurgery: Treatment = {
   slug: "secondary-breast-surgery",
   category: "breast",
@@ -8,17 +8,17 @@ export const secondaryBreastSurgery: Treatment = {
   imageAlt: "Breast aesthetics at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Secondary Breast Surgery in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Secondary Breast Surgery in Istanbul, Dr. Gamze Eren",
       metaDescription:
-        "Corrective and secondary breast surgery to refine or revise a previous result — implant exchange, lift, or correction. Dr. Gamze Eren, Istanbul.",
+        "Corrective and secondary breast surgery to refine or revise a previous result, implant exchange, lift, or correction. Dr. Gamze Eren, Istanbul.",
       title: "Secondary Breast Surgery",
       tagline: "Refining or correcting a previous result, with care.",
       summary:
-        "Secondary breast surgery refines or corrects the outcome of a previous breast operation — whether you'd like to update an older result, exchange implants, or address a concern. With a reconstructive background, Dr. Eren approaches these nuanced cases individually.",
+        "Secondary breast surgery refines or corrects the outcome of a previous breast operation, whether you'd like to update an older result, exchange implants, or address a concern. With a reconstructive background, Dr. Eren approaches these nuanced cases individually.",
       sections: [
         {
           heading: "When it's considered",
-          body: "Sometimes a previous breast surgery — your own choice years ago, or done elsewhere — no longer matches what you want, or a specific concern has developed: implant ageing, a change in position or firmness, or asymmetry. Secondary surgery is about thoughtfully improving on what's there.\n\nBecause every starting point is different, these cases are highly individual. Dr. Eren's reconstructive background is an asset in planning a careful, realistic correction.",
+          body: "Sometimes a previous breast surgery, your own choice years ago, or done elsewhere, no longer matches what you want, or a specific concern has developed: implant ageing, a change in position or firmness, or asymmetry. Secondary surgery is about thoughtfully improving on what's there.\n\nBecause every starting point is different, these cases are highly individual. Dr. Eren's reconstructive background is an asset in planning a careful, realistic correction.",
         },
         {
           heading: "What it can involve",
@@ -41,13 +41,13 @@ export const secondaryBreastSurgery: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Sekonder Meme Cerrahisi — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Sekonder Meme Cerrahisi, Dr. Gamze Eren",
       metaDescription:
-        "Önceki bir sonucu inceltmek veya düzeltmek için onarıcı ve sekonder meme cerrahisi — implant değişimi, dikleştirme veya düzeltme. Dr. Gamze Eren, İstanbul.",
+        "Önceki bir sonucu inceltmek veya düzeltmek için onarıcı ve sekonder meme cerrahisi, implant değişimi, dikleştirme veya düzeltme. Dr. Gamze Eren, İstanbul.",
       title: "Sekonder Meme Cerrahisi",
       tagline: "Önceki bir sonucu özenle inceltmek veya düzeltmek.",
       summary:
-        "Sekonder meme cerrahisi, önceki bir meme ameliyatının sonucunu inceltir veya düzeltir — eski bir sonucu güncellemek, implant değiştirmek ya da bir sorunu gidermek isteyebilirsiniz. Rekonstrüktif birikimiyle Dr. Eren bu nüanslı olguları kişiye özel ele alır.",
+        "Sekonder meme cerrahisi, önceki bir meme ameliyatının sonucunu inceltir veya düzeltir, eski bir sonucu güncellemek, implant değiştirmek ya da bir sorunu gidermek isteyebilirsiniz. Rekonstrüktif birikimiyle Dr. Eren bu nüanslı olguları kişiye özel ele alır.",
       sections: [
         {
           heading: "Ne zaman düşünülür",

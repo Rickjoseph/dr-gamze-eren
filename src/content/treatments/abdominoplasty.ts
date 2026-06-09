@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const abdominoplasty: Treatment = {
   slug: "abdominoplasty",
   category: "body",
@@ -8,17 +8,17 @@ export const abdominoplasty: Treatment = {
   imageAlt: "Body contouring at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Abdominoplasty (Tummy Tuck) in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Abdominoplasty (Tummy Tuck) in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "Tummy tuck to remove loose skin and repair abdominal muscle for a flatter, firmer midline. Dr. Gamze Eren, Istanbul.",
       title: "Abdominoplasty (Tummy Tuck)",
-      tagline: "A flatter, firmer abdomen — skin and muscle restored.",
+      tagline: "A flatter, firmer abdomen, skin and muscle restored.",
       summary:
-        "Abdominoplasty removes loose, excess skin and tightens the abdominal muscles that pregnancy or weight change can separate — restoring a flatter, firmer midline that diet and exercise often can't achieve alone.",
+        "Abdominoplasty removes loose, excess skin and tightens the abdominal muscles that pregnancy or weight change can separate, restoring a flatter, firmer midline that diet and exercise often can't achieve alone.",
       sections: [
         {
           heading: "Who it helps",
-          body: "After pregnancy or significant weight loss, the abdominal skin can hang loose and the muscles can separate (a condition called diastasis), leaving a bulge no amount of exercise resolves. A tummy tuck addresses both the skin and the muscle wall.\n\nDr. Eren tailors the approach — from a mini-tummy tuck to a full or extended procedure — to what your anatomy needs, and often combines it with liposuction for a smoother contour.",
+          body: "After pregnancy or significant weight loss, the abdominal skin can hang loose and the muscles can separate (a condition called diastasis), leaving a bulge no amount of exercise resolves. A tummy tuck addresses both the skin and the muscle wall.\n\nDr. Eren tailors the approach, from a mini-tummy tuck to a full or extended procedure, to what your anatomy needs, and often combines it with liposuction for a smoother contour.",
         },
         {
           heading: "The procedure",
@@ -36,16 +36,16 @@ export const abdominoplasty: Treatment = {
         },
         {
           q: "Is it the same as liposuction?",
-          a: "No — liposuction removes fat, while a tummy tuck also removes loose skin and repairs separated muscle. They are often combined.",
+          a: "No, liposuction removes fat, while a tummy tuck also removes loose skin and repairs separated muscle. They are often combined.",
         },
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Karın Germe (Abdominoplasti) — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Karın Germe (Abdominoplasti), Dr. Gamze Eren",
       metaDescription:
         "Gevşek deriyi alan ve karın kasını onaran, daha düz ve sıkı bir orta hat için karın germe. Dr. Gamze Eren, İstanbul.",
       title: "Karın Germe (Abdominoplasti)",
-      tagline: "Daha düz, sıkı bir karın — deri ve kas onarılır.",
+      tagline: "Daha düz, sıkı bir karın, deri ve kas onarılır.",
       summary:
         "Karın germe, gevşek ve fazla deriyi alır ve gebelik ya da kilo değişiminin ayırabileceği karın kaslarını sıkılaştırır; diyet ve egzersizin çoğu zaman tek başına sağlayamadığı daha düz ve sıkı bir orta hat kazandırır.",
       sections: [
@@ -69,7 +69,7 @@ export const abdominoplasty: Treatment = {
         },
         {
           q: "Liposuction ile aynı mı?",
-          a: "Hayır — liposuction yağı alır; karın germe ise ayrıca gevşek deriyi alır ve ayrılan kası onarır. Çoğu zaman birlikte yapılırlar.",
+          a: "Hayır, liposuction yağı alır; karın germe ise ayrıca gevşek deriyi alır ve ayrılan kası onarır. Çoğu zaman birlikte yapılırlar.",
         },
       ],
     },

@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const armThighLift: Treatment = {
   slug: "arm-thigh-lift",
   category: "body",
@@ -8,17 +8,17 @@ export const armThighLift: Treatment = {
   imageAlt: "Body contouring at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Arm & Thigh Lift in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Arm & Thigh Lift in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "Brachioplasty and thigh lift to remove loose skin and firm the arms and thighs, often after weight loss. Dr. Gamze Eren, Istanbul.",
       title: "Arm & Thigh Lift",
       tagline: "Firmer arms and thighs, with loose skin removed.",
       summary:
-        "An arm lift (brachioplasty) and thigh lift remove loose, sagging skin and refine the contour of the upper arms and thighs — most often after significant weight loss or with natural ageing, where skin has lost its elasticity.",
+        "An arm lift (brachioplasty) and thigh lift remove loose, sagging skin and refine the contour of the upper arms and thighs, most often after significant weight loss or with natural ageing, where skin has lost its elasticity.",
       sections: [
         {
           heading: "When it helps",
-          body: "When skin loses elasticity — after major weight loss, or simply with time — the upper arms and inner thighs can sag in a way exercise cannot tighten. An arm or thigh lift removes the excess skin and firms the contour.\n\nDr. Eren plans incisions carefully to give the smoothest result with the most discreet scarring possible, and may combine the lift with liposuction to refine shape.",
+          body: "When skin loses elasticity, after major weight loss, or simply with time, the upper arms and inner thighs can sag in a way exercise cannot tighten. An arm or thigh lift removes the excess skin and firms the contour.\n\nDr. Eren plans incisions carefully to give the smoothest result with the most discreet scarring possible, and may combine the lift with liposuction to refine shape.",
         },
         {
           heading: "The procedure",
@@ -26,13 +26,13 @@ export const armThighLift: Treatment = {
         },
         {
           heading: "Recovery & results",
-          body: "Compression garments support healing, and most people return to desk work within one to two weeks, with exercise reintroduced gradually. Swelling settles over the following weeks.\n\nThe trade for firmer, smoother limbs is a scar that fades over time — a trade most patients are glad to make.",
+          body: "Compression garments support healing, and most people return to desk work within one to two weeks, with exercise reintroduced gradually. Swelling settles over the following weeks.\n\nThe trade for firmer, smoother limbs is a scar that fades over time, a trade most patients are glad to make.",
         },
       ],
       faqs: [
         {
           q: "Will there be a scar?",
-          a: "Yes — removing loose skin requires an incision, placed as discreetly as possible (inner arm or thigh). Scars fade significantly over the first year.",
+          a: "Yes, removing loose skin requires an incision, placed as discreetly as possible (inner arm or thigh). Scars fade significantly over the first year.",
         },
         {
           q: "Can both be done together?",
@@ -41,7 +41,7 @@ export const armThighLift: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Kol ve Uyluk Germe — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Kol ve Uyluk Germe, Dr. Gamze Eren",
       metaDescription:
         "Gevşek deriyi alıp kolları ve uylukları sıkılaştıran kol germe (braklioplasti) ve uyluk germe, çoğunlukla kilo kaybından sonra. Dr. Gamze Eren, İstanbul.",
       title: "Kol ve Uyluk Germe",
@@ -59,13 +59,13 @@ export const armThighLift: Treatment = {
         },
         {
           heading: "İyileşme ve sonuçlar",
-          body: "Korseler iyileşmeyi destekler; çoğu kişi bir-iki hafta içinde masa başı işine döner, egzersize kademeli olarak başlanır. Şişlik izleyen haftalarda geçer.\n\nDaha sıkı, pürüzsüz uzuvların karşılığı zamanla soluklaşan bir izdir — çoğu hastanın memnuniyetle kabul ettiği bir takas.",
+          body: "Korseler iyileşmeyi destekler; çoğu kişi bir-iki hafta içinde masa başı işine döner, egzersize kademeli olarak başlanır. Şişlik izleyen haftalarda geçer.\n\nDaha sıkı, pürüzsüz uzuvların karşılığı zamanla soluklaşan bir izdir, çoğu hastanın memnuniyetle kabul ettiği bir takas.",
         },
       ],
       faqs: [
         {
           q: "İz kalır mı?",
-          a: "Evet — gevşek deriyi almak bir kesi gerektirir; mümkün olduğunca gizli yerleştirilir (iç kol veya uyluk). İzler ilk yıl içinde belirgin biçimde soluklaşır.",
+          a: "Evet, gevşek deriyi almak bir kesi gerektirir; mümkün olduğunca gizli yerleştirilir (iç kol veya uyluk). İzler ilk yıl içinde belirgin biçimde soluklaşır.",
         },
         {
           q: "İkisi birlikte yapılabilir mi?",

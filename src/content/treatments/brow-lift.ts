@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const browLift: Treatment = {
   slug: "brow-lift",
   category: "facial",
@@ -8,7 +8,7 @@ export const browLift: Treatment = {
   imageAlt: "Facial rejuvenation at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Brow Lift in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Brow Lift in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "A natural brow lift that opens the upper face without a frozen or surprised look. Dr. Gamze Eren, Istanbul.",
       title: "Brow Lift",
@@ -18,7 +18,7 @@ export const browLift: Treatment = {
       sections: [
         {
           heading: "When a brow lift helps",
-          body: "As the brow descends with age it can crowd the upper eyelids, deepen frown lines and create a permanently tired or stern look. Lifting the brow to its natural position refreshes the whole upper face — and sometimes reduces the need for eyelid surgery.\n\nDr. Eren tailors the lift to your anatomy, keeping the brow shape feminine or masculine as appropriate and avoiding a surprised, over-lifted look.",
+          body: "As the brow descends with age it can crowd the upper eyelids, deepen frown lines and create a permanently tired or stern look. Lifting the brow to its natural position refreshes the whole upper face, and sometimes reduces the need for eyelid surgery.\n\nDr. Eren tailors the lift to your anatomy, keeping the brow shape feminine or masculine as appropriate and avoiding a surprised, over-lifted look.",
         },
         {
           heading: "The procedure",
@@ -32,7 +32,7 @@ export const browLift: Treatment = {
       faqs: [
         {
           q: "Will my forehead look frozen?",
-          a: "No — a surgical brow lift repositions the brow rather than paralysing muscles, so natural expression is preserved.",
+          a: "No, a surgical brow lift repositions the brow rather than paralysing muscles, so natural expression is preserved.",
         },
         {
           q: "Can it be combined with eyelid surgery?",
@@ -41,7 +41,7 @@ export const browLift: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Kaş Kaldırma — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Kaş Kaldırma, Dr. Gamze Eren",
       metaDescription:
         "Donmuş veya şaşkın bir görünüm olmadan üst yüzü açan doğal kaş kaldırma. Dr. Gamze Eren, İstanbul.",
       title: "Kaş Kaldırma",
@@ -65,7 +65,7 @@ export const browLift: Treatment = {
       faqs: [
         {
           q: "Alnım donmuş mu görünür?",
-          a: "Hayır — cerrahi kaş kaldırma kasları felç etmek yerine kaşı yeniden konumlandırır; doğal ifade korunur.",
+          a: "Hayır, cerrahi kaş kaldırma kasları felç etmek yerine kaşı yeniden konumlandırır; doğal ifade korunur.",
         },
         {
           q: "Göz kapağı ameliyatıyla birleştirilebilir mi?",

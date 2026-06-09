@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: specialised reconstructive content — please have Dr. Gamze Eren
+// NOTE: specialised reconstructive content, please have Dr. Gamze Eren
 // review the clinical detail before launch.
 export const polandSyndrome: Treatment = {
   slug: "poland-syndrome",
@@ -9,7 +9,7 @@ export const polandSyndrome: Treatment = {
   imageAlt: "Breast and chest reconstruction at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Poland Syndrome Treatment in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Poland Syndrome Treatment in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "Reconstructive correction of Poland syndrome chest and breast asymmetry with implants, fat grafting and flap techniques. Dr. Gamze Eren, Istanbul.",
       title: "Poland Syndrome Treatment",
@@ -23,7 +23,7 @@ export const polandSyndrome: Treatment = {
         },
         {
           heading: "Reconstructive options",
-          body: "Correction is tailored to your anatomy and goals, and may combine several techniques: anatomical or custom implants to rebuild volume and projection, fat grafting to refine contour and soften transitions, and — in selected cases — muscle flap reconstruction (such as a latissimus dorsi flap) to restore missing muscle bulk. For women, breast symmetry procedures may be combined to match the opposite side.\n\nTreatment is often staged across more than one procedure to achieve the most natural, durable result.",
+          body: "Correction is tailored to your anatomy and goals, and may combine several techniques: anatomical or custom implants to rebuild volume and projection, fat grafting to refine contour and soften transitions, and, in selected cases, muscle flap reconstruction (such as a latissimus dorsi flap) to restore missing muscle bulk. For women, breast symmetry procedures may be combined to match the opposite side.\n\nTreatment is often staged across more than one procedure to achieve the most natural, durable result.",
         },
         {
           heading: "Your pathway",
@@ -33,7 +33,7 @@ export const polandSyndrome: Treatment = {
       faqs: [
         {
           q: "Is this surgery suitable for both men and women?",
-          a: "Yes. The approach is tailored to each person — rebuilding chest contour and muscle bulk, with breast symmetry procedures added when appropriate.",
+          a: "Yes. The approach is tailored to each person, rebuilding chest contour and muscle bulk, with breast symmetry procedures added when appropriate.",
         },
         {
           q: "Will I need more than one operation?",
@@ -42,7 +42,7 @@ export const polandSyndrome: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Poland Sendromu Tedavisi — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Poland Sendromu Tedavisi, Dr. Gamze Eren",
       metaDescription:
         "Poland sendromuna bağlı göğüs ve meme asimetrisinin implant, yağ enjeksiyonu ve flep teknikleriyle rekonstrüktif düzeltimi. Dr. Gamze Eren, İstanbul.",
       title: "Poland Sendromu Tedavisi",
@@ -66,7 +66,7 @@ export const polandSyndrome: Treatment = {
       faqs: [
         {
           q: "Bu ameliyat hem erkekler hem kadınlar için uygun mu?",
-          a: "Evet. Yaklaşım her kişiye özeldir — göğüs konturu ve kas hacmi yeniden oluşturulur, uygun olduğunda meme simetrisi işlemleri eklenir.",
+          a: "Evet. Yaklaşım her kişiye özeldir, göğüs konturu ve kas hacmi yeniden oluşturulur, uygun olduğunda meme simetrisi işlemleri eklenir.",
         },
         {
           q: "Birden fazla ameliyat gerekir mi?",

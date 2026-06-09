@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const gynecomastia: Treatment = {
   slug: "gynecomastia",
   category: "breast",
@@ -8,17 +8,17 @@ export const gynecomastia: Treatment = {
   imageAlt: "Body contouring at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Gynecomastia Surgery in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Gynecomastia Surgery in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "Male breast reduction (gynecomastia) for a flat, naturally masculine chest. Dr. Gamze Eren, Istanbul.",
       title: "Gynecomastia (Male Breast Reduction)",
       tagline: "A flatter, firmer, naturally masculine chest.",
       summary:
-        "Gynecomastia is enlargement of male breast tissue — common, benign, and very treatable. Dr. Gamze Eren corrects it with a tailored combination of liposuction and gland excision to restore a flat, defined chest that looks natural in and out of clothing.",
+        "Gynecomastia is enlargement of male breast tissue, common, benign, and very treatable. Dr. Gamze Eren corrects it with a tailored combination of liposuction and gland excision to restore a flat, defined chest that looks natural in and out of clothing.",
       sections: [
         {
           heading: "What gynecomastia is",
-          body: "Gynecomastia is the development of excess glandular tissue and/or fat in the male chest. It can affect one or both sides and may stem from hormonal changes, genetics, weight, or certain medications. It is harmless, but for many men it affects confidence — and it rarely resolves on its own once established.\n\nDuring consultation, Dr. Eren assesses whether the fullness is mainly glandular, fatty, or mixed, as this determines the right technique.",
+          body: "Gynecomastia is the development of excess glandular tissue and/or fat in the male chest. It can affect one or both sides and may stem from hormonal changes, genetics, weight, or certain medications. It is harmless, but for many men it affects confidence, and it rarely resolves on its own once established.\n\nDuring consultation, Dr. Eren assesses whether the fullness is mainly glandular, fatty, or mixed, as this determines the right technique.",
         },
         {
           heading: "The procedure",
@@ -41,13 +41,13 @@ export const gynecomastia: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Jinekomasti Ameliyatı — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Jinekomasti Ameliyatı, Dr. Gamze Eren",
       metaDescription:
         "Düz ve doğal erkeksi bir göğüs için erkekte meme küçültme (jinekomasti). Dr. Gamze Eren, İstanbul.",
       title: "Jinekomasti (Erkekte Meme Küçültme)",
       tagline: "Daha düz, sıkı ve doğal erkeksi bir göğüs.",
       summary:
-        "Jinekomasti, erkek meme dokusunun büyümesidir — yaygın, iyi huylu ve tedavisi oldukça kolaydır. Dr. Gamze Eren, kıyafetle ve kıyafetsiz doğal görünen düz ve belirgin bir göğüs için liposuction ve bez dokusu çıkarımını kişiye özel birleştirerek bunu düzeltir.",
+        "Jinekomasti, erkek meme dokusunun büyümesidir, yaygın, iyi huylu ve tedavisi oldukça kolaydır. Dr. Gamze Eren, kıyafetle ve kıyafetsiz doğal görünen düz ve belirgin bir göğüs için liposuction ve bez dokusu çıkarımını kişiye özel birleştirerek bunu düzeltir.",
       sections: [
         {
           heading: "Jinekomasti nedir",

@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const medicalPeels: Treatment = {
   slug: "medical-peels",
   category: "non-surgical",
@@ -8,13 +8,13 @@ export const medicalPeels: Treatment = {
   imageAlt: "Non-surgical treatments at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Medical-Grade Peels in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Medical-Grade Peels in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "Medical chemical peels to renew skin, even tone and improve texture, supervised by a plastic surgeon. Dr. Gamze Eren, Istanbul.",
       title: "Medical-Grade Peels",
       tagline: "Renewed, brighter, smoother skin.",
       summary:
-        "Medical-grade chemical peels gently remove the outer layers of tired skin to reveal fresher skin beneath — improving tone, texture, pigmentation and fine lines, under medical supervision for safe, effective results.",
+        "Medical-grade chemical peels gently remove the outer layers of tired skin to reveal fresher skin beneath, improving tone, texture, pigmentation and fine lines, under medical supervision for safe, effective results.",
       sections: [
         {
           heading: "What peels improve",
@@ -22,7 +22,7 @@ export const medicalPeels: Treatment = {
         },
         {
           heading: "What to expect",
-          body: "After cleansing, the peel solution is applied for a set time and then neutralised or removed. You may feel mild tingling or warmth. A session takes around 20–30 minutes.\n\nLighter peels have little downtime; medium peels cause some redness and flaking for several days as the skin renews — all part of the process.",
+          body: "After cleansing, the peel solution is applied for a set time and then neutralised or removed. You may feel mild tingling or warmth. A session takes around 20–30 minutes.\n\nLighter peels have little downtime; medium peels cause some redness and flaking for several days as the skin renews, all part of the process.",
         },
         {
           heading: "Results & aftercare",
@@ -32,22 +32,22 @@ export const medicalPeels: Treatment = {
       faqs: [
         {
           q: "How much downtime is there?",
-          a: "It depends on the peel's depth — light peels have minimal downtime, while medium peels involve a few days of redness and flaking. Dr. Eren will recommend the right level for you.",
+          a: "It depends on the peel's depth, light peels have minimal downtime, while medium peels involve a few days of redness and flaking. Dr. Eren will recommend the right level for you.",
         },
         {
           q: "Is sun protection important?",
-          a: "Very — daily SPF after a peel protects the fresh skin, prevents pigmentation and helps your result last.",
+          a: "Very, daily SPF after a peel protects the fresh skin, prevents pigmentation and helps your result last.",
         },
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Medikal Peeling — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Medikal Peeling, Dr. Gamze Eren",
       metaDescription:
         "Cildi yenileyen, tonu eşitleyen ve dokuyu iyileştiren, plastik cerrah gözetiminde medikal kimyasal peeling. Dr. Gamze Eren, İstanbul.",
       title: "Medikal Peeling (Kimyasal Soyma)",
       tagline: "Yenilenmiş, daha aydınlık ve pürüzsüz cilt.",
       summary:
-        "Medikal kimyasal peeling, yorgun cildin dış katmanlarını nazikçe alarak altındaki daha taze cildi ortaya çıkarır; ton, doku, pigmentasyon ve ince çizgileri iyileştirir — güvenli ve etkili sonuçlar için tıbbi gözetim altında.",
+        "Medikal kimyasal peeling, yorgun cildin dış katmanlarını nazikçe alarak altındaki daha taze cildi ortaya çıkarır; ton, doku, pigmentasyon ve ince çizgileri iyileştirir, güvenli ve etkili sonuçlar için tıbbi gözetim altında.",
       sections: [
         {
           heading: "Peeling neyi iyileştirir",
@@ -55,7 +55,7 @@ export const medicalPeels: Treatment = {
         },
         {
           heading: "Ne beklemeli",
-          body: "Temizlikten sonra peeling solüsyonu belirli bir süre uygulanır ve ardından nötralize edilir veya alınır. Hafif karıncalanma veya sıcaklık hissedebilirsiniz. Bir seans yaklaşık 20–30 dakika sürer.\n\nHafif peelinglerin iyileşme süresi azdır; orta peelingler cilt yenilenirken birkaç gün kızarıklık ve soyulmaya yol açar — hepsi sürecin parçasıdır.",
+          body: "Temizlikten sonra peeling solüsyonu belirli bir süre uygulanır ve ardından nötralize edilir veya alınır. Hafif karıncalanma veya sıcaklık hissedebilirsiniz. Bir seans yaklaşık 20–30 dakika sürer.\n\nHafif peelinglerin iyileşme süresi azdır; orta peelingler cilt yenilenirken birkaç gün kızarıklık ve soyulmaya yol açar, hepsi sürecin parçasıdır.",
         },
         {
           heading: "Sonuçlar ve bakım",
@@ -65,11 +65,11 @@ export const medicalPeels: Treatment = {
       faqs: [
         {
           q: "İyileşme süresi ne kadar?",
-          a: "Peelingin derinliğine bağlıdır — hafif peelinglerin iyileşme süresi minimaldir, orta peelingler birkaç gün kızarıklık ve soyulma içerir. Dr. Eren size uygun düzeyi önerir.",
+          a: "Peelingin derinliğine bağlıdır, hafif peelinglerin iyileşme süresi minimaldir, orta peelingler birkaç gün kızarıklık ve soyulma içerir. Dr. Eren size uygun düzeyi önerir.",
         },
         {
           q: "Güneş koruması önemli mi?",
-          a: "Çok — peeling sonrası günlük SPF taze cildi korur, pigmentasyonu önler ve sonucunuzun kalıcılığına yardımcı olur.",
+          a: "Çok, peeling sonrası günlük SPF taze cildi korur, pigmentasyonu önler ve sonucunuzun kalıcılığına yardımcı olur.",
         },
       ],
     },

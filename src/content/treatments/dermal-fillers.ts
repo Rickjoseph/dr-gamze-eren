@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const dermalFillers: Treatment = {
   slug: "dermal-fillers",
   category: "non-surgical",
@@ -8,17 +8,17 @@ export const dermalFillers: Treatment = {
   imageAlt: "Non-surgical treatments at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Dermal Fillers (Hyaluronic Acid) in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Dermal Fillers (Hyaluronic Acid) in Istanbul, Dr. Gamze Eren",
       metaDescription:
-        "Natural enhancement with hyaluronic acid fillers — lips, cheeks, contour and lines, placed by a plastic surgeon. Dr. Gamze Eren, Istanbul.",
+        "Natural enhancement with hyaluronic acid fillers, lips, cheeks, contour and lines, placed by a plastic surgeon. Dr. Gamze Eren, Istanbul.",
       title: "Hyaluronic Acid Fillers",
       tagline: "Restoring volume and contour, naturally.",
       summary:
-        "Hyaluronic acid fillers restore lost volume, refine contour and soften lines — subtly enhancing the lips, cheeks, jawline or under-eyes. Hyaluronic acid is a substance your body already produces, and results are immediate yet reversible.",
+        "Hyaluronic acid fillers restore lost volume, refine contour and soften lines, subtly enhancing the lips, cheeks, jawline or under-eyes. Hyaluronic acid is a substance your body already produces, and results are immediate yet reversible.",
       sections: [
         {
           heading: "What fillers can do",
-          body: "As we age, we lose volume and definition — cheeks flatten, the jawline softens, folds deepen and lips thin. Hyaluronic acid fillers gently replace that volume and re-balance proportion, or enhance features like the lips and cheeks.\n\nDr. Eren's eye is for harmony: enhancing in proportion to your face so the result looks like a refreshed you, never overfilled.",
+          body: "As we age, we lose volume and definition, cheeks flatten, the jawline softens, folds deepen and lips thin. Hyaluronic acid fillers gently replace that volume and re-balance proportion, or enhance features like the lips and cheeks.\n\nDr. Eren's eye is for harmony: enhancing in proportion to your face so the result looks like a refreshed you, never overfilled.",
         },
         {
           heading: "What to expect",
@@ -26,7 +26,7 @@ export const dermalFillers: Treatment = {
         },
         {
           heading: "Results & reversibility",
-          body: "Results are visible at once and settle over a week or two as any swelling resolves. Depending on the product and area, they typically last six to eighteen months.\n\nA reassuring advantage of hyaluronic acid is that it can be dissolved if ever needed — making it a flexible, low-commitment option.",
+          body: "Results are visible at once and settle over a week or two as any swelling resolves. Depending on the product and area, they typically last six to eighteen months.\n\nA reassuring advantage of hyaluronic acid is that it can be dissolved if ever needed, making it a flexible, low-commitment option.",
         },
       ],
       faqs: [
@@ -36,14 +36,14 @@ export const dermalFillers: Treatment = {
         },
         {
           q: "Can fillers be reversed?",
-          a: "Yes — hyaluronic acid fillers can be dissolved with an enzyme if you wish to adjust or remove them, which makes them a flexible choice.",
+          a: "Yes, hyaluronic acid fillers can be dissolved with an enzyme if you wish to adjust or remove them, which makes them a flexible choice.",
         },
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Dolgu (Hyaluronik Asit) — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Dolgu (Hyaluronik Asit), Dr. Gamze Eren",
       metaDescription:
-        "Bir plastik cerrah tarafından uygulanan hyaluronik asit dolgularla doğal belirginleştirme — dudak, yanak, kontur ve çizgiler. Dr. Gamze Eren, İstanbul.",
+        "Bir plastik cerrah tarafından uygulanan hyaluronik asit dolgularla doğal belirginleştirme, dudak, yanak, kontur ve çizgiler. Dr. Gamze Eren, İstanbul.",
       title: "Hyaluronik Asit Dolgular",
       tagline: "Hacmi ve konturu doğal biçimde geri kazanmak.",
       summary:
@@ -51,7 +51,7 @@ export const dermalFillers: Treatment = {
       sections: [
         {
           heading: "Dolgular ne yapabilir",
-          body: "Yaşlandıkça hacim ve belirginlik kaybederiz — yanaklar düzleşir, çene hattı yumuşar, kıvrımlar derinleşir ve dudaklar incelir. Hyaluronik asit dolgular bu hacmi nazikçe yerine koyar ve oranı yeniden dengeler ya da dudak ve yanak gibi hatları belirginleştirir.\n\nDr. Eren'in gözü uyuma odaklıdır: yüzünüzle orantılı biçimde belirginleştirir; sonuç asla aşırı dolgun değil, tazelenmiş bir siz gibi görünür.",
+          body: "Yaşlandıkça hacim ve belirginlik kaybederiz, yanaklar düzleşir, çene hattı yumuşar, kıvrımlar derinleşir ve dudaklar incelir. Hyaluronik asit dolgular bu hacmi nazikçe yerine koyar ve oranı yeniden dengeler ya da dudak ve yanak gibi hatları belirginleştirir.\n\nDr. Eren'in gözü uyuma odaklıdır: yüzünüzle orantılı biçimde belirginleştirir; sonuç asla aşırı dolgun değil, tazelenmiş bir siz gibi görünür.",
         },
         {
           heading: "Ne beklemeli",
@@ -59,7 +59,7 @@ export const dermalFillers: Treatment = {
         },
         {
           heading: "Sonuçlar ve geri döndürülebilirlik",
-          body: "Sonuçlar anında görülür ve şişlik geçtikçe bir-iki hafta içinde oturur. Ürüne ve bölgeye bağlı olarak genellikle altı-on sekiz ay sürer.\n\nHyaluronik asidin güven veren bir avantajı, gerektiğinde eritilebilmesidir — bu da onu esnek, düşük bağlılıklı bir seçenek yapar.",
+          body: "Sonuçlar anında görülür ve şişlik geçtikçe bir-iki hafta içinde oturur. Ürüne ve bölgeye bağlı olarak genellikle altı-on sekiz ay sürer.\n\nHyaluronik asidin güven veren bir avantajı, gerektiğinde eritilebilmesidir, bu da onu esnek, düşük bağlılıklı bir seçenek yapar.",
         },
       ],
       faqs: [
@@ -69,7 +69,7 @@ export const dermalFillers: Treatment = {
         },
         {
           q: "Dolgular geri alınabilir mi?",
-          a: "Evet — hyaluronik asit dolgular, ayarlamak veya çıkarmak isterseniz bir enzimle eritilebilir; bu da onları esnek bir seçenek kılar.",
+          a: "Evet, hyaluronik asit dolgular, ayarlamak veya çıkarmak isterseniz bir enzimle eritilebilir; bu da onları esnek bir seçenek kılar.",
         },
       ],
     },

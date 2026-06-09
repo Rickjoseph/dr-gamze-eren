@@ -8,11 +8,11 @@ export const post = {
   image: "/img/blog/facelift.jpg",
   imageAlt: "Elegant mature woman portrait",
   body: `
-The goal of facial rejuvenation is not to look 20 again. It is to look like the best version of yourself at your current age — refreshed, well-rested, and with the character and wisdom that comes with living.
+The goal of facial rejuvenation is not to look 20 again. It is to look like the best version of yourself at your current age, refreshed, well-rested, and with the character and wisdom that comes with living.
 
 ## How Aging Changes the Face
 
-Over time, the face changes in predictable ways. The skin loses elasticity and develops fine lines. The deeper structures — muscle and fat — migrate downward due to gravity and volume loss. Cheekbones become less prominent. The jawline softens. The neck loses definition.
+Over time, the face changes in predictable ways. The skin loses elasticity and develops fine lines. The deeper structures, muscle and fat, migrate downward due to gravity and volume loss. Cheekbones become less prominent. The jawline softens. The neck loses definition.
 
 A facelift addresses the deeper structures, tightening and repositioning the underlying tissues. Skin is redraped, not stretched. The result is restoration of natural contours, not a pulled or frozen appearance.
 
@@ -24,19 +24,19 @@ Skin quality matters more than age. Sun damage, smoking history, and genetics al
 
 ## The Modern Approach
 
-Modern facelift technique emphasizes natural results. Rather than pulling skin tightly, we reposition the deeper structures — muscle and fat layers — to restore volume where it has been lost and lift areas that have sagged.
+Modern facelift technique emphasizes natural results. Rather than pulling skin tightly, we reposition the deeper structures, muscle and fat layers, to restore volume where it has been lost and lift areas that have sagged.
 
 The incisions are placed strategically: in front of the ear, around the earlobe, and behind the ear, where they heal inconspicuously. Most patients can conceal remaining bruising with makeup by two weeks.
 
 ## Complementary Treatments
 
 A facelift is often combined with:
-- **Eyelid surgery (blepharoplasty)** — removes excess skin and fat that creates a tired appearance
-- **Neck lift** — tightens skin and muscle under the chin to restore definition
-- **Fat transfer** — restores volume to cheekbones, temples, and under eyes
-- **Skin resurfacing** — addresses fine lines and texture with laser or chemical peels
+- **Eyelid surgery (blepharoplasty)**, removes excess skin and fat that creates a tired appearance
+- **Neck lift**, tightens skin and muscle under the chin to restore definition
+- **Fat transfer**, restores volume to cheekbones, temples, and under eyes
+- **Skin resurfacing**, addresses fine lines and texture with laser or chemical peels
 
-The combination creates harmonious facial rejuvenation — improving multiple age-related changes rather than isolated features.
+The combination creates harmonious facial rejuvenation, improving multiple age-related changes rather than isolated features.
 
 ## Recovery and Timeline
 
@@ -46,12 +46,12 @@ Most patients take 1-2 weeks off work. Swelling peaks around day 3-4 and gradual
 
 Many patients ask: "Is it too soon?" or "Have I waited too long?" The answer is individual. Early intervention with a subtle procedure often yields better results than waiting for more significant changes and requiring more aggressive surgery.
 
-Conversely, waiting does not mean you have missed your window — a facelift is effective at any age where the benefits outweigh surgical risks.
+Conversely, waiting does not mean you have missed your window, a facelift is effective at any age where the benefits outweigh surgical risks.
 
 ## What Makes Results Last
 
-A facelift remains visible for 7-10 years on average. Aging continues, of course — we cannot stop time. But the procedure resets the clock by several years and slows the visible appearance of aging in treated areas.
+A facelift remains visible for 7-10 years on average. Aging continues, of course, we cannot stop time. But the procedure resets the clock by several years and slows the visible appearance of aging in treated areas.
 
-The best results come from patients who protect their skin: sunscreen daily, healthy lifestyle, good sleep, and realistic expectations. The goal is not to look unchanged — it is to look like the best version of yourself.
+The best results come from patients who protect their skin: sunscreen daily, healthy lifestyle, good sleep, and realistic expectations. The goal is not to look unchanged, it is to look like the best version of yourself.
   `.trim(),
 };

@@ -1,7 +1,7 @@
 export const post = {
   slug: "breast-augmentation-implants-guide",
   title: "Choosing the Right Breast Implants: A Surgeon's Perspective",
-  excerpt: "Round vs teardrop, size selection, implant placement — Dr. Gamze Eren explains the decisions behind a natural breast augmentation result.",
+  excerpt: "Round vs teardrop, size selection, implant placement, Dr. Gamze Eren explains the decisions behind a natural breast augmentation result.",
   date: "2026-05-10",
   category: "Breast",
   readTime: "7 min read",
@@ -12,17 +12,17 @@ Breast augmentation is the most personalised procedure we perform. The same impl
 
 ## Round vs Teardrop Implants
 
-Round implants provide fullness in the upper pole — the area above the nipple. They are the most commonly chosen option and, in the right patient, look entirely natural. When a patient lies down, a round implant will flatten naturally, mimicking the behaviour of natural breast tissue.
+Round implants provide fullness in the upper pole, the area above the nipple. They are the most commonly chosen option and, in the right patient, look entirely natural. When a patient lies down, a round implant will flatten naturally, mimicking the behaviour of natural breast tissue.
 
-Teardrop implants — sometimes called anatomical implants — have more projection at the lower pole and a gentler slope at the top. They tend to suit patients with a longer breast base or those who want a more subtle, natural silhouette with less upper fullness.
+Teardrop implants, sometimes called anatomical implants, have more projection at the lower pole and a gentler slope at the top. They tend to suit patients with a longer breast base or those who want a more subtle, natural silhouette with less upper fullness.
 
 At Dr. Eren's clinic we use Silksurface FDA-approved implants exclusively. The textured surface significantly reduces the risk of capsular contracture and implant rotation.
 
 ## Choosing Size
 
-Size is the decision patients most often second-guess after surgery — and almost always in the same direction: patients wish they had gone slightly larger. This does not mean you should go larger than feels right for you. It means the swelling in early recovery makes implants appear smaller than they will ultimately be.
+Size is the decision patients most often second-guess after surgery, and almost always in the same direction: patients wish they had gone slightly larger. This does not mean you should go larger than feels right for you. It means the swelling in early recovery makes implants appear smaller than they will ultimately be.
 
-We use 3D simulation during consultation so you can visualise proportional outcomes before any decision is made. Size is discussed in terms of projection and width relative to your natural chest measurements, not cup size — cup sizing varies by brand and tells us very little.
+We use 3D simulation during consultation so you can visualise proportional outcomes before any decision is made. Size is discussed in terms of projection and width relative to your natural chest measurements, not cup size, cup sizing varies by brand and tells us very little.
 
 ## Implant Placement
 
@@ -32,7 +32,7 @@ Placement affects recovery time, animation (movement during exercise), and long-
 
 ## What Natural Actually Means
 
-The patients who are happiest with their results almost always chose an outcome proportional to their frame — something a close friend might notice looks different without being able to say exactly why. The goal is rarely dramatic. It is usually a quiet confidence.
+The patients who are happiest with their results almost always chose an outcome proportional to their frame, something a close friend might notice looks different without being able to say exactly why. The goal is rarely dramatic. It is usually a quiet confidence.
 
 We are happy to share before and after photographs of previous patients with similar anatomy to help you calibrate your expectations before your consultation.
   `.trim(),

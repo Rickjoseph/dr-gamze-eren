@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const breastLift: Treatment = {
   slug: "breast-lift",
   category: "breast",
@@ -8,21 +8,21 @@ export const breastLift: Treatment = {
   imageAlt: "Breast aesthetics at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Breast Lift (Mastopexy) in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Breast Lift (Mastopexy) in Istanbul, Dr. Gamze Eren",
       metaDescription:
-        "Breast lift to restore a firmer, higher, more youthful breast shape — with or without implants. Dr. Gamze Eren, Istanbul.",
+        "Breast lift to restore a firmer, higher, more youthful breast shape, with or without implants. Dr. Gamze Eren, Istanbul.",
       title: "Breast Lift (Mastopexy)",
       tagline: "Restoring a firmer, higher, more youthful shape.",
       summary:
-        "A breast lift raises and reshapes breasts that have sagged with time, pregnancy, breastfeeding or weight change — repositioning the nipple and tightening the tissue for a firmer, more youthful contour, with or without an implant.",
+        "A breast lift raises and reshapes breasts that have sagged with time, pregnancy, breastfeeding or weight change, repositioning the nipple and tightening the tissue for a firmer, more youthful contour, with or without an implant.",
       sections: [
         {
           heading: "Who it helps",
-          body: "Over time, skin and ligaments stretch and breasts can lose their lift — the nipple may sit lower and the upper breast can look deflated. A breast lift removes excess skin and reshapes the breast tissue to restore a higher, firmer position.\n\nIf you also want more fullness, a small implant can be combined with the lift; if your volume is enough, a lift alone is often all that's needed. Dr. Eren advises which suits you.",
+          body: "Over time, skin and ligaments stretch and breasts can lose their lift, the nipple may sit lower and the upper breast can look deflated. A breast lift removes excess skin and reshapes the breast tissue to restore a higher, firmer position.\n\nIf you also want more fullness, a small implant can be combined with the lift; if your volume is enough, a lift alone is often all that's needed. Dr. Eren advises which suits you.",
         },
         {
           heading: "The procedure",
-          body: "Excess skin is removed and the breast tissue is reshaped and lifted, with the nipple repositioned to a natural height. Incision patterns are chosen to match the degree of lift needed — kept as limited as possible — and placed to heal discreetly around the areola and breast fold.\n\nIt is performed under general anaesthesia in an accredited hospital, as a day case or with one overnight stay.",
+          body: "Excess skin is removed and the breast tissue is reshaped and lifted, with the nipple repositioned to a natural height. Incision patterns are chosen to match the degree of lift needed, kept as limited as possible, and placed to heal discreetly around the areola and breast fold.\n\nIt is performed under general anaesthesia in an accredited hospital, as a day case or with one overnight stay.",
         },
         {
           heading: "Recovery & results",
@@ -41,9 +41,9 @@ export const breastLift: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Meme Dikleştirme (Mastopeksi) — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Meme Dikleştirme (Mastopeksi), Dr. Gamze Eren",
       metaDescription:
-        "Daha sıkı, daha yukarıda ve genç bir meme şekli için meme dikleştirme — implantlı veya implantsız. Dr. Gamze Eren, İstanbul.",
+        "Daha sıkı, daha yukarıda ve genç bir meme şekli için meme dikleştirme, implantlı veya implantsız. Dr. Gamze Eren, İstanbul.",
       title: "Meme Dikleştirme (Mastopeksi)",
       tagline: "Daha sıkı, daha yukarıda ve genç bir şeklin geri kazanımı.",
       summary:

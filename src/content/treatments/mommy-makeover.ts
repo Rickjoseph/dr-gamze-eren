@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const mommyMakeover: Treatment = {
   slug: "mommy-makeover",
   category: "body",
@@ -8,17 +8,17 @@ export const mommyMakeover: Treatment = {
   imageAlt: "Body contouring at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Mommy Makeover in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Mommy Makeover in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "A personalised combination of tummy, breast and body procedures to restore your pre-pregnancy shape. Dr. Gamze Eren, Istanbul.",
       title: "Mommy Makeover",
       tagline: "Restoring your shape, on your terms.",
       summary:
-        "Pregnancy and breastfeeding change the body in ways that diet and exercise can't always reverse. A mommy makeover combines several procedures in one personalised plan — typically tummy, breast and contour work — to restore a balanced, refreshed shape with a single recovery.",
+        "Pregnancy and breastfeeding change the body in ways that diet and exercise can't always reverse. A mommy makeover combines several procedures in one personalised plan, typically tummy, breast and contour work, to restore a balanced, refreshed shape with a single recovery.",
       sections: [
         {
           heading: "What a mommy makeover includes",
-          body: "There is no single mommy makeover — it is built around you. Common components are abdominoplasty (tummy tuck) to repair stretched muscle and remove loose skin, breast lift and/or augmentation to restore volume and position, and liposuction to refine the waist, hips or back.\n\nAt consultation, Dr. Eren listens to what bothers you most and proposes the smallest combination that achieves the result you want.",
+          body: "There is no single mommy makeover, it is built around you. Common components are abdominoplasty (tummy tuck) to repair stretched muscle and remove loose skin, breast lift and/or augmentation to restore volume and position, and liposuction to refine the waist, hips or back.\n\nAt consultation, Dr. Eren listens to what bothers you most and proposes the smallest combination that achieves the result you want.",
         },
         {
           heading: "One plan, one recovery",
@@ -26,7 +26,7 @@ export const mommyMakeover: Treatment = {
         },
         {
           heading: "Recovery & results",
-          body: "Most women take two to three weeks of gentle recovery, wearing supportive garments and gradually returning to daily life. Final results settle over the following months as swelling resolves.\n\nThe aim is not to look like someone else — it is to feel like yourself again, with a contour that reflects the effort you put into your body.",
+          body: "Most women take two to three weeks of gentle recovery, wearing supportive garments and gradually returning to daily life. Final results settle over the following months as swelling resolves.\n\nThe aim is not to look like someone else, it is to feel like yourself again, with a contour that reflects the effort you put into your body.",
         },
       ],
       faqs: [
@@ -41,17 +41,17 @@ export const mommyMakeover: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Annelik Estetiği (Mommy Makeover) — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Annelik Estetiği (Mommy Makeover), Dr. Gamze Eren",
       metaDescription:
         "Gebelik öncesi şeklinizi geri kazandırmak için karın, meme ve vücut işlemlerinin kişiye özel birleşimi. Dr. Gamze Eren, İstanbul.",
       title: "Annelik Estetiği (Mommy Makeover)",
       tagline: "Şeklinizi, sizin koşullarınızda yeniden kazanın.",
       summary:
-        "Gebelik ve emzirme, vücudu diyet ve egzersizin her zaman geri döndüremeyeceği şekillerde değiştirir. Annelik estetiği, birkaç işlemi tek bir kişiye özel planda birleştirir — genellikle karın, meme ve kontur çalışması — ve tek bir iyileşme süreciyle dengeli, tazelenmiş bir şekil kazandırır.",
+        "Gebelik ve emzirme, vücudu diyet ve egzersizin her zaman geri döndüremeyeceği şekillerde değiştirir. Annelik estetiği, birkaç işlemi tek bir kişiye özel planda birleştirir, genellikle karın, meme ve kontur çalışması, ve tek bir iyileşme süreciyle dengeli, tazelenmiş bir şekil kazandırır.",
       sections: [
         {
           heading: "Annelik estetiği neleri içerir",
-          body: "Tek bir annelik estetiği yoktur — plan sizin etrafınızda kurulur. Yaygın bileşenler; gerilmiş kası onarmak ve gevşek deriyi almak için abdominoplasti (karın germe), hacmi ve konumu geri kazandırmak için meme dikleştirme ve/veya büyütme ve bel, kalça ya da sırtı inceltmek için liposuctiondur.\n\nKonsültasyonda Dr. Eren sizi en çok rahatsız edeni dinler ve istediğiniz sonuca ulaştıracak en küçük kombinasyonu önerir.",
+          body: "Tek bir annelik estetiği yoktur, plan sizin etrafınızda kurulur. Yaygın bileşenler; gerilmiş kası onarmak ve gevşek deriyi almak için abdominoplasti (karın germe), hacmi ve konumu geri kazandırmak için meme dikleştirme ve/veya büyütme ve bel, kalça ya da sırtı inceltmek için liposuctiondur.\n\nKonsültasyonda Dr. Eren sizi en çok rahatsız edeni dinler ve istediğiniz sonuca ulaştıracak en küçük kombinasyonu önerir.",
         },
         {
           heading: "Tek plan, tek iyileşme",

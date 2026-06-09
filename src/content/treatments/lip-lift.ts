@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const lipLift: Treatment = {
   slug: "lip-lift",
   category: "facial",
@@ -8,17 +8,17 @@ export const lipLift: Treatment = {
   imageAlt: "Facial aesthetics at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Lip Lift in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Lip Lift in Istanbul, Dr. Gamze Eren",
       metaDescription:
-        "A subtle, permanent lip lift that shortens the philtrum and defines the upper lip — no fillers. Dr. Gamze Eren, Istanbul.",
+        "A subtle, permanent lip lift that shortens the philtrum and defines the upper lip, no fillers. Dr. Gamze Eren, Istanbul.",
       title: "Lip Lift",
-      tagline: "Shorter philtrum, more visible lip — subtly, permanently.",
+      tagline: "Shorter philtrum, more visible lip, subtly, permanently.",
       summary:
-        "A lip lift shortens the space between the nose and upper lip, rolling more of the natural lip into view and adding a youthful, defined upper lip — without fillers.",
+        "A lip lift shortens the space between the nose and upper lip, rolling more of the natural lip into view and adding a youthful, defined upper lip, without fillers.",
       sections: [
         {
           heading: "What a lip lift does",
-          body: "With age or naturally, the distance between the nose and the upper lip can lengthen, hiding the upper teeth and flattening the lip. A lip lift removes a small, precisely measured strip of skin just under the nose, lifting the lip to show more pink and a gentle, attractive curve.\n\nUnlike filler, it changes proportion rather than just volume — and the result is permanent.",
+          body: "With age or naturally, the distance between the nose and the upper lip can lengthen, hiding the upper teeth and flattening the lip. A lip lift removes a small, precisely measured strip of skin just under the nose, lifting the lip to show more pink and a gentle, attractive curve.\n\nUnlike filler, it changes proportion rather than just volume, and the result is permanent.",
         },
         {
           heading: "The procedure",
@@ -26,7 +26,7 @@ export const lipLift: Treatment = {
         },
         {
           heading: "Recovery & results",
-          body: "There is mild swelling for a few days and fine sutures are removed at about a week. The scar under the nose matures and fades to become discreet.\n\nThe result is a softly enhanced, more defined upper lip that suits your face — subtle, not surgical-looking.",
+          body: "There is mild swelling for a few days and fine sutures are removed at about a week. The scar under the nose matures and fades to become discreet.\n\nThe result is a softly enhanced, more defined upper lip that suits your face, subtle, not surgical-looking.",
         },
       ],
       faqs: [
@@ -41,11 +41,11 @@ export const lipLift: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Dudak Kaldırma — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Dudak Kaldırma, Dr. Gamze Eren",
       metaDescription:
-        "Filtrumu kısaltan ve üst dudağı belirginleştiren ince, kalıcı dudak kaldırma — dolgusuz. Dr. Gamze Eren, İstanbul.",
+        "Filtrumu kısaltan ve üst dudağı belirginleştiren ince, kalıcı dudak kaldırma, dolgusuz. Dr. Gamze Eren, İstanbul.",
       title: "Dudak Kaldırma",
-      tagline: "Daha kısa filtrum, daha görünür dudak — ince ve kalıcı.",
+      tagline: "Daha kısa filtrum, daha görünür dudak, ince ve kalıcı.",
       summary:
         "Dudak kaldırma, burun ile üst dudak arasındaki mesafeyi kısaltır; doğal dudağın daha fazlasını görünür kılar ve dolgu kullanmadan genç, belirgin bir üst dudak kazandırır.",
       sections: [
@@ -59,7 +59,7 @@ export const lipLift: Treatment = {
         },
         {
           heading: "İyileşme ve sonuçlar",
-          body: "Birkaç gün hafif şişlik olur; ince dikişler yaklaşık bir haftada alınır. Burun altındaki iz olgunlaşır ve soluklaşarak belirsizleşir.\n\nSonuç, yüzünüze yakışan, hafifçe belirginleşmiş bir üst dudaktır — ince, ameliyat olmuş gibi değil.",
+          body: "Birkaç gün hafif şişlik olur; ince dikişler yaklaşık bir haftada alınır. Burun altındaki iz olgunlaşır ve soluklaşarak belirsizleşir.\n\nSonuç, yüzünüze yakışan, hafifçe belirginleşmiş bir üst dudaktır, ince, ameliyat olmuş gibi değil.",
         },
       ],
       faqs: [

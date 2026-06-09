@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const blepharoplasty: Treatment = {
   slug: "blepharoplasty",
   category: "facial",
@@ -8,17 +8,17 @@ export const blepharoplasty: Treatment = {
   imageAlt: "Eyelid surgery at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Blepharoplasty (Eyelid Surgery) in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Blepharoplasty (Eyelid Surgery) in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "Upper and lower eyelid surgery for a rested, natural look. Dr. Gamze Eren, Istanbul.",
       title: "Blepharoplasty (Eyelid Surgery)",
-      tagline: "A rested, open look — never a startled one.",
+      tagline: "A rested, open look, never a startled one.",
       summary:
         "Blepharoplasty refreshes the upper and/or lower eyelids by removing or repositioning excess skin and fat. The goal is simple: to look rested and more like yourself, never surprised or 'pulled'.",
       sections: [
         {
           heading: "Who it helps",
-          body: "Over time, upper eyelids can become hooded and lower lids can develop bags or shadows. Blepharoplasty addresses both — upper, lower, or together — to open the eyes and soften a tired appearance.\n\nDr. Eren assesses skin, fat and the position of the brow together, because a heavy brow can mimic excess eyelid skin and is sometimes better treated differently.",
+          body: "Over time, upper eyelids can become hooded and lower lids can develop bags or shadows. Blepharoplasty addresses both, upper, lower, or together, to open the eyes and soften a tired appearance.\n\nDr. Eren assesses skin, fat and the position of the brow together, because a heavy brow can mimic excess eyelid skin and is sometimes better treated differently.",
         },
         {
           heading: "The procedure",
@@ -36,16 +36,16 @@ export const blepharoplasty: Treatment = {
         },
         {
           q: "Will I look 'different'?",
-          a: "No — the aim is a rested version of your own eyes, not a changed expression.",
+          a: "No, the aim is a rested version of your own eyes, not a changed expression.",
         },
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Göz Kapağı Estetiği (Blefaroplasti) — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Göz Kapağı Estetiği (Blefaroplasti), Dr. Gamze Eren",
       metaDescription:
         "Dinlenmiş ve doğal bir bakış için üst ve alt göz kapağı estetiği. Dr. Gamze Eren, İstanbul.",
       title: "Göz Kapağı Estetiği (Blefaroplasti)",
-      tagline: "Dinlenmiş ve açık bir bakış — asla şaşkın değil.",
+      tagline: "Dinlenmiş ve açık bir bakış, asla şaşkın değil.",
       summary:
         "Blefaroplasti, fazla deri ve yağı alarak veya yeniden konumlandırarak üst ve/veya alt göz kapaklarını tazeler. Amaç basittir: şaşırmış ya da 'gergin' değil, dinlenmiş ve daha çok kendiniz gibi görünmek.",
       sections: [
@@ -69,7 +69,7 @@ export const blepharoplasty: Treatment = {
         },
         {
           q: "'Farklı' mı görünürüm?",
-          a: "Hayır — amaç ifadenizi değiştirmek değil, kendi gözlerinizin dinlenmiş hâlidir.",
+          a: "Hayır, amaç ifadenizi değiştirmek değil, kendi gözlerinizin dinlenmiş hâlidir.",
         },
       ],
     },

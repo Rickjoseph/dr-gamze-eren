@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const mesotherapySkinBoosters: Treatment = {
   slug: "mesotherapy-skin-boosters",
   category: "non-surgical",
@@ -8,13 +8,13 @@ export const mesotherapySkinBoosters: Treatment = {
   imageAlt: "Non-surgical treatments at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Mesotherapy & Skin Boosters in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Mesotherapy & Skin Boosters in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "Hydrating, glow-boosting mesotherapy and skin boosters to improve skin quality and radiance. Dr. Gamze Eren, Istanbul.",
       title: "Mesotherapy & Skin Boosters",
       tagline: "Hydration and glow, from within the skin.",
       summary:
-        "Mesotherapy and skin boosters deliver hydrating, revitalising ingredients into the skin to improve its quality, texture and glow — not to change your features, but to make your skin look healthier, fresher and more luminous.",
+        "Mesotherapy and skin boosters deliver hydrating, revitalising ingredients into the skin to improve its quality, texture and glow, not to change your features, but to make your skin look healthier, fresher and more luminous.",
       sections: [
         {
           heading: "What they do",
@@ -22,7 +22,7 @@ export const mesotherapySkinBoosters: Treatment = {
         },
         {
           heading: "What to expect",
-          body: "A fine needle delivers tiny amounts of product across the treatment area. Sessions take around 20–30 minutes, with minimal discomfort and little to no downtime — you may have small bumps or redness that settle within hours to a day.\n\nA short course of sessions, a few weeks apart, usually gives the best result.",
+          body: "A fine needle delivers tiny amounts of product across the treatment area. Sessions take around 20–30 minutes, with minimal discomfort and little to no downtime, you may have small bumps or redness that settle within hours to a day.\n\nA short course of sessions, a few weeks apart, usually gives the best result.",
         },
         {
           heading: "Results & maintenance",
@@ -41,13 +41,13 @@ export const mesotherapySkinBoosters: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Mezoterapi ve Cilt Bakım Aşıları — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Mezoterapi ve Cilt Bakım Aşıları, Dr. Gamze Eren",
       metaDescription:
         "Cilt kalitesini ve ışıltısını iyileştiren nemlendirici mezoterapi ve cilt bakım aşıları (skin booster). Dr. Gamze Eren, İstanbul.",
       title: "Mezoterapi ve Cilt Bakım Aşıları",
       tagline: "Cildin içinden nem ve ışıltı.",
       summary:
-        "Mezoterapi ve cilt bakım aşıları (skin booster), cildin kalitesini, dokusunu ve ışıltısını iyileştirmek için nemlendirici ve canlandırıcı içerikleri cilde ulaştırır — hatlarınızı değiştirmek için değil, cildinizi daha sağlıklı, taze ve aydınlık göstermek için.",
+        "Mezoterapi ve cilt bakım aşıları (skin booster), cildin kalitesini, dokusunu ve ışıltısını iyileştirmek için nemlendirici ve canlandırıcı içerikleri cilde ulaştırır, hatlarınızı değiştirmek için değil, cildinizi daha sağlıklı, taze ve aydınlık göstermek için.",
       sections: [
         {
           heading: "Ne yaparlar",
@@ -55,7 +55,7 @@ export const mesotherapySkinBoosters: Treatment = {
         },
         {
           heading: "Ne beklemeli",
-          body: "İnce bir iğne, tedavi bölgesine küçük miktarlarda ürün uygular. Seanslar yaklaşık 20–30 dakika sürer; rahatsızlık minimaldir ve iyileşme süresi yok denecek kadar azdır — saatler ile bir gün içinde geçen küçük kabarcıklar veya kızarıklık olabilir.\n\nBirkaç hafta arayla yapılan kısa bir seans kürü genellikle en iyi sonucu verir.",
+          body: "İnce bir iğne, tedavi bölgesine küçük miktarlarda ürün uygular. Seanslar yaklaşık 20–30 dakika sürer; rahatsızlık minimaldir ve iyileşme süresi yok denecek kadar azdır, saatler ile bir gün içinde geçen küçük kabarcıklar veya kızarıklık olabilir.\n\nBirkaç hafta arayla yapılan kısa bir seans kürü genellikle en iyi sonucu verir.",
         },
         {
           heading: "Sonuçlar ve bakım",

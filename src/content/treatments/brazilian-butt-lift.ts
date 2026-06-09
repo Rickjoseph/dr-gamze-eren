@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const brazilianButtLift: Treatment = {
   slug: "brazilian-butt-lift",
   category: "body",
@@ -8,21 +8,21 @@ export const brazilianButtLift: Treatment = {
   imageAlt: "Body contouring at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Brazilian Butt Lift (BBL) in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Brazilian Butt Lift (BBL) in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "Natural buttock enhancement with your own fat (BBL) for balanced, proportionate curves. Dr. Gamze Eren, Istanbul.",
       title: "Brazilian Butt Lift (BBL)",
       tagline: "Your own fat, for natural, balanced curves.",
       summary:
-        "A Brazilian butt lift reshapes and enhances the buttocks using your own fat — slimming areas like the waist and back with liposuction, then transferring purified fat to create a fuller, lifted, naturally proportionate shape.",
+        "A Brazilian butt lift reshapes and enhances the buttocks using your own fat, slimming areas like the waist and back with liposuction, then transferring purified fat to create a fuller, lifted, naturally proportionate shape.",
       sections: [
         {
           heading: "What a BBL does",
-          body: "A BBL is really two procedures in one: liposuction to refine the waist, flanks or back, and fat transfer to add volume and shape where you want it. Because it uses your own tissue, the result feels natural and there is no implant.\n\nDr. Eren's emphasis is proportion — enhancing your curves in balance with your frame rather than chasing an exaggerated look. Safety is paramount: fat is placed in safe planes, never deep into muscle.",
+          body: "A BBL is really two procedures in one: liposuction to refine the waist, flanks or back, and fat transfer to add volume and shape where you want it. Because it uses your own tissue, the result feels natural and there is no implant.\n\nDr. Eren's emphasis is proportion, enhancing your curves in balance with your frame rather than chasing an exaggerated look. Safety is paramount: fat is placed in safe planes, never deep into muscle.",
         },
         {
           heading: "The procedure",
-          body: "Fat is gently harvested by liposuction, purified, and re-injected in layers to sculpt the buttocks. The contouring of the donor areas is part of the result — a slimmer waist often enhances the curve as much as the added volume.\n\nIt is performed under general anaesthesia in an accredited hospital, as a day case or with one overnight stay.",
+          body: "Fat is gently harvested by liposuction, purified, and re-injected in layers to sculpt the buttocks. The contouring of the donor areas is part of the result, a slimmer waist often enhances the curve as much as the added volume.\n\nIt is performed under general anaesthesia in an accredited hospital, as a day case or with one overnight stay.",
         },
         {
           heading: "Recovery & results",
@@ -32,7 +32,7 @@ export const brazilianButtLift: Treatment = {
       faqs: [
         {
           q: "Is a BBL safe?",
-          a: "When performed correctly, fat is placed only in safe, superficial planes — never into the muscle — which is the key to a safe procedure. Dr. Eren follows current safety guidelines closely.",
+          a: "When performed correctly, fat is placed only in safe, superficial planes, never into the muscle, which is the key to a safe procedure. Dr. Eren follows current safety guidelines closely.",
         },
         {
           q: "Will the result last?",
@@ -41,7 +41,7 @@ export const brazilianButtLift: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Brezilya Poposu (BBL) — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Brezilya Poposu (BBL), Dr. Gamze Eren",
       metaDescription:
         "Dengeli ve orantılı kıvrımlar için kendi yağınızla doğal kalça belirginleştirme (BBL). Dr. Gamze Eren, İstanbul.",
       title: "Brezilya Poposu (BBL)",
@@ -65,7 +65,7 @@ export const brazilianButtLift: Treatment = {
       faqs: [
         {
           q: "BBL güvenli mi?",
-          a: "Doğru uygulandığında yağ yalnızca güvenli, yüzeysel katmanlara yerleştirilir — asla kas içine değil — ve bu, güvenli bir işlemin anahtarıdır. Dr. Eren güncel güvenlik kılavuzlarına titizlikle uyar.",
+          a: "Doğru uygulandığında yağ yalnızca güvenli, yüzeysel katmanlara yerleştirilir, asla kas içine değil, ve bu, güvenli bir işlemin anahtarıdır. Dr. Eren güncel güvenlik kılavuzlarına titizlikle uyar.",
         },
         {
           q: "Sonuç kalıcı mı?",

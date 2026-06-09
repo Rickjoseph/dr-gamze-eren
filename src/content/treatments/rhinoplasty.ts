@@ -1,6 +1,6 @@
 import type { Treatment } from "./types";
 
-// NOTE: clinical content — please have Dr. Gamze Eren review before launch.
+// NOTE: clinical content, please have Dr. Gamze Eren review before launch.
 export const rhinoplasty: Treatment = {
   slug: "rhinoplasty",
   category: "facial",
@@ -8,17 +8,17 @@ export const rhinoplasty: Treatment = {
   imageAlt: "Rhinoplasty planning at Dr. Gamze Eren's clinic",
   content: {
     en: {
-      metaTitle: "Rhinoplasty in Istanbul — Dr. Gamze Eren",
+      metaTitle: "Rhinoplasty in Istanbul, Dr. Gamze Eren",
       metaDescription:
         "Natural, proportionate rhinoplasty planned in 3D with Kratos simulation. Dr. Gamze Eren, Istanbul.",
       title: "Rhinoplasty (Nose Reshaping)",
-      tagline: "A nose that fits your face — planned in 3D before surgery.",
+      tagline: "A nose that fits your face, planned in 3D before surgery.",
       summary:
-        "Rhinoplasty reshapes the nose to balance it with the rest of your face — refining the bridge, tip or proportions, and improving breathing where needed. Dr. Gamze Eren plans every case in three dimensions with Kratos simulation, so you can preview a natural result before any decision is made.",
+        "Rhinoplasty reshapes the nose to balance it with the rest of your face, refining the bridge, tip or proportions, and improving breathing where needed. Dr. Gamze Eren plans every case in three dimensions with Kratos simulation, so you can preview a natural result before any decision is made.",
       sections: [
         {
           heading: "A nose in harmony with your face",
-          body: "Good rhinoplasty is not about a 'type' of nose — it is about proportion. Dr. Eren designs each result around your features, ethnicity and the way your nose moves when you smile and speak, aiming for a natural outcome that doesn't look operated on.\n\nFunction matters as much as form: where breathing is restricted, the septum and internal structures are addressed in the same procedure.",
+          body: "Good rhinoplasty is not about a 'type' of nose, it is about proportion. Dr. Eren designs each result around your features, ethnicity and the way your nose moves when you smile and speak, aiming for a natural outcome that doesn't look operated on.\n\nFunction matters as much as form: where breathing is restricted, the septum and internal structures are addressed in the same procedure.",
         },
         {
           heading: "Planned in 3D, performed with precision",
@@ -26,13 +26,13 @@ export const rhinoplasty: Treatment = {
         },
         {
           heading: "Recovery & results",
-          body: "An external splint is worn for about a week, after which most patients feel comfortable in public. Bruising settles within two weeks; the tip refines over months as the last swelling resolves.\n\nThe nose continues to settle into its final shape over the first year — and a well-planned result ages naturally with your face.",
+          body: "An external splint is worn for about a week, after which most patients feel comfortable in public. Bruising settles within two weeks; the tip refines over months as the last swelling resolves.\n\nThe nose continues to settle into its final shape over the first year, and a well-planned result ages naturally with your face.",
         },
       ],
       faqs: [
         {
           q: "Will my result look natural?",
-          a: "That is the priority. Changes are planned in proportion to your features, and 3D simulation lets you agree the goal in advance — avoiding an over-done look.",
+          a: "That is the priority. Changes are planned in proportion to your features, and 3D simulation lets you agree the goal in advance, avoiding an over-done look.",
         },
         {
           q: "Can breathing problems be treated at the same time?",
@@ -41,11 +41,11 @@ export const rhinoplasty: Treatment = {
       ],
     },
     tr: {
-      metaTitle: "İstanbul'da Burun Estetiği (Rinoplasti) — Dr. Gamze Eren",
+      metaTitle: "İstanbul'da Burun Estetiği (Rinoplasti), Dr. Gamze Eren",
       metaDescription:
         "Kratos simülasyonuyla 3D planlanan doğal ve orantılı burun estetiği. Dr. Gamze Eren, İstanbul.",
       title: "Burun Estetiği (Rinoplasti)",
-      tagline: "Yüzünüze yakışan bir burun — ameliyattan önce 3D planlanır.",
+      tagline: "Yüzünüze yakışan bir burun, ameliyattan önce 3D planlanır.",
       summary:
         "Rinoplasti, burnu yüzünüzün geri kalanıyla dengelemek için yeniden şekillendirir; sırtı, ucu veya oranları inceltir ve gerektiğinde nefes almayı iyileştirir. Dr. Gamze Eren her olguyu Kratos simülasyonuyla üç boyutlu planlar; böylece herhangi bir karar verilmeden önce doğal sonucu önizleyebilirsiniz.",
       sections: [
