@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { GlassCard } from "@/components/GlassCard";
 import type { PublicationsLabels } from "@/content/publications";
 
@@ -14,24 +15,32 @@ type Props = {
 // Keeps the About page calm while still surfacing credibility on demand.
 export function PublicationsAccordion({ labels, journal, international }: Props) {
   const [open, setOpen] = useState(false);
-  const total = journal.length + international.length + 10; // +10 national
 
   return (
-    <GlassCard className="p-7 sm:p-9">
+    <GlassCard className="p-6 sm:p-9">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        className="flex w-full items-center justify-between gap-4 text-left"
+        className="flex w-full items-center justify-between gap-3 text-left sm:gap-4"
       >
-        <span>
-          <span className="eyebrow block">{labels.eyebrow}</span>
-          <span className="mt-1 block font-display text-2xl sm:text-3xl">
-            {labels.title}
+        <span className="flex min-w-0 items-center gap-4">
+          <Image
+            src="/team/dr-gamze-eren-profile.jpg"
+            alt="Dr. Gamze Eren, plastic surgeon"
+            width={64}
+            height={80}
+            className="shrink-0 rounded-2xl object-cover shadow-sm ring-1 ring-white/70"
+          />
+          <span className="min-w-0">
+            <span className="eyebrow block">{labels.eyebrow}</span>
+            <span className="mt-1 block font-display text-xl leading-tight sm:text-3xl">
+              {labels.title}
+            </span>
           </span>
         </span>
-        <span className="flex items-center gap-2 text-sm text-[var(--color-taupe)]">
-          <span>{open ? labels.hideLabel : labels.showLabel}</span>
+        <span className="flex shrink-0 items-center gap-2 text-sm text-[var(--color-taupe)]">
+          <span className="hidden sm:inline">{open ? labels.hideLabel : labels.showLabel}</span>
           <svg
             className={`h-4 w-4 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
             fill="none"
