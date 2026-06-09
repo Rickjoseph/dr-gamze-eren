@@ -20,17 +20,17 @@ export type TechContent = {
 // should be reviewed by Dr. Gamze Eren before launch.
 export const technologyContent: Record<Locale, TechContent> = {
   en: {
-    metaTitle: "3D Kratos Simulation — Dr. Gamze Eren",
+    metaTitle: "3D Kratos Simulation, Dr. Gamze Eren",
     eyebrow: "Technology",
     headlineA: "Plan your result in",
     headlineAccent: "three dimensions",
-    lede: "With 3D Kratos pre-operative simulation, you and Dr. Gamze Eren design and preview a natural, proportionate result together — before any decision is made.",
+    lede: "With 3D Kratos pre-operative simulation, you and Dr. Gamze Eren design and preview a natural, proportionate result together, before any decision is made.",
     intro: {
       eyebrow: "What it is",
       title: "A shared plan, visualised in 3D",
       paragraphs: [
         "Kratos is a 3D pre-operative simulation platform used most often for rhinoplasty and facial planning. Starting from photographs of your face, it builds an accurate three-dimensional model that Dr. Gamze Eren uses to plan and visualise the proposed result.",
-        "Instead of describing an outcome in words, the simulation lets you see a realistic preview — so the goal of your surgery is clear, shared, and agreed before you proceed.",
+        "Instead of describing an outcome in words, the simulation lets you see a realistic preview, so the goal of your surgery is clear, shared, and agreed before you proceed.",
       ],
     },
     steps: {
@@ -46,15 +46,15 @@ export const technologyContent: Record<Locale, TechContent> = {
       eyebrow: "Why it matters",
       title: "Clarity, precision, confidence",
       items: [
-        { t: "Shared expectations", d: "You and your surgeon work toward the same, visualised goal — far less guesswork, fewer surprises." },
+        { t: "Shared expectations", d: "You and your surgeon work toward the same, visualised goal, far less guesswork, fewer surprises." },
         { t: "Surgical precision", d: "A detailed 3D plan informs the operative steps, supporting a more predictable, refined result." },
         { t: "Naturally yours", d: "Changes are planned in proportion to your features, protecting a result that still looks unmistakably like you." },
       ],
     },
     note: {
       eyebrow: "An honest note",
-      title: "A guide to the goal — not a guarantee",
-      body: "A simulation is a planning tool that illustrates the intended result. It is a guide we work toward, not a promise of an exact outcome — final results depend on your anatomy, healing and biology, which Dr. Gamze will discuss with you in person.",
+      title: "A guide to the goal, not a guarantee",
+      body: "A simulation is a planning tool that illustrates the intended result. It is a guide we work toward, not a promise of an exact outcome, final results depend on your anatomy, healing and biology, which Dr. Gamze will discuss with you in person.",
     },
     cta: {
       headline: "Plan your procedure in 3D",
@@ -64,7 +64,7 @@ export const technologyContent: Record<Locale, TechContent> = {
     },
   },
   tr: {
-    metaTitle: "3D Kratos Simülasyonu — Dr. Gamze Eren",
+    metaTitle: "3D Kratos Simülasyonu, Dr. Gamze Eren",
     eyebrow: "Teknoloji",
     headlineA: "Sonucunuzu",
     headlineAccent: "üç boyutta planlayın",
@@ -97,7 +97,7 @@ export const technologyContent: Record<Locale, TechContent> = {
     },
     note: {
       eyebrow: "Dürüst bir not",
-      title: "Hedefe bir rehber — garanti değil",
+      title: "Hedefe bir rehber, garanti değil",
       body: "Simülasyon, amaçlanan sonucu gösteren bir planlama aracıdır. Ulaşmaya çalıştığımız bir rehberdir, kesin sonucun garantisi değildir; nihai sonuçlar anatominize, iyileşmenize ve biyolojinize bağlıdır ve Dr. Gamze bunları sizinle yüz yüze görüşecektir.",
     },
     cta: {

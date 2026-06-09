@@ -1,14 +1,14 @@
 // All translatable strings. Add a new locale by extending each section.
-// Keep keys identical across locales — TypeScript will enforce it via Dict.
+// Keep keys identical across locales, TypeScript will enforce it via Dict.
 
 export type Locale = "en" | "tr" | "ru";
 
 const en = {
   meta: {
-    siteTitle: "Dr. Gamze Eren — Aesthetic & Reconstructive Surgery, Istanbul",
+    siteTitle: "Dr. Gamze Eren, Aesthetic & Reconstructive Surgery, Istanbul",
     siteDescription:
       "Board-certified plastic surgery in Istanbul. Surgical precision meets artistic vision, with natural, confident results in a private Caddebostan clinic.",
-    ogTitle: "Dr. Gamze Eren — Aesthetic Surgery, Istanbul",
+    ogTitle: "Dr. Gamze Eren, Aesthetic Surgery, Istanbul",
     ogDescription:
       "Confidence is beautiful. Surgical precision, artistic vision, results that look unmistakably yours.",
   },
@@ -69,7 +69,7 @@ const en = {
     },
     philosophy: {
       eyebrow: "Philosophy",
-      quoteA: "“Beauty is not perfection — it is",
+      quoteA: "“Beauty is not perfection, it is",
       quoteAccent1: "harmony",
       quoteB: ", confidence, and feeling at peace in your own body. Aesthetic surgery is not a transformation but a graceful return to your",
       quoteAccent2: "strongest self",
@@ -390,10 +390,10 @@ const en = {
 
 const tr: typeof en = {
   meta: {
-    siteTitle: "Dr. Gamze Eren — Estetik ve Plastik Cerrahi, İstanbul",
+    siteTitle: "Dr. Gamze Eren, Estetik ve Plastik Cerrahi, İstanbul",
     siteDescription:
       "İstanbul’da kurul onaylı plastik cerrahi. Cerrahi hassasiyet ve sanatsal vizyonun buluşması; Caddebostan’da özel bir klinikte doğal, özgüvenli sonuçlar.",
-    ogTitle: "Dr. Gamze Eren — Estetik Cerrahi, İstanbul",
+    ogTitle: "Dr. Gamze Eren, Estetik Cerrahi, İstanbul",
     ogDescription:
       "Özgüven güzeldir. Cerrahi hassasiyet, sanatsal vizyon ve gerçekten size ait görünen sonuçlar.",
   },
@@ -454,7 +454,7 @@ const tr: typeof en = {
     },
     philosophy: {
       eyebrow: "Felsefe",
-      quoteA: "“Güzellik kusursuzluk değildir — o,",
+      quoteA: "“Güzellik kusursuzluk değildir, o,",
       quoteAccent1: "uyum",
       quoteB: ", özgüven ve kendi bedeninizde huzur duymaktır. Estetik cerrahi bir dönüşüm değil, içindeki",
       quoteAccent2: "en güçlü halinize",
