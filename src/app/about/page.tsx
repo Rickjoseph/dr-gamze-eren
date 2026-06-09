@@ -98,7 +98,7 @@ export default async function AboutPage() {
             <GlassCard className="md:col-span-3 overflow-hidden p-0">
               <div className="relative aspect-[4/5] w-full md:aspect-auto md:h-full">
                 <Image
-                  src="/team/dr-gamze-portrait.jpg"
+                  src="/team/dr-gamze-eren-portrait.jpg"
                   alt={`${a.portrait.role} ${a.portrait.name}`}
                   fill
                   priority
