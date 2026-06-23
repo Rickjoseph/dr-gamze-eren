@@ -1168,7 +1168,7 @@ const de = {
   },
   nav: {
     home: "Startseite",
-    about: "Über mich",
+    about: "Über",
     services: "Leistungen",
     results: "Ergebnisse",
     blog: "Journal",
