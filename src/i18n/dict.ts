@@ -1032,7 +1032,7 @@ const ru: typeof en = {
         "Процедуры, спланированные с учётом ваших пропорций и с 3D-симуляцией, чтобы каждое изменение было понятно до того, как оно будет сделано.",
       procedures: [
         "Ринопластика (Kratos 3D)",
-        "Верхняя и нижняя блефаропластика",
+        "Блефаропластика (веки)",
         "Подтяжка бровей",
         "Подтяжка губ",
         "Липофилинг лица",
@@ -1045,7 +1045,7 @@ const ru: typeof en = {
         "Индивидуальный подход к моделированию тела, отдающий приоритет пропорциям, а не объёму. Восстановление поддерживается современными протоколами и concierge-уходом.",
       procedures: [
         "Mommy makeover",
-        "Бразильская подтяжка ягодиц (BBL)",
+        "BBL (подтяжка ягодиц)",
         "Абдоминопластика",
         "Подтяжка рук и бёдер",
         "Липосакция (VASER, 360°)",
@@ -1065,8 +1065,8 @@ const ru: typeof en = {
         "Меню инъекций, аппаратных и кожных процедур под медицинским контролем для поддержания, утончения и продления результата операций.",
       procedures: [
         "Ботулотоксин",
-        "Филлеры на гиалуроновой кислоте",
-        "Мезотерапия и кожные бустеры",
+        "Гиалуроновые филлеры",
+        "Мезотерапия & бустеры",
         "Медицинские пилинги",
         "Биостимуляторы",
       ],
@@ -1415,7 +1415,7 @@ const de = {
         "Eingriffe, die auf Ihre Gesichtsproportionen abgestimmt sind – mit 3D-Simulation geplant, damit Sie jede Veränderung vor dem Eingriff verstehen.",
       procedures: [
         "Rhinoplastik (Kratos 3D)",
-        "Ober- & Unterlid-Blepharoplastik",
+        "Blepharoplastik (Lider)",
         "Browlift",
         "Liplift",
         "Gesichtsfetttransfer",
@@ -1430,8 +1430,8 @@ const de = {
         "Mommy Makeover",
         "Brazilian Butt Lift (BBL)",
         "Abdominoplastik",
-        "Arm- & Oberschenkelstraffung",
-        "Liposuktion (VASER, 360°)",
+        "Arm- & Oberschenkel-Lift",
+        "Liposuktion (360°)",
       ],
     },
     breast: {
