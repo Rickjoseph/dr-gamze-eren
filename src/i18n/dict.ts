@@ -1031,7 +1031,7 @@ const ru: typeof en = {
       description:
         "Процедуры, спланированные с учётом ваших пропорций и с 3D-симуляцией, чтобы каждое изменение было понятно до того, как оно будет сделано.",
       procedures: [
-        "Ринопластика (Kratos 3D)",
+        "Ринопластика (3D)",
         "Блефаропластика (веки)",
         "Подтяжка бровей",
         "Подтяжка губ",
@@ -1414,8 +1414,8 @@ const de = {
       description:
         "Eingriffe, die auf Ihre Gesichtsproportionen abgestimmt sind – mit 3D-Simulation geplant, damit Sie jede Veränderung vor dem Eingriff verstehen.",
       procedures: [
-        "Rhinoplastik (Kratos 3D)",
-        "Blepharoplastik (Lider)",
+        "Rhinoplastik (3D)",
+        "Blepharoplastik",
         "Browlift",
         "Liplift",
         "Gesichtsfetttransfer",
@@ -1428,9 +1428,9 @@ const de = {
         "Ein maßgeschneiderter Ansatz zur Körperformung, der Proportion vor Volumen stellt. Die Erholung wird durch moderne Protokolle und Concierge-Betreuung unterstützt.",
       procedures: [
         "Mommy Makeover",
-        "Brazilian Butt Lift (BBL)",
+        "BBL (Butt Lift)",
         "Abdominoplastik",
-        "Arm- & Oberschenkel-Lift",
+        "Arm & Oberschenkel",
         "Liposuktion (360°)",
       ],
     },
@@ -1449,7 +1449,7 @@ const de = {
       procedures: [
         "Botulinumtoxin",
         "Hyaluronsäure-Filler",
-        "Mesotherapie & Skin Booster",
+        "Mesotherapie & Booster",
         "Medizinische Peelings",
         "Biostimulators",
       ],
