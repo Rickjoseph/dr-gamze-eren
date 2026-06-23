@@ -143,6 +143,7 @@ export const treatmentUI: Record<
 
 // Returns the previous and next treatments relative to `slug` in the flat
 // treatments array order (category-grouped: facial → breast → body → non-surgical).
+// Wraps around: the first treatment links back to the last, and vice versa.
 export function getAdjacentTreatments(slug: string): {
   prev: Treatment | null;
   next: Treatment | null;
@@ -150,8 +151,8 @@ export function getAdjacentTreatments(slug: string): {
   const idx = treatments.findIndex((t) => t.slug === slug);
   if (idx === -1) return { prev: null, next: null };
   return {
-    prev: idx > 0 ? treatments[idx - 1] : null,
-    next: idx < treatments.length - 1 ? treatments[idx + 1] : null,
+    prev: treatments[idx > 0 ? idx - 1 : treatments.length - 1],
+    next: treatments[idx < treatments.length - 1 ? idx + 1 : 0],
   };
 }
 
