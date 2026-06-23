@@ -6,8 +6,8 @@ export const post = {
   date: "2026-06-04",
   category: "Body",
   readTime: "6 min read",
-  image: "/img/service-body.jpg",
-  imageAlt: "Calm, confident silhouette in soft natural light",
+  image: "/img/blog/mommy-makeover.jpg",
+  imageAlt: "Woman embracing freedom and confidence after Mommy Makeover",
   body: `
 Pregnancy and breastfeeding are transformative, and they leave their mark on the body in ways that are not always reversible with diet and exercise alone. Stretched skin, separated abdominal muscles and a change in breast shape are common, and entirely natural. A mommy makeover is a personalised way to address them together.
 
