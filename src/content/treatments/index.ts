@@ -140,3 +140,26 @@ export const treatmentUI: Record<
     secondaryButton: "Alle Eingriffe",
   },
 };
+
+// Returns the previous and next treatments relative to `slug` in the flat
+// treatments array order (category-grouped: facial → breast → body → non-surgical).
+export function getAdjacentTreatments(slug: string): {
+  prev: Treatment | null;
+  next: Treatment | null;
+} {
+  const idx = treatments.findIndex((t) => t.slug === slug);
+  if (idx === -1) return { prev: null, next: null };
+  return {
+    prev: idx > 0 ? treatments[idx - 1] : null,
+    next: idx < treatments.length - 1 ? treatments[idx + 1] : null,
+  };
+}
+
+// Prev/next navigation labels per locale.
+export const treatmentNavLabels: Record<Locale, { prev: string; next: string }> = {
+  en: { prev: "Previous", next: "Next" },
+  de: { prev: "Vorheriger", next: "Nächster" },
+  ru: { prev: "Назад", next: "Вперёд" },
+  tr: { prev: "Önceki", next: "Sonraki" },
+};
+
