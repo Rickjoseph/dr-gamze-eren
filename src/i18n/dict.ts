@@ -261,7 +261,7 @@ const en = {
       description:
         "Procedures shaped around your facial proportions, planned with 3D simulation so you understand every change before it is made.",
       procedures: [
-        "Rhinoplasty (Kratos 3D planning)",
+        "Rhinoplasty (Kratos 3D)",
         "Upper & lower blepharoplasty",
         "Brow lift",
         "Lip lift",
@@ -646,7 +646,7 @@ const tr: typeof en = {
       description:
         "Yüz oranlarınıza göre şekillendirilen, her değişikliği önceden anlamanız için 3D simülasyonla planlanan işlemler.",
       procedures: [
-        "Rinoplasti (Kratos 3D planlama)",
+        "Rinoplasti (Kratos 3D)",
         "Üst & alt blefaroplasti",
         "Kaş kaldırma",
         "Dudak kaldırma",
