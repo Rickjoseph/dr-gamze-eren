@@ -3,12 +3,15 @@ import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 import { GlassCard } from "@/components/GlassCard";
+import { TreatmentNav } from "@/components/TreatmentNav";
 import { getDict } from "@/i18n/getLocale";
 import {
   getTreatment,
   getTreatmentContent,
+  getAdjacentTreatments,
   treatments,
   treatmentUI,
+  treatmentNavLabels,
 } from "@/content/treatments";
 
 interface Props {
@@ -44,6 +47,11 @@ export default async function TreatmentPage({ params }: Props) {
   const { locale, t } = await getDict();
   const c = getTreatmentContent(treatment, locale);
   const ui = treatmentUI[locale];
+  const navLabels = treatmentNavLabels[locale];
+  const { prev, next } = getAdjacentTreatments(slug);
+  const prevTitle = prev ? getTreatmentContent(prev, locale).title : null;
+  const nextTitle = next ? getTreatmentContent(next, locale).title : null;
+  const categoryLabel = t.groups[treatment.category];
 
   return (
     <>
@@ -132,6 +140,16 @@ export default async function TreatmentPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* ============== PREV / NEXT NAV ============== */}
+      <TreatmentNav
+        prev={prev}
+        next={next}
+        prevTitle={prevTitle}
+        nextTitle={nextTitle}
+        categoryLabel={categoryLabel}
+        labels={navLabels}
+      />
     </>
   );
 }
