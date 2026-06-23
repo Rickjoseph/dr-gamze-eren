@@ -1031,7 +1031,7 @@ const ru: typeof en = {
       description:
         "Процедуры, спланированные с учётом ваших пропорций и с 3D-симуляцией, чтобы каждое изменение было понятно до того, как оно будет сделано.",
       procedures: [
-        "Ринопластика (планирование Kratos 3D)",
+        "Ринопластика (Kratos 3D)",
         "Верхняя и нижняя блефаропластика",
         "Подтяжка бровей",
         "Подтяжка губ",
@@ -1414,7 +1414,7 @@ const de = {
       description:
         "Eingriffe, die auf Ihre Gesichtsproportionen abgestimmt sind – mit 3D-Simulation geplant, damit Sie jede Veränderung vor dem Eingriff verstehen.",
       procedures: [
-        "Rhinoplastik (Kratos 3D-Planung)",
+        "Rhinoplastik (Kratos 3D)",
         "Ober- & Unterlid-Blepharoplastik",
         "Browlift",
         "Liplift",
