@@ -67,4 +67,15 @@ export const publicationsLabels: Record<Locale, PublicationsLabels> = {
     nationalSummary:
       "10 устных и постерных докладов на национальных конгрессах Турецкого общества пластической, реконструктивной и эстетической хирургии (2011–2016).",
   },
+  de: {
+    eyebrow: "Wissenschaft",
+    title: "Publikationen & Forschung",
+    showLabel: "Publikationen anzeigen",
+    hideLabel: "Publikationen verbergen",
+    journalLabel: "Begutachtete Fachartikel",
+    internationalLabel: "Internationale Vorträge",
+    nationalLabel: "Nationale Vorträge",
+    nationalSummary:
+      "10 mündliche und Poster-Präsentationen auf nationalen Kongressen der Türkischen Gesellschaft für Plastische, Rekonstruktive und Ästhetische Chirurgie (2011–2016).",
+  },
 };

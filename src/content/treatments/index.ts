@@ -128,4 +128,15 @@ export const treatmentUI: Record<
     ctaButton: "Записаться на консультацию",
     secondaryButton: "Все процедуры",
   },
+  de: {
+    back: "← Zurück zu den Eingriffen",
+    guidesLabel: "Ausführliche Leitfäden",
+    faqTitle: "Häufige Fragen",
+    disclaimer:
+      "Diese Seite dient nur allgemeinen Informationszwecken und ist keine medizinische Beratung. Eignung und Ergebnisse variieren individuell und werden in der Beratung besprochen.",
+    ctaTitle: "Erwägen Sie diesen Eingriff?",
+    ctaBody: "Vereinbaren Sie eine persönliche Beratung bei Dr. Gamze Eren – online oder in der Klinik.",
+    ctaButton: "Beratung vereinbaren",
+    secondaryButton: "Alle Eingriffe",
+  },
 };

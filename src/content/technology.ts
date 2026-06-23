@@ -151,4 +151,48 @@ export const technologyContent: Record<Locale, TechContent> = {
       secondary: "Услуги",
     },
   },
+  de: {
+    metaTitle: "3D-Kratos-Simulation – Dr. Gamze Eren",
+    eyebrow: "Technologie",
+    headlineA: "Ihr Ergebnis in",
+    headlineAccent: "drei Dimensionen planen",
+    lede: "Mit der präoperativen 3D-Kratos-Simulation entwerfen und besichtigen Sie gemeinsam mit Dr. Gamze Eren ein natürliches, proportioniertes Ergebnis – noch bevor eine Entscheidung getroffen wird.",
+    intro: {
+      eyebrow: "Was es ist",
+      title: "Ein gemeinsamer Plan, visualisiert in 3D",
+      paragraphs: [
+        "Kratos ist eine präoperative 3D-Simulationsplattform, die am häufigsten für Rhinoplastik und Gesichtsplanung eingesetzt wird. Auf Basis von Fotos Ihres Gesichts erstellt sie ein genaues dreidimensionales Modell, das Dr. Gamze Eren zur Planung und Visualisierung des vorgeschlagenen Ergebnisses verwendet.",
+        "Statt das Ergebnis in Worten zu beschreiben, ermöglicht die Simulation eine realistische Vorschau – das Ziel Ihrer Operation ist vor dem Eingriff klar, geteilt und vereinbart.",
+      ],
+    },
+    steps: {
+      eyebrow: "Wie es funktioniert",
+      title: "Drei Schritte, ein klarer Plan",
+      items: [
+        { t: "1 · Aufnahme", d: "Wir machen präzise Fotos Ihres Gesichts aus standardisierten Winkeln, um ein genaues 3D-Modell zu erstellen." },
+        { t: "2 · Simulation", d: "Dr. Gamze Eren plant das vorgesehene Ergebnis an Ihrer eigenen Anatomie und balanciert Proportionen, Profil und Harmonie." },
+        { t: "3 · Gemeinsame Überprüfung", d: "Sie sehen die Simulation neben Ihrem Ausgangspunkt, verfeinern sie und stimmen dem Plan vor der Operation zu." },
+      ],
+    },
+    benefits: {
+      eyebrow: "Warum es wichtig ist",
+      title: "Klarheit, Präzision, Vertrauen",
+      items: [
+        { t: "Gemeinsame Erwartungen", d: "Sie und Ihr Chirurg arbeiten auf dasselbe, visualisierte Ziel hin – weit weniger Unsicherheit, weniger Überraschungen." },
+        { t: "Chirurgische Präzision", d: "Ein detaillierter 3D-Plan leitet die Operationsschritte und unterstützt ein vorhersehbareres, verfeinerteres Ergebnis." },
+        { t: "Natürlich Ihrer", d: "Veränderungen werden proportional zu Ihren Gesichtszügen geplant, damit das Ergebnis unverwechselbar wie Sie aussieht." },
+      ],
+    },
+    note: {
+      eyebrow: "Ein ehrlicher Hinweis",
+      title: "Ein Wegweiser zum Ziel – keine Garantie",
+      body: "Eine Simulation ist ein Planungswerkzeug, das das beabsichtigte Ergebnis veranschaulicht. Es ist ein Orientierungspunkt, auf den wir hinarbeiten – kein Versprechen eines exakten Ergebnisses. Das endgültige Resultat hängt von Ihrer Anatomie, Heilung und Biologie ab, die Dr. Gamze persönlich mit Ihnen besprechen wird.",
+    },
+    cta: {
+      headline: "Planen Sie Ihren Eingriff in 3D",
+      body: "Buchen Sie eine Beratung, um Ihre personalisierte Simulation zu sehen und zu besprechen, was für Sie realistisch ist.",
+      primary: "Beratung buchen",
+      secondary: "Leistungen entdecken",
+    },
+  },
 };
