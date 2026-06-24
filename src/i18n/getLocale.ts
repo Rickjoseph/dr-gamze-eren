@@ -21,7 +21,6 @@ const COUNTRY_TO_LOCALE: Record<string, Locale> = {
   AU: "en",
   CA: "en",
   NL: "en",
-  NL: "en",
 };
 
 // Detect locale from IP using Vercel geo headers (no external API needed)
