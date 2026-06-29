@@ -43,5 +43,5 @@ Hangi boyut ve şeklin size uygun olduğunu konsültasyonumuzda birlikte belirle
 İmplant ameliyatları 1–1,5 saat sürer. Hastanede 1 gece kalış önerilir. İyileşme süreci diğer göğüs ameliyatlarıyla benzerdir: ilk haftada dinlenme, 3–5 günde günlük aktivitelere dönüş, 4–6 hafta spordan kaçınma.
 
 Silksurface® implantlar hakkında sorularınız için ücretsiz konsültasyona davetlisiniz.
-  \`,
+  `,
 };
