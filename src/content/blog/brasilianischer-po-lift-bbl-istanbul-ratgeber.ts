@@ -5,6 +5,7 @@ export const post = {
   date: "2026-06-29",
   category: "Körper",
   readTime: "7 Min. Lesezeit",
+  locale: "de",
   image: "/img/service-body.jpg",
   imageAlt: "Körperformung und brasilianischer Po-Lift in der Klinik Dr. Gamze Eren Istanbul",
   body: `
