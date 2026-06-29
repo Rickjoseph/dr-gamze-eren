@@ -106,5 +106,38 @@ export const dermalFillers: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Hyaluronsäure-Filler in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Natürliche Volumenrestaurierung und Konturverfeinerung mit Hyaluronsäure-Fillern. Dr. Gamze Eren, Istanbul.",
+      title: "Hyaluronsäure-Filler",
+      tagline: "Volumen wiederherstellen – Konturen verfeinern.",
+      summary:
+        "Dermatologische Filler aus Hyaluronsäure restaurieren verloren gegangenes Volumen, glätten Falten und definieren Konturen – von Lippen über Wangen bis zur Kinn-Jaw-Linie.",
+      sections: [
+        {
+          heading: "Was Filler behandeln",
+          body: "Nasolabialfalten, Wangenvolumen, Lippenvolumen und -form, Tränenrinnen, Kinn- und Kieferliniendefinition.\n\nHyaluronsäure ist natürlich im Körper vorhanden und reversibel mit Hyaluronidase.",
+        },
+        {
+          heading: "Die Behandlung",
+          body: "Injektion mit feinen Nadeln oder Kanülen, mit oder ohne Betäubungscreme. Dauer: 20–45 Minuten. Minimale Ausfallzeit.\n\nErgebnisse sofort sichtbar.",
+        },
+        {
+          heading: "Ergebnisse",
+          body: "Je nach Produkt und Zone 6–18 Monate. Lippen kürzer; Wangen und Kinn länger anhaltend.\n\nUmkehrbar bei Bedarf.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Ist es schmerzhaft?",
+          a: "Minimal. Betäubungscreme und anästhesiehaltiger Filler machen die Behandlung sehr komfortabel.",
+        },
+        {
+          q: "Kann ich danach sofort arbeiten gehen?",
+          a: "Ja. Kleine Schwellungen möglich, aber die meisten gehen direkt weiter.",
+        },
+      ],
+    },
   },
 };
