@@ -7,7 +7,7 @@ export const post = {
   readTime: "7 dk okuma",
   locale: "tr",
   image: "/img/blog/poland.jpg",
-  imageAlt: "Poland sendromu rekonstrüksiyon — Dr. Gamze Eren kliniği İstanbul",
+  imageAlt: "Poland sendromu rekonstrüksiyon, Dr. Gamze Eren kliniği İstanbul",
   body: `
 Poland sendromu, her 30.000 ila 100.000 doğumda bir görülen nadir bir doğumsal durumdur. Genellikle vücudun bir tarafında göğüs kası (pectoralis major) eksikliği ve aynı tarafta el veya parmak anomalileriyle kendini gösterir.
 
