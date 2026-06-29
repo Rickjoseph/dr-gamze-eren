@@ -7,7 +7,7 @@ export const post = {
   readTime: "6 dk okuma",
   locale: "tr",
   image: "/img/blog/mommy-makeover.jpg",
-  imageAlt: "Mommy makeover çocuk sonrası vücut şekillendirme — Dr. Gamze Eren İstanbul",
+  imageAlt: "Mommy makeover çocuk sonrası vücut şekillendirme, Dr. Gamze Eren İstanbul",
   body: `
 Anne olmak bedenin sınırlarını zorlar: gerilmiş cilt, değişen göğüsler, karın kaslarında ayrışma, bölgesel yağ birikimi. Bunlar zayıflık değil, fizyolojik gerçeklerdir. Ve bunların büyük bölümü cerrahi olarak ele alınabilir.
 
@@ -27,7 +27,7 @@ Bunların hepsi tek anestezi altında yapılır. Bu, birden fazla ayrı ameliyat
 
 ## Diastaz Rekti: Karın Kaslarının Ayrışması
 
-Pek çok kadın gebelik sonrası karın ortasında yumuşaklık veya "göbek çıkması" fark eder. Bu çoğunlukla diastaz rektidir — karın kaslarının orta hattan ayrılması. Diyet ve egzersiz bu durumu düzeltemez.
+Pek çok kadın gebelik sonrası karın ortasında yumuşaklık veya "göbek çıkması" fark eder. Bu çoğunlukla diastaz rektidir, karın kaslarının orta hattan ayrılması. Diyet ve egzersiz bu durumu düzeltemez.
 
 Karın germe sırasında bu kaslar dikilerek yeniden birleştirilir. Hem fonksiyonel (sırt ağrısı azalır) hem estetik bir düzeltmedir.
 
@@ -49,7 +49,7 @@ Kombine bir ameliyat olduğu için iyileşme süresi bireysel işlemlere kıyasl
 - Egzersiz 6 hafta yasaktır
 - Nihai sonuç 3–6 ayda netleşir
 
-Çocuklu anneler için pratik not: İlk haftada yardım alınması önerilir — özellikle küçük çocuk kaldırmak yasaktır.
+Çocuklu anneler için pratik not: İlk haftada yardım alınması önerilir, özellikle küçük çocuk kaldırmak yasaktır.
 
 ## Sonuçlar Kalıcı mıdır?
 
