@@ -106,5 +106,38 @@ export const mommyMakeover: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Mommy Makeover in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Kombinierter Körperformungseingriff nach Schwangerschaft: Brust, Bauch und Körper in einer OP. Dr. Gamze Eren, Istanbul.",
+      title: "Mommy Makeover",
+      tagline: "Brust, Bauch und Körper in einem kombinierten Eingriff.",
+      summary:
+        "Ein Mommy Makeover kombiniert mehrere Eingriffe – häufig Bauchdeckenstraffung, Liposuktion und Brustkorrektur – in einer Sitzung, um nach Schwangerschaft und Stillen die Körperform wiederherzustellen.",
+      sections: [
+        {
+          heading: "Was kombiniert wird",
+          body: "Schwangerschaft und Stillen können Bauch, Taille und Brust gleichzeitig verändern. Ein Mommy Makeover adressiert all das in einer OP, um Erholungszeit zu minimieren und das Ergebnis zu harmonisieren.\n\nHäufige Kombinationen: Bauchdeckenstraffung + 360°-Liposuktion + Bruststraffung oder -vergrößerung.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Die Kombination wird individuell geplant. Dr. Eren bespricht Ihre Prioritäten und gestaltet einen Plan, der sicher in einer Sitzung durchführbar ist.\n\nDurchgeführt unter Vollnarkose mit Krankenhausaufenthalt, Dauer je nach Kombination.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Kombinierte Eingriffe erfordern eine längere Erholungsphase – üblicherweise 2–3 Wochen eingeschränkte Aktivität. Der Vorteil: eine einzige Erholungsphase statt mehrerer.\n\nErgebnisse sind dauerhaft bei stabilem Gewicht.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Ist es sicher, mehrere Eingriffe zu kombinieren?",
+          a: "Ja, wenn sorgfältig geplant. Dr. Eren wählt Kombinationen aus, die sicher in einer Sitzung durchgeführt werden können, und stimmt alles auf Ihre Gesundheit ab.",
+        },
+        {
+          q: "Wann nach der Schwangerschaft kann ich das machen?",
+          a: "In der Regel empfehlen wir zu warten, bis Sie fertig gestillt haben und das Gewicht stabil ist – meist 6–12 Monate nach der Geburt.",
+        },
+      ],
+    },
   },
 };
