@@ -106,5 +106,38 @@ export const facialFatTransfer: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Fetttransfer Gesicht (Lipofilling) in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Natürliche Gesichtsverjüngung durch Eigenfett-Transfer. Dr. Gamze Eren, Istanbul.",
+      title: "Fetttransfer Gesicht (Lipofilling)",
+      tagline: "Volumen natürlich wiederherstellen – mit Ihrem eigenen Fett.",
+      summary:
+        "Gesichtlicher Fetttransfer verwendet Ihr eigenes Fett, um eingesunkene Bereiche wie Wangen, Schläfen oder Augenringe aufzufüllen – für eine natürliche, langanhaltende Verjüngung ohne Filler.",
+      sections: [
+        {
+          heading: "Was Fetttransfer bewirkt",
+          body: "Mit dem Alter verliert das Gesicht Fettvolumen, was zu eingesunkenen Wangen, Schläfen und Tränenrinnen führt. Fetttransfer stellt dieses Volumen mit natürlichem Gewebe wieder her, das sich integriert und dauerhaft bleibt.\n\nOft mit anderen Eingriffen kombiniert (z.B. Facelift oder Blepharoplastik) für ein ganzheitliches Ergebnis.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Fett wird per Liposuktion aus einem Spenderareal (z.B. Bauch) entnommen, aufbereitet und in Mikrotröpfchen präzise injiziert. Mehrere Schichten sorgen für eine natürliche Integration.\n\nAmbulant unter Lokalanästhesie oder kombiniert mit anderen Eingriffen.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Schwellungen klingen innerhalb von 2–3 Wochen ab. Etwa 60–70% des übertragenen Fettes bleibt dauerhaft bestehen.\n\nDas Ergebnis sieht und fühlt sich natürlicher an als synthetische Filler.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Wie lange hält das Ergebnis?",
+          a: "Das angewachsene Fett bleibt dauerhaft – im Gegensatz zu Fillern, die sich auflösen. Ein stabiles Gewicht hilft, das Ergebnis zu erhalten.",
+        },
+        {
+          q: "Was ist der Unterschied zu Hyaluronsäure-Fillern?",
+          a: "Filler sind nicht-chirurgisch, temporär und leicht umkehrbar. Fetttransfer ist dauerhafter, naturgetreuer, aber erfordert eine kleine OP.",
+        },
+      ],
+    },
   },
 };
