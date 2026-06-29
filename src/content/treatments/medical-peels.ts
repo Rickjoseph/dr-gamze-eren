@@ -106,5 +106,38 @@ export const medicalPeels: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Medizinische Peelings in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Professionelle chemische Peelings für strahlendere, gleichmäßigere Haut. Dr. Gamze Eren, Istanbul.",
+      title: "Medizinische Peelings",
+      tagline: "Haut erneuern – Textur und Strahlung verbessern.",
+      summary:
+        "Medizinische chemische Peelings exfolieren kontrolliert die obersten Hautschichten, um Textur, Farbton, Poren und feine Linien zu verbessern.",
+      sections: [
+        {
+          heading: "Was Peelings behandeln",
+          body: "Unregelmäßige Pigmentierung, Aknenarben, feine Linien, raue Textur und fahlen Teint.\n\nVerschiedene Tiefen (oberflächlich, mittelstark, tief) je nach Hautbedarf und gewünschtem Ergebnis.",
+        },
+        {
+          heading: "Die Behandlung",
+          body: "Die Peeling-Lösung wird auf die Haut aufgetragen und nach einer kontrollierten Zeit neutralisiert. Dauer: 20–40 Minuten.\n\nAusfallzeit je nach Tiefe: oberflächlich kaum, tief bis zu 2 Wochen.",
+        },
+        {
+          heading: "Ergebnisse",
+          body: "Glattere, strahlendere Haut nach der Schälung. Optimale Ergebnisse oft nach einer Serie von Behandlungen.\n\nSonnenschutz danach unbedingt erforderlich.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Für welchen Hauttyp geeignet?",
+          a: "Für die meisten Hauttypen, aber Tiefe und Wirkstoff werden individuell angepasst. Dr. Eren beurteilt Ihren Typ vor der Behandlung.",
+        },
+        {
+          q: "Wie oft sollte man Peelings machen?",
+          a: "Oberflächliche alle 4–6 Wochen; tiefere 1–2 Mal pro Jahr.",
+        },
+      ],
+    },
   },
 };
