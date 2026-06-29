@@ -106,5 +106,38 @@ export const gynecomastia: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Gynäkomastie-Behandlung in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Chirurgische Behandlung von Gynäkomastie (vergrößerte Brust beim Mann) in Istanbul. Dr. Gamze Eren.",
+      title: "Gynäkomastie (Brust beim Mann)",
+      tagline: "Brustgewebe reduzieren – Selbstbewusstsein wiederherstellen.",
+      summary:
+        "Gynäkomastie ist die Vergrößerung des Brustgewebes beim Mann, die durch Hormonveränderungen, Gewicht oder Genetik verursacht werden kann. Ein chirurgischer Eingriff entfernt überschüssiges Gewebe für eine flachere, männlichere Brust.",
+      sections: [
+        {
+          heading: "Was Gynäkomastie ist",
+          body: "Gynäkomastie betrifft viele Männer und kann auf jeder Seite oder beidseits auftreten. Sie ist nicht durch Sport allein zu beheben, wenn echtes Drüsengewebe vorhanden ist.\n\nEine Behandlung kombiniert oft Liposuktion (für Fett) und direkte Drüsengewebeentfernung.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Je nach Zusammensetzung (Fett vs. Drüsengewebe) wird Liposuktion, direkte Exzision oder beides eingesetzt. Schnitte sind minimal und in der Brustwarzenrand-Grenze platziert.\n\nAmbulant unter Sedierung oder Vollnarkose.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Einige Wochen wird ein Kompressionskleidungsstück getragen. Die meisten kehren innerhalb einer Woche zu normalen Aktivitäten zurück.\n\nDas Ergebnis ist dauerhaft, sofern Gewicht stabil bleibt und Hormonursachen behandelt wurden.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Kommt es zurück?",
+          a: "Entferntes Drüsengewebe kehrt nicht zurück. Erhebliche Gewichtszunahme oder Hormonstörungen könnten Fettansammlung begünstigen.",
+        },
+        {
+          q: "Wie diskret ist der Eingriff?",
+          a: "Sehr diskret. Die meisten Narben liegen am Rand des Brustwarzenareals und sind kaum sichtbar.",
+        },
+      ],
+    },
   },
 };
