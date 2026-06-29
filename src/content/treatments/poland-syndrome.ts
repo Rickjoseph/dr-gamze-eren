@@ -107,5 +107,38 @@ export const polandSyndrome: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Poland-Syndrom Behandlung in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Rekonstruktive Behandlung des Poland-Syndroms. Dr. Gamze Eren, Plastische Chirurgie Istanbul.",
+      title: "Poland-Syndrom",
+      tagline: "Rekonstruktive Chirurgie für angeborene Brustasymmetrie.",
+      summary:
+        "Das Poland-Syndrom ist eine seltene angeborene Erkrankung mit einseitigem Fehlen des Brustmuskels und oft auch Brustgewebsunterwicklung. Dr. Eren bietet individuelle rekonstruktive Optionen zur Wiederherstellung der Symmetrie.",
+      sections: [
+        {
+          heading: "Was das Poland-Syndrom ist",
+          body: "Das Poland-Syndrom betrifft Männer und Frauen und führt zu Asymmetrien in Brust und Oberkörper. Der Schweregrad variiert erheblich – von kleinen Asymmetrien bis zu ausgeprägtem Fehlen von Muskel- und Brustgewebe.\n\nJeder Fall wird individuell beurteilt; eine standardisierte Lösung gibt es nicht.",
+        },
+        {
+          heading: "Rekonstruktive Optionen",
+          body: "Optionen umfassen: Implantat allein, Implantat kombiniert mit Latissimus-dorsi-Lappen, Eigenfettpransfer oder Kombinationen. Dr. Eren bespricht die beste Strategie basierend auf Ihrem Befund und Ziel.\n\nDurchgeführt unter Vollnarkose mit Krankenhausaufenthalt.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Die Erholungszeit hängt von der gewählten Technik ab. Das Ziel ist eine verbesserte Symmetrie – kein perfektes Spiegelbild, aber ein deutlich harmonischeres Erscheinungsbild.\n\nErgebnisse sind dauerhaft.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Kann das Poland-Syndrom vollständig korrigiert werden?",
+          a: "Eine vollständige Symmetrie ist nicht immer möglich, aber eine deutliche Verbesserung in Aussehen und Selbstbewusstsein ist regelmäßig erreichbar.",
+        },
+        {
+          q: "In welchem Alter sollte man behandelt werden?",
+          a: "Nach Abschluss der Körperentwicklung, üblicherweise nach dem 18. Lebensjahr. Dr. Eren beurteilt den besten Zeitpunkt individuell.",
+        },
+      ],
+    },
   },
 };
