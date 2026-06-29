@@ -59,5 +59,5 @@ Dikişler genellikle kulak arkasına ve saç çizgisine gizlenir — görünür 
 İyi bir yüz germe 7–10 yıl etkisini korur. Yaşlanma durdurulamaz; ancak saat 10 yıl "geri sarılır" ve bu kazanım korunur. Cilt bakımı ve güneşten korunma sonuçların ömrünü uzatır.
 
 Konsültasyonumuzda yüzünüzü birlikte değerlendiriyor ve size en uygun yaklaşımı planlıyoruz.
-  \`,
+  `,
 };
