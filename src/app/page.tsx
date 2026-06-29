@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { GlassCard } from "@/components/GlassCard";
 import { BlogCarousel } from "@/components/BlogCarousel";
+import { Testimonials } from "@/components/Testimonials";
 import { posts } from "@/content/blog";
 import { getDict } from "@/i18n/getLocale";
 
@@ -304,23 +305,8 @@ export default async function Home() {
         />
       </section>
 
-      {/* ============== TESTIMONIAL ============== */}
-      <section className="relative mt-32 px-4 sm:px-8">
-        <div className="mx-auto max-w-4xl">
-          <GlassCard className="p-10 text-center sm:p-16">
-            <p className="font-display text-7xl leading-none text-[var(--color-rosegold)]">
-              &ldquo;
-            </p>
-            <p className="mx-auto mt-2 max-w-2xl text-2xl leading-relaxed sm:text-3xl">
-              {h.testimonial.quoteA}{" "}
-              <span className="italic-accent">{h.testimonial.quoteAccent}</span>
-            </p>
-            <p className="mt-8 text-xs uppercase tracking-[0.2em] text-[var(--color-taupe)]">
-              {h.testimonial.attribution}
-            </p>
-          </GlassCard>
-        </div>
-      </section>
+      {/* ============== TESTIMONIALS ============== */}
+      <Testimonials />
 
       {/* ============== CTA ============== */}
       <section className="relative mt-32 px-4 sm:px-8">
