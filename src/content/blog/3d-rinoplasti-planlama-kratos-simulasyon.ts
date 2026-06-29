@@ -7,9 +7,9 @@ export const post = {
   readTime: "6 dk okuma",
   locale: "tr",
   image: "/img/blog/rhinoplasty-3d.jpg",
-  imageAlt: "Kratos 3D rinoplasti simülasyon planlaması — Dr. Gamze Eren İstanbul",
+  imageAlt: "Kratos 3D rinoplasti simülasyon planlaması, Dr. Gamze Eren İstanbul",
   body: `
-"Ameliyat sonrası nasıl görüneceğimi bilemeden nasıl karar vereceğim?" — Bu soru rinoplastiyi değerlendiren hastaların büyük çoğunluğunun aklında geçer.
+"Ameliyat sonrası nasıl görüneceğimi bilemeden nasıl karar vereceğim?", Bu soru rinoplastiyi değerlendiren hastaların büyük çoğunluğunun aklında geçer.
 
 Kratos 3D planlama sistemi bu soruya en kapsamlı yanıtı veriyor.
 
