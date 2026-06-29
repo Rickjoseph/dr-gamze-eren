@@ -7,7 +7,7 @@ export const post = {
   category: "Reconstructive",
   readTime: "7 min read",
   image: "/img/blog/poland.jpg",
-  imageAlt: "Male torso, clean studio light — Poland Syndrome correction",
+  imageAlt: "Male torso, clean studio light, Poland Syndrome correction",
   body: `
 Poland syndrome is one of the lesser-known congenital differences, yet it affects a meaningful number of people, and for many, it quietly influences confidence for years. With a reconstructive background in flap and breast surgery, Dr. Gamze Eren approaches each case individually, with the goal of restoring natural balance and contour.
 
