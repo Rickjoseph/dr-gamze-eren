@@ -58,5 +58,5 @@ Kliniğimizde kullandığımız Silksurface® implantlar, yenilikçi mikro yüze
 Göğüs büyütme emzirme kapasitesini doğrudan etkilemez; implantlar meme bezinin altına veya kasın altına yerleştirilir. Ancak emzirme sonrası sarkma varsa eş zamanlı mastopexy (meme dikimi) değerlendirilebilir.
 
 Sorularınız için konsültasyon ücretsizdir.
-  \`,
+  `,
 };
