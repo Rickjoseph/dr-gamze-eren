@@ -26,10 +26,10 @@ const CATEGORY_COLORS: Record<string, string> = {
 export default async function BlogPage() {
   const { locale } = await getDict();
 
-  // Universal posts first (date-sorted), then locale-specific posts appended at end
+  // Locale-specific posts first (newest article), then universal posts date-sorted
   const visiblePosts = [
-    ...posts.filter((p) => !p.locale),
     ...posts.filter((p) => p.locale === locale),
+    ...posts.filter((p) => !p.locale),
   ];
 
   return (
