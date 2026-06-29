@@ -6,8 +6,8 @@ export const post = {
   category: "Body",
   readTime: "7 min read",
   locale: "en",
-  image: "/img/service-body.jpg",
-  imageAlt: "Body contouring and Brazilian butt lift at Dr. Gamze Eren clinic Istanbul",
+  image: "/img/blog/bbl-hero.jpg",
+  imageAlt: "Woman in water — natural body confidence after BBL at Dr. Gamze Eren clinic Istanbul",
   body: `
 A Brazilian Butt Lift — commonly known as BBL — is one of the most searched aesthetic procedures in the world. It uses your own body fat, not implants, to add volume and reshape the buttocks for a fuller, lifted, naturally proportionate result.
 
