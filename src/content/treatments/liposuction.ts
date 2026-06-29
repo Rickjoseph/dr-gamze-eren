@@ -106,5 +106,38 @@ export const liposuction: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Liposuktion (VASER, 360°) in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Präzise Liposuktion und 360°-Körperkonturierung für hartnäckige Zonen. Dr. Gamze Eren, Istanbul.",
+      title: "Liposuktion (VASER, 360°)",
+      tagline: "Korrektur von Zonen, die Diät und Sport nicht erreichen.",
+      summary:
+        "Liposuktion entfernt hartnäckige Fettdepots zur Konturverfeinerung – ein Formungswerkzeug, keine Gewichtsreduktion. Dr. Eren setzt Techniken wie VASER und 360°-Konturierung ein, um den Körper glatt und proportioniert zu formen.",
+      sections: [
+        {
+          heading: "Was Liposuktion ist – und was nicht",
+          body: "Liposuktion ist ein Konturierungseingriff, keine Adipositasbehandlung. Sie zielt auf lokales Fett ab, das gegen Diät und Sport resistiert – Flanken, Bauch, Rücken, Innenoberschenkel, Arme oder Kinn – um die Silhouette zu verfeinern.\n\nBei der 360°-Konturierung wird die gesamte Körpermitte in einer Sitzung geformt für ein gleichmäßiges, rundum stimmiges Ergebnis. VASER-Technologie kann helfen, Konturen in faserigen Bereichen zu definieren und die Fettentnahme zu erleichtern.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Durch winzige Schnitte entnehmen dünne Kanülen Fett in gleichmäßigen Schichten und glätten die Kontur. Das entnommene Fett kann manchmal weiterverwendet werden – z.B. als Fetttransfer, um an anderer Stelle Volumen hinzuzufügen.\n\nJe nach Umfang unter Lokalanästhesie mit Sedierung oder Vollnarkose, ambulant oder mit einer Übernachtung.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Einige Wochen wird ein Kompressionskleidungsstück getragen, um die neue Form zu stützen und Schwellungen zu reduzieren. Die meisten kehren innerhalb einiger Tage bis einer Woche zu Büroarbeit zurück, Sport wird schrittweise wieder aufgenommen.\n\nDie Konturen verfeinern sich über Monate weiter, während die Schwellung abklingt; bei stabilem Gewicht sind die Ergebnisse dauerhaft – aus einer Zone entnommenes Fett kehrt nicht auf dieselbe Weise zurück.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Kommt das Fett zurück?",
+          a: "Die entnommenen Fettzellen kehren nicht zurück. Erhebliche Gewichtszunahme kann verbleibende Zellen in anderen Bereichen vergrößern; daher erhält ein stabiles Gewicht das Ergebnis am besten.",
+        },
+        {
+          q: "Ist Liposuktion eine Methode zur Gewichtsabnahme?",
+          a: "Nein – sie verfeinert Form und Kontur, reduziert nicht das Gesamtgewicht. Sie erzielt die besten Ergebnisse bei hartnäckigen, lokalisierten Bereichen.",
+        },
+      ],
+    },
   },
 };
