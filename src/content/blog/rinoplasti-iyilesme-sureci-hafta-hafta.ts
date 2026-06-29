@@ -7,7 +7,7 @@ export const post = {
   readTime: "6 dk okuma",
   locale: "tr",
   image: "/img/blog/rhinoplasty.jpg",
-  imageAlt: "Rinoplasti iyileşme süreci — Dr. Gamze Eren kliniği İstanbul",
+  imageAlt: "Rinoplasti iyileşme süreci, Dr. Gamze Eren kliniği İstanbul",
   body: `
 Rinoplasti, en ince teknik detayları gerektiren estetik operasyonların başında gelir. Pek çok hasta ameliyatı planlarken iyileşme sürecini merak eder: Ne zaman işe dönebilirim? Morluklar ne zaman geçer? Sonuç ne zaman netleşir?
 
@@ -21,7 +21,7 @@ Evde rahatlayın, sıcak içeceklerden kaçının, öne eğilmeyin.
 
 ## 1. Hafta
 
-İlk birkaç günde şişlik ve morluk en yoğun seviyededir. Gözler çevresinde ve yanaklarda belirgin olabilir — bu tamamen beklenen bir durumdur ve ameliyatın "başarısız olduğu" anlamına gelmez.
+İlk birkaç günde şişlik ve morluk en yoğun seviyededir. Gözler çevresinde ve yanaklarda belirgin olabilir, bu tamamen beklenen bir durumdur ve ameliyatın "başarısız olduğu" anlamına gelmez.
 
 Alçı ya da splint genellikle 7–10. günde çıkarılır. Bu an çoğu hasta için heyecan vericidir; ancak burun hâlâ şiş ve sert görünebilir. Sabırlı olun: bu ilk şekil, kalıcı sonuç değildir.
 
@@ -39,13 +39,13 @@ Egzersiz, spor, yüzme gibi aktiviteler hâlâ yasaktır.
 
 ## 1. Ay
 
-Şişliğin yaklaşık yüzde sekseni geçmiştir. Burun artık görece normal görünür. Çevrenizdeki insanların büyük çoğunluğu fark etmez bile. Çok dikkatli bakıldığında hafif bir dolgunluk hissedilebilir — bu normaldir.
+Şişliğin yaklaşık yüzde sekseni geçmiştir. Burun artık görece normal görünür. Çevrenizdeki insanların büyük çoğunluğu fark etmez bile. Çok dikkatli bakıldığında hafif bir dolgunluk hissedilebilir, bu normaldir.
 
 Bu dönemde güneşten korunmak önemlidir; bronzlaşma doğal iyileşme izlerine karışabilir.
 
 ## 3–6. Ay
 
-Burun giderek incelmektedir. İnce detaylar — burun ucu, kanatlar, köprü — daha belirgin hale gelir. Nefes almak da iyileşme sürecinde düzelir; septum tamiri yapılmışsa bu dönemde nefes açıklığını hissedersiniz.
+Burun giderek incelmektedir. İnce detaylar, burun ucu, kanatlar, köprü, daha belirgin hale gelir. Nefes almak da iyileşme sürecinde düzelir; septum tamiri yapılmışsa bu dönemde nefes açıklığını hissedersiniz.
 
 ## 12. Ay: Nihai Sonuç
 
