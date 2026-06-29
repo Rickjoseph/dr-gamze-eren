@@ -305,8 +305,6 @@ export default async function Home() {
         />
       </section>
 
-      {/* ============== TESTIMONIALS ============== */}
-      <Testimonials />
 
       {/* ============== CTA ============== */}
       <section className="relative mt-32 px-4 sm:px-8">
@@ -330,6 +328,9 @@ export default async function Home() {
           </GlassCard>
         </div>
       </section>
+
+      {/* ============== TESTIMONIALS ============== */}
+      <Testimonials />
     </>
   );
 }
