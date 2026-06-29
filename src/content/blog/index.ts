@@ -24,9 +24,12 @@ import { post as post6 } from "./poland-syndrome-understanding-and-reconstructio
 import { post as post7 } from "./mommy-makeover-restoring-confidence-after-children";
 import { post as post8 } from "./silksurface-breast-implants-natural-feel";
 import { post as post9 } from "./rhinoplasty-3d-planning-kratos-simulation";
+import { post as post10 } from "./brazilian-butt-lift-bbl-istanbul-guide";
+import { post as post11 } from "./brezilya-poposu-bbl-istanbul-rehberi";
+import { post as post12 } from "./brasilianischer-po-lift-bbl-istanbul-ratgeber";
 
 export const posts: Post[] = [
-  post1, post2, post3, post4, post5, post6, post7, post8, post9,
+  post1, post2, post3, post4, post5, post6, post7, post8, post9, post10, post11, post12,
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
 
 export function getPost(slug: string): Post | undefined {
