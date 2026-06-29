@@ -5,6 +5,7 @@ export const post = {
   date: "2026-06-29",
   category: "Body",
   readTime: "7 min read",
+  locale: "en",
   image: "/img/service-body.jpg",
   imageAlt: "Body contouring and Brazilian butt lift at Dr. Gamze Eren clinic Istanbul",
   body: `
