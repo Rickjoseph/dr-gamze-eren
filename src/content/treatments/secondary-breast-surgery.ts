@@ -106,5 +106,38 @@ export const secondaryBreastSurgery: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Brustrevision (Sekundärchirurgie) in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Revision und Korrektur nach vorangegangener Brustoperation. Dr. Gamze Eren, Istanbul.",
+      title: "Brustrevision (Sekundärchirurgie)",
+      tagline: "Korrekturen nach vorangegangener Brustoperation.",
+      summary:
+        "Sekundäre Brustchirurgie korrigiert Ergebnisse nach früheren Brustimplantaten oder -straffungen – ob durch Kapselkontraktur, Implantatverlagerung, Asymmetrie oder einfach Änderung des gewünschten Ergebnisses.",
+      sections: [
+        {
+          heading: "Wann eine Revision sinnvoll ist",
+          body: "Häufige Gründe: Kapselkontraktur (Verhärtung), Implantatverlagerung oder -rotation, Asymmetrie, Wunsch nach Größenänderung oder Implantatentfernung.\n\nDr. Eren beurteilt den Befund sorgfältig, bevor eine Lösung empfohlen wird.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Je nach Befund: Implantatwechsel, Kapselbehandlung (Kapsulotomie oder Kapsulektomie), Neupositionierung oder komplette Entfernung mit oder ohne Straffung.\n\nDurchgeführt unter Vollnarkose, Dauer je nach Umfang.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Ähnlich wie bei der primären Operation, manchmal etwas länger je nach Komplexität.\n\nDas Ziel ist ein zufriedenstellenderes, natürlicheres und komfortableres Ergebnis als zuvor.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Ist eine Revision komplizierter als die ursprüngliche OP?",
+          a: "Sie kann komplexer sein, je nach Befund. Narbengewebe und vorherige Implantate erfordern präzise Beurteilung. Dr. Eren hat Erfahrung mit schwierigen Revisionen.",
+        },
+        {
+          q: "Wie lange sollte ich mit einer Revision warten?",
+          a: "In der Regel mindestens 6–12 Monate nach der ursprünglichen Operation, damit die Schwellung vollständig abgeklungen ist und das endgültige Ergebnis sichtbar ist.",
+        },
+      ],
+    },
   },
 };
