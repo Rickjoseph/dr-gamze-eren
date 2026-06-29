@@ -56,5 +56,5 @@ Kombine bir ameliyat olduğu için iyileşme süresi bireysel işlemlere kıyasl
 Alınan yağ hücreleri ve çıkarılan fazla cilt geri gelmez. Ancak kilo değişimi veya yeni gebelik sonuçları etkileyebilir. Sağlıklı bir kilo korunduğunda Mommy Makeover etkileri uzun yıllar sürer.
 
 Dr. Gamze Eren ile konsültasyonumuz ücretsizdir. Hangi kombinasyonun size en uygun olduğunu birlikte planlayalım.
-  \`,
+  `,
 };
