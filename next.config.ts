@@ -34,6 +34,9 @@ const nextConfig: NextConfig = {
       { source: "/single-post/:slug*", destination: "/blog/:slug*", permanent: true },
       // Old site junk pages
       { source: "/shortcodes", destination: "/", permanent: true },
+      // Old BBL page — redirect to new Turkish blog post
+      { source: "/brezilya-poposu-bbl", destination: "/blog/brezilya-poposu-bbl-istanbul-rehberi", permanent: true },
+      { source: "/brezilya-poposu-bbl/", destination: "/blog/brezilya-poposu-bbl-istanbul-rehberi", permanent: true },
     ];
   },
 };
