@@ -5,6 +5,7 @@ export const post = {
   date: "2026-06-29",
   category: "Vücut",
   readTime: "7 dk okuma",
+  locale: "tr",
   image: "/img/service-body.jpg",
   imageAlt: "Dr. Gamze Eren kliniği İstanbul brezilya poposu BBL",
   body: `
