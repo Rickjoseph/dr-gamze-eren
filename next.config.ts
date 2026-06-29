@@ -2,37 +2,47 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    // Prefer AVIF (smaller) over WebP; Next will fall back automatically.
     formats: ["image/avif", "image/webp"],
-    // Cache optimised variants for a year — these never change in practice.
     minimumCacheTTL: 60 * 60 * 24 * 365,
   },
-  // Compress static text responses (HTML/CSS/JS/JSON). On by default in
-  // most hosting environments, but make it explicit.
   compress: true,
-  // Redirect old site URLs that Google has indexed to the correct pages
   async redirects() {
     return [
-      // Old site pages → correct new URLs
+      // Old site nav pages
       { source: "/home", destination: "/", permanent: true },
       { source: "/home-2", destination: "/", permanent: true },
       { source: "/home-3", destination: "/", permanent: true },
       { source: "/contacts", destination: "/contact", permanent: true },
+      { source: "/contacts/:path*", destination: "/contact", permanent: true },
       { source: "/contact-us", destination: "/contact", permanent: true },
-      { source: "/services-2", destination: "/services", permanent: true },
-      { source: "/gallery", destination: "/media", permanent: true },
-      { source: "/portfolio", destination: "/media", permanent: true },
+      { source: "/appointment", destination: "/contact", permanent: true },
+      { source: "/appointment/:path*", destination: "/contact", permanent: true },
       { source: "/team", destination: "/about", permanent: true },
+      { source: "/team/:path*", destination: "/about", permanent: true },
       { source: "/dr-gamze-eren", destination: "/about", permanent: true },
+      // Old service/procedure pages → new services page
+      { source: "/services-2", destination: "/services", permanent: true },
+      { source: "/liposuction", destination: "/services", permanent: true },
+      { source: "/liposuction/:path*", destination: "/services", permanent: true },
+      { source: "/gynecomastia", destination: "/services", permanent: true },
+      { source: "/gynecomastia/:path*", destination: "/services", permanent: true },
+      { source: "/facelift", destination: "/services", permanent: true },
+      { source: "/facelift/:path*", destination: "/services", permanent: true },
       { source: "/rhinoplasty", destination: "/services", permanent: true },
       { source: "/nose-job", destination: "/services", permanent: true },
       { source: "/breast-augmentation", destination: "/services", permanent: true },
+      // Old media/portfolio pages
+      { source: "/gallery", destination: "/media", permanent: true },
+      { source: "/portfolio", destination: "/media", permanent: true },
+      // Old blog structure
       { source: "/blog-single/:slug*", destination: "/blog/:slug*", permanent: true },
       { source: "/single-post/:slug*", destination: "/blog/:slug*", permanent: true },
-      // Catch-all: any unrecognised path → homepage
-      { source: "/:path*", destination: "/", permanent: false, missing: [
-        { type: "header", key: "x-nextjs-data" }
-      ]},
+      // Old site junk pages
+      { source: "/shortcodes", destination: "/", permanent: true },
+      { source: "/shortcodes/:path*", destination: "/", permanent: true },
+      // Catch-all: any other unrecognised path → homepage (temporary redirect
+      // so Google keeps checking in case we add real pages later)
+      { source: "/:path+", destination: "/", permanent: false },
     ];
   },
 };
