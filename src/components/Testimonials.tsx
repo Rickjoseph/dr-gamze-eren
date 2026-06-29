@@ -21,13 +21,13 @@ const reviews: Review[] = [
     procedure: "Breast augmentation",
     initials: "RB",
     short: {
-      en: "Dr. Eren is truly outstanding—warm, knowledgeable, and meticulous. I travelled to Turkey hoping for a great result, but I left with so much more—confidence, peace of mind, and an experience I will always be grateful for.",
-      tr: "Dr. Eren gerçekten olağanüstü—sıcak, bilgili ve titiz. Türkiye'ye harika bir sonuç umuduyla geldim ama çok daha fazlasıyla ayrıldım—özgüven, huzur ve minnetle hatırlayacağım bir deneyim.",
-      de: "Dr. Eren ist wirklich außergewöhnlich—herzlich, kompetent und sorgfältig. Ich kam in die Türkei in der Hoffnung auf ein großartiges Ergebnis, aber ich ging mit so viel mehr—Selbstvertrauen, Seelenfrieden und einer Erfahrung, für die ich immer dankbar sein werde.",
-      ru: "Доктор Эрен по-настоящему выдающийся специалист — тёплый, знающий и внимательный. Я приехала в Турцию в надежде на хороший результат, но уехала с гораздо большим — с уверенностью в себе, душевным покоем и опытом, за который я буду вечно благодарна.",
+      en: "Dr. Eren is truly outstanding, warm, knowledgeable, and meticulous. I travelled to Turkey hoping for a great result, but I left with so much more, confidence, peace of mind, and an experience I will always be grateful for.",
+      tr: "Dr. Eren gerçekten olağanüstü, sıcak, bilgili ve titiz. Türkiye'ye harika bir sonuç umuduyla geldim ama çok daha fazlasıyla ayrıldım, özgüven, huzur ve minnetle hatırlayacağım bir deneyim.",
+      de: "Dr. Eren ist wirklich außergewöhnlich, herzlich, kompetent und sorgfältig. Ich kam in die Türkei in der Hoffnung auf ein großartiges Ergebnis, aber ich ging mit so viel mehr, Selbstvertrauen, Seelenfrieden und einer Erfahrung, für die ich immer dankbar sein werde.",
+      ru: "Доктор Эрен по-настоящему выдающийся специалист, тёплый, знающий и внимательный. Я приехала в Турцию в надежде на хороший результат, но уехала с гораздо большим, с уверенностью в себе, душевным покоем и опытом, за который я буду вечно благодарна.",
     },
     full: {
-      en: "I rarely write reviews, but my experience with Dr. Güler Gamze Eren and her assistant Berrak has been so exceptional that I felt compelled to share it.\n\nChoosing breast augmentation is a big decision, especially when traveling abroad for surgery, but from my very first contact with the clinic, I felt completely reassured. Every question was answered with patience, honesty, and professionalism.\n\nDr. Eren is truly outstanding—warm, knowledgeable, meticulous, and incredibly talented. She listened carefully to my wishes, explained everything clearly, and made me feel supported every step of the way.\n\nA special thank you to Berrak, who was an absolute angel throughout this journey. Her kindness, patience, and constant support made such a difference.\n\nI am only one week post-op, but I am already so happy with my results. I travelled to Turkey hoping for a great result, but I left with so much more—confidence, peace of mind, and an experience I will always be grateful for.",
+      en: "I rarely write reviews, but my experience with Dr. Güler Gamze Eren and her assistant Berrak has been so exceptional that I felt compelled to share it.\n\nChoosing breast augmentation is a big decision, especially when traveling abroad for surgery, but from my very first contact with the clinic, I felt completely reassured. Every question was answered with patience, honesty, and professionalism.\n\nDr. Eren is truly outstanding, warm, knowledgeable, meticulous, and incredibly talented. She listened carefully to my wishes, explained everything clearly, and made me feel supported every step of the way.\n\nA special thank you to Berrak, who was an absolute angel throughout this journey. Her kindness, patience, and constant support made such a difference.\n\nI am only one week post-op, but I am already so happy with my results. I travelled to Turkey hoping for a great result, but I left with so much more, confidence, peace of mind, and an experience I will always be grateful for.",
     },
   },
   {
@@ -41,11 +41,11 @@ const reviews: Review[] = [
       en: "You're not just a great doctor, you're a person with a big heart. Like a fairy, you make our wishes come true. ❤️",
       tr: "Sadece harika bir doktor değilsiniz, büyük bir kalbe sahip bir insansınız. Bir peri gibi dileklerimizi gerçeğe dönüştürüyorsunuz. ❤️",
       de: "Sie sind nicht nur eine großartige Ärztin, Sie sind ein Mensch mit einem großen Herzen. Wie eine Fee erfüllen Sie unsere Wünsche. ❤️",
-      ru: "Вы не просто великолепный врач — вы человек с большим сердцем. Как фея, вы исполняете наши мечты. ❤️",
+      ru: "Вы не просто великолепный врач, вы человек с большим сердцем. Как фея, вы исполняете наши мечты. ❤️",
     },
     full: {
       en: "Thank you for your professionalism and confident hand during my surgery. Your work gave me a second chance at a healthier life.\n\nYou're not just a great doctor, you're a person with a big heart. Thank you for your talent, knowledge, and the care you show each patient.\n\nAnd like a fairy, you make our wishes come true. ❤️❤️❤️",
-      ru: "Спасибо за профессионализм и уверенную руку во время моей операции. Ваша работа дала мне второй шанс на более здоровую жизнь.\n\nВы не просто великолепный врач — вы человек с большим сердцем. Спасибо за ваш талант, знания и заботу о каждом пациенте.\n\nИ как фея, вы исполняете наши желания. ❤️❤️❤️",
+      ru: "Спасибо за профессионализм и уверенную руку во время моей операции. Ваша работа дала мне второй шанс на более здоровую жизнь.\n\nВы не просто великолепный врач, вы человек с большим сердцем. Спасибо за ваш талант, знания и заботу о каждом пациенте.\n\nИ как фея, вы исполняете наши желания. ❤️❤️❤️",
     },
   },
   {
@@ -55,14 +55,14 @@ const reviews: Review[] = [
     procedure: "Abdominoplasty & Gynecomastia",
     initials: "DA",
     short: {
-      en: "After losing 55 kg, I underwent circular abdominoplasty with liposuction and gynecomastia removal—and everything went perfectly. Excellent and attentive doctor. I couldn't be happier with the results.",
-      tr: "55 kg verdikten sonra liposuction ile birlikte dairesel karın germe ve jinekomasti ameliyatı oldum—ve her şey mükemmel gitti. Mükemmel ve ilgili bir doktor. Sonuçlardan daha mutlu olamazdım.",
-      de: "Nach 55 kg Gewichtsverlust unterzog ich mich einer zirkulären Abdominoplastik mit Liposuktion und Gynäkomastie-Entfernung—und alles verlief perfekt. Ausgezeichnete und aufmerksame Ärztin. Ich könnte nicht glücklicher mit den Ergebnissen sein.",
-      ru: "После потери 55 кг я прошёл циркулярную абдоминопластику с липосакцией и удалением гинекомастии — всё прошло идеально. Отличный и внимательный врач. Я не мог бы быть счастливее с результатами.",
+      en: "After losing 55 kg, I underwent circular abdominoplasty with liposuction and gynecomastia removal, and everything went perfectly. Excellent and attentive doctor. I couldn't be happier with the results.",
+      tr: "55 kg verdikten sonra liposuction ile birlikte dairesel karın germe ve jinekomasti ameliyatı oldum, ve her şey mükemmel gitti. Mükemmel ve ilgili bir doktor. Sonuçlardan daha mutlu olamazdım.",
+      de: "Nach 55 kg Gewichtsverlust unterzog ich mich einer zirkulären Abdominoplastik mit Liposuktion und Gynäkomastie-Entfernung, und alles verlief perfekt. Ausgezeichnete und aufmerksame Ärztin. Ich könnte nicht glücklicher mit den Ergebnissen sein.",
+      ru: "После потери 55 кг я прошёл циркулярную абдоминопластику с липосакцией и удалением гинекомастии, всё прошло идеально. Отличный и внимательный врач. Я не мог бы быть счастливее с результатами.",
     },
     full: {
-      en: "Excellent and attentive doctor!\n\nI underwent an extensive surgery — circular abdominoplasty with liposuction and gynecomastia removal — after losing 55 kg, and everything went perfectly.\n\nDr. Gamze Eren took great care of me throughout the entire process, from the initial consultation to post-operative follow-up. She was thorough, patient, and genuinely invested in getting the best possible result for me.\n\nThe results exceeded my expectations. I couldn't be happier with my transformation.",
-      de: "Ausgezeichnete und aufmerksame Ärztin!\n\nNach einem Gewichtsverlust von 55 kg unterzog ich mich einer umfangreichen Operation — zirkuläre Abdominoplastik mit Liposuktion und Gynäkomastie-Entfernung — und alles verlief perfekt.\n\nDr. Gamze Eren kümmerte sich von der ersten Konsultation bis zur postoperativen Nachsorge hervorragend um mich. Sie war gründlich, geduldig und wirklich darum bemüht, das bestmögliche Ergebnis für mich zu erzielen.\n\nDie Ergebnisse übertrafen meine Erwartungen. Ich könnte nicht glücklicher mit meiner Verwandlung sein.",
+      en: "Excellent and attentive doctor!\n\nI underwent an extensive surgery, circular abdominoplasty with liposuction and gynecomastia removal, after losing 55 kg, and everything went perfectly.\n\nDr. Gamze Eren took great care of me throughout the entire process, from the initial consultation to post-operative follow-up. She was thorough, patient, and genuinely invested in getting the best possible result for me.\n\nThe results exceeded my expectations. I couldn't be happier with my transformation.",
+      de: "Ausgezeichnete und aufmerksame Ärztin!\n\nNach einem Gewichtsverlust von 55 kg unterzog ich mich einer umfangreichen Operation, zirkuläre Abdominoplastik mit Liposuktion und Gynäkomastie-Entfernung, und alles verlief perfekt.\n\nDr. Gamze Eren kümmerte sich von der ersten Konsultation bis zur postoperativen Nachsorge hervorragend um mich. Sie war gründlich, geduldig und wirklich darum bemüht, das bestmögliche Ergebnis für mich zu erzielen.\n\nDie Ergebnisse übertrafen meine Erwartungen. Ich könnte nicht glücklicher mit meiner Verwandlung sein.",
     },
   },
   {
@@ -72,13 +72,13 @@ const reviews: Review[] = [
     procedure: "Liposuction & BBL",
     initials: "LO",
     short: {
-      en: "Dr. Gamze Eren is an absolute legend. According to my massage therapist—who has worked with patients from many surgeons—Dr. Gamze is one of the very few doctors whose patients she has never seen experience post-op complications.",
-      tr: "Dr. Gamze Eren gerçek bir efsane. Masaj terapistim—birçok cerrahın hastasıyla çalışan—Dr. Gamze'nin hastalarında ameliyat sonrası komplikasyon görmediğini söyledi. Bu, cerrahi tekniğinin ve ameliyat sonrası bakımının kalitesi hakkında çok şey anlatıyor.",
-      de: "Dr. Gamze Eren ist eine absolute Legende. Meine Massagetherapeutin—die mit Patienten vieler Chirurgen gearbeitet hat—sagte, Dr. Gamze sei eine der wenigen Ärztinnen, deren Patienten sie nie postoperative Komplikationen erlebt hat.",
-      ru: "Доктор Гамзе Эрен — настоящая легенда. Мой массажист, работавший с пациентами многих хирургов, сказал, что доктор Гамзе — один из очень немногих врачей, чьи пациенты никогда не испытывают послеоперационных осложнений.",
+      en: "Dr. Gamze Eren is an absolute legend. According to my massage therapist, who has worked with patients from many surgeons, Dr. Gamze is one of the very few doctors whose patients she has never seen experience post-op complications.",
+      tr: "Dr. Gamze Eren gerçek bir efsane. Masaj terapistim, birçok cerrahın hastasıyla çalışan, Dr. Gamze'nin hastalarında ameliyat sonrası komplikasyon görmediğini söyledi. Bu, cerrahi tekniğinin ve ameliyat sonrası bakımının kalitesi hakkında çok şey anlatıyor.",
+      de: "Dr. Gamze Eren ist eine absolute Legende. Meine Massagetherapeutin, die mit Patienten vieler Chirurgen gearbeitet hat, sagte, Dr. Gamze sei eine der wenigen Ärztinnen, deren Patienten sie nie postoperative Komplikationen erlebt hat.",
+      ru: "Доктор Гамзе Эрен, настоящая легенда. Мой массажист, работавший с пациентами многих хирургов, сказал, что доктор Гамзе, один из очень немногих врачей, чьи пациенты никогда не испытывают послеоперационных осложнений.",
     },
     full: {
-      en: "Dr. Gamze Eren is an absolute legend. She is a highly skilled aesthetic surgeon who, together with her professional team, provides a reliable, supportive, and truly patient-centered service.\n\nWhile most surgeons quickly agreed with the areas I wanted liposuction—and some even pushed me toward a full BBL to increase the costs—Dr. Gamze did the opposite. She carefully explained the risks, set realistic expectations, and pushed back where she felt it was unsafe.\n\nShe used six entry points in total, three on each upper leg, and each one has left only a tiny scar that is practically unnoticeable. The placement is very symmetrical, reflecting her aesthetic eye and meticulous attention to detail.\n\nOne of the standout aspects is that she requires patients to stay in the hospital for two nights post-surgery—something no other surgeon I consulted offered. This made a huge difference in my recovery.\n\nAccording to my massage therapist, who has worked with patients from many different surgeons, Dr. Gamze is one of the very few doctors whose patients she has never seen experience post-op complications. That speaks volumes.",
+      en: "Dr. Gamze Eren is an absolute legend. She is a highly skilled aesthetic surgeon who, together with her professional team, provides a reliable, supportive, and truly patient-centered service.\n\nWhile most surgeons quickly agreed with the areas I wanted liposuction, and some even pushed me toward a full BBL to increase the costs, Dr. Gamze did the opposite. She carefully explained the risks, set realistic expectations, and pushed back where she felt it was unsafe.\n\nShe used six entry points in total, three on each upper leg, and each one has left only a tiny scar that is practically unnoticeable. The placement is very symmetrical, reflecting her aesthetic eye and meticulous attention to detail.\n\nOne of the standout aspects is that she requires patients to stay in the hospital for two nights post-surgery, something no other surgeon I consulted offered. This made a huge difference in my recovery.\n\nAccording to my massage therapist, who has worked with patients from many different surgeons, Dr. Gamze is one of the very few doctors whose patients she has never seen experience post-op complications. That speaks volumes.",
     },
   },
   {
@@ -94,8 +94,8 @@ const reviews: Review[] = [
       ru: "Я безмерно благодарна доктору Гамзе Эрен за самую красивую ринопластику, о которой я могла только мечтать. С первой консультации она была добра, терпелива и по-настоящему слушала всё, что я хотела.",
     },
     full: {
-      en: "I am beyond grateful to Dr. Gamze Eren for performing the most beautiful rhinoplasty I could have ever dreamed of. From our first consultation, she was kind, patient, and truly listened to everything I wanted. Her professionalism, skill, and artistry are unmatched.\n\nThe results are absolutely stunning—natural, balanced, and exactly what I had hoped for. The entire experience, from pre-op to recovery, was smooth and well-supported by her team.\n\nIf you are considering rhinoplasty, look no further. Dr. Gamze Eren is simply the best.",
-      ru: "Я безмерно благодарна доктору Гамзе Эрен за самую красивую ринопластику, о которой я могла только мечтать. С первой консультации она была добра, терпелива и по-настоящему слушала. Её профессионализм, мастерство и художественный вкус не имеют себе равных.\n\nРезультаты абсолютно потрясающие — естественные, гармоничные и именно такие, на которые я надеялась.\n\nЕсли вы думаете о ринопластике, не ищите больше. Доктор Гамзе Эрен — просто лучшая.",
+      en: "I am beyond grateful to Dr. Gamze Eren for performing the most beautiful rhinoplasty I could have ever dreamed of. From our first consultation, she was kind, patient, and truly listened to everything I wanted. Her professionalism, skill, and artistry are unmatched.\n\nThe results are absolutely stunning, natural, balanced, and exactly what I had hoped for. The entire experience, from pre-op to recovery, was smooth and well-supported by her team.\n\nIf you are considering rhinoplasty, look no further. Dr. Gamze Eren is simply the best.",
+      ru: "Я безмерно благодарна доктору Гамзе Эрен за самую красивую ринопластику, о которой я могла только мечтать. С первой консультации она была добра, терпелива и по-настоящему слушала. Её профессионализм, мастерство и художественный вкус не имеют себе равных.\n\nРезультаты абсолютно потрясающие, естественные, гармоничные и именно такие, на которые я надеялась.\n\nЕсли вы думаете о ринопластике, не ищите больше. Доктор Гамзе Эрен, просто лучшая.",
     },
   },
 ];
@@ -251,7 +251,7 @@ export function Testimonials({ locale = "en" }: { locale?: Locale }) {
           </div>
         </div>
 
-        {/* Carousel — 3 cards desktop, 1 mobile */}
+        {/* Carousel, 3 cards desktop, 1 mobile */}
         <div
           className="relative"
           onTouchStart={onTouchStart}
