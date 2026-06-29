@@ -26,10 +26,11 @@ const CATEGORY_COLORS: Record<string, string> = {
 export default async function BlogPage() {
   const { locale } = await getDict();
 
-  // Show posts with no locale tag (universal) + posts matching the current locale
-  const visiblePosts = posts.filter(
-    (p) => !p.locale || p.locale === locale
-  );
+  // Universal posts first (date-sorted), then locale-specific posts appended at end
+  const visiblePosts = [
+    ...posts.filter((p) => !p.locale),
+    ...posts.filter((p) => p.locale === locale),
+  ];
 
   return (
     <section className="relative px-4 sm:px-8">
