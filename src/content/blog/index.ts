@@ -13,6 +13,8 @@ export interface Post {
   /** Short alt text describing the image (a11y) */
   imageAlt: string;
   body: string;
+  /** Optional locale tag — if set, only shown to matching locale visitors */
+  locale?: "en" | "tr" | "ru" | "de";
 }
 
 import { post as post1 } from "./rhinoplasty-recovery-what-to-expect";
