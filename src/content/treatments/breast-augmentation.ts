@@ -106,5 +106,38 @@ export const breastAugmentation: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Brustvergrößerung in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Natürliche Brustvergrößerung mit FDA-zugelassenen Silikonimplantaten oder Eigenfettpransfer. Dr. Gamze Eren, Istanbul.",
+      title: "Brustvergrößerung",
+      tagline: "Volumen, das zu Ihrer Figur passt – kein überladenes Aussehen.",
+      summary:
+        "Eine Brustvergrößerung fügt Volumen und Fülle hinzu, um die Brust mit dem Rest Ihrer Figur in Einklang zu bringen. Dr. Eren priorisiert Natürlichkeit und Proportion – für ein Ergebnis, das sich wie Sie fühlt.",
+      sections: [
+        {
+          heading: "Das Richtige für Sie wählen",
+          body: "Eine Vergrößerung ist sehr individuell. Das richtige Implantat – Größe, Profil und Platzierung – hängt von Ihrem Körper, vorhandenem Gewebe und dem gewünschten Aussehen ab. Dr. Eren bevorzugt Proportionen statt maximaler Größe für ein Ergebnis, das zu Ihnen passt und gut altert.\n\nImplantatoptionen umfassen FDA-zugelassene Silk-Surface-Optionen; für eine dezente, sehr natürliche Augmentation kann Eigenfettpransfer eine Alternative sein.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Das Implantat wird je nach Anatomie unter dem Brustgewebe oder teilweise unter dem Muskel durch einen diskreten Schnitt (meist in der Brustfalte) platziert. Dr. Eren bespricht alle Vor- und Nachteile vorab mit Ihnen.\n\nDurchgeführt unter Vollnarkose in einem akkreditierten Krankenhaus, ambulant oder mit einer Übernachtung.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Einige Wochen wird ein Stütz-BH getragen. Die meisten kehren innerhalb einiger Tage bis einer Woche zu Büroarbeit und nach etwa sechs Wochen zum vollen Sport zurück.\n\nDie Brust setzt sich in den folgenden Wochen und Monaten in eine natürliche Position und Weichheit ab; die endgültige Form zeigt sich, wenn die Schwellung zurückgegangen ist.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Welche Art von Implantaten werden verwendet?",
+          a: "Dr. Eren verwendet FDA-zugelassene Kohäsivgel-Implantate (Silk Surface). Runde und Tropfenform-Optionen werden anhand Ihrer Anatomie und Ihres Ziels besprochen.",
+        },
+        {
+          q: "Sehen sie natürlich aus und fühlen sich so an?",
+          a: "Das ist das Ziel. Größe und Profil werden gewählt, um Ihre Figur zu ergänzen, und das Implantat setzt sich mit der Zeit weich ab.",
+        },
+      ],
+    },
   },
 };
