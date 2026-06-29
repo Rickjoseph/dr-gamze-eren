@@ -53,6 +53,7 @@ const reviews: Review[] = [
     country: "Germany",
     flag: "DE",
     procedure: "Abdominoplasty & Gynecomastia",
+    photo: "/img/reviews/daniel.webp",
     initials: "DA",
     short: {
       en: "After losing 55 kg, I underwent circular abdominoplasty with liposuction and gynecomastia removal, and everything went perfectly. Excellent and attentive doctor. I couldn't be happier with the results.",
@@ -70,6 +71,7 @@ const reviews: Review[] = [
     country: "Ireland",
     flag: "IE",
     procedure: "Liposuction & BBL",
+    photo: "/img/reviews/lily.webp",
     initials: "LO",
     short: {
       en: "Dr. Gamze Eren is an absolute legend. According to my massage therapist, who has worked with patients from many surgeons, Dr. Gamze is one of the very few doctors whose patients she has never seen experience post-op complications.",
@@ -86,6 +88,7 @@ const reviews: Review[] = [
     country: "Ukraine",
     flag: "UA",
     procedure: "Rhinoplasty",
+    photo: "/img/reviews/veronika.webp",
     initials: "VR",
     short: {
       en: "I am beyond grateful to Dr. Gamze Eren for performing the most beautiful rhinoplasty I could have ever dreamed of. From our first consultation, she was kind, patient, and truly listened to everything I wanted.",
