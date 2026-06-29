@@ -106,5 +106,38 @@ export const lipLift: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Liplift in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Liplift zur Verkürzung des Philtrum und Betonung der Oberlippe. Dr. Gamze Eren, Istanbul.",
+      title: "Liplift",
+      tagline: "Eine jüngere Mundpartie – dauerhaft, ohne Filler.",
+      summary:
+        "Ein Liplift verkürzt den Abstand zwischen Nase und Oberlippe (Philtrum) und betont die natürliche Form der Lippe – dauerhaft, im Gegensatz zu Fillern.",
+      sections: [
+        {
+          heading: "Was ein Liplift bewirkt",
+          body: "Mit der Zeit wird das Philtrum länger, die Oberlippe fällt nach unten und verliert ihre Definition. Ein Liplift verkürzt diesen Abstand chirurgisch, hebt die Lippe an und betont die natürliche Form des Lippenbogens.\n\nDas Ergebnis ist dauerhafter als Filler – einmal geheilt, bleibt es.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Ein diskreter Schnitt direkt unterhalb der Nasenbasis entfernt einen kleinen Streifen Haut. Die Narbe liegt in der natürlichen Nasenbasis-Falte und wird mit der Zeit fast unsichtbar.\n\nDurchgeführt unter Lokalanästhesie, ambulant – ein einfacher Eingriff.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Schwellungen klingen innerhalb einer Woche ab; Nähte werden früh entfernt. Die meisten kehren innerhalb einiger Tage zu normalen Aktivitäten zurück.\n\nDas Ergebnis ist dauerhaft und natürlich.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Was ist der Unterschied zum Filler?",
+          a: "Filler fügt Volumen hinzu; ein Liplift ändert die Position und Form dauerhaft. Für ein verlängertes Philtrum ist ein Liplift oft die bessere, dauerhaftere Lösung.",
+        },
+        {
+          q: "Wird die Narbe sichtbar sein?",
+          a: "Sie liegt in der Nasenbasis-Falte und verblasst erheblich. Bei den meisten Patienten ist sie nach vollständiger Heilung kaum zu sehen.",
+        },
+      ],
+    },
   },
 };
