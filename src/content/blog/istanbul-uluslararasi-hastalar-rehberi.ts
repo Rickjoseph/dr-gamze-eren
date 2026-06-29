@@ -7,9 +7,9 @@ export const post = {
   readTime: "5 dk okuma",
   locale: "tr",
   image: "/img/blog/istanbul.jpg",
-  imageAlt: "Boğaz'da gece görünümü — İstanbul uluslararası hasta rehberi",
+  imageAlt: "Boğaz'da gece görünümü, İstanbul uluslararası hasta rehberi",
   body: `
-İstanbul, estetik cerrahide Avrupa'nın en köklü merkezlerinden biri haline geldi. Deneyimli cerrahlar, JCI akreditasyonlu hastaneler ve Batı Avrupa'nın yarısı fiyatı — bunların hepsi doğru. Ama "neye dikkat etmeliyim, nasıl planlamalıyım?" sorusu akıllarda kalıyor.
+İstanbul, estetik cerrahide Avrupa'nın en köklü merkezlerinden biri haline geldi. Deneyimli cerrahlar, JCI akreditasyonlu hastaneler ve Batı Avrupa'nın yarısı fiyatı, bunların hepsi doğru. Ama "neye dikkat etmeliyim, nasıl planlamalıyım?" sorusu akıllarda kalıyor.
 
 Bu rehber, Dr. Gamze Eren kliniğiyle çalışan uluslararası hastalar için hazırlandı.
 
