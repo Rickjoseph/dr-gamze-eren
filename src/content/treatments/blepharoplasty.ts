@@ -106,5 +106,38 @@ export const blepharoplasty: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Lidstraffung (Blepharoplastik) in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Oberlid- und Unterlid-Blepharoplastik für einen ausgeruhten, jüngeren Blick. Dr. Gamze Eren, Istanbul.",
+      title: "Lidstraffung (Blepharoplastik)",
+      tagline: "Frischer, ausgeruhter Blick – obere oder untere Lider.",
+      summary:
+        "Die Blepharoplastik entfernt überschüssige Haut, Fett und Muskel von den Augenlidern für ein jüngeres, ausgeruhteres Aussehen. Obere Lider können das Sichtfeld beeinträchtigen; untere Lider zeigen oft Tränensäcke und Hohlräume.",
+      sections: [
+        {
+          heading: "Obere vs. untere Lider",
+          body: "Hängende Oberlider lassen müde oder älter wirken und können sogar das Sichtfeld einschränken. Untere Tränensäcke und Hohlräume erzeugen Schatten und einen dauerhaft müden Ausdruck.\n\nBeide können separat oder in einer Sitzung behandelt werden, je nach Ihren Bedürfnissen.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Überschüssige Haut und Fett werden durch präzise Schnitte in den natürlichen Lidfalten entfernt – Narben werden praktisch unsichtbar. Untere Lider können über die Innenseite (transkonjunktival) ohne sichtbare Narbe behandelt werden.\n\nMöglich unter Lokalanästhesie (Bürooption) oder Vollnarkose, ambulant.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Schwellungen und Blutergüsse klingen innerhalb von 10–14 Tagen ab. Die meisten fühlen sich danach in der Öffentlichkeit wohl. Nähte werden früh entfernt.\n\nDas Ergebnis ist dauerhaft – obwohl natürliche Alterung weitergeht, bleibt das Ergebnis über Jahre hinweg verbessert.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Werde ich bewusstlos operiert?",
+          a: "Nicht unbedingt. Oberlider können unter Lokalanästhesie in der Praxis durchgeführt werden. Für untere Lider oder beide gleichzeitig ist oft eine leichte Sedierung oder Vollnarkose komfortabler.",
+        },
+        {
+          q: "Wie lange halten die Ergebnisse?",
+          a: "Viele Jahre. Oberlider bleiben oft 10–15 Jahre lang verbessert; Unterlider noch länger.",
+        },
+      ],
+    },
   },
 };
