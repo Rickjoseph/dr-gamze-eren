@@ -20,7 +20,7 @@ const nextConfig: NextConfig = {
       { source: "/team", destination: "/about", permanent: true },
       { source: "/team/:path*", destination: "/about", permanent: true },
       { source: "/dr-gamze-eren", destination: "/about", permanent: true },
-      // Old service/procedure pages → new services page
+      // Old service/procedure pages
       { source: "/services-2", destination: "/services", permanent: true },
       { source: "/liposuction", destination: "/services", permanent: true },
       { source: "/liposuction/:path*", destination: "/services", permanent: true },
@@ -40,9 +40,6 @@ const nextConfig: NextConfig = {
       // Old site junk pages
       { source: "/shortcodes", destination: "/", permanent: true },
       { source: "/shortcodes/:path*", destination: "/", permanent: true },
-      // Catch-all: any other unrecognised path → homepage (temporary redirect
-      // so Google keeps checking in case we add real pages later)
-      { source: "/:path+", destination: "/", permanent: false },
     ];
   },
 };
