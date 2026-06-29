@@ -106,5 +106,38 @@ export const brazilianButtLift: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Brazilian Butt Lift (BBL) in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Natürliche Gesäßvergrößerung mit eigenem Fett (BBL) für ausgewogene, proportionierte Kurven. Dr. Gamze Eren, Istanbul.",
+      title: "Brazilian Butt Lift (BBL)",
+      tagline: "Ihr eigenes Fett – für natürliche, ausgewogene Kurven.",
+      summary:
+        "Ein Brazilian Butt Lift formt und vergrößert das Gesäß mit Ihrem eigenen Fett: Liposuktion schlank Taille und Rücken, das gereinigte Fett wird übertragen, um eine vollere, angehobene und natürlich proportionierte Form zu schaffen.",
+      sections: [
+        {
+          heading: "Was ein BBL bewirkt",
+          body: "Ein BBL ist im Grunde zwei Eingriffe in einem: Liposuktion zur Verschmälerung von Taille, Flanken oder Rücken – und Fetttransfer, um dort Volumen und Form hinzuzufügen, wo Sie es wünschen. Da eigenes Gewebe verwendet wird, fühlt sich das Ergebnis natürlich an – ganz ohne Implantat.\n\nDr. Erens Schwerpunkt liegt auf Proportionen: Ihre Kurven werden im Einklang mit Ihrer Figur betont, kein übertriebenes Aussehen. Sicherheit hat Vorrang: Fett wird in sicheren Schichten platziert, niemals tief in den Muskel.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Das Fett wird schonend per Liposuktion entnommen, aufbereitet und in Schichten injiziert, um das Gesäß zu formen. Die Konturierung der Entnahmestellen ist Teil des Ergebnisses – eine schlankere Taille betont die Kurve oft genauso wie das hinzugefügte Volumen.\n\nDer Eingriff wird unter Vollnarkose in einem akkreditierten Krankenhaus durchgeführt, ambulant oder mit einer Übernachtung.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Sie vermeiden einige Wochen lang das direkte Sitzen auf dem Gesäß und tragen ein Kompressionskleidungsstück zur Formunterstützung. Die meisten kehren innerhalb von zwei Wochen zu leichter Aktivität zurück; das endgültige Ergebnis festigt sich über einige Monate, während sich das angewachsene Fett stabilisiert.\n\nDas angewachsene Volumen ist langanhaltend mit einem weichen, natürlichen Gefühl.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Ist ein BBL sicher?",
+          a: "Bei korrekter Durchführung wird Fett nur in sicheren, oberflächlichen Schichten platziert – niemals in den Muskel. Das ist der Schlüssel zur Sicherheit. Dr. Eren folgt strikt den aktuellen Sicherheitsrichtlinien.",
+        },
+        {
+          q: "Hält das Ergebnis an?",
+          a: "Das Fett, das eine Blutversorgung aufbaut, bleibt langfristig bestehen. Ein stabiles Gewicht hilft, die Form zu erhalten.",
+        },
+      ],
+    },
   },
 };
