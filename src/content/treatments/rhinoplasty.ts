@@ -106,5 +106,38 @@ export const rhinoplasty: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Rhinoplastik (Nasenkorrektur) in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Natürliche, proportionierte Rhinoplastik mit 3D-Planung per Kratos-Simulation. Dr. Gamze Eren, Istanbul.",
+      title: "Rhinoplastik (Nasenkorrektur)",
+      tagline: "Eine Nase, die zu Ihrem Gesicht passt – vor der OP in 3D geplant.",
+      summary:
+        "Die Rhinoplastik formt die Nase, um sie mit dem übrigen Gesicht in Einklang zu bringen – Rücken, Spitze oder Proportionen werden verfeinert, bei Bedarf wird die Atmung verbessert. Dr. Gamze Eren plant jeden Fall dreidimensional mit der Kratos-Simulation, damit Sie das natürliche Ergebnis bereits vor Ihrer Entscheidung sehen können.",
+      sections: [
+        {
+          heading: "Eine Nase im Einklang mit Ihrem Gesicht",
+          body: "Eine gute Rhinoplastik ist keine Frage des Nasentyps, sondern der Proportionen. Dr. Eren gestaltet jedes Ergebnis angepasst an Ihre Gesichtszüge, Ihre ethnische Herkunft und die Bewegung Ihrer Nase beim Lächeln und Sprechen – mit dem Ziel eines natürlichen Aussehens ohne sichtbare Operation.\n\nFunktion ist genauso wichtig wie Form: Bei eingeschränkter Atmung werden Septum und innere Strukturen im selben Eingriff behandelt.",
+        },
+        {
+          heading: "3D-geplant, präzise ausgeführt",
+          body: "Vor der OP wird Ihre Nase mit Kratos dreidimensional kartiert und simuliert – eine realistische, gemeinsame Vorschau, die Sie und Dr. Eren gemeinsam prüfen und anpassen können. Der Eingriff kann offen oder geschlossen erfolgen, je nach Bedarf, mit Arbeit an Knorpel und Knochen statt bloßer Gewebeentnahme.\n\nEr wird unter Vollnarkose in einem akkreditierten Krankenhaus durchgeführt, üblicherweise ambulant oder mit einer Übernachtung.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Etwa eine Woche wird eine externe Schiene getragen; danach fühlen sich die meisten Patienten in der Öffentlichkeit wohl. Blutergüsse klingen innerhalb von zwei Wochen ab; die Spitze verfeinert sich über Monate, während die Schwellung zurückgeht.\n\nDie Nase nimmt das ganze erste Jahr ihre endgültige Form an, und ein gut geplantes Ergebnis altert natürlich mit Ihrem Gesicht.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Wird mein Ergebnis natürlich aussehen?",
+          a: "Das ist die Priorität. Veränderungen werden proportional zu Ihren Zügen geplant, und die 3D-Simulation ermöglicht es, das Ziel im Voraus abzustimmen – ein operiertes Aussehen wird vermieden.",
+        },
+        {
+          q: "Können Atemprobleme gleichzeitig behandelt werden?",
+          a: "Ja. Funktionelle Probleme wie eine Septumdeviation werden in der Regel im selben Eingriff behoben.",
+        },
+      ],
+    },
   },
 };
