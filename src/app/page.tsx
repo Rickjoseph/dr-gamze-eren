@@ -295,7 +295,7 @@ export default async function Home() {
       {/* ============== JOURNAL CAROUSEL ============== */}
       <section className="relative mt-32">
         <BlogCarousel
-          posts={posts.filter((p) => !p.locale || p.locale === locale).slice(0, 6)}
+          posts={[...posts.filter((p) => !p.locale), ...posts.filter((p) => p.locale === locale)].slice(0, 6)}
           eyebrow={h.journal.eyebrow}
           headlineA={h.journal.headlineA}
           headlineAccent={h.journal.headlineAccent}
