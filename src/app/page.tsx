@@ -14,7 +14,7 @@ const serviceImages: Record<string, string> = {
 };
 
 export default async function Home() {
-  const { t } = await getDict();
+  const { t, locale } = await getDict();
   const h = t.home;
 
   return (
@@ -295,7 +295,7 @@ export default async function Home() {
       {/* ============== JOURNAL CAROUSEL ============== */}
       <section className="relative mt-32">
         <BlogCarousel
-          posts={posts.slice(0, 6)}
+          posts={posts.filter((p) => !p.locale || p.locale === locale).slice(0, 6)}
           eyebrow={h.journal.eyebrow}
           headlineA={h.journal.headlineA}
           headlineAccent={h.journal.headlineAccent}
