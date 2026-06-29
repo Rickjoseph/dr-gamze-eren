@@ -106,5 +106,38 @@ export const breastReduction: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Brustverkleinerung in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Brustverkleinerung zur Linderung von Schmerzen, Haltungsproblemen und Beschwerden. Dr. Gamze Eren, Istanbul.",
+      title: "Brustverkleinerung",
+      tagline: "Erleichterung, Proportionen und Komfort wiederherstellen.",
+      summary:
+        "Eine Brustverkleinerung reduziert Größe und Gewicht der Brust und behebt damit oft körperliche Beschwerden wie Nacken- und Rückenschmerzen sowie Hautirritationen. Das Ergebnis ist eine kleinere, gehobene Brust, die besser zur Figur passt.",
+      sections: [
+        {
+          heading: "Wer davon profitiert",
+          body: "Große Brüste können zu chronischen Schmerzen in Schultern, Nacken und Rücken führen, außerdem zu Hautreizungen und Einschränkungen bei körperlicher Aktivität. Eine Verkleinerung löst diese Probleme und formt gleichzeitig die Brust neu.\n\nDer Eingriff ist sowohl funktionell als auch ästhetisch – viele Patientinnen berichten von einer deutlichen Verbesserung der Lebensqualität.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Überschüssiges Gewebe, Fett und Haut werden entfernt; die Brust wird in eine höhere, rundere Position gebracht. Die Brustwarze wird neu positioniert; die Schnittführung richtet sich nach dem Ausmaß der Verkleinerung.\n\nDurchgeführt unter Vollnarkose mit einer Übernachtung.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Einige Wochen wird ein Stütz-BH getragen; die meisten kehren innerhalb einer bis zwei Wochen zu leichter Aktivität zurück. Schwellungen und Empfindlichkeit klingen innerhalb weniger Wochen ab; Narben verblassen über 12–18 Monate.\n\nViele Patientinnen erleben sofortige Linderung von Beschwerden; das endgültige Aussehen zeigt sich, wenn die Schwellung vollständig abgeklungen ist.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Verliere ich das Stillen nach einer Verkleinerung?",
+          a: "Das Risiko besteht. Dr. Eren bespricht es offen, falls dies für Sie relevant ist. Techniken zur Gewebeschonung können das Risiko minimieren.",
+        },
+        {
+          q: "Ist der Eingriff von der Versicherung gedeckt?",
+          a: "Das hängt vom Ausmaß der körperlichen Beschwerden und dem Versicherungsanbieter ab. Wir können einen medizinischen Bericht für Ihre Krankenversicherung ausstellen.",
+        },
+      ],
+    },
   },
 };
