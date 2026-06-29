@@ -7,7 +7,7 @@ export const post = {
   category: "Rhinoplasty",
   readTime: "6 min read",
   image: "/img/blog/rhinoplasty-3d.jpg",
-  imageAlt: "Close-up male face, B&W — precision rhinoplasty planning",
+  imageAlt: "Close-up male face, B&W, precision rhinoplasty planning",
   body: `
 Few procedures carry as much anticipation, and as much uncertainty, as rhinoplasty. The nose sits at the centre of the face, and even small changes have a big effect. For decades, patients had to describe what they wanted in words and trust the surgeon to interpret it. 3D simulation with Kratos changes that conversation entirely.
 
