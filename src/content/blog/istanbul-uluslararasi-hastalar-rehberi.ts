@@ -65,5 +65,5 @@ Uzun uçuşlar için tromboz çorapları önerilir; ayrıca bol su içmeniz gere
 Fiyatlarımız prosedüre göre değişir. Konsültasyonumuz ücretsizdir ve size ameliyat öncesinde net bir maliyet dökümü sunarız. Sürpriz ek ücret yoktur: hastane konaklama, transfer (200 € dahil), korse ve ilaç masrafları pakete dahildir.
 
 Herhangi bir sorunuz için bizimle iletişime geçmekten çekinmeyin.
-  \`,
+  `,
 };
