@@ -48,5 +48,5 @@ Poland sendromu Dr. Gamze Eren için yalnızca estetik bir müdahale değil, rek
 Hedef: simetri, fonksiyon ve hastanın yaşam kalitesi.
 
 Konsültasyonumuz gizli, ücretsiz ve yargısızdır. Poland sendromuyla yaşayan herkes için kapımız açıktır.
-  \`,
+  `,
 };
