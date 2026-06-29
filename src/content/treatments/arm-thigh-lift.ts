@@ -106,5 +106,38 @@ export const armThighLift: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Arm- und Oberschenkelstraffung in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Arm- und Oberschenkelstraffung zur Entfernung überschüssiger, erschlaffter Haut nach Gewichtsverlust. Dr. Gamze Eren, Istanbul.",
+      title: "Arm- und Oberschenkelstraffung",
+      tagline: "Überschüssige Haut entfernen – Konturen definieren.",
+      summary:
+        "Arm- und Oberschenkelstraffungen entfernen erschlaffte Haut und definieren die Konturen von Oberarmen und Oberschenkeln – häufig nach erheblichem Gewichtsverlust oder als Teil einer Körperformung nach der Schwangerschaft.",
+      sections: [
+        {
+          heading: "Wann sie sinnvoll ist",
+          body: "Sport kann Muskeln stärken, aber erschlaffte Haut durch Gewichtsverlust, Alterung oder Genetik nicht straffen. Eine Straffung entfernt dieses überschüssige Gewebe für sauberere, definiertere Konturen.\n\nHäufig mit Liposuktion kombiniert, wenn noch Fettdepots vorhanden sind.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Überschüssige Haut wird über einen diskreten Schnitt entfernt – bei Armen an der Innenseite, bei Oberschenkeln im Leistenbereich oder an der Innenseite. Die Schnittführung richtet sich nach dem Ausmaß der Straffung.\n\nDurchgeführt unter Vollnarkose, ambulant oder mit einer Übernachtung.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Die meisten kehren innerhalb von ein bis zwei Wochen zu leichter Aktivität zurück. Compression-Kleidung wird einige Wochen getragen. Narben befinden sich in diskreten Positionen und verblassen mit der Zeit.\n\nDas Ergebnis ist dauerhaft bei stabilen Gewicht.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Hinterlässt der Eingriff sichtbare Narben?",
+          a: "Narben sind unvermeidlich, werden aber in natürlichen Hautfalten platziert und verblassen erheblich. Die meisten Patienten empfinden sie als akzeptablen Kompromiss.",
+        },
+        {
+          q: "Kann ich Arm- und Oberschenkelstraffung kombinieren?",
+          a: "Ja, das ist möglich und wird häufig als Teil einer umfassenderen Körperformung nach Gewichtsverlust durchgeführt.",
+        },
+      ],
+    },
   },
 };
