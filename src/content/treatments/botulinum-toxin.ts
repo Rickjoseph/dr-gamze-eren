@@ -106,5 +106,38 @@ export const botulinumToxin: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Botox (Botulinumtoxin) in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Professionelle Botox-Behandlungen für natürliche, ausgeruhte Ergebnisse. Dr. Gamze Eren, Istanbul.",
+      title: "Botox (Botulinumtoxin)",
+      tagline: "Mimikfalten glätten – natürlich und ausgeruht aussehen.",
+      summary:
+        "Botulinumtoxin entspannt selektiv die Muskeln, die Mimikfalten verursachen, für ein frischeres, ausgeruhteres Aussehen ohne starren oder überbehandelten Look.",
+      sections: [
+        {
+          heading: "Was Botox behandelt",
+          body: "Stirnfalten, Zornesfalten (zwischen den Brauen), Krähenfüße und andere Mimikfalten werden effektiv behandelt. Auch Einsatz für Bruxismus (Zähneknirschen), Hyperhydrose (Schwitzen) und Lippe/Halsmuskulatur möglich.\n\nDas Ziel: ausgeruht, nicht eingefroren.",
+        },
+        {
+          heading: "Die Behandlung",
+          body: "Kleine Injektionen mit feinen Nadeln, keine Betäubung erforderlich. Dauer: 15–30 Minuten. Keine Ausfallzeit.\n\nErste Wirkung nach 3–7 Tagen sichtbar, volle Wirkung nach 2 Wochen.",
+        },
+        {
+          heading: "Ergebnisse",
+          body: "Hält 3–6 Monate, je nach behandelter Zone und individuellem Stoffwechsel.\n\nRegelmäßige Behandlungen können die Wirkdauer verlängern.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Sieht es natürlich aus?",
+          a: "In erfahrenen Händen ja. Dr. Eren dosiert konservativ für ein natürliches, nicht eingeschränktes Ergebnis.",
+        },
+        {
+          q: "Wann sollte man beginnen?",
+          a: "Als Prophylaxe schon in den späten 20ern bis frühen 30ern sinnvoll. Aber auch später noch sehr effektiv.",
+        },
+      ],
+    },
   },
 };
