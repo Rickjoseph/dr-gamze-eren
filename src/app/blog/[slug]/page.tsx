@@ -103,6 +103,58 @@ export default async function BlogPostPage({ params }: Props) {
           </Link>
         </div>
 
+        {/* Related posts */}
+        {(() => {
+          const { locale } = post as any;
+          const related = posts
+            .filter((p) =>
+              p.slug !== post.slug &&
+              p.category === post.category &&
+              (!p.locale || !locale || p.locale === locale)
+            )
+            .slice(0, 3);
+          const fill = related.length < 3
+            ? posts
+                .filter((p) =>
+                  p.slug !== post.slug &&
+                  p.category !== post.category &&
+                  (!p.locale || !locale || p.locale === locale) &&
+                  !related.find((r) => r.slug === p.slug)
+                )
+                .slice(0, 3 - related.length)
+            : [];
+          const shown = [...related, ...fill];
+          if (!shown.length) return null;
+          return (
+            <div className="mt-16">
+              <p className="text-xs uppercase tracking-widest text-[var(--color-taupe)]">Continue reading</p>
+              <div className="mt-6 grid gap-5 sm:grid-cols-3">
+                {shown.map((r) => (
+                  <Link
+                    key={r.slug}
+                    href={`/blog/${r.slug}`}
+                    className="group flex flex-col overflow-hidden rounded-2xl border border-white/60 bg-white/30 shadow-[0_4px_16px_-4px_rgba(26,20,16,0.10)] transition-all hover:-translate-y-0.5 hover:shadow-[0_12px_32px_-8px_rgba(26,20,16,0.18)]"
+                  >
+                    <div className="relative aspect-[3/2] w-full overflow-hidden">
+                      <Image
+                        src={r.image}
+                        alt={r.imageAlt}
+                        fill
+                        sizes="(max-width: 640px) 90vw, 240px"
+                        className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+                      />
+                    </div>
+                    <div className="p-4">
+                      <p className="text-[10px] uppercase tracking-widest text-[var(--color-taupe)]">{r.category}</p>
+                      <p className="mt-1 text-sm font-medium leading-snug text-[var(--color-ink)] group-hover:text-[var(--color-rosegold)] transition-colors line-clamp-2">{r.title}</p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          );
+        })()}
+
         {/* Back */}
         <div className="mt-10 text-center">
           <Link href="/blog" className="text-sm text-[var(--color-taupe)] hover:text-[var(--color-cocoa)] transition">
