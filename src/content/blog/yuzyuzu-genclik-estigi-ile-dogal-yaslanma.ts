@@ -1,5 +1,5 @@
 export const post = {
-  slug: "yuzyuzu-genclik-estegi-ile-dogal-yaslanma",
+  slug: "yuzyuzu-genclik-estigi-ile-dogal-yaslanma",
   title: "Yüz Germe ve Yüz Gençleştirme: Doğal Yaşlanmanın Estetiği",
   excerpt: "Yüz germe artık 'gerilmiş plastik' görünümü anlamına gelmiyor. Dr. Gamze Eren, modern tekniklerin nasıl doğal ve dingin bir sonuç yarattığını anlatıyor.",
   date: "2026-05-26",
