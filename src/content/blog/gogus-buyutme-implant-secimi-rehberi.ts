@@ -7,9 +7,9 @@ export const post = {
   readTime: "7 dk okuma",
   locale: "tr",
   image: "/img/blog/breast.jpg",
-  imageAlt: "Göğüs büyütme implant seçimi — Dr. Gamze Eren kliniği İstanbul",
+  imageAlt: "Göğüs büyütme implant seçimi, Dr. Gamze Eren kliniği İstanbul",
   body: `
-Göğüs büyütme kararı kişiseldir. Ama implant seçimi — boyut, şekil, yüzey — çoğu zaman anlaşılması güç teknik bir konu gibi görünür. Sosyal medyada farklı yorumlar, internet forumlarında çelişkili tavsiyeler... Bunlar karar vermeyi zorlaştırır.
+Göğüs büyütme kararı kişiseldir. Ama implant seçimi, boyut, şekil, yüzey, çoğu zaman anlaşılması güç teknik bir konu gibi görünür. Sosyal medyada farklı yorumlar, internet forumlarında çelişkili tavsiyeler... Bunlar karar vermeyi zorlaştırır.
 
 Bu yazıda Dr. Gamze Eren, implant seçiminde nelere baktığını, hangi faktörlerin belirleyici olduğunu ve sıkça sorulan sorulara gerçekçi cevaplar veriyor.
 
@@ -27,7 +27,7 @@ Göğüs büyütme, kimseyi başka birine benzetmek için değil, kendi vücudun
 
 **Damla (anatomik) implantlar:** Alt polde daha fazla hacim, daha "doğal düşen" bir görünüm sunar. Kliniğimizde kullandığımız Silksurface® implantlar bu kategoridedir. Pürüzlü yüzeyli eski nesil damla implantların aksine, Silksurface mikro yapısı daha güvenli ve konforludur.
 
-Hangisinin size uygun olduğu büyük ölçüde mevcut meme dokusunuza, göğüs kafesi yapınıza ve beklentilerinize bağlıdır — sosyal medyadaki "ideal implant" tartışmalarından değil.
+Hangisinin size uygun olduğu büyük ölçüde mevcut meme dokusunuza, göğüs kafesi yapınıza ve beklentilerinize bağlıdır, sosyal medyadaki "ideal implant" tartışmalarından değil.
 
 ## Boyut Seçimi: CC Değil, Orantı
 
@@ -39,7 +39,7 @@ Kliniğimizde boyut kararı şunlara göre verilir:
 - İstenen görünüm
 - 3D simülasyon (seçime göre)
 
-Amacımız her zaman orantılı bir sonuçtur — bakıldığında "implant takılmış" izlenimi vermeyen bir görünüm.
+Amacımız her zaman orantılı bir sonuçtur, bakıldığında "implant takılmış" izlenimi vermeyen bir görünüm.
 
 ## Silksurface® FDA Onaylı İmplantlar
 
