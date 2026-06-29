@@ -34,7 +34,7 @@ import { post as post13 } from "./rinoplasti-iyilesme-sureci-hafta-hafta";
 import { post as post14 } from "./istanbul-uluslararasi-hastalar-rehberi";
 import { post as post15 } from "./gogus-buyutme-implant-secimi-rehberi";
 import { post as post16 } from "./liposuction-vucut-sekillendirme-kilo-vermekten-fazlasi";
-import { post as post17 } from "./yuzyuzu-genclik-estegi-ile-dogal-yaslanma";
+import { post as post17 } from "./yuzyuzu-genclik-estigi-ile-dogal-yaslanma";
 import { post as post18 } from "./poland-sendromu-anlama-ve-rekonstruksiyon";
 import { post as post19 } from "./mommy-makeover-cocuk-sonrasi-bedenini-yeniden-kesfet";
 import { post as post20 } from "./silksurface-meme-implantlari-dogal-his-maksimum-konfor";
