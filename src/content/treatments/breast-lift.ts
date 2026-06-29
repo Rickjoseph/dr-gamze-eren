@@ -106,5 +106,38 @@ export const breastLift: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Bruststraffung (Mastopexie) in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Bruststraffung zur Wiederherstellung von Form und Position ohne Implantat. Dr. Gamze Eren, Istanbul.",
+      title: "Bruststraffung (Mastopexie)",
+      tagline: "Form und Position wiederherstellen – natürlich, ohne Implantat.",
+      summary:
+        "Eine Mastopexie hebt und formt die Brust neu, indem überschüssige Haut entfernt und das Brustgewebe neu positioniert wird. Das Ergebnis ist eine jugendlichere, vollere Kontur, die sich proportioniell anfühlt.",
+      sections: [
+        {
+          heading: "Was eine Straffung erreicht",
+          body: "Mit der Zeit – durch Schwangerschaft, Stillen, Gewichtsveränderungen oder einfach die Schwerkraft – kann die Brust ihre Form und Position verlieren. Eine Mastopexie stellt beides wieder her, ohne die Größe wesentlich zu verändern.\n\nFür mehr Volumen kann eine Straffung mit Implantaten oder Eigenfettpransfer kombiniert werden.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Überschüssige Haut wird entfernt, Brustgewebe und Brustwarze werden in eine höhere, natürlichere Position gebracht. Die Schnittführung hängt vom Ausmaß der Straffung ab – Dr. Eren bespricht die für Sie am wenigsten sichtbare Option.\n\nDurchgeführt unter Vollnarkose, üblicherweise mit einer Übernachtung.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Einige Wochen wird ein Stütz-BH getragen. Die meisten kehren innerhalb einer Woche zu leichter Aktivität zurück; Sport nach etwa sechs Wochen.\n\nNarben verblassen über 12–18 Monate deutlich. Das Ergebnis ist dauerhaft, obwohl natürliche Alterung und Gewichtsveränderungen die Form im Laufe der Zeit beeinflussen können.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Brauche ich auch Implantate?",
+          a: "Nicht unbedingt. Wenn Sie mit der Größe zufrieden sind und nur Halt und Form wiederherstellen möchten, ist eine Mastopexie allein oft ausreichend. Dr. Eren bespricht beide Optionen.",
+        },
+        {
+          q: "Sind Narben sichtbar?",
+          a: "Narben sind unvermeidlich, werden aber sorgfältig platziert und verblassen mit der Zeit erheblich. Die meisten Patientinnen empfinden sie als einen akzeptablen Kompromiss für die erreichte Form.",
+        },
+      ],
+    },
   },
 };
