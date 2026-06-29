@@ -50,5 +50,5 @@ Rinoplasti geri dönüşü en zor estetik operasyonlardan biridir. Revizyon amel
 Uluslararası hastalar için konsültasyon video görüşmesiyle yapılabilir. Fotoğraflarınızı paylaştığınızda ön değerlendirme yapılır; İstanbul'a geldiğinizde Kratos ile detaylı planlama seansı gerçekleştirilir.
 
 Sorularınız için bizimle iletişime geçin.
-  \`,
+  `,
 };
