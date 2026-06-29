@@ -66,5 +66,5 @@ Alınan yağ hücreleri kalıcı olarak çıkarılmıştır — ancak kalan hüc
 - Yüzme ve deniz: 4 hafta sonra
 
 Kliniğimiz, ameliyat sonrası korse ve bakım talimatlarını ameliyat paketinize dahil eder.
-  \`,
+  `,
 };
