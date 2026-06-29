@@ -7,7 +7,7 @@ export const post = {
   readTime: "5 dk okuma",
   locale: "tr",
   image: "/img/blog/breast.jpg",
-  imageAlt: "Silksurface meme implantları — Dr. Gamze Eren kliniği İstanbul",
+  imageAlt: "Silksurface meme implantları, Dr. Gamze Eren kliniği İstanbul",
   body: `
 Göğüs implantı seçerken "pürüzlü mü, düz mü?" sorusu on yıllardır tartışılıyor. Ama bu ikili zıtlık artık tam resmi göstermiyor. Silksurface® teknolojisi bu tartışmayı yeniden çerçeveliyor.
 
