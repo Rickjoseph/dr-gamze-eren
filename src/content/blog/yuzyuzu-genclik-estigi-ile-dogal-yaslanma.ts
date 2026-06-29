@@ -7,9 +7,9 @@ export const post = {
   readTime: "7 dk okuma",
   locale: "tr",
   image: "/img/blog/facelift.jpg",
-  imageAlt: "Yüz germe doğal sonuç — Dr. Gamze Eren kliniği İstanbul",
+  imageAlt: "Yüz germe doğal sonuç, Dr. Gamze Eren kliniği İstanbul",
   body: `
-Yüz germe denilince akla gelen eski görüntü — aşırı gerilmiş cilt, donmuş ifade, "yapay" bir yüz — modern cerrahinin çok gerisinde kalmıştır. Bugünün tekniği farklı bir soruyu yanıtlıyor: "10 yıl önce nasıl görünüyordum?" değil, "en iyi versiyonumu nasıl koruyabilirim?"
+Yüz germe denilince akla gelen eski görüntü, aşırı gerilmiş cilt, donmuş ifade, "yapay" bir yüz, modern cerrahinin çok gerisinde kalmıştır. Bugünün tekniği farklı bir soruyu yanıtlıyor: "10 yıl önce nasıl görünüyordum?" değil, "en iyi versiyonumu nasıl koruyabilirim?"
 
 ## Yüz Neden ve Nasıl Yaşlanır?
 
@@ -19,7 +19,7 @@ Yaşlanma tek boyutlu değildir. Yüzde birkaç şey aynı anda değişir:
 **Yağ dokusu:** Yüzün üst bölgelerindeki yağ erir, alt yüze iner. Bu "dolgunluğun" yer değiştirmesidir.
 **Kemik ve kas:** Yüz iskeleti zamanla küçülür; bu da cilt için desteği azaltır.
 
-Modern yüz germe bu üç katmanın hepsini ele alır — sadece cildi çekmez.
+Modern yüz germe bu üç katmanın hepsini ele alır, sadece cildi çekmez.
 
 ## SMAS Tekniği: Yüzeysel Değil, Derin
 
@@ -52,7 +52,7 @@ Bu kombinasyonlar tek anestezi ile yapılır ve sonuç daha bütüncül olur.
 - Sosyal hayata dönüş: yaklaşık 2–3 hafta
 - Nihai sonuç: 3–6 ay
 
-Dikişler genellikle kulak arkasına ve saç çizgisine gizlenir — görünür iz minimumdur.
+Dikişler genellikle kulak arkasına ve saç çizgisine gizlenir, görünür iz minimumdur.
 
 ## Sonuç Ne Kadar Sürer?
 
