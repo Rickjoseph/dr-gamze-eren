@@ -106,5 +106,38 @@ export const browLift: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Browlift (Stirnlift) in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Browlift zur Anhebung hängender Augenbrauen und Glättung von Stirnfalten. Dr. Gamze Eren, Istanbul.",
+      title: "Browlift (Stirnlift)",
+      tagline: "Augenbrauen anheben – müder oder grimmiger Ausdruck beseitigen.",
+      summary:
+        "Ein Browlift hebt hängende Augenbrauen und glättet horizontale Stirnfalten für einen frischeren, offeneren Gesichtsausdruck. Häufig mit einer Lidstraffung kombiniert.",
+      sections: [
+        {
+          heading: "Was ein Browlift bewirkt",
+          body: "Hängende Augenbrauen können einen müden oder grimmigen Ausdruck verleihen – selbst wenn man sich gut fühlt. Ein Browlift hebt die Brauen in eine jüngere, natürlichere Position.\n\nVerschiedene Techniken sind verfügbar, von minimal-invasiv (endoskopisch) bis zu direkten Verfahren, je nach Ausmaß der Korrektur.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Beim endoskopischen Browlift werden kleine Schnitte in der Kopfhaut verwendet; das Gewebe wird gehoben und neu positioniert. Alternative Techniken können diskrete Schnitte an der Schläfe oder direkt über der Braue verwenden.\n\nDurchgeführt unter Vollnarkose oder Sedierung, meist ambulant.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Schwellungen klingen innerhalb von 1–2 Wochen ab. Die meisten kehren innerhalb von 10 Tagen zu normalen Aktivitäten zurück.\n\nDas Ergebnis ist dauerhaft; ein einmal gehobenes Gewebe altert natürlich, bleibt aber verbessert.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Sehe ich danach überrascht aus?",
+          a: "Das ist ein häufiges Missverständnis. Dr. Eren zielt auf eine natürliche Position ab – leicht angehoben, nicht übertrieben.",
+        },
+        {
+          q: "Kann ich Browlift und Lidstraffung kombinieren?",
+          a: "Ja, das ist sehr häufig. Gemeinsam geben sie dem gesamten Augenbereich einen frischeren, harmonischen Ausdruck.",
+        },
+      ],
+    },
   },
 };
