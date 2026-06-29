@@ -6,8 +6,8 @@ export const post = {
   category: "Vücut",
   readTime: "7 dk okuma",
   locale: "tr",
-  image: "/img/service-body.jpg",
-  imageAlt: "Dr. Gamze Eren kliniği İstanbul brezilya poposu BBL",
+  image: "/img/blog/bbl-hero.jpg",
+  imageAlt: "Suda duran kadın — Dr. Gamze Eren kliniği İstanbul brezilya poposu BBL",
   body: `
 Brezilya Poposu — yaygın adıyla BBL — dünyada en çok aranan estetik operasyonların başında geliyor. İmplant yerine kendi vücut yağınızı kullanarak kalçalara dolgunluk ve kaldırılmış bir görünüm kazandırır; sonuç yumuşak, doğal ve orantılıdır.
 
