@@ -13,21 +13,16 @@ const nextConfig: NextConfig = {
       { source: "/home-2", destination: "/", permanent: true },
       { source: "/home-3", destination: "/", permanent: true },
       { source: "/contacts", destination: "/contact", permanent: true },
-      { source: "/contacts/:path*", destination: "/contact", permanent: true },
       { source: "/contact-us", destination: "/contact", permanent: true },
       { source: "/appointment", destination: "/contact", permanent: true },
-      { source: "/appointment/:path*", destination: "/contact", permanent: true },
+      // Only redirect /team page itself, NOT /team/* (images live there)
       { source: "/team", destination: "/about", permanent: true },
-      { source: "/team/:path*", destination: "/about", permanent: true },
       { source: "/dr-gamze-eren", destination: "/about", permanent: true },
       // Old service/procedure pages
       { source: "/services-2", destination: "/services", permanent: true },
       { source: "/liposuction", destination: "/services", permanent: true },
-      { source: "/liposuction/:path*", destination: "/services", permanent: true },
       { source: "/gynecomastia", destination: "/services", permanent: true },
-      { source: "/gynecomastia/:path*", destination: "/services", permanent: true },
       { source: "/facelift", destination: "/services", permanent: true },
-      { source: "/facelift/:path*", destination: "/services", permanent: true },
       { source: "/rhinoplasty", destination: "/services", permanent: true },
       { source: "/nose-job", destination: "/services", permanent: true },
       { source: "/breast-augmentation", destination: "/services", permanent: true },
@@ -39,7 +34,6 @@ const nextConfig: NextConfig = {
       { source: "/single-post/:slug*", destination: "/blog/:slug*", permanent: true },
       // Old site junk pages
       { source: "/shortcodes", destination: "/", permanent: true },
-      { source: "/shortcodes/:path*", destination: "/", permanent: true },
     ];
   },
 };
