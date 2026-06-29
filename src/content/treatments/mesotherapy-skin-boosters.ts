@@ -106,5 +106,38 @@ export const mesotherapySkinBoosters: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Mesotherapie & Skin Booster in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Mesotherapie und Skin Booster für tiefe Feuchtigkeitsversorgung und strahlende Haut. Dr. Gamze Eren, Istanbul.",
+      title: "Mesotherapie & Skin Booster",
+      tagline: "Tiefe Hydration und Hautqualität verbessern.",
+      summary:
+        "Mesotherapie und Skin Booster (wie Profhilo, Restylane Skinboosters) injizieren Hyaluronsäure, Vitamine und Wirkstoffe direkt in die mittlere Hautschicht für intensive Feuchtigkeitszufuhr, Elastizität und Strahlung.",
+      sections: [
+        {
+          heading: "Was sie behandeln",
+          body: "Dehydrierte, fahle oder schlaffe Haut. Auch für frühe Prävention von Faltenbildung und zur Verbesserung der allgemeinen Hautqualität.\n\nGeeignet für Gesicht, Hals, Dekolleté und Hände.",
+        },
+        {
+          heading: "Die Behandlung",
+          body: "Micro-Injektionen in die Dermis, mit feinen Nadeln. Dauer: 20–30 Minuten. Minimale Rötung, keine Ausfallzeit.\n\nSerie von 3–4 Sitzungen empfohlen.",
+        },
+        {
+          heading: "Ergebnisse",
+          body: "Strahlendere, festere und besser hydratisierte Haut über 3–6 Monate. Ergebnisse bauen sich schrittweise auf.\n\nHäufig als Ergänzung zu anderen Eingriffen empfohlen.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Was ist der Unterschied zwischen Skin Booster und normalem Filler?",
+          a: "Skin Booster sind dünnflüssiger und auf Feuchtigkeitsverbesserung ausgelegt, kein strukturelles Volumen. Filler definieren Konturen. Beide ergänzen sich.",
+        },
+        {
+          q: "Wie oft sollte man wiederholen?",
+          a: "Alle 6 Monate für Erhalt; initial 3 Sitzungen im Abstand von 4 Wochen.",
+        },
+      ],
+    },
   },
 };
