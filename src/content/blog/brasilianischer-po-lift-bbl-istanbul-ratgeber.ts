@@ -6,8 +6,8 @@ export const post = {
   category: "Körper",
   readTime: "7 Min. Lesezeit",
   locale: "de",
-  image: "/img/service-body.jpg",
-  imageAlt: "Körperformung und brasilianischer Po-Lift in der Klinik Dr. Gamze Eren Istanbul",
+  image: "/img/blog/bbl-hero.jpg",
+  imageAlt: "Frau im Wasser — natürliches Körpergefühl nach BBL in der Klinik Dr. Gamze Eren Istanbul",
   body: `
 Der Brasilianische Po-Lift — international bekannt als BBL (Brazilian Butt Lift) — gehört zu den weltweit meistgesuchten ästhetischen Eingriffen. Er nutzt Ihr eigenes Körperfett, keine Implantate, um dem Gesäß mehr Volumen, Lift und natürliche Proportionen zu geben.
 
