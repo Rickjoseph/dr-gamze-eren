@@ -106,5 +106,38 @@ export const bioStimulators: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Biostimulator-Behandlungen in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Biostimulatoren zur Anregung der natürlichen Kollagenproduktion für straffere, jüngere Haut. Dr. Gamze Eren, Istanbul.",
+      title: "Biostimulatoren",
+      tagline: "Kollagen anregen – Haut langfristig stärken.",
+      summary:
+        "Biostimulatoren (wie Sculptra oder Radiesse) regen den Körper zur eigenen Kollagenproduktion an – für eine schrittweise, natürlich wirkende Hautverdichtung und Volumenwiederherstellung.",
+      sections: [
+        {
+          heading: "Wie Biostimulatoren wirken",
+          body: "Anders als Filler füllen Biostimulatoren nicht sofort auf, sondern stimulieren über Monate die Kollagenproduktion. Das Ergebnis ist eine langsamere, natürlichere Verbesserung der Hautqualität und Festigkeit.\n\nGeeignet für Gesicht, Hals, Dekolleté und Hände.",
+        },
+        {
+          heading: "Die Behandlung",
+          body: "Die Substanz wird mit feinen Nadeln oder einer Kanüle injiziert. In der Regel 2–3 Sitzungen im Abstand einiger Wochen für optimale Ergebnisse.\n\nAmbulant, ohne Ausfallzeit.",
+        },
+        {
+          heading: "Ergebnisse",
+          body: "Ergebnisse entwickeln sich über 3–6 Monate und halten 18–24 Monate oder länger an.\n\nDas Erscheinungsbild ist natürlich – keine sofortige, auffällige Veränderung.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Wer sind gute Kandidaten?",
+          a: "Personen, die eine diskrete, natürliche Verbesserung suchen, ohne sofortige große Veränderung – oft 35–60 Jahre, als Vorbeugung oder frühe Korrektur.",
+        },
+        {
+          q: "Können Biostimulatoren mit anderen Behandlungen kombiniert werden?",
+          a: "Ja, häufig mit Botox, Fillern oder Skinboostern für ein umfassendes Ergebnis.",
+        },
+      ],
+    },
   },
 };
