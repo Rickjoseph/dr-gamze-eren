@@ -36,6 +36,9 @@ export async function generateMetadata(): Promise<Metadata> {
   const { t } = await getDict();
   return {
     metadataBase: new URL("https://drgamzeeren.com"),
+    verification: {
+      google: "TFz0Od1IhfbOaHIsAh1GBD_M0xS21WugnG4e8VSoOUk",
+    },
     title: {
       default: t.meta.siteTitle,
       template: "%s · Dr. Gamze Eren",
