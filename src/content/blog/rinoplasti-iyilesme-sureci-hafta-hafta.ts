@@ -56,5 +56,5 @@ Rinoplastide kalıcı sonuç tam anlamıyla bir yılda netleşir. Özellikle bur
 Kliniğimizde ameliyat sonrası kontroller düzenli aralıklarla yapılır: 1. hafta, 1. ay, 3. ay ve 12. ay. Uluslararası hastalarımızla video konsültasyonla da iletişimi sürdürüyoruz.
 
 İyileşme sürecindeki her sorunuz için kliniğimize ulaşabilirsiniz. Hiçbir endişe küçük değildir.
-  \`,
+  `,
 };
