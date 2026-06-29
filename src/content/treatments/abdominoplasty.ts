@@ -106,5 +106,38 @@ export const abdominoplasty: Treatment = {
         },
       ],
     },
+        de: {
+      metaTitle: "Bauchdeckenstraffung (Abdominoplastik) in Istanbul – Dr. Gamze Eren",
+      metaDescription:
+        "Bauchdeckenstraffung zur Entfernung überschüssiger Haut und Straffung der Bauchmuskulatur. Dr. Gamze Eren, Istanbul.",
+      title: "Bauchdeckenstraffung (Abdominoplastik)",
+      tagline: "Einen flachen, strafferen Bauch – auch wenn Sport und Diät es nicht erreichen.",
+      summary:
+        "Eine Bauchdeckenstraffung entfernt überschüssige Haut und Fett und strafft die darunterliegenden Muskeln für einen flacheren, definierten Bauch. Besonders wirksam nach Schwangerschaft oder erheblichem Gewichtsverlust.",
+      sections: [
+        {
+          heading: "Was sie leistet",
+          body: "Wenn Haut und Muskeln nach Schwangerschaft oder Gewichtsverlust erschlafft sind, kann Sport das Problem nicht vollständig beheben. Eine Abdominoplastik strafft die Muskeln, entfernt überschüssige Haut und formt die Taille neu – für ein saubereres, proportionaleres Ergebnis.\n\nSie wird häufig mit Liposuktion kombiniert und ist ein Kernelement des Mommy Makeovers.",
+        },
+        {
+          heading: "Der Eingriff",
+          body: "Durch einen diskreten, horizontal verlaufenden Schnitt (meist unterhalb der Bikinizone) werden Haut und Fett entfernt, die Bauchmuskeln gestrafft und der Nabel neu positioniert. Eine Mini-Bauchdeckenstraffung ist für weniger ausgedehnte Korrekturen unterhalb des Nabels möglich.\n\nDurchgeführt unter Vollnarkose mit einer bis zwei Übernachtungen.",
+        },
+        {
+          heading: "Erholung & Ergebnisse",
+          body: "Zwei bis vier Wochen werden Aktivitäten eingeschränkt; ein Kompressionskleidungsstück wird einige Wochen getragen. Die meisten kehren innerhalb von zwei Wochen zu leichter Arbeit zurück, volles Training nach sechs bis acht Wochen.\n\nDas Ergebnis ist dauerhaft, solange das Gewicht stabil bleibt; zukünftige Schwangerschaften können das Ergebnis beeinflussen.",
+        },
+      ],
+      faqs: [
+        {
+          q: "Was ist der Unterschied zwischen Bauchdeckenstraffung und Liposuktion?",
+          a: "Liposuktion entfernt Fett; eine Bauchdeckenstraffung entfernt überschüssige Haut und strafft Muskeln. Häufig werden beide kombiniert für ein optimales Ergebnis.",
+        },
+        {
+          q: "Wann ist der Narbe sichtbar?",
+          a: "Die Narbe liegt tief im Bikinibereich und wird sorgfältig platziert. Sie verblasst über 12–18 Monate erheblich.",
+        },
+      ],
+    },
   },
 };
